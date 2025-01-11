@@ -1,0 +1,1845 @@
+{
+	id: "2CF0419BBCC9A794"
+	group: ""
+	order_index: 14
+	filename: "chapter_12_botania"
+	title: "12 - Botania"
+	icon: {
+		id: "botania:natura_pylon"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Botania"
+			icon: {
+				id: "botania:natura_pylon"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: -2.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Tech Mod"
+			dependencies: ["6784B67A7C42BF4A"]
+			size: 1.5d
+			id: "20C1CFCB41C25E38"
+			tasks: [{
+				id: "7C7AF0197B321A28"
+				type: "item"
+				item: {
+					id: "botania:apothecary_default"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "04C83E0E6D890EAD"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Opps a Daisy! My Quilt Exploded! MY GARDEN BLEW UP"
+			icon: {
+				id: "botania:pure_daisy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["437C0A3ACD20868F"]
+			id: "05F950444713BE8B"
+			tasks: [
+				{
+					id: "79B72544754FDE4E"
+					type: "item"
+					item: {
+						id: "botania:pure_daisy"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3135FFA92C5DEE2F"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "5507A351042194DA"
+					type: "item"
+					item: {
+						id: "botania:livingwood"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Shimmering Mushrooms"
+			icon: {
+				id: "botania:light_blue_mushroom"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["20C1CFCB41C25E38"]
+			id: "437C0A3ACD20868F"
+			tasks: [{
+				id: "682B2D10464EC6A4"
+				type: "item"
+				title: "Any Shimmering Mushroom"
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "itemfilters:id_regex"
+								Count: 1b
+								tag: {
+									value: "mushroom"
+								}
+							}
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+									value: "botania:petals"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Your First Mana"
+			icon: {
+				id: "botania:diluted_pool"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["05F950444713BE8B"]
+			id: "4FB3C37C9B9A5E46"
+			tasks: [
+				{
+					id: "23A32A00CF8456A6"
+					type: "item"
+					item: {
+						id: "botania:hydroangeas"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4923E1B7D3CFCF7C"
+					type: "item"
+					item: {
+						id: "botania:mana_spreader"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0580AC1EE516B8C5"
+					type: "item"
+					item: {
+						id: "botania:diluted_pool"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["4FB3C37C9B9A5E46"]
+			id: "4C538053B7D77441"
+			tasks: [{
+				id: "5FB6B84C8DD45544"
+				type: "item"
+				item: {
+					id: "botania:runic_altar"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["4FB3C37C9B9A5E46"]
+			id: "643989BE9984AA65"
+			tasks: [{
+				id: "2F9244E8B45A87CE"
+				type: "item"
+				item: {
+					id: "botania:mana_pool"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tier 1 Runes"
+			icon: {
+				id: "botania:rune_water"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["4C538053B7D77441"]
+			id: "106DD18DC48E0C81"
+			tasks: [
+				{
+					id: "5F9AFD27BFDEEFF3"
+					type: "item"
+					item: {
+						id: "botania:rune_water"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0BA0AEC0FB4CBA65"
+					type: "item"
+					item: {
+						id: "botania:rune_fire"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7E3964F0DF527A3A"
+					type: "item"
+					item: {
+						id: "botania:rune_earth"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4BAE10B667FDB66C"
+					type: "item"
+					item: {
+						id: "botania:rune_air"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4949CC8E878E84ED"
+					type: "item"
+					item: {
+						id: "botania:rune_mana"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "botania:terra_plate"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["106DD18DC48E0C81"]
+			id: "19CAFCF8F8EC93CC"
+			tasks: [
+				{
+					id: "657D9538F29026D0"
+					type: "item"
+					item: {
+						id: "botania:terra_plate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4FA71788CF94BB11"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "1714766850DADDB2"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Portal to Alfheim"
+			icon: {
+				id: "botania:alfheim_portal"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 2.0d
+			dependencies: [
+				"5D6F05F59006F507"
+				"5D8CE9A615B5D019"
+			]
+			id: "5E6CC8CFCFFF1984"
+			tasks: [
+				{
+					id: "04B3987BC66A79A2"
+					type: "item"
+					item: {
+						id: "botania:alfheim_portal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "393D39ABBCFC5732"
+					type: "item"
+					item: {
+						id: "botania:glimmering_livingwood"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "7BBCF035E7FB0397"
+					type: "item"
+					item: {
+						id: "botania:livingwood"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "31BD0DAE39E6B386"
+					type: "item"
+					item: {
+						id: "botania:natura_pylon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Terrasteel"
+			x: 4.0d
+			y: 2.0d
+			dependencies: [
+				"19CAFCF8F8EC93CC"
+				"08EAC256ECB45DB3"
+			]
+			id: "5D8CE9A615B5D019"
+			tasks: [{
+				id: "4DEE311EF48A7DFE"
+				type: "item"
+				item: {
+					id: "botania:terrasteel_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tier 2 Runes"
+			icon: {
+				id: "botania:rune_summer"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["19CAFCF8F8EC93CC"]
+			id: "5D6F05F59006F507"
+			tasks: [
+				{
+					id: "47411F0BB97B2DDA"
+					type: "item"
+					item: {
+						id: "botania:rune_spring"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4403EE117FA7F82C"
+					type: "item"
+					item: {
+						id: "botania:rune_summer"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "20529B50ABC52B48"
+					type: "item"
+					item: {
+						id: "botania:rune_autumn"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "03BB38EC2DC4BD21"
+					type: "item"
+					item: {
+						id: "botania:rune_winter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tier 3 Runes"
+			icon: {
+				id: "botania:rune_wrath"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			description: ["This quest only requires 1 of the tier 3 runes, but you will need to use most of them."]
+			dependencies: ["28FACD841B475A85"]
+			id: "25BAAB99EFE7F8FE"
+			tasks: [{
+				id: "496F2F2933E6CB6A"
+				type: "item"
+				title: "Any Tier 3 Rune"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "botania:rune_lust"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_gluttony"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_greed"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_sloth"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_wrath"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_envy"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "botania:rune_pride"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["106DD18DC48E0C81"]
+			id: "08EAC256ECB45DB3"
+			tasks: [{
+				id: "7578E6F100F1C5DA"
+				type: "item"
+				item: {
+					id: "botania:spark"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Elven Materials"
+			icon: {
+				id: "botania:dragonstone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["5E6CC8CFCFFF1984"]
+			id: "28FACD841B475A85"
+			tasks: [
+				{
+					id: "15B84DDBEC59302B"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5198FA21C2B97E17"
+					type: "item"
+					item: {
+						id: "botania:dragonstone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1842D1A33B95BBA9"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Guardian of Gaia I"
+			icon: {
+				id: "botania:gaia_pylon"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 2.0d
+			description: ["Build the arena shown in the Lexica and shift-right-click the Terrasteel Ingot into the Beacon to begin the bossfight."]
+			dependencies: ["25BAAB99EFE7F8FE"]
+			id: "4A13A9DBE9C3EA61"
+			tasks: [
+				{
+					id: "50B1619408AE193B"
+					type: "item"
+					item: {
+						id: "minecraft:beacon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4E97905331DAE2E6"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "3C6F9F84DAA7A0CD"
+					type: "item"
+					item: {
+						id: "botania:gaia_pylon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "71701AE62A1FD3BB"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["4A13A9DBE9C3EA61"]
+			id: "5DD3879132A72E1E"
+			tasks: [{
+				id: "3A0520BC3C0B9A7F"
+				type: "item"
+				item: {
+					id: "botania:life_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Bifrost"
+			icon: {
+				id: "botania:rainbow_rod"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["5DD3879132A72E1E"]
+			id: "2B9C421914FA438B"
+			tasks: [
+				{
+					id: "2B3F559D518635DA"
+					type: "item"
+					item: {
+						id: "botania:rainbow_rod"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3B3FC0887D654D52"
+					type: "item"
+					item: {
+						id: "botania:bifrost_perm"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "mythicbotany:mana_infuser"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 4.0d
+			dependencies: ["0C748364A93B5E7C"]
+			id: "4EF249BA469BD626"
+			tasks: [
+				{
+					id: "331B6B1756221819"
+					type: "item"
+					item: {
+						id: "mythicbotany:mana_infuser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "05A2FF65CBA665F1"
+					type: "item"
+					item: {
+						id: "minecraft:gold_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "572EC1E820DE99C8"
+					type: "item"
+					item: {
+						id: "botania:shimmerrock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 4.0d
+			dependencies: ["4EF249BA469BD626"]
+			id: "7464CB34236F1458"
+			tasks: [{
+				id: "3536ABDDECFDBFB1"
+				type: "item"
+				item: {
+					id: "mythicbotany:alfsteel_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Guardian of Gaia II"
+			x: 12.0d
+			y: 2.0d
+			description: ["A higher-tier, more difficult version of the bossfight."]
+			dependencies: ["4EF249BA469BD626"]
+			id: "04B7E5F0F370E323"
+			tasks: [{
+				id: "450C24ECE7010B41"
+				type: "item"
+				item: {
+					id: "botania:gaia_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["04B7E5F0F370E323"]
+			id: "0B083C4D62AD5CD7"
+			tasks: [{
+				id: "0DB8651283E4FAF6"
+				type: "item"
+				item: {
+					id: "botania:dice"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ego"
+			x: 14.0d
+			y: 0.0d
+			description: ["The item used to summon the Gaia Guardian III, also known as Ego."]
+			dependencies: [
+				"0B083C4D62AD5CD7"
+				"7464CB34236F1458"
+			]
+			id: "30F6CC095D67B63F"
+			tasks: [{
+				id: "1637CD4FE2F43F7D"
+				type: "item"
+				item: {
+					id: "extrabotany:challengeticket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "mythicbotany:yggdrasil_branch"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 0.0d
+			description: ["A near-perfect replica of a branch of the tree the 9 realms are situated upon. Gives special water revealing new knowledges."]
+			dependencies: ["681063269E111FD9"]
+			id: "5B1C852383E9DA81"
+			tasks: [
+				{
+					id: "1EDE2C72E3FBA4BE"
+					type: "item"
+					item: {
+						id: "mythicbotany:yggdrasil_branch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5EC7031E28D25B60"
+					type: "item"
+					item: {
+						id: "mythicbotany:gjallar_horn_empty"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "524E5C2FA3C692DD"
+					type: "item"
+					item: {
+						id: "mythicbotany:gjallar_horn_full"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Automatic Runic Altar"
+			icon: {
+				id: "botania:shimmerrock"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["4A13A9DBE9C3EA61"]
+			id: "7A01129F9C866243"
+			tasks: [
+				{
+					id: "31260B43AE89A6E7"
+					type: "item"
+					item: "masterfulmachinery:magical_controller"
+				}
+				{
+					id: "350DE72FBA3584CA"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_input"
+				}
+				{
+					id: "409BA680A2784308"
+					type: "item"
+					item: "masterfulmachinery:magical_mana_port_botania_mana_input"
+				}
+				{
+					id: "15477C57C44AE5A2"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_output"
+				}
+				{
+					id: "3A25063BFCAE51B1"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "3B6EAFD9C7C3C1A5"
+					type: "item"
+					item: {
+						id: "botania:gaia_pylon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "35F17B2E18DA6900"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 37L
+				}
+				{
+					id: "1B668C18DEB28065"
+					type: "item"
+					item: {
+						id: "botania:livingrock_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "01D1902DCF6C04CA"
+					type: "item"
+					item: {
+						id: "botania:shimmerrock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Gaia Kill-O-Tron 3000"
+			icon: {
+				id: "botania:bifrost_perm"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["681063269E111FD9"]
+			id: "46E5D46AD3014D19"
+			tasks: [
+				{
+					id: "565AEA4DCC80B7B6"
+					type: "item"
+					item: "masterfulmachinery:magical_controller"
+				}
+				{
+					id: "7A76DABFB1DA6327"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_input"
+				}
+				{
+					id: "2CFBF841B6D209AB"
+					type: "item"
+					item: "masterfulmachinery:magical_energy_port_energy_input"
+				}
+				{
+					id: "2B5AE299DD518553"
+					type: "item"
+					item: "masterfulmachinery:magical_mana_port_botania_mana_input"
+				}
+				{
+					id: "374C1E3ADC96ECA5"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_output"
+				}
+				{
+					id: "462928CB4C0477EB"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_pylon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "23BB1DD750C2C58E"
+					type: "item"
+					item: {
+						id: "minecraft:beacon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0939647C2C9B77C9"
+					type: "item"
+					item: {
+						id: "botania:bifrost_perm"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "593F00041F50BB43"
+					type: "item"
+					item: {
+						id: "botania:bifrost_pane"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 80L
+				}
+				{
+					id: "6370A1B50FD385C6"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6B998A8AA02BE3B9"
+					type: "item"
+					item: {
+						id: "botania:dragonstone_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "57702C6B79296E17"
+					type: "item"
+					item: {
+						id: "botania:elementium_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2353C29C2693C0DF"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "458D21F7D284CDF6"
+					type: "item"
+					item: {
+						id: "botania:manasteel_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "1095AE7B860CCD6C"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockstainlesssteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "2A7F27E4811256ED"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "19B4E45EB8F2A747"
+					type: "item"
+					item: {
+						id: "envirocore:kyronite_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 32L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			dependencies: ["30F6CC095D67B63F"]
+			id: "681063269E111FD9"
+			tasks: [{
+				id: "719126E971CB37FE"
+				type: "item"
+				item: {
+					id: "extrabotany:orichalcos"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Rune Ritual"
+			icon: {
+				id: "mythicbotany:master_rune_holder"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: 0.0d
+			description: ["Place the required runes in the outer Rune Holders and the center item in the Master Rune Holder. The runes in the normal Rune Holders will not be consumed; only the center item is consumed. Click the Master Rune Holder with a Wand of the Forest to start the ritual. You need to have drank the Water from the Well of Mimir in order to be able to perform rune rituals."]
+			dependencies: ["5B1C852383E9DA81"]
+			id: "35E2C14E0DBC72B7"
+			tasks: [
+				{
+					id: "164AECAE92D827D6"
+					type: "item"
+					item: {
+						id: "mythicbotany:master_rune_holder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4F2A7F579D7DE4A6"
+					type: "item"
+					item: {
+						id: "mythicbotany:rune_holder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+			]
+		}
+		{
+			title: "Blood of Kvasir Ritual"
+			icon: {
+				id: "mythicbotany:kvasir_blood"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: 2.0d
+			description: ["Follow the steps in the Lexica for doing this ritual. This ritual recipe will take mana from a mana containing item in your inventory, like a Mana Tablet."]
+			dependencies: [
+				"35E2C14E0DBC72B7"
+				"55C163DE701695D2"
+				"3851ECBF9C0717D5"
+			]
+			id: "4642613272DFB58F"
+			tasks: [
+				{
+					id: "2FC58E465B9CA6DD"
+					type: "item"
+					item: {
+						id: "mythicbotany:fimbultyr_tablet"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "72EB29DBC0946B6C"
+					type: "item"
+					item: {
+						id: "botania:rune_fire"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "2A2027B6DF1B2D9D"
+					type: "item"
+					item: {
+						id: "botania:rune_summer"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "6F2CAC296D29DD3A"
+					type: "item"
+					item: {
+						id: "mythicbotany:midgard_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "484654CF2D0D7F99"
+					type: "item"
+					item: {
+						id: "mythicbotany:helheim_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "528017E051EB3197"
+					type: "item"
+					item: {
+						id: "botania:ender_dagger"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "382427E216EF7333"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_nugget"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "419AF71836B54041"
+					type: "item"
+					item: {
+						id: "botania:vial"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "19900C1825352DE1"
+					type: "kill"
+					title: "Sacrifice Wandering Trader"
+					icon: {
+						id: "minecraft:lead"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "minecraft:wandering_trader"
+					value: 1L
+				}
+				{
+					id: "456FEF11EA85FC28"
+					type: "item"
+					item: {
+						id: "mythicbotany:kvasir_blood"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Entering the Portal"
+			icon: {
+				id: "mythicbotany:kvasir_mead"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: 2.0d
+			description: ["Drink the Mead of Kvasir to gain the ability to enter Alfheim."]
+			dependencies: ["4642613272DFB58F"]
+			id: "7AE430EC144CB509"
+			tasks: [
+				{
+					id: "04DB6979343D90B8"
+					type: "item"
+					item: {
+						id: "mythicbotany:kvasir_mead"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1EF3955DF6EA414F"
+					type: "dimension"
+					title: "Walk into the Portal to Alfheim"
+					icon: {
+						id: "botania:pixie_dust"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					dimension: "mythicbotany:alfheim"
+				}
+			]
+		}
+		{
+			title: "Tier 4 Runes"
+			icon: {
+				id: "mythicbotany:midgard_rune"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: 4.0d
+			dependencies: ["26AAA981603DEC86"]
+			id: "55C163DE701695D2"
+			tasks: [{
+				id: "2D7D7D35EA6FDC43"
+				type: "item"
+				title: "Any Tier 4 Rune"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "mythicbotany:asgard_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:vanaheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:alfheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:midgard_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:joetunheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:muspelheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:niflheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:nidavellir_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "mythicbotany:helheim_rune"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: 4.0d
+			description: [
+				"Locate an Andwari Cave and break the Gold Blocks until you find the Cursed Ring of Andwari."
+				"Andwari Caves can be found using an Explorer's Compass by simply searching for Andwari Cave."
+			]
+			dependencies: ["7AE430EC144CB509"]
+			id: "79A79CE98C1A9F9C"
+			tasks: [{
+				id: "6A7649F10E93570C"
+				type: "item"
+				item: {
+					id: "mythicbotany:cursed_andwari_ring"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ring of Andwari Ritual"
+			icon: {
+				id: "mythicbotany:andwari_ring"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 22.0d
+			y: 4.0d
+			dependencies: ["79A79CE98C1A9F9C"]
+			id: "4EA3F9F387758FFA"
+			tasks: [
+				{
+					id: "7FA277F94DB56035"
+					type: "item"
+					item: {
+						id: "botania:rune_mana"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6A50DF47799D7394"
+					type: "item"
+					item: {
+						id: "botania:rune_greed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "5A4CFE6BD942A2D6"
+					type: "item"
+					item: {
+						id: "botania:rune_water"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "095EE9EDDF770494"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfheim_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "4D9B6E16CE6CAFB4"
+					type: "item"
+					item: {
+						id: "botania:manaweave_cloth"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "45EEB1CEBC9B6063"
+					type: "item"
+					item: {
+						id: "mythicbotany:andwari_ring"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Pristine Gold"
+			x: 25.0d
+			y: 1.25d
+			shape: "gear"
+			description: ["NOTE: Most autocrafters, including Molecular Assemblers, will consume the Ring of Andwari. Use an RFTools crafter if you need to automate Pristine Gold."]
+			dependencies: ["4EA3F9F387758FFA"]
+			size: 2.5d
+			repeatable: true
+			id: "6E5079DA5CC192BD"
+			tasks: [{
+				id: "06C4E4DC2CBEE75F"
+				type: "item"
+				item: {
+					id: "kubejs:pristine_gold_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "67208B2AFB4ED2AF"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛪ\\nThe war mainly started in the lesser dimensions, and all civilizations living in them are being wiped out. From my friends’ input, it appears that the elves are doing fine, since they were never really colonized. However, all of the dimensions, especially Midgard,\"}"
+							"{\"text\":\"are suffering immensely.\"}"
+						]
+						title: "Entry ᛇᛪ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Kyronite Void Miner"
+			icon: {
+				id: "envirotech:kyronite_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["2B9C421914FA438B"]
+			id: "29A9F72703C147E5"
+			tasks: [
+				{
+					id: "3D3DC92FE132654C"
+					type: "item"
+					item: {
+						id: "envirotech:kyronite_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "711F1FAB88D35CB9"
+					type: "item"
+					item: {
+						id: "envirocore:kyronite_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 44L
+				}
+				{
+					id: "19636730CA12B6DF"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "4681688444F9DA9F"
+					type: "item"
+					title: "8x Modifier"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:mod"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "envirocore"
+									}
+								}
+								{
+									id: "itemfilters:id_regex"
+									Count: 1b
+									tag: {
+										value: "modifier"
+									}
+								}
+							]
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Pladium"
+			x: 10.0d
+			y: 6.0d
+			dependencies: ["29A9F72703C147E5"]
+			id: "0C748364A93B5E7C"
+			tasks: [{
+				id: "4EFF39694DDC5DA3"
+				type: "item"
+				item: {
+					id: "envirocore:pladium_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			dependencies: ["7464CB34236F1458"]
+			id: "26AAA981603DEC86"
+			tasks: [{
+				id: "09A2FC19B43E7407"
+				type: "item"
+				item: {
+					id: "extrabotany:dimensioncatalyst"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			description: ["Obtained by killing the Gaia Guardian II after drinking Water from the Well of Mimir."]
+			dependencies: ["5B1C852383E9DA81"]
+			id: "3851ECBF9C0717D5"
+			tasks: [{
+				id: "73EFAEE933F3BB6D"
+				type: "item"
+				item: {
+					id: "mythicbotany:fimbultyr_tablet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			shape: "square"
+			description: ["Mana Collectors can take mana from nearby generating flowers and directly output them to a spark network. This bypasses the transfer limit of Mana Spreaders, so Mana Collectors are best paired with flowers like Wither Aconites or Shulk Me Nots."]
+			dependencies: ["681063269E111FD9"]
+			id: "0A986AF953A266F1"
+			tasks: [{
+				id: "346BA2009B36F551"
+				type: "item"
+				item: {
+					id: "mythicbotany:mana_collector"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

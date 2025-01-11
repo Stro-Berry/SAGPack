@@ -1,0 +1,1513 @@
+{
+	id: "6E51C0458A42DD2E"
+	group: ""
+	order_index: 18
+	filename: "chapter_16_futurepack"
+	title: "16 - Futurepack"
+	icon: {
+		id: "futurepack:scrench"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Futurepack"
+			icon: {
+				id: "futurepack:scrench"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Fly to the Stars"
+			dependencies: ["5D3FA30ECCABED32"]
+			size: 1.5d
+			id: "4ECE08A0F0E8CC86"
+			tasks: [{
+				id: "5F2B3FD9B11BFC6B"
+				type: "item"
+				item: {
+					id: "extendedcrafting:elite_table"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "09368F750BB7EE7A"
+				type: "item"
+				item: {
+					id: "futurepack:scrench"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["The Industrial Furnace needs to be fueled with lava."]
+			dependencies: ["4ECE08A0F0E8CC86"]
+			id: "16C9CD61FA12119A"
+			tasks: [{
+				id: "244B8EE815A6E98B"
+				type: "item"
+				item: {
+					id: "futurepack:industrial_furnace"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Precision Welder"
+			icon: {
+				id: "envirocore:ionite_frame"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["16C9CD61FA12119A"]
+			id: "1C4AFA31C8CE1A54"
+			tasks: [
+				{
+					id: "0AECB4652ECDEB35"
+					type: "item"
+					item: "masterfulmachinery:magical_controller"
+				}
+				{
+					id: "4DD002E2E186DAEE"
+					type: "item"
+					item: "masterfulmachinery:magical_energy_port_energy_input"
+				}
+				{
+					id: "160AFEFA01AD52C0"
+					type: "item"
+					item: "masterfulmachinery:magical_fluid_port_fluids_input"
+				}
+				{
+					id: "31B7BD56C94C7360"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_input"
+				}
+				{
+					id: "432869144AD1E527"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_output"
+				}
+				{
+					id: "392DCE3592BB0E5A"
+					type: "item"
+					item: {
+						id: "kubejs:starglass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 48L
+				}
+				{
+					id: "786E889CAAB47E42"
+					type: "item"
+					item: {
+						id: "kubejs:superconductive_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "51522762F56FAEE8"
+					type: "item"
+					item: {
+						id: "envirocore:ionite_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 49L
+				}
+			]
+		}
+		{
+			title: "Dark Matter Frame"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["1C4AFA31C8CE1A54"]
+			id: "7FFB533EC46703EC"
+			tasks: [{
+				id: "11E4C40E1DDCFF5F"
+				type: "item"
+				item: {
+					id: "kubejs:dark_matter_frame"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"7FFB533EC46703EC"
+				"4BF017B25E52A106"
+			]
+			id: "3545AE0DFB38604D"
+			tasks: [{
+				id: "630F58EFDB25F2CD"
+				type: "item"
+				item: {
+					id: "futurepack:industrial_neon_furnace_white"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Your First Power"
+			icon: {
+				id: "futurepack:t0_generator"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			description: ["Futurepack uses its own power system called Neon Energy, or NE. This is not compatible with FE, so you'll need to make a Futurepack Generator. Cables are used to transfer NE between machines."]
+			dependencies: ["7FFB533EC46703EC"]
+			id: "4BF017B25E52A106"
+			tasks: [
+				{
+					id: "1F9E454775A78FFD"
+					type: "item"
+					item: {
+						id: "futurepack:t0_generator"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7D804127C5FA3793"
+					type: "item"
+					item: {
+						id: "futurepack:wire_normal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Basic Rocket"
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["3545AE0DFB38604D"]
+			id: "5C5EB8CC620FBCD9"
+			tasks: [{
+				id: "7D586B94D7411F8E"
+				type: "item"
+				item: {
+					id: "kubejs:basic_rocket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Launchpad"
+			icon: {
+				id: "kubejs:actively_cooled_casing"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["3545AE0DFB38604D"]
+			id: "637252AEA03C8528"
+			tasks: [
+				{
+					id: "231ECB8ACC80CD56"
+					type: "item"
+					item: "masterfulmachinery:reinforced_controller"
+				}
+				{
+					id: "4564300B062E01FE"
+					type: "item"
+					item: "masterfulmachinery:reinforced_energy_port_energy_input"
+				}
+				{
+					id: "748F68D9327B3D0A"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_input"
+				}
+				{
+					id: "50A51CA4C9B68D50"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_output"
+				}
+				{
+					id: "44C044EFA697E436"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockstainlesssteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 25L
+				}
+				{
+					id: "02F438D008A091CC"
+					type: "item"
+					item: {
+						id: "kubejs:actively_cooled_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "72F4E92193DB3DA5"
+					type: "item"
+					item: {
+						id: "futurepack:metal_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "05AFB0D4F521F0A5"
+					type: "item"
+					item: {
+						id: "futurepack:metal_block_ventilation"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "17CBCCADDAF0C500"
+					type: "item"
+					item: {
+						id: "futurepack:color_gitter_slab_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["3545AE0DFB38604D"]
+			id: "27FF2DFC79A49EA8"
+			tasks: [{
+				id: "6B70F1489CCED222"
+				type: "item"
+				item: {
+					id: "kubejs:basic_crystal_excavation_unit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Better Crystals"
+			icon: {
+				id: "futurepack:crystal_retium"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 0.0d
+			dependencies: [
+				"0336D41BD6BADE40"
+				"27FF2DFC79A49EA8"
+				"6E06D3994D917DB4"
+				"5C5EB8CC620FBCD9"
+				"637252AEA03C8528"
+			]
+			id: "086C8B39D4E86BE9"
+			tasks: [
+				{
+					id: "1C9343CC55ABAA7C"
+					type: "item"
+					item: {
+						id: "futurepack:crystal_alutin"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "558D42F2EE8EF1BE"
+					type: "item"
+					item: {
+						id: "futurepack:crystal_retium"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: 4.0d
+			id: "6E06D3994D917DB4"
+			tasks: [{
+				id: "448142FED038F8D1"
+				type: "item"
+				item: {
+					id: "futurepack:fuel_rods"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Wireless Material Receiver"
+			icon: {
+				id: "mekanism:teleporter"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -4.0d
+			id: "0336D41BD6BADE40"
+			tasks: [
+				{
+					id: "1D2902D5417A2D9D"
+					type: "item"
+					item: "masterfulmachinery:reinforced_controller"
+				}
+				{
+					id: "7DC37D2577A97B94"
+					type: "item"
+					item: "masterfulmachinery:reinforced_energy_port_energy_input"
+				}
+				{
+					id: "1E6B18A61562EEA0"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_input"
+				}
+				{
+					id: "5D23BFB554DED468"
+					type: "item"
+					item: "masterfulmachinery:reinforced_gas_port_mekanism_gas_output"
+				}
+				{
+					id: "6D97ABB8CA18D738"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_output"
+				}
+				{
+					id: "4781A4E1DDEE0385"
+					type: "item"
+					item: "emendatusenigmatica:enderium_block"
+					count: 126L
+				}
+				{
+					id: "56B3B513B4179BF4"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockstainlesssteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 40L
+				}
+				{
+					id: "1DE20237A139D6E8"
+					type: "item"
+					item: {
+						id: "kubejs:dark_matter_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7979D66B85D0A7B0"
+					type: "item"
+					item: {
+						id: "futurepack:color_iron_gray"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 64L
+				}
+				{
+					id: "777F98EE10D2F79F"
+					type: "item"
+					item: {
+						id: "futurepack:color_iron_slab_gray"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "504B907858413E5D"
+					type: "item"
+					item: {
+						id: "futurepack:color_luftung_gray"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 24L
+				}
+				{
+					id: "0C0FBA731817EAA9"
+					type: "item"
+					item: {
+						id: "futurepack:metal_gitter_pane"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 60L
+				}
+				{
+					id: "32959AB6CCD1ACC5"
+					type: "item"
+					item: {
+						id: "futurepack:metal_block_gitter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 112L
+				}
+				{
+					id: "06F4D23E76DB26C3"
+					type: "item"
+					item: {
+						id: "futurepack:metal_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "641E5CE7F31548A8"
+					type: "item"
+					item: {
+						id: "futurepack:wire_super"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 44L
+				}
+				{
+					id: "65F4DD2E987960FD"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "1C38257CCFBFE6BB"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 25L
+				}
+				{
+					id: "16BEC2BAE4D17D5D"
+					type: "item"
+					item: {
+						id: "futurepack:color_gitter_slab_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "154D928254A2FF2D"
+					type: "item"
+					item: {
+						id: "futurepack:color_gitter_stair_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 95L
+				}
+				{
+					id: "3F65CF608C48242C"
+					type: "item"
+					item: {
+						id: "futurepack:color_iron_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 84L
+				}
+			]
+		}
+		{
+			title: "Upgrading Your Machines"
+			icon: {
+				id: "futurepack:chip_damage_control"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					power: 1.0f
+				}
+			}
+			x: 8.0d
+			y: 2.0d
+			shape: "diamond"
+			description: ["Most Futurepack machines can be upgraded by shift-right clicking them with a Scrench. Swap the components with better ones to increase the machine's speed. However, higher tier components will produce more heat, and components will be destroyed if the temperature increases past their maximum temperature. To cool down your machine, place External Coolers next to the machine you want to cool. Later on, you will unlock Water Coolers which are much more effective."]
+			dependencies: ["3545AE0DFB38604D"]
+			id: "1CD5427BF4340870"
+			tasks: [{
+				id: "0F122A5AE6310456"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["086C8B39D4E86BE9"]
+			id: "2C7E1976794F0C71"
+			tasks: [{
+				id: "1A00E926DA72093D"
+				type: "item"
+				item: "futurepack:maschineboard"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["2C7E1976794F0C71"]
+			id: "54F243E9760FD73F"
+			tasks: [{
+				id: "326443C614720017"
+				type: "item"
+				item: {
+					id: "futurepack:zentrifuge_white"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Support Points"
+			icon: {
+				id: "futurepack:aiflash2"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					support: {
+						maxSP: 512
+						sp: 512
+					}
+				}
+			}
+			x: 18.0d
+			y: 2.0d
+			shape: "diamond"
+			description: ["You may have noticed that some Centrifuge and Industrial Neon Furnace recipes require SP. SP, or Support Points, is a resource created by some machines, mainly Super Crushers and Neon Furnaces. The easiest way to generate SP is to use Neon Furnaces, since they create SP by processing normal furnace recipes. To extract SP out of an SP producing machine, install a Support Chipset in its upgrade menu and connect it with Support Cables to an SP consuming machine."]
+			hide_dependency_lines: true
+			dependencies: ["4ECE08A0F0E8CC86"]
+			id: "5581930956848EAD"
+			tasks: [{
+				id: "1122F452DBD2FDB5"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			dependencies: [
+				"5581930956848EAD"
+				"54F243E9760FD73F"
+			]
+			id: "43C93688A7BBB699"
+			tasks: [{
+				id: "4210153140A1C577"
+				type: "item"
+				item: {
+					id: "futurepack:ingot_bitripentium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			description: ["The Assembly Table is used to craft Chipsets, RAM, and Cores. The stats of a crafted item are randomized, so it won't be the same as what JEI shows. However, supplying the Assembly Table with NE and SP will increase the average stats of crafted items."]
+			dependencies: ["43C93688A7BBB699"]
+			id: "2A8DDAA8144DAF28"
+			tasks: [{
+				id: "10F9E49EF6BB2E31"
+				type: "item"
+				item: {
+					id: "futurepack:assembly_table_white"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Spaceship"
+			icon: {
+				id: "futurepack:thruster_white_light_blue"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: 6.0d
+			description: [
+				"To get to other planets, you'll need to build a Spaceship. Valid Spaceships must be built from valid blocks and be completely enclosed. Most Futurepack blocks are valid, so the easiest options are Colored Metal blocks and Bulletproof Glass. You will also need a thruster for every 100 blocks in your Spaceship. There are no placement rules for any of the required, including the thrusters. They can be placed anywhere as long as they are connected to the rest of the ship."
+				"The easiest and recommended option is to build a 5x5x4 (exterior) box out of Bulletproof Glass and place the required blocks in the wall of the box to make room for a 3x2x2 FTL Drive later on. You'll only need to use the Spaceship twice, so your build doesn't matter that much."
+			]
+			dependencies: ["2A8DDAA8144DAF28"]
+			id: "5F1B167A9C62B1E7"
+			tasks: [
+				{
+					id: "1533B982AD4F24E6"
+					type: "item"
+					item: {
+						id: "futurepack:board_computer_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "445B4C4D7044424F"
+					type: "item"
+					item: {
+						id: "futurepack:thruster_white_light_blue"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1B6A2ECC530F9589"
+					type: "item"
+					item: {
+						id: "futurepack:fuel_cell"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3128FC82F5409068"
+					type: "item"
+					item: {
+						id: "futurepack:teleporter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 18.0d
+			y: 6.0d
+			description: ["Right click the Telescope in the overworld to get the stellar coordinates of Menelaus."]
+			dependencies: ["2A8DDAA8144DAF28"]
+			id: "3F59DE67AAA4B720"
+			tasks: [{
+				id: "166CB32FF827E93D"
+				type: "item"
+				item: {
+					id: "futurepack:telescope"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Menelaus"
+			x: 16.0d
+			y: 8.0d
+			description: [
+				"To prepare your Spaceship, put some Rocket Fuel in the Fuel Tank and give the Board Computer 1000 NE. Put the Menelaus stellar coordinates in the slot of the board computer. If you've done everything right, the Board Computer should say that the spaceship is ready when right clicked."
+				"To travel to Menelaus, click the bottom circular button so that the display shows Menelaus, and then click the checkmark button to launch the Spaceship. The spaceship will spawn about a hundred blocks above the ground, so you'll probably want flight to get down. You should also bring some kind of teleporter so you can travel between Menelaus and the overworld without using the Spaceship."
+			]
+			dependencies: [
+				"3F59DE67AAA4B720"
+				"5F1B167A9C62B1E7"
+			]
+			id: "04A0B8161C136FAB"
+			tasks: [{
+				id: "3647C0BEC484F748"
+				type: "dimension"
+				title: "Visit Menelaus"
+				icon: {
+					id: "futurepack:dirt_m"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				dimension: "futurepack:menelaus"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 10.0d
+			dependencies: ["378F498C0B4424CC"]
+			id: "58EF844D0307C410"
+			tasks: [{
+				id: "2DAE1328DEC1DBAC"
+				type: "item"
+				item: {
+					id: "kubejs:ilmenite_ore"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.0d
+			dependencies: ["378F498C0B4424CC"]
+			id: "78A4314A87F1DA97"
+			tasks: [{
+				id: "28CA7537EA92D464"
+				type: "item"
+				item: {
+					id: "futurepack:crusher_white"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Neodymium"
+			x: 14.0d
+			y: 8.0d
+			dependencies: ["04A0B8161C136FAB"]
+			id: "378F498C0B4424CC"
+			tasks: [{
+				id: "79CF468EFAA4B540"
+				type: "item"
+				item: {
+					id: "futurepack:ingot_neodymium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ilmenite"
+			x: 10.0d
+			y: 8.0d
+			dependencies: [
+				"58EF844D0307C410"
+				"78A4314A87F1DA97"
+			]
+			id: "5DD39E5631044FCE"
+			tasks: [{
+				id: "1B31D792366B83A3"
+				type: "item"
+				item: {
+					id: "kubejs:ilmenite_dust"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			dependencies: ["5DD39E5631044FCE"]
+			id: "1D6EDFAECCED4021"
+			tasks: [{
+				id: "49166301290ADD58"
+				type: "item"
+				item: {
+					id: "kubejs:ilmenite_carbon_mixture"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["1D6EDFAECCED4021"]
+			id: "3F9A3B40F8844448"
+			tasks: [{
+				id: "4B16D132A536562A"
+				type: "item"
+				item: {
+					id: "kubejs:titanium_salt"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["3F9A3B40F8844448"]
+			id: "0704B6FD86E7117B"
+			tasks: [{
+				id: "5ED5E4FBED3D8CC8"
+				type: "item"
+				item: {
+					id: "kubejs:acidic_titanium_salt"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.0d
+			dependencies: ["0704B6FD86E7117B"]
+			id: "77DE39CA176C10DF"
+			tasks: [{
+				id: "4D06BDF54BDAA23C"
+				type: "item"
+				item: {
+					id: "kubejs:crude_titanium_dust"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 10.0d
+			dependencies: ["77DE39CA176C10DF"]
+			id: "4EAFADBB332CD094"
+			tasks: [{
+				id: "4D685857A842DAD7"
+				type: "item"
+				item: {
+					id: "kubejs:titanium_tetraiodide"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 10.0d
+			dependencies: ["4EAFADBB332CD094"]
+			id: "19042BA54E5A526A"
+			tasks: [{
+				id: "1B9366E4969DCF91"
+				type: "item"
+				item: {
+					id: "kubejs:impure_titanium_dust"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Titanium"
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["19042BA54E5A526A"]
+			id: "2F8053A64327AEF3"
+			tasks: [{
+				id: "79DB72F7F193789F"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingottitanium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Asteroid Belt"
+			icon: {
+				id: "futurepack:meteor_rock"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 8.0d
+			dependencies: ["2F8053A64327AEF3"]
+			id: "6033F823BC22F529"
+			tasks: [{
+				id: "1D7F15448AC6A4DA"
+				type: "item"
+				item: {
+					id: "kubejs:asteroid_belt_teleportation_device"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Low-Gravity Assembler"
+			icon: {
+				id: "futurepack:quantanium"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 10.0d
+			dependencies: ["6033F823BC22F529"]
+			id: "5F4233BE581A3068"
+			tasks: [
+				{
+					id: "23A07BC5771C916F"
+					type: "item"
+					item: "masterfulmachinery:reinforced_controller"
+				}
+				{
+					id: "71B43D697108D4E8"
+					type: "item"
+					item: "masterfulmachinery:reinforced_energy_port_energy_input"
+				}
+				{
+					id: "4358265FABD261E5"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_input"
+				}
+				{
+					id: "6CA01E9D9F1B5F7A"
+					type: "item"
+					item: "masterfulmachinery:reinforced_item_port_items_output"
+				}
+				{
+					id: "39E574792FBD0801"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblocktitanium"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 24L
+				}
+				{
+					id: "0D9553048B576E52"
+					type: "item"
+					item: {
+						id: "futurepack:color_iron_gray"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "04CCB359548F6790"
+					type: "item"
+					item: {
+						id: "futurepack:color_gitter_light_gray"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 48L
+				}
+				{
+					id: "137F243B1CE3D5BB"
+					type: "item"
+					item: {
+						id: "futurepack:quantanium"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1FF764F54A59B9F9"
+					type: "item"
+					item: {
+						id: "futurepack:color_iron_white"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 24L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 14.0d
+			dependencies: ["66B0B3576EC66C91"]
+			id: "4268AC1C49FFDCDD"
+			tasks: [{
+				id: "77DDE193B2A904BC"
+				type: "item"
+				item: {
+					id: "kubejs:advanced_rocket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Glowtite Crystals"
+			x: 2.0d
+			y: 12.0d
+			dependencies: ["5F4233BE581A3068"]
+			id: "66B0B3576EC66C91"
+			tasks: [{
+				id: "72D33771EC083898"
+				type: "item"
+				item: {
+					id: "futurepack:crystal_glowtite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			icon: {
+				id: "futurepack:modul_oxygen_tank"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					oxygen: {
+						max: 6000
+						amount: 0
+					}
+				}
+			}
+			x: 2.0d
+			y: 6.0d
+			description: ["To survive in the Asteroid Belt, you will need an Oxygen Mask. The \"Open Composite Armor\" keybind will open the menu to install modules in any composite armor pieces you are wearing. Install the Oxygen Mask and Oxygen Tank in your Composite Helmet. They will passively fill with oxygen while you are in the overworld and will be drained when you are in the Asteroid Belt."]
+			dependencies: ["6033F823BC22F529"]
+			id: "0898C391D1E9F8CE"
+			tasks: [
+				{
+					id: "5B9B691384ED173E"
+					type: "item"
+					item: {
+						id: "futurepack:modul_oxygen_mask"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							oxygen: {
+								max: 600
+								amount: 0
+							}
+						}
+					}
+				}
+				{
+					id: "33A9E75CDC153A9A"
+					type: "item"
+					item: {
+						id: "futurepack:modul_oxygen_tank"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							oxygen: {
+								max: 6000
+								amount: 0
+							}
+						}
+					}
+				}
+				{
+					id: "443D371DD6130AB1"
+					type: "item"
+					item: {
+						id: "futurepack:composite_helmet"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+							modules: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 14.0d
+			dependencies: ["4268AC1C49FFDCDD"]
+			id: "2F79AF2C7C50A321"
+			tasks: [{
+				id: "65DC39DBDD9118F2"
+				type: "item"
+				item: {
+					id: "futurepack:ingot_rare_earth"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Wakurium"
+			x: 6.0d
+			y: 14.0d
+			dependencies: ["2F79AF2C7C50A321"]
+			id: "5F055153614B06C2"
+			tasks: [{
+				id: "572FA62A417206C5"
+				type: "item"
+				item: {
+					id: "futurepack:ingot_wakurium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "FTL Drive"
+			x: 8.0d
+			y: 16.0d
+			description: ["Place a 3x2x2 of FTL Blocks in your Spaceship and right click it with a Scrench to form the multiblock."]
+			dependencies: ["5F055153614B06C2"]
+			id: "22E33BEE392EAFC6"
+			tasks: [{
+				id: "0ED7CBA3A5D63356"
+				type: "item"
+				item: {
+					id: "futurepack:ftl_drive"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 12.0d
+			dependencies: ["5F055153614B06C2"]
+			id: "16D1AEA40BE0C4BB"
+			tasks: [{
+				id: "4814C419969C7C2B"
+				type: "item"
+				item: {
+					id: "futurepack:advanced_board_computer_white"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tyros"
+			icon: {
+				id: "futurepack:grass_t"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 14.0d
+			dependencies: [
+				"16D1AEA40BE0C4BB"
+				"22E33BEE392EAFC6"
+			]
+			id: "5BB1087BFCA4B2C1"
+			tasks: [{
+				id: "001CB8F3C0A7F680"
+				type: "dimension"
+				dimension: "futurepack:tyros"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 14.0d
+			dependencies: ["5BB1087BFCA4B2C1"]
+			id: "2467F27FBB38AB06"
+			tasks: [{
+				id: "717E4D89F62EC98D"
+				type: "item"
+				item: {
+					id: "futurepack:polymer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Bioterium Crystals"
+			x: 12.0d
+			y: 12.0d
+			dependencies: ["2467F27FBB38AB06"]
+			id: "0FB8FB0155C2C021"
+			tasks: [{
+				id: "5B5C5BB81AD65E67"
+				type: "item"
+				item: {
+					id: "futurepack:crystal_bioterium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 16.0d
+			dependencies: ["2467F27FBB38AB06"]
+			id: "1FAEA4715D9C01E9"
+			tasks: [{
+				id: "43381EF1D6F5A129"
+				type: "item"
+				item: {
+					id: "kubejs:air_pumping_unit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Xenon"
+			x: 14.0d
+			y: 16.0d
+			dependencies: ["1FAEA4715D9C01E9"]
+			id: "544CA9B5A11C896F"
+			tasks: [{
+				id: "3856685FF22F8167"
+				type: "item"
+				item: {
+					id: "kubejs:liquid_xenon_bucket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Quantanium"
+			x: 16.0d
+			y: 14.0d
+			shape: "gear"
+			dependencies: [
+				"64D2A7675C89EB3A"
+				"544CA9B5A11C896F"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "1942781BE30CB938"
+			tasks: [{
+				id: "3B82E2C4BBBCEAD3"
+				type: "item"
+				item: {
+					id: "futurepack:ingot_quantanium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Aethium Void Miner"
+			icon: {
+				id: "envirotech:aethium_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: 12.0d
+			dependencies: ["0FB8FB0155C2C021"]
+			id: "4D6AC89A3E0249B9"
+			tasks: [
+				{
+					id: "51E6442C5FF0144F"
+					type: "item"
+					item: {
+						id: "envirotech:aethium_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "30308813EDDB0D9D"
+					type: "item"
+					item: {
+						id: "envirocore:aethium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 88L
+				}
+			]
+		}
+		{
+			title: "Nanorite Crystals"
+			x: 16.0d
+			y: 12.0d
+			dependencies: ["4D6AC89A3E0249B9"]
+			id: "64D2A7675C89EB3A"
+			tasks: [{
+				id: "6C853BE1D0FFFB54"
+				type: "item"
+				item: {
+					id: "envirocore:nanorite_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

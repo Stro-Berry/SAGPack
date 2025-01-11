@@ -1,0 +1,773 @@
+{
+	id: "01CA0233434EAF47"
+	group: ""
+	order_index: 2
+	filename: "chapter_2_create"
+	title: "2 - Create"
+	icon: "create:cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Create"
+			icon: "create:cogwheel"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Aesthetic Machinery"
+			description: [
+				"Use the forged blocks you collected in the last chapter to craft an Andesite Casing."
+				"Pristine gems can be obtained by putting Geodes in a tetra workbench and smashing with a hammer. Geodes can be found underground in stone."
+			]
+			dependencies: ["544E2409D1765FD8"]
+			size: 1.5d
+			id: "763DEF5D07F38F12"
+			tasks: [
+				{
+					id: "34483EF1BB5301EE"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 4L
+				}
+				{
+					id: "5971EE2F7DC443B8"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+			]
+			rewards: [{
+				id: "2C624148271F6C16"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["763DEF5D07F38F12"]
+			id: "0E8174664311A153"
+			tasks: [{
+				id: "471C293882C45058"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["763DEF5D07F38F12"]
+			id: "283A57022E9A4341"
+			tasks: [{
+				id: "7CF7A8A83BBA9771"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			title: "Impure Forged Shards"
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["0E8174664311A153"]
+			id: "00EB4483C6CFD47A"
+			tasks: [{
+				id: "0FFB05FC90246278"
+				type: "item"
+				item: "kubejs:impure_forged_shard"
+			}]
+		}
+		{
+			title: "Forged Shards"
+			x: 4.0d
+			y: 4.0d
+			dependencies: [
+				"00EB4483C6CFD47A"
+				"283A57022E9A4341"
+			]
+			id: "301F5684AB57280A"
+			tasks: [{
+				id: "5A66759F432BF61A"
+				type: "item"
+				item: "kubejs:forged_shard"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["763DEF5D07F38F12"]
+			id: "74D403BD611D0189"
+			tasks: [{
+				id: "47BB0128831E02A8"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			description: ["Right click an Empty Blaze Burner onto a Blaze or a Blaze Spawner to fill it."]
+			hide_dependency_lines: true
+			dependencies: ["763DEF5D07F38F12"]
+			id: "5BECCCF58A3FB53C"
+			tasks: [{
+				id: "3A810C825CB3CA95"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			title: "Based"
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["763DEF5D07F38F12"]
+			id: "5655394C509CDB43"
+			tasks: [{
+				id: "7ADC9910A0721D8F"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "Easier Andesite Alloy"
+			x: 6.0d
+			y: -4.0d
+			shape: "square"
+			description: ["Andesite Alloy can be made more efficiently by mixing Andesite and Zinc in a heated basin."]
+			dependencies: [
+				"5655394C509CDB43"
+				"5BECCCF58A3FB53C"
+				"74D403BD611D0189"
+			]
+			id: "48AD8001578FF650"
+			tasks: [{
+				id: "08EA5181CDDC2EEC"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			shape: "circle"
+			dependencies: [
+				"3A94CC17F571C152"
+				"1ECB55D14457DAAD"
+			]
+			id: "107FCC4C116FA38F"
+			tasks: [{
+				id: "33CC1C1D4D88CEBF"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["763DEF5D07F38F12"]
+			id: "1ECB55D14457DAAD"
+			tasks: [{
+				id: "66AD3B6722267137"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			title: "Squirter"
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["107FCC4C116FA38F"]
+			id: "7D422BFA00557171"
+			tasks: [{
+				id: "39759159963929CC"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"3A94CC17F571C152"
+				"7D422BFA00557171"
+			]
+			id: "60195D37EB350BB1"
+			tasks: [{
+				id: "601C898EB49559CD"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			icon: "emendatusenigmatica:molten_ruby_bucket"
+			x: 6.0d
+			y: 0.0d
+			description: ["Redstone, Iron, and Copper can be melted in a heated basin."]
+			dependencies: [
+				"5BECCCF58A3FB53C"
+				"74D403BD611D0189"
+				"5655394C509CDB43"
+			]
+			id: "3A94CC17F571C152"
+			tasks: [{
+				id: "4D5ED6B3C15ED562"
+				type: "checkmark"
+				title: "Molten Materials"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: [
+				"17ED5CC98502BADB"
+				"60195D37EB350BB1"
+			]
+			id: "450FABF6155D34D9"
+			tasks: [{
+				id: "3C92BEF843DA1B34"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.0d
+			y: 4.0d
+			dependencies: [
+				"301F5684AB57280A"
+				"1ECB55D14457DAAD"
+			]
+			id: "7FD859CF3A948C41"
+			tasks: [{
+				id: "11A2EE5E8366352A"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			title: "Rods"
+			icon: "emendatusenigmatica:cobalt_rod"
+			x: 10.0d
+			y: 4.0d
+			description: ["Rods can be made by sawing ingots in a Mechanical Saw."]
+			dependencies: ["7FD859CF3A948C41"]
+			id: "17ED5CC98502BADB"
+			tasks: [{
+				id: "0E9B053E89446A6F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["450FABF6155D34D9"]
+			id: "5C9CE02866C9A117"
+			tasks: [{
+				id: "1D5EA8244CDD124C"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			title: "Forged Duplication"
+			x: 12.0d
+			y: -2.0d
+			shape: "square"
+			description: ["Use the sequenced assembly recipe to turn one Forged Shard into one Forged Wall, which can then be milled back into four Forged Shards"]
+			dependencies: ["5C9CE02866C9A117"]
+			id: "0EC8D0A2C62955F7"
+			tasks: [{
+				id: "361D01C1C46DED28"
+				type: "item"
+				item: {
+					id: "tetra:forged_wall"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Easier Forging"
+			icon: {
+				id: "tetra:forged_beam"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -4.0d
+			shape: "square"
+			dependencies: ["0EC8D0A2C62955F7"]
+			id: "19DD49B5F4D8FEEB"
+			tasks: [
+				{
+					id: "7C6675F26B4EA25F"
+					type: "item"
+					item: {
+						id: "tetra:forged_beam"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "5CF449624933CD3B"
+					type: "item"
+					item: {
+						id: "tetra:forged_bolt"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "2FEAB6EF7DBF3313"
+					type: "item"
+					item: {
+						id: "tetra:forged_mesh"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "78A8C901D4A4C842"
+					type: "item"
+					item: {
+						id: "tetra:vent_plate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Exploration-less Metal Scraps"
+			x: 4.0d
+			y: 6.0d
+			shape: "diamond"
+			description: ["Forged Shards can be milled for a 25% chance of getting a Metal Scrap."]
+			dependencies: ["301F5684AB57280A"]
+			dependency_requirement: "one_completed"
+			id: "64EBDBCA608A885B"
+			tasks: [{
+				id: "1CFE22298243CA93"
+				type: "item"
+				item: {
+					id: "tetra:metal_scrap"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			description: [
+				""
+				"You'll probably want to semi-automate forged walls and tetra components before making this."
+			]
+			dependencies: ["5C9CE02866C9A117"]
+			id: "067E2DC29A94DDAB"
+			tasks: [{
+				id: "75791FD777E79D72"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+			rewards: [{
+				id: "4D528A8AF89E7651"
+				type: "random"
+			}]
+		}
+		{
+			title: "Smelting Solutions"
+			icon: {
+				id: "ironfurnaces:upgrade_copper"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 4.0d
+			shape: "diamond"
+			description: ["An encased fan with lava in front of it will smelt any items dropped in its path for free. Make sure not to walk in front of it though!"]
+			dependencies: ["283A57022E9A4341"]
+			id: "105165E352635F4A"
+			tasks: [{
+				id: "7431EAF4A0ADB0CE"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Lava Pump"
+			icon: {
+				id: "minecraft:lava_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"Lowering a Hose Pulley into a lava ocean in the Nether will let you pump out infinite lava. You'll need large amounts of lava soon to craft forged walls and components."
+				"Tip: Water Wheels work with lava too."
+			]
+			dependencies: [
+				"107FCC4C116FA38F"
+				"49A76C8C53C501DB"
+			]
+			id: "72ED058E3422A39F"
+			tasks: [
+				{
+					id: "63B9EDF96F68BE33"
+					type: "item"
+					item: "create:hose_pulley"
+				}
+				{
+					id: "6727840642527ECC"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+			]
+		}
+		{
+			title: "Windmill"
+			icon: "create:white_sail"
+			x: 10.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"You're probably starting to outgrow your water wheel array by now. A windmill can produce up to 8192 su, more than enough to complete this chapter."
+				"You can either use wool blocks as sails or craft sail frames, which work without being filled with wool."
+			]
+			dependencies: ["17ED5CC98502BADB"]
+			id: "733F8BEC112BEA25"
+			tasks: [
+				{
+					id: "068B6F3357ACE73D"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "54B9958345151418"
+					type: "item"
+					title: "8x Any Windmill Sail"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:tag"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "forge:wool"
+									}
+								}
+								{
+									id: "create:sail_frame"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Crushing Wheels"
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["5C9CE02866C9A117"]
+			id: "40C885C4FA1BC1E6"
+			tasks: [{
+				id: "4055C6649E81348E"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["40C885C4FA1BC1E6"]
+			id: "706311EE50AC87D6"
+			tasks: [{
+				id: "19FFE87B8C57C59D"
+				type: "item"
+				item: "create:blaze_cake_base"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			dependencies: [
+				"67DAB36C4D1AED40"
+				"3B788526ECC41D96"
+			]
+			id: "702ADF5272F819EA"
+			tasks: [{
+				id: "3D52F640D1571D86"
+				type: "item"
+				item: "nethers_delight:magma_gelatin"
+			}]
+		}
+		{
+			title: "For cooking me-... I mean meatballs"
+			x: 16.0d
+			y: 6.0d
+			description: ["Place over fire, a magma block, or a Stove."]
+			id: "67DAB36C4D1AED40"
+			tasks: [{
+				id: "22691FF7F9A482AC"
+				type: "item"
+				item: {
+					id: "farmersdelight:cooking_pot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["107FCC4C116FA38F"]
+			id: "1B5AB360690B78F6"
+			tasks: [{
+				id: "4382038BB2732B43"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			description: ["Right clicking a Blaze Cake on a Blaze Burner will superheat it."]
+			dependencies: [
+				"702ADF5272F819EA"
+				"1B5AB360690B78F6"
+				"706311EE50AC87D6"
+			]
+			id: "40C0EF39B94BC9A5"
+			tasks: [{
+				id: "669F1CCD1250D883"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 2.0d
+			dependencies: ["40C0EF39B94BC9A5"]
+			id: "21E14170A0817BC5"
+			tasks: [{
+				id: "7B3C39AFD73152B2"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Mechanical Crafter"
+			x: 16.0d
+			y: 0.0d
+			description: ["You'll need 25 of these to complete this chapter."]
+			dependencies: ["067E2DC29A94DDAB"]
+			id: "2A718DB5C3413AD0"
+			tasks: [{
+				id: "6A99FB0F6ECD16D6"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			title: "The Alloy Kiln"
+			icon: "immersiveengineering:alloy_smelter"
+			x: 18.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Unlocks Immersive Engineering as well as the ability to make basic alloys."]
+			dependencies: [
+				"21E14170A0817BC5"
+				"2A718DB5C3413AD0"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "50987FF92A581CF5"
+			tasks: [{
+				id: "0AA050DD306FFA14"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "23B6D31C7051EA24"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛄ\\nThe aliens are back, and they’ve been in the lower dimensions exploiting their resources. It’s kinda annoying since we helped create them, but a war at this time would not be worth it, so we can’t stop them.\\n\"}"]
+						title: "Entry ᛄ"
+						author: "Björn"
+					}
+				}
+			}]
+		}
+		{
+			icon: "create:furnace_engine"
+			x: 16.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"A Furnace Engine will generate 16,384 su when placed on a furnace, or 32,768 su on a blast furnace. The furnace engine will only work when the furnace or blast furnace is visually lit, not just when it has fuel. This means that the furnace must have a constant supply of items for the furnace to smelt."
+				"An easy way to automate this is to have the furnace smelt iron dust and mill the smelted ingot back into dust. This has the benefit of also working with blast furnaces. Once you unlock External Heaters in the next chapter, you can power the furnace by simply giving it a little bit of power."
+			]
+			dependencies: ["2A718DB5C3413AD0"]
+			id: "3DA44AAA8225DE3A"
+			tasks: [
+				{
+					id: "4E3AEE93BDEE5636"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+				{
+					id: "440891F8F6A1E7D8"
+					type: "item"
+					item: "create:flywheel"
+				}
+			]
+		}
+		{
+			title: "Straw Collection"
+			icon: {
+				id: "farmersdelight:netherite_knife"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			shape: "square"
+			description: ["Break grass using a Knife to collect straw."]
+			id: "49A76C8C53C501DB"
+			tasks: [
+				{
+					id: "47256C798EFAC51C"
+					type: "item"
+					title: "Any Knife"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+				}
+				{
+					id: "642C36F50BD5D2B6"
+					type: "item"
+					item: {
+						id: "farmersdelight:straw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "Getting Dream Luck for your Geodes"
+			icon: {
+				id: "tetra:pristine_diamond"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: -2.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Milling your geodes gives you a higher chance of getting pristine gems. Once you unlock Crushing Wheels, you can get an even higher chance."]
+			dependencies: ["0E8174664311A153"]
+			id: "44D77CD840B72488"
+			tasks: [
+				{
+					id: "4758FA49D40287C7"
+					type: "item"
+					item: {
+						id: "tetra:pristine_lapis"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "14511BD5AEA01C26"
+					type: "item"
+					item: {
+						id: "tetra:pristine_emerald"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "754EBC96FD914924"
+					type: "item"
+					item: {
+						id: "tetra:pristine_diamond"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Propelpearls"
+			x: 18.0d
+			y: 4.0d
+			description: ["Propelpearls can be found in crimson forests in the Nether. Right click a grown plant with shears to harvest the propelpearls."]
+			id: "3B788526ECC41D96"
+			tasks: [{
+				id: "47FE35B019351237"
+				type: "item"
+				item: "nethers_delight:propelpearl"
+			}]
+		}
+	]
+}

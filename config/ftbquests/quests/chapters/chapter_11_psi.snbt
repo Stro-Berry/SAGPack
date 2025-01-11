@@ -1,0 +1,597 @@
+{
+	id: "42ABAA28D9036DCC"
+	group: ""
+	order_index: 13
+	filename: "chapter_11_psi"
+	title: "11 - Psi"
+	icon: "psi:cad_assembly_psimetal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Psi"
+			icon: "psi:cad_assembly_psimetal"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Bring a Gun to a Wizard Battle"
+			description: ["Placing a CAD Assembly in the CAD Assembler will create a Casting Device. You will be able to put different CAD components in when assembling as you unlock them."]
+			dependencies: ["3D6313B3B8E7F31B"]
+			size: 1.5d
+			id: "10612B4124AFE623"
+			tasks: [
+				{
+					id: "6043DA33F3526605"
+					type: "item"
+					item: "psi:cad_assembly_iron"
+				}
+				{
+					id: "6BE908CDC89A952B"
+					type: "item"
+					item: "psi:cad_assembler"
+				}
+			]
+			rewards: [{
+				id: "1706E51C84FE463F"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						"patchouli:book": "psi:encyclopaedia_psionica"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["Using any Casting Device on Burnt Otherstone will transform it into Psidust."]
+			dependencies: ["10612B4124AFE623"]
+			id: "1FC2830091B5D781"
+			tasks: [{
+				id: "4773AE34A129860E"
+				type: "item"
+				item: "psi:psidust"
+			}]
+		}
+		{
+			title: "Basic CAD Components"
+			icon: "psi:cad_core_basic"
+			x: 2.0d
+			y: 2.0d
+			description: ["These can be added to your CAD when assembling it to increase its stats. You may need to use them."]
+			dependencies: ["1FC2830091B5D781"]
+			id: "07053FBD033F9AE0"
+			tasks: [
+				{
+					id: "3A7A7AA05CF237EC"
+					type: "item"
+					item: "psi:cad_core_basic"
+				}
+				{
+					id: "08DD93AADB57D8F9"
+					type: "item"
+					item: "psi:cad_socket_basic"
+				}
+				{
+					id: "78C8B82D053CC94A"
+					type: "item"
+					item: "psi:cad_battery_basic"
+				}
+			]
+		}
+		{
+			title: "Using Psi"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					"patchouli:book": "psi:encyclopaedia_psionica"
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Psi is a mod that can be rather complicated, so if you do not have experience with Psi you will need to read the guide, or find a tutorial elsewhere. The Psi addon Phi has little documentation, so it will be explained in the quests."]
+			dependencies: ["10612B4124AFE623"]
+			id: "02CC7A8B80D8BC8A"
+			tasks: [{
+				id: "14ED49C47DD8A6B4"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Your First Spell"
+			icon: {
+				id: "psi:spell_bullet"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.0d
+			y: -2.0d
+			description: ["The Spell Programmer allows you to program spells. Right-click on it while holding your Spell Bullet to set it, and then insert it into your Casting Device with the CAD Assembler."]
+			dependencies: ["1FC2830091B5D781"]
+			id: "231F7A28E53C46BB"
+			tasks: [
+				{
+					id: "3E6209C3AA16B515"
+					type: "item"
+					item: "psi:programmer"
+				}
+				{
+					id: "217668007CA8A03C"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["1FC2830091B5D781"]
+			id: "33B31B793BCE4351"
+			tasks: [{
+				id: "512970029FE60346"
+				type: "item"
+				item: "psi:cad_assembly_gold"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["To get Cracked Enhanced Block, you will need to use Trick: Break Block, since it has a mining level too high for any other tool."]
+			dependencies: [
+				"231F7A28E53C46BB"
+				"1FC2830091B5D781"
+				"33B31B793BCE4351"
+				"07053FBD033F9AE0"
+			]
+			id: "1F01A683189E428B"
+			tasks: [{
+				id: "11E3A9053492776B"
+				type: "item"
+				item: "psi:psimetal"
+			}]
+		}
+		{
+			title: "Overclocked CAD Components"
+			icon: "psi:cad_core_overclocked"
+			x: 6.0d
+			y: 2.0d
+			dependencies: [
+				"07053FBD033F9AE0"
+				"1F01A683189E428B"
+			]
+			id: "5A8B95680E204B67"
+			tasks: [
+				{
+					id: "0468929A630C235D"
+					type: "item"
+					item: "psi:cad_core_overclocked"
+				}
+				{
+					id: "0AED62155118589E"
+					type: "item"
+					item: "psi:cad_socket_signaling"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["1F01A683189E428B"]
+			id: "47C184C89B59794F"
+			tasks: [{
+				id: "6E5A0A7334AFF8BD"
+				type: "item"
+				item: "psi:cad_assembly_psimetal"
+			}]
+		}
+		{
+			title: "Conjured Glass"
+			x: 6.0d
+			y: 0.0d
+			description: ["Using Trick: Conjure Block, and then using Trick: Smelt Block on the conjured block will result in Conjured Glass."]
+			dependencies: [
+				"1F01A683189E428B"
+				"47C184C89B59794F"
+				"5A8B95680E204B67"
+			]
+			id: "24BED4AFAE54EB6A"
+			tasks: [{
+				id: "5829FE3D3ED53CD7"
+				type: "item"
+				item: {
+					id: "kubejs:conjured_glass"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["24BED4AFAE54EB6A"]
+			id: "463ACD400D1E48B6"
+			tasks: [{
+				id: "6A92715D49559A14"
+				type: "item"
+				item: "psi:psigem"
+			}]
+		}
+		{
+			title: "Conductive CAD Components"
+			icon: "psi:cad_core_conductive"
+			x: 8.0d
+			y: 2.0d
+			dependencies: [
+				"5A8B95680E204B67"
+				"463ACD400D1E48B6"
+			]
+			id: "362DD044080663CF"
+			tasks: [
+				{
+					id: "5B1EC460722482E9"
+					type: "item"
+					item: "psi:cad_core_conductive"
+				}
+				{
+					id: "530AFC5E3DFE0F29"
+					type: "item"
+					item: "psi:cad_socket_large"
+				}
+				{
+					id: "595404E4C1AA3D85"
+					type: "item"
+					item: "psi:cad_battery_extended"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["463ACD400D1E48B6"]
+			id: "73000EDE8D97CEAE"
+			tasks: [{
+				id: "213555C05A2F9EEB"
+				type: "item"
+				item: "psi:lit_white_psimetal_plate"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["463ACD400D1E48B6"]
+			id: "3AA15317B931D0A0"
+			tasks: [{
+				id: "3E1D0A6355B17BA4"
+				type: "item"
+				item: "psi:lit_black_psimetal_plate"
+			}]
+		}
+		{
+			title: "Germinated Ivory Seed"
+			x: 10.0d
+			y: -2.0d
+			description: ["You will need to use Trick: Smelt Item to make these, as the raw seeds can't be picked up or accessed."]
+			dependencies: ["73000EDE8D97CEAE"]
+			id: "4A10E9F1D222AC21"
+			tasks: [{
+				id: "7794FD8473BD16F5"
+				type: "item"
+				item: {
+					id: "kubejs:germinated_ivory_seed"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Germinated Ebony Seed"
+			x: 12.0d
+			y: 0.0d
+			description: ["You will need to use Trick: Smelt Item to make these, as the raw seeds can't be picked up or accessed."]
+			dependencies: ["3AA15317B931D0A0"]
+			id: "238579AE505A310F"
+			tasks: [{
+				id: "249D97FD9056B692"
+				type: "item"
+				item: {
+					id: "kubejs:germinated_ebony_seed"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["4A10E9F1D222AC21"]
+			id: "5F1D63E18653836B"
+			tasks: [{
+				id: "3D7C1E73CE1E2324"
+				type: "item"
+				item: "psi:ivory_psimetal"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["238579AE505A310F"]
+			id: "222CC9E33D75D19F"
+			tasks: [{
+				id: "709E67C462DF68FB"
+				type: "item"
+				item: "psi:ebony_psimetal"
+			}]
+		}
+		{
+			title: "Hyperclocked CAD Components"
+			icon: "psi:cad_core_hyperclocked"
+			x: 14.0d
+			y: 2.0d
+			dependencies: [
+				"362DD044080663CF"
+				"222CC9E33D75D19F"
+				"5F1D63E18653836B"
+			]
+			id: "1AA37B70AC68A812"
+			tasks: [
+				{
+					id: "41E75C0721E85FED"
+					type: "item"
+					item: "psi:cad_core_hyperclocked"
+				}
+				{
+					id: "29C37D1D608E948E"
+					type: "item"
+					item: "psi:cad_socket_transmissive"
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: -2.0d
+			dependencies: [
+				"222CC9E33D75D19F"
+				"457F43B7653F1335"
+			]
+			id: "55568D77142C3539"
+			tasks: [{
+				id: "6202015316ADE9C6"
+				type: "item"
+				item: "psi:cad_assembly_ebony_psimetal"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -2.0d
+			dependencies: [
+				"5F1D63E18653836B"
+				"457F43B7653F1335"
+			]
+			id: "39880C21843E6A85"
+			tasks: [{
+				id: "60850DA3E6DD3319"
+				type: "item"
+				item: "psi:cad_assembly_ivory_psimetal"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.0d
+			description: ["You will need to do an ore processing to get this item."]
+			dependencies: ["42CCFC9F91869811"]
+			id: "457F43B7653F1335"
+			tasks: [{
+				id: "55F517DB52E5BFD2"
+				type: "item"
+				item: "phi:psionic_dust"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			description: ["To create this, you will need to use Trick: Smite (or wait for lightning to strike it, but that would take a really long time)."]
+			dependencies: [
+				"222CC9E33D75D19F"
+				"5F1D63E18653836B"
+			]
+			id: "42CCFC9F91869811"
+			tasks: [{
+				id: "45C3039D9CDABD6E"
+				type: "item"
+				item: "phi:psionic_dust_ore"
+			}]
+		}
+		{
+			title: "Radiative CAD Components"
+			icon: "psi:cad_core_radiative"
+			x: 16.0d
+			y: 2.0d
+			dependencies: [
+				"1AA37B70AC68A812"
+				"457F43B7653F1335"
+			]
+			id: "39F5598770F55C40"
+			tasks: [
+				{
+					id: "0F13AD0902C93524"
+					type: "item"
+					item: "psi:cad_core_radiative"
+				}
+				{
+					id: "06C71348DA1A3DA4"
+					type: "item"
+					item: "psi:cad_socket_huge"
+				}
+				{
+					id: "543D2F43A676FA14"
+					type: "item"
+					item: "psi:cad_battery_ultradense"
+				}
+			]
+		}
+		{
+			title: "Psion Distillation Chamber"
+			icon: "phi:distill_chamber_controller"
+			x: 18.0d
+			y: 2.0d
+			description: ["To assemble this multiblock, you will need to make a hollow 3x3 cube, leaving one spot in the middle of one of the 4 sides to place the controller. Throwing Psidust in front of the controller will suck it into the machine, which it will then spit out Psions out the same side. When Psions hit a Magic Processing Unit, it adds some Psi to their storage. If you connect this to a Create Rope Pulley, you can move it up and down to face different MPUs, allowing you to only build 1 to automate Psi magic."]
+			dependencies: ["457F43B7653F1335"]
+			id: "2C650BE61DA4D06F"
+			tasks: [
+				{
+					id: "067D5BDC212088C9"
+					type: "item"
+					item: "phi:distill_chamber_wall"
+					count: 25L
+				}
+				{
+					id: "00DBB967C72D7A04"
+					type: "item"
+					item: "phi:distill_chamber_controller"
+				}
+			]
+		}
+		{
+			title: "Larger Distillation Chamber"
+			x: 22.0d
+			y: 2.0d
+			shape: "square"
+			description: ["You can also make it 5x5. You will need this much extra to do so."]
+			dependencies: ["2C650BE61DA4D06F"]
+			id: "2E3EC8F2ADB854C5"
+			tasks: [{
+				id: "628F5C038359F3A4"
+				type: "item"
+				item: "phi:distill_chamber_wall"
+				count: 72L
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			description: ["This machine won't be powerful enough to cast all spells. It is charged with Psions from the Psionic Infusion Chamber. Right-click on it with a Spell Bullet to program, and use a Redstone Torch to set its redstone control."]
+			dependencies: [
+				"39880C21843E6A85"
+				"55568D77142C3539"
+				"2C650BE61DA4D06F"
+				"457F43B7653F1335"
+				"39F5598770F55C40"
+			]
+			id: "5AF6AAE17A80C3D6"
+			tasks: [{
+				id: "60EDD62AF74D182E"
+				type: "item"
+				item: "phi:mpu"
+			}]
+		}
+		{
+			x: 22.0d
+			y: -2.0d
+			description: ["In order to charge this with Psi, you need to use Trick: Transfer Psi with an MPU facing toward the Infusion Laser. When it gets enough Psi, it will emit a burst that will infuse items. It can only infuse up to Psimetal Ingots, but there is a workaround."]
+			dependencies: ["457F43B7653F1335"]
+			id: "212E8454AADD075A"
+			tasks: [{
+				id: "228C29E538B9C7CE"
+				type: "item"
+				item: "phi:infusion_laser"
+			}]
+		}
+		{
+			icon: "phi:psimetal_crusher"
+			x: 24.0d
+			y: -2.0d
+			shape: "square"
+			description: ["If you want an alternative method of making Psidust, you can use the Psimetal Crusher to crush a Psimetal Ingot into 8 Psidust. This may prove useful in making more Psi with the Distillation Chamber. Simply place the Psimetal Crusher and then throw your Psimetal under it to crush it."]
+			hide_dependency_lines: false
+			dependencies: ["457F43B7653F1335"]
+			id: "52E218595B098C8D"
+			tasks: [{
+				id: "2892CB43D3D7CE20"
+				type: "item"
+				item: "phi:psimetal_crusher"
+			}]
+		}
+		{
+			title: "Combination Crafting"
+			icon: {
+				id: "extendedcrafting:crafting_core"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 22.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["This needs a lot of Conjured Glass, so you will need to set up some automation."]
+			dependencies: [
+				"212E8454AADD075A"
+				"5AF6AAE17A80C3D6"
+				"2C650BE61DA4D06F"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "6784B67A7C42BF4A"
+			tasks: [
+				{
+					id: "3E7A6011996F3743"
+					type: "item"
+					item: {
+						id: "extendedcrafting:crafting_core"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3F9209490BACBB0F"
+					type: "item"
+					item: {
+						id: "extendedcrafting:pedestal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "38D501347FB723AF"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛨ\\nThe person took me to an area underground where there was a big assemble of Aliens other Asgardians working together. I will not be mentioning their names for privacy reasons, but the aliens were working with us because they were also dissatisfied\\nwith the actions of\"}"
+							"{\"text\":\"their government.\"}"
+						]
+						title: "Entry ᛇᛨ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+	]
+}

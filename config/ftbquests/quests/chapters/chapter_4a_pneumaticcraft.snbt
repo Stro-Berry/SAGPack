@@ -1,0 +1,1024 @@
+{
+	id: "71732D7B3B9EFDF3"
+	group: ""
+	order_index: 5
+	filename: "chapter_4a_pneumaticcraft"
+	title: "4b - PneumaticCraft"
+	icon: {
+		id: "pneumaticcraft:pressure_gauge"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "PneumaticCraft"
+			icon: {
+				id: "pneumaticcraft:pressure_gauge"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Feel the Pressure"
+			description: ["You'll have to use TNT to make your first Compressed Iron Ingots, but it will become easier with the Pressure Chamber."]
+			dependencies: ["0F55C3AFCFD7892E"]
+			size: 1.5d
+			id: "7866D57C5FEF0C67"
+			tasks: [{
+				id: "4F13A2410B7103D5"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:ingot_iron_compressed"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6D6DF13C54BC4346"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							"patchouli:book": "pneumaticcraft:book"
+						}
+					}
+				}
+				{
+					id: "41AAC2A8F36D134B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_gauge"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0C2A085482017FA3"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_wrench"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							"pneumaticcraft:air": 30000
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Reinforced Stone"
+			x: 0.0d
+			y: 2.0d
+			description: ["Now you have less concrete to drink because you have to turn it into Reinforced Stone."]
+			dependencies: ["7866D57C5FEF0C67"]
+			id: "28A17D90DE982230"
+			tasks: [{
+				id: "572A295A2DF3C720"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:reinforced_stone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			title: "The Pressure Chamber"
+			icon: {
+				id: "pneumaticcraft:pressure_chamber_wall"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			description: ["This multiblock requires Pressurized Air, which you will get from the Liquid Compressor. You have to use a hopper to load items into it."]
+			dependencies: [
+				"28A17D90DE982230"
+				"38BDC323ADEFC74E"
+			]
+			id: "6AC94D0B4E062C44"
+			tasks: [
+				{
+					id: "4DD0CEFA74F8987D"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_wall"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "74B4B9C73CD97188"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_valve"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3D16C8BABCCA3946"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_interface"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "26FFCC8871147E0D"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "Pressure Tube"
+			x: 2.0d
+			y: -2.0d
+			description: ["These pipes move pressurized air. Be careful when expanding your infastructure, or some air could leak out."]
+			dependencies: ["7866D57C5FEF0C67"]
+			id: "1376E0F1FE2A4D48"
+			tasks: [{
+				id: "5769267899A91FFB"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pressure_tube"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			title: "Refinery"
+			icon: {
+				id: "pneumaticcraft:refinery"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: -2.0d
+			description: ["Can refine fluids into many other fluids. This machine does not require pressure to operate, however it does require heat. You can access more advanced methods of heat generation later, but for now you can put a campfire or another hot block below the Refinery Controller."]
+			dependencies: [
+				"7866D57C5FEF0C67"
+				"63BE3053633985CD"
+			]
+			id: "7DB095649FD7A1A2"
+			tasks: [
+				{
+					id: "0822B459C3A9C568"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:refinery"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "35A7359A0FFA8FEE"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:refinery_output"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["The Air Compressor has been disabled in this modpack to make it harder. You'll have to craft this one instead and use liquids from the Refinery as fuel. Don't let too much pressure build up, or it could explode."]
+			dependencies: [
+				"7DB095649FD7A1A2"
+				"1376E0F1FE2A4D48"
+			]
+			id: "38BDC323ADEFC74E"
+			tasks: [{
+				id: "42C22FA6ECAB194C"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:liquid_compressor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["This machine runs on Pressurized Air and heat. "]
+			dependencies: ["72EAF44D4219C398"]
+			id: "616790C0284A75A1"
+			tasks: [{
+				id: "42DD2D36FF9F2FF5"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:thermopneumatic_processing_plant"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["6AC94D0B4E062C44"]
+			id: "72EAF44D4219C398"
+			tasks: [{
+				id: "01CA55914D740F31"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:compressed_stone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Plastic"
+			x: 6.0d
+			y: 0.0d
+			description: ["Use the Thermopneumatic Processing Unit to create some molten plastic, then place it in the world to turn it into a Plastic Sheet."]
+			dependencies: ["616790C0284A75A1"]
+			id: "40352EADCB995EDD"
+			tasks: [{
+				id: "0A6D6832909F8F4E"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:plastic"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			shape: "square"
+			dependencies: ["616790C0284A75A1"]
+			id: "2AF9246A620BAC5F"
+			tasks: [{
+				id: "631C315D9C480C0F"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:upgrade_matrix"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The only Machine I don't want to go Boom"
+			x: 6.0d
+			y: 4.0d
+			shape: "square"
+			description: ["Security Upgrades prevent machines from exploding by making them leak air out when it is too high."]
+			dependencies: ["2AF9246A620BAC5F"]
+			id: "2771C6DE041336EC"
+			tasks: [{
+				id: "3DE5D3F323DFDD84"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:security_upgrade"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "More Space"
+			x: 8.0d
+			y: 4.0d
+			shape: "square"
+			description: ["Volume Upgrades increase the amount of space for Pressurized Air."]
+			dependencies: ["2AF9246A620BAC5F"]
+			id: "146A29421B5372BF"
+			tasks: [{
+				id: "70CB71E4874FD422"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:volume_upgrade"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Impatience"
+			x: 4.0d
+			y: 4.0d
+			shape: "square"
+			description: ["Speed Upgrades increase the speed of a machine."]
+			dependencies: ["2AF9246A620BAC5F"]
+			id: "776051DF84332D75"
+			tasks: [{
+				id: "5A4B725419387028"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:speed_upgrade"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Same-Minute Shipping"
+			x: 6.0d
+			y: -2.0d
+			description: ["Amadron, the multi-million dollar galactical corporation. They have very fast delivery, and you will need to order some items from them. You can charge the tablet with the Charging Station."]
+			dependencies: [
+				"40352EADCB995EDD"
+				"2E37D264D613CD68"
+			]
+			id: "188AF534B9905C6B"
+			tasks: [{
+				id: "215E0B01DDCC0DBD"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:amadron_tablet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: ["Fills items with Pressurized Air."]
+			dependencies: ["1376E0F1FE2A4D48"]
+			id: "2E37D264D613CD68"
+			tasks: [{
+				id: "110DED74E0EF4DB3"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:charging_station"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["188AF534B9905C6B"]
+			id: "5314BDC5192AB686"
+			tasks: [{
+				id: "70BA7FD8DE60769A"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pcb_blueprint"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			description: [
+				"Collects UV light from the Sun and develops circuit boards to prepare for use."
+				"You can get Refined Radiance by either placing light sources such as glowstone around a Chromatic Compound item entity, or by dropping Chromatic Compound onto a beacon beam."
+			]
+			dependencies: [
+				"5314BDC5192AB686"
+				"54C4665D0F90AA62"
+			]
+			id: "0E80A3CED92BEB34"
+			tasks: [{
+				id: "3F1EC17B6D632FB0"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:uv_light_box"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Acid"
+			x: 8.0d
+			y: 0.0d
+			description: ["Ewwww"]
+			dependencies: ["40352EADCB995EDD"]
+			id: "41DB2A39D737E236"
+			tasks: [{
+				id: "30F98F756E99F504"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:etching_acid_bucket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["41DB2A39D737E236"]
+			id: "60AC51CE1C84E756"
+			tasks: [{
+				id: "78C4546E2B53C300"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:etching_tank"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["40352EADCB995EDD"]
+			id: "1DA95EAF8952DF1C"
+			tasks: [{
+				id: "64929BE10E1BB151"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:empty_pcb"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Developing your PCB"
+			icon: {
+				id: "pneumaticcraft:empty_pcb"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					"pneumaticcraft:uv_exposure": 100
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			description: ["The longer you let your PCB develop in the UV light box, the more likely it is to complete during the Etching Process."]
+			dependencies: [
+				"1DA95EAF8952DF1C"
+				"0E80A3CED92BEB34"
+			]
+			id: "049CCCFA1B6C44DB"
+			tasks: [{
+				id: "0715004222724E77"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: [
+				"049CCCFA1B6C44DB"
+				"60AC51CE1C84E756"
+				"41DB2A39D737E236"
+			]
+			id: "17AB877703002B99"
+			tasks: [{
+				id: "72BC93966C37B85D"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:unassembled_pcb"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Electronic Components"
+			icon: {
+				id: "pneumaticcraft:capacitor"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["40352EADCB995EDD"]
+			id: "6BFC221924FD7B45"
+			tasks: [
+				{
+					id: "37B0C5BB545BAB54"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:transistor"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "24375F6261867B7E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:capacitor"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: [
+				"17AB877703002B99"
+				"6BFC221924FD7B45"
+			]
+			id: "64671F00E84123E7"
+			tasks: [{
+				id: "5705E7C7D04F4FDE"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:printed_circuit_board"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Assembly Line"
+			icon: {
+				id: "pneumaticcraft:assembly_controller"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: 0.0d
+			description: ["To build this \"multiblock,\" place your Controller. Place the Export Unit on the right, and the Import Unit on the left. Place the Drill behind the Export Unit, the Platform behind the Controller, and the Laser behind the Import Unit. Finally, place a chest in front of the Controller. The controller is the only block that requires pressure. Item input and output is from the chest. You will need to put your desired Assembly Program in the Controller."]
+			dependencies: ["64671F00E84123E7"]
+			id: "57DD945B4ED8CED8"
+			tasks: [
+				{
+					id: "3F6342730401DF9B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_platform"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "224252FA72CA4D4C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_io_unit_import"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "08891BB6F4076873"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_io_unit_export"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7DAA02DDB3A86820"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_drill"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7DA6009A7B23532B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_laser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "00AA166DDAB3B757"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_controller"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Assembly Programs"
+			icon: {
+				id: "pneumaticcraft:assembly_program_drill_laser"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 2.0d
+			description: ["These programs are used in the Assembly Line."]
+			hide_dependency_lines: true
+			dependencies: ["188AF534B9905C6B"]
+			id: "55B31E51B9CF235F"
+			tasks: [
+				{
+					id: "36D8B9D9AA63C168"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_program_laser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1C04FD81C762180A"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_program_drill"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "623ECE041ABBAEF5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:assembly_program_drill_laser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"57DD945B4ED8CED8"
+				"55B31E51B9CF235F"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "69B33534D656C8D5"
+			tasks: [{
+				id: "625E29DD5E7CC700"
+				type: "item"
+				item: {
+					id: "mekanism:steel_casing"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "595D271BDFA4A28B"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛝ\\nI’m studying the ancient runes from old Asgard, that I obtained multi of due to my former status. They talk of a device that creates infinite resources when configured, that I’ve named The Cell. I’ve tried to make plans to actually build one, but all attempts thus far\"}"
+							"{\"text\":\"have failed.\"}"
+						]
+						title: "Entry ᛇᛝ"
+						author: "Björn"
+					}
+				}
+			}]
+		}
+		{
+			title: "Gas Turbine"
+			icon: {
+				id: "advgenerators:turbine_rotor_tier5"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Gas Turbines burn liquid fuels to generate power. You can check the valid fuels and the power generated per mB by looking at the uses of the Gas Turbine controller in JEI. Gas Turbines burn Biodiesel more efficiently than Diesel Generators, and can also burn your excess Gasoline from distilling oil."
+				"At this point in progression you can only craft the Basic, Enhanced, and Advanced turbines. Later on you will unlock upgrades to increase fuel efficiency as well as the rest of the turbines."
+			]
+			dependencies: ["69B33534D656C8D5"]
+			id: "700160D367F6491A"
+			tasks: [
+				{
+					id: "03341B82145944C8"
+					type: "item"
+					item: {
+						id: "advgenerators:fuel_turbine_controller"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6192A17EC543B423"
+					type: "item"
+					item: {
+						id: "advgenerators:fluid_input"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6A48BEC84D4230A5"
+					type: "item"
+					item: {
+						id: "advgenerators:fe_output"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "573906EDF65DFDDE"
+					type: "item"
+					title: "Turbine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "advgenerators:turbine_tier1"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "advgenerators:turbine_tier2"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "advgenerators:turbine_tier3"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "advgenerators:turbine_tier4"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "advgenerators:turbine_tier5"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			description: ["Creates negative pressure. You'll need this to make Vacuum Tubes."]
+			dependencies: ["40352EADCB995EDD"]
+			id: "54C4665D0F90AA62"
+			tasks: [{
+				id: "35EDBBCA1718B4B8"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:vacuum_pump"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Infrastructure That Works Under Pressure"
+			icon: {
+				id: "pneumaticcraft:advanced_pressure_tube"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: -2.0d
+			shape: "diamond"
+			description: [
+				"PneumaticCraft air pressure will be used throughout the pack, so it's a good idea to build infrastructure to distribute air pressure to your machines."
+				"The best way to do this is to have a high pressure 20 bar network connected to your compressors that feeds into multiple low pressure 5 bar networks that are connected to your machines. This will minimise the amount of pressure that is lost over long distances."
+			]
+			dependencies: ["57DD945B4ED8CED8"]
+			id: "3A8A3E17BA646171"
+			tasks: [{
+				id: "40743BB33CA7D269"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Read the tooltip if you don't know how this works."
+				"Tip: You can place Heat Sinks on other Heat Sinks, and they will transfer heat between them and dissipate heat/cold more effectively. This even works if you place it on the front, even though they aren't visually connected."
+			]
+			dependencies: ["72EAF44D4219C398"]
+			id: "238A766E7FE0C44D"
+			tasks: [{
+				id: "4AB44AA2158114CF"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:vortex_tube"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The ME Storage System"
+			icon: "appliedenergistics2:energy_acceptor"
+			x: 14.0d
+			y: 4.0d
+			shape: "square"
+			description: ["To build your system, start with the Energy Acceptor. All AE2 components use Channels. ME cables can carry 8 channels at a time and dense ME cables can carry 32 channels at a time. The Energy Acceptor only provides 8 channels, and you can't combine them to upgrade your total channels, so for now you're stuck with only 8. Connect a ME Drive to your ME Cables, which should be connected to the Energy Acceptor, which should be connected to your energy. Put one or more cells in the ME Drive, and also add a ME Terminal to your cables. You can now store as many items in your system as you'd like via the terminal, assuming you have enough storage in your drives. If you run out, add more."]
+			dependencies: ["64671F00E84123E7"]
+			size: 1.5d
+			id: "7098510FA7E74209"
+			tasks: [
+				{
+					id: "4CF67CB26370CB5C"
+					type: "item"
+					item: "appliedenergistics2:energy_acceptor"
+				}
+				{
+					id: "636DC9730E8240B0"
+					type: "item"
+					item: "appliedenergistics2:fluix_glass_cable"
+					count: 8L
+				}
+				{
+					id: "175486024C84B559"
+					type: "item"
+					item: "appliedenergistics2:terminal"
+				}
+				{
+					id: "4A414A336E576EA3"
+					type: "item"
+					item: "appliedenergistics2:drive"
+				}
+				{
+					id: "7ADC6AE4DE95F98B"
+					type: "item"
+					title: "Basic Cell"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "appliedenergistics2:1k_storage_cell"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "appliedenergistics2:4k_storage_cell"
+									Count: 1b
+									tag: { }
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	]
+}

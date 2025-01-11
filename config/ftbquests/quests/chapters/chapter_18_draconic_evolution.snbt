@@ -1,0 +1,424 @@
+{
+	id: "73CAC19BCA64889C"
+	group: ""
+	order_index: 20
+	filename: "chapter_18_draconic_evolution"
+	title: "18 - Draconic Evolution"
+	icon: "draconicevolution:chaotic_core"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Draconic Evolution"
+			icon: "draconicevolution:chaotic_core"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Kill Everything"
+			dependencies: ["5FA29D4EFC769C54"]
+			size: 1.5d
+			id: "43AEBD999E74292C"
+			tasks: [
+				{
+					id: "410F118876F86F22"
+					type: "item"
+					item: "draconicevolution:crafting_core"
+				}
+				{
+					id: "3252D6C2EED62951"
+					type: "item"
+					item: "draconicevolution:basic_crafting_injector"
+					count: 10L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["43AEBD999E74292C"]
+			id: "25C06CFE615D9E50"
+			tasks: [{
+				id: "65483C61EBFC1062"
+				type: "item"
+				item: {
+					id: "extendedcrafting:compressor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["25C06CFE615D9E50"]
+			id: "03CAC8749FC685C7"
+			tasks: [{
+				id: "02F849AB0EDFD808"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+		}
+		{
+			title: "Wyvern Fusion Crafter"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["03CAC8749FC685C7"]
+			id: "602809835EE1573C"
+			tasks: [{
+				id: "191456D58F84B07F"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+				count: 10L
+			}]
+		}
+		{
+			title: "Raw Awakened Draconium"
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["602809835EE1573C"]
+			id: "288BB779355D1A8F"
+			tasks: [{
+				id: "717DA6EF4700D704"
+				type: "item"
+				item: "minecraft:barrier"
+				count: 4L
+			}]
+		}
+		{
+			title: "Acidic Awakened Draconium Solution"
+			x: 10.0d
+			y: 0.0d
+			dependencies: [
+				"288BB779355D1A8F"
+				"301C0E3CEE90A090"
+			]
+			id: "6992C89D700716E2"
+			tasks: [{
+				id: "036818E91C1BD978"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Awakened Draconium Solution"
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["6992C89D700716E2"]
+			id: "1193A9F9F352CBF1"
+			tasks: [{
+				id: "16532C0874827F30"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Fluoroantimonic Acid"
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["399F558A61D69CA6"]
+			id: "301C0E3CEE90A090"
+			tasks: [{
+				id: "4009CD5E6F38A374"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Antimony Pentafluoride"
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["248EC444E0BA2F1D"]
+			id: "399F558A61D69CA6"
+			tasks: [{
+				id: "7CC19454E2FB1824"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Antimony Pentachloride"
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["6D317A88619596C2"]
+			id: "248EC444E0BA2F1D"
+			tasks: [{
+				id: "6D59A783C43FEE9E"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Antimony Trichloride"
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["7A787E385B8BA621"]
+			id: "6D317A88619596C2"
+			tasks: [{
+				id: "47993796567E7850"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Antimony"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["789BF8D416EA2338"]
+			id: "7A787E385B8BA621"
+			tasks: [{
+				id: "152877C1C0FBD5EE"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Stibnite"
+			x: 0.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["43AEBD999E74292C"]
+			id: "789BF8D416EA2338"
+			tasks: [{
+				id: "62074127B1DD8932"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Awakened Draconium"
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["1193A9F9F352CBF1"]
+			id: "45CF6A15A524BEF3"
+			tasks: [{
+				id: "1B4A8102B2CF5A12"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_ingot"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["45CF6A15A524BEF3"]
+			id: "41F359723DAFE8D3"
+			tasks: [{
+				id: "54B5CB179632DB7A"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+		}
+		{
+			title: "Xerothium Void Miner"
+			icon: {
+				id: "envirotech:xerothium_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: 0.0d
+			dependencies: ["41F359723DAFE8D3"]
+			id: "2704F65F2F756168"
+			tasks: [
+				{
+					id: "3A7CD675061CC2C0"
+					type: "item"
+					item: {
+						id: "envirotech:xerothium_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "667DD455691609FC"
+					type: "item"
+					item: {
+						id: "envirocore:xerothium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 100L
+				}
+				{
+					id: "47D6AF76D3294E1E"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 88L
+				}
+				{
+					id: "7637B152FA1D38F0"
+					type: "item"
+					title: "20x Modifier"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:mod"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "envirocore"
+									}
+								}
+								{
+									id: "itemfilters:id_regex"
+									Count: 1b
+									tag: {
+										value: "modifier"
+									}
+								}
+							]
+						}
+					}
+					count: 20L
+				}
+			]
+		}
+		{
+			title: "Erilane Crystals"
+			x: 20.0d
+			y: 0.0d
+			dependencies: ["2704F65F2F756168"]
+			id: "267EEB6289030A0D"
+			tasks: [{
+				id: "7616A5A0DCEB8046"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "Draconic Fusion Crafter"
+			icon: "draconicevolution:awakened_crafting_injector"
+			x: 22.0d
+			y: 0.0d
+			dependencies: ["267EEB6289030A0D"]
+			id: "515B3B9DFF217FCA"
+			tasks: [{
+				id: "45B240F4F698B3BB"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+				count: 10L
+			}]
+		}
+		{
+			title: "Draconic Reactor"
+			icon: "draconicevolution:reactor_core"
+			x: 24.0d
+			y: 0.0d
+			dependencies: ["515B3B9DFF217FCA"]
+			id: "6E9EA724F89FDD71"
+			tasks: [
+				{
+					id: "094C1375135A54FA"
+					type: "item"
+					item: "draconicevolution:reactor_core"
+				}
+				{
+					id: "5232451275A07D95"
+					type: "item"
+					item: "draconicevolution:reactor_stabilizer"
+					count: 4L
+				}
+				{
+					id: "70A4E6ADAFC936D6"
+					type: "item"
+					item: "draconicevolution:reactor_injector"
+				}
+			]
+		}
+		{
+			title: "Unstable Draconium"
+			x: 26.0d
+			y: 0.0d
+			dependencies: ["6E9EA724F89FDD71"]
+			id: "151BC655AA972A2E"
+			tasks: [{
+				id: "4D038DF59A1F022A"
+				type: "item"
+				item: "draconicevolution:medium_chaos_frag"
+			}]
+		}
+		{
+			x: 28.0d
+			y: 0.0d
+			dependencies: [
+				"151BC655AA972A2E"
+				"0BCDFA6C604E48F0"
+			]
+			id: "393AF51EA948C329"
+			tasks: [{
+				id: "099876F30B0CFD46"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -2.0d
+			id: "0BCDFA6C604E48F0"
+			tasks: [{
+				id: "4AB2458D890C25FB"
+				type: "item"
+				item: "draconicevolution:chaos_shard"
+			}]
+		}
+		{
+			title: "Chaotic Fusion Crafter"
+			x: 30.0d
+			y: 0.0d
+			dependencies: ["393AF51EA948C329"]
+			id: "5584AF428DD9D373"
+			tasks: [{
+				id: "556C7518D0DA069D"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+				count: 10L
+			}]
+		}
+		{
+			x: 32.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["5584AF428DD9D373"]
+			size: 2.5d
+			repeatable: true
+			id: "4C7095D6D6BD434F"
+			tasks: [{
+				id: "5DD6A2DD2158936C"
+				type: "item"
+				item: "draconicevolution:chaotic_energy_core"
+			}]
+			rewards: [{
+				id: "36C37B111E9CFF7F"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛨ\\nBecause an Alfheim establishment attacked us when we tried to take their natural resources, we decided not to colonize it. We could still invade their kingdom if we wanted, but it wouldn’t be worth it.\\n\"}"]
+						title: "Entry ᛨ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+	]
+}

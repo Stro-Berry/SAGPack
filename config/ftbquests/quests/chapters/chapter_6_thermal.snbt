@@ -1,0 +1,715 @@
+{
+	id: "180AC3E14DF812FE"
+	group: ""
+	order_index: 8
+	filename: "chapter_6_thermal"
+	title: "6 - Thermal"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Thermal"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Simple yet Powerful"
+			dependencies: ["2BDEB25F0DE76068"]
+			size: 1.5d
+			id: "2E29B6C18E630F4A"
+			tasks: [{
+				id: "21E4884EF1905BAE"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [
+				{
+					id: "5E403C2BF491743F"
+					type: "item"
+					item: "thermal:wrench"
+				}
+				{
+					id: "38EC843619D49BC7"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							"patchouli:book": "thermal:guidebook"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["2E29B6C18E630F4A"]
+			id: "2D184A7B3677F119"
+			tasks: [{
+				id: "2479C6EE12E2EBDD"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["2E29B6C18E630F4A"]
+			id: "322BD947C61E118F"
+			tasks: [{
+				id: "29C279B2F5791E5E"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["Your first Thermal alloy."]
+			dependencies: [
+				"322BD947C61E118F"
+				"2D184A7B3677F119"
+			]
+			id: "2E22FB0A0DAE7FE9"
+			tasks: [{
+				id: "1EB79F286596670B"
+				type: "item"
+				item: "emendatusenigmatica:signalum_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["The modern-day Alloy Smelter."]
+			dependencies: ["2E22FB0A0DAE7FE9"]
+			id: "1388FF52E1F0943A"
+			tasks: [{
+				id: "6AE9F9FDF981F518"
+				type: "item"
+				item: "thermal:machine_smelter"
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: ["This machine requires fertilizer to run."]
+			dependencies: ["2E22FB0A0DAE7FE9"]
+			id: "09E42FF9A9DD1C27"
+			tasks: [{
+				id: "564B220C7748D144"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+		}
+		{
+			title: "Solder Ingot"
+			x: 4.0d
+			y: -2.0d
+			description: ["Used to put together various circuits."]
+			dependencies: ["1388FF52E1F0943A"]
+			id: "7F14287AB7472BBA"
+			tasks: [{
+				id: "73624EDE1D22EFF9"
+				type: "item"
+				item: {
+					id: "kubejs:solder_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Radiant Alloy"
+			x: 6.0d
+			y: -2.0d
+			description: ["Needs more sunlight."]
+			dependencies: ["7F14287AB7472BBA"]
+			id: "0910320B4165FFAF"
+			tasks: [{
+				id: "2B98E8F2E64DF755"
+				type: "item"
+				item: {
+					id: "kubejs:radiant_alloy"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Lumium"
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"09E42FF9A9DD1C27"
+				"0910320B4165FFAF"
+			]
+			id: "4B503BCFBB22BF56"
+			tasks: [{
+				id: "595A2214280562B5"
+				type: "item"
+				item: "emendatusenigmatica:lumium_ingot"
+			}]
+		}
+		{
+			title: "DML?"
+			x: 8.0d
+			y: 2.0d
+			description: ["The Thermal Chapter also unlocks Hostile Neural Networks."]
+			dependencies: [
+				"4B503BCFBB22BF56"
+				"301CA45D8A361913"
+				"7CB2AF7D811D8BC7"
+			]
+			id: "139325B3ADACB034"
+			tasks: [{
+				id: "1C03DEFABDB29750"
+				type: "item"
+				item: {
+					id: "hostilenetworks:sim_chamber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Prediction Matricies"
+			x: 6.0d
+			y: 2.0d
+			description: ["The Simulation Chamber requires these to run. You may want to semi-automate them."]
+			dependencies: ["1388FF52E1F0943A"]
+			id: "1BA5D2663BC0AC6E"
+			tasks: [{
+				id: "5FE4688B738C2388"
+				type: "item"
+				item: {
+					id: "hostilenetworks:empty_prediction"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			title: "Platinum"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"Obtained via the T2 Resource Miner from the Metallic program."
+				""
+			]
+			dependencies: ["4A2815755EC50B31"]
+			id: "301CA45D8A361913"
+			tasks: [{
+				id: "571E2A259E221AB8"
+				type: "item"
+				item: {
+					id: "kubejs:platinum_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Creating your Data Models"
+			icon: {
+				id: "hostilenetworks:blank_data_model"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			description: ["To make your Data Model, you will need to right-click on your desired mob with the Model Framework. However, the model will be Faulty. You will put it inside of your Deep Learner and then kill 6 of that mob type, which will upgrade it to Basic. After that, you can put it in a Simulation Chamber."]
+			dependencies: [
+				"301CA45D8A361913"
+				"7CB2AF7D811D8BC7"
+			]
+			id: "2E468720EAD251E4"
+			tasks: [
+				{
+					id: "717DE9864CCCED32"
+					type: "item"
+					item: {
+						id: "hostilenetworks:deep_learner"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0C0D105B5563F3B5"
+					type: "item"
+					item: {
+						id: "hostilenetworks:blank_data_model"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Generalized Predictions"
+			icon: {
+				id: "hostilenetworks:overworld_prediction"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 2.0d
+			description: ["After putting your Data Models in the Simulation Chamber along with Prediction Matricies, you will get Generalized Predictions based on the dimension the mob in the data model comes from."]
+			dependencies: [
+				"139325B3ADACB034"
+				"2E468720EAD251E4"
+				"1BA5D2663BC0AC6E"
+			]
+			id: "6BE6F556DDED7848"
+			tasks: [
+				{
+					id: "4E88A8515517622F"
+					type: "item"
+					item: {
+						id: "hostilenetworks:nether_prediction"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3B331384DA768FB4"
+					type: "item"
+					item: {
+						id: "hostilenetworks:overworld_prediction"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			description: ["You may have noticed you've been getting some mob-specific predictions from the Simulation Chamber. These are used in the Loot Fabricator to create items based on the type of mob."]
+			dependencies: ["6BE6F556DDED7848"]
+			id: "265D502B9F71AD70"
+			tasks: [{
+				id: "22CBCC14E25100C2"
+				type: "item"
+				item: {
+					id: "hostilenetworks:loot_fabricator"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ender Cube"
+			x: 16.0d
+			y: 2.0d
+			description: ["Melting this cube is the only way to get Resonant Ender. It comes from Enderman Predictions, so you'll need an Enderman data model."]
+			dependencies: ["265D502B9F71AD70"]
+			id: "62E578BC64093EBB"
+			tasks: [{
+				id: "18E16DF2E07B9AA3"
+				type: "item"
+				item: {
+					id: "kubejs:ender_cube"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Still Fractionating?"
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["301CA45D8A361913"]
+			id: "63103D7EBABCE84E"
+			tasks: [{
+				id: "2CD21070E6B8107D"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: [
+				"63103D7EBABCE84E"
+				"56C2D0C3FE64E082"
+			]
+			id: "567887FB8E5FEA27"
+			tasks: [{
+				id: "3FC4A59C5BBB5536"
+				type: "item"
+				item: "thermal:rosin"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["301CA45D8A361913"]
+			id: "56C2D0C3FE64E082"
+			tasks: [{
+				id: "03B40151BED4EAFB"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["2E22FB0A0DAE7FE9"]
+			id: "08B763BABFB8C6F1"
+			tasks: [{
+				id: "5065400B0A18B8D8"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			dependencies: ["08B763BABFB8C6F1"]
+			id: "228A685235F05CE6"
+			tasks: [{
+				id: "60C2B30A869D8728"
+				type: "item"
+				item: "emendatusenigmatica:ender_dust"
+			}]
+		}
+		{
+			title: "Enderium Base Ingot"
+			x: 14.0d
+			y: 0.0d
+			dependencies: [
+				"567887FB8E5FEA27"
+				"228A685235F05CE6"
+			]
+			id: "1CC99F5F5CE3B03F"
+			tasks: [{
+				id: "538E5F253D7E01BE"
+				type: "item"
+				item: {
+					id: "kubejs:enderium_base_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: [
+				"62E578BC64093EBB"
+				"1CC99F5F5CE3B03F"
+			]
+			id: "355A8065552EA7CD"
+			tasks: [{
+				id: "4A8807BFF2BF5250"
+				type: "item"
+				item: "emendatusenigmatica:enderium_ingot"
+			}]
+		}
+		{
+			title: "Reinforced Ingot"
+			x: 18.0d
+			y: -2.0d
+			dependencies: ["355A8065552EA7CD"]
+			id: "1F05129345014062"
+			tasks: [{
+				id: "21E809A4AB81D9CF"
+				type: "item"
+				item: {
+					id: "kubejs:reinforced_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Mithril Ingot"
+			x: 18.0d
+			y: 2.0d
+			shape: "gear"
+			dependencies: ["1F05129345014062"]
+			size: 2.5d
+			repeatable: true
+			id: "11C2B634EF47BA5A"
+			tasks: [{
+				id: "76E96F11DE5A581E"
+				type: "item"
+				item: {
+					id: "kubejs:mithril_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "04D64DE117975685"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛯ\\nThe war has spread to Asgard, and from what I’ve heard, the aliens’ planet is also being affected. It won’t be long, hatch occurs and everybody is dead. I’m going to store all of these logs underground where nobody can ever find them until a very long\"}"
+							"{\"text\":\"time has passed.\"}"
+						]
+						title: "Entry ᛇᛯ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Erodium Void Miner"
+			icon: {
+				id: "envirotech:erodium_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			description: ["Hold shift over the Void Miner CCU to see the rest of the required blocks."]
+			dependencies: [
+				"7CB2AF7D811D8BC7"
+				"4B503BCFBB22BF56"
+			]
+			id: "4A2815755EC50B31"
+			tasks: [
+				{
+					id: "0A2FDE21A7288035"
+					type: "item"
+					item: {
+						id: "envirotech:erodium_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "325C6A3C0DE331AE"
+					type: "item"
+					item: {
+						id: "envirocore:erodium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 28L
+				}
+				{
+					id: "1D8321E4227A04CD"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Precision Component Assembler"
+			icon: {
+				id: "envirocore:erodium_frame"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			shape: "square"
+			dependencies: ["4B503BCFBB22BF56"]
+			id: "7A8E601E29B5A293"
+			tasks: [
+				{
+					id: "561839E2753EDEBC"
+					type: "item"
+					item: "masterfulmachinery:basic_controller"
+				}
+				{
+					id: "6A12D7363B24A557"
+					type: "item"
+					item: "masterfulmachinery:basic_energy_port_energy_input"
+				}
+				{
+					id: "66B54AFA55B044A1"
+					type: "item"
+					item: "masterfulmachinery:basic_item_port_items_input"
+				}
+				{
+					id: "3D02C2C278324F9D"
+					type: "item"
+					item: "masterfulmachinery:basic_pressure_port_pncr_pressure_input"
+				}
+				{
+					id: "6E82E9B76314F248"
+					type: "item"
+					item: "masterfulmachinery:basic_item_port_items_output"
+				}
+				{
+					id: "4C6FDB42D82033F8"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_brick_wall"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "071D6341E929FD4C"
+					type: "item"
+					item: {
+						id: "envirocore:erodium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 35L
+				}
+				{
+					id: "239587AA69307CA5"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+				{
+					id: "6CA7893597FD270E"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 17L
+				}
+				{
+					id: "02C5B98FA5327DAC"
+					type: "item"
+					item: "appliedenergistics2:quartz_vibrant_glass"
+					count: 35L
+				}
+			]
+		}
+		{
+			title: "Advanced ME System"
+			icon: "chisel:futura/controller"
+			x: 10.0d
+			y: -4.0d
+			shape: "square"
+			description: ["The ME Controller is like the Energy Acceptor, but it provides 32 channels per face. ME Controllers can also be put next to each other, in either a line, hollow square, or hollow cuboid shape. All channels provided from your whole controller will apply to your entire network."]
+			dependencies: ["7A8E601E29B5A293"]
+			size: 1.5d
+			id: "557B456E5266BC4F"
+			tasks: [{
+				id: "409A2F941AD1A85C"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+		}
+		{
+			title: "Channel Networking"
+			x: 10.0d
+			y: -6.0d
+			shape: "square"
+			description: ["You're going to need a lot of channels with AE2, which is now possible with your ME Controller. However, since Dense Cables can only carry 32 Channels, you'll need to find a better way to get them across your base. Solution: P2Ps. ME P2Ps use a channel, but can transport Channels instantly if they're connected with more cable. Use 2 different ME cable colors for organization. Cyan for your direct connection to the controllers, and green for the P2P connections. Place a P2P on your ME Controller, and use Dense Cyan Cables to connect it to your main face, which will not have a P2P. Connect 4 regular Cyan cables to a dense cable, and have them branch out to different parts of your base. When you need 32 channels in a location, place a P2P at the end part where it branches out, and then add green cables coming out of it. Use the Memory Card to link a P2P from the controller to a P2P at your area. Place 1 Green Dense Cable at the end, and have 4 regular Green Cables branching out from it, similar to your cyan main network. This is an efficient way to create your ME System, and will basically last you for the entire pack."]
+			dependencies: ["557B456E5266BC4F"]
+			id: "5DE3AF03343A815E"
+			tasks: [{
+				id: "6991CA47098EF954"
+				type: "item"
+				item: "appliedenergistics2:me_p2p_tunnel"
+			}]
+		}
+		{
+			title: "AE2 Autocrafting"
+			icon: "appliedenergistics2:blank_pattern"
+			x: 12.0d
+			y: -4.0d
+			shape: "square"
+			description: [""]
+			dependencies: ["557B456E5266BC4F"]
+			id: "77D138B8EC36AD9C"
+			tasks: [
+				{
+					id: "015BC74763591F8B"
+					type: "item"
+					item: "appliedenergistics2:interface"
+				}
+				{
+					id: "29C4D2C041C4D35D"
+					type: "item"
+					item: "appliedenergistics2:crafting_monitor"
+				}
+				{
+					id: "5F78E10F85D802E2"
+					type: "item"
+					item: "appliedenergistics2:1k_crafting_storage"
+				}
+				{
+					id: "1B32018A38EB1922"
+					type: "item"
+					item: "appliedenergistics2:crafting_accelerator"
+				}
+				{
+					id: "69073BA36AE5F266"
+					type: "item"
+					item: "appliedenergistics2:pattern_terminal"
+				}
+				{
+					id: "15E4D499D86DFFC8"
+					type: "item"
+					item: "appliedenergistics2:blank_pattern"
+				}
+			]
+		}
+	]
+}

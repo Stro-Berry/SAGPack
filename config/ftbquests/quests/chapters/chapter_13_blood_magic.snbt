@@ -1,0 +1,986 @@
+{
+	id: "14D5717C4F32444A"
+	group: ""
+	order_index: 15
+	filename: "chapter_13_blood_magic"
+	title: "13 - Blood Magic"
+	icon: "bloodmagic:altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Blood Magic"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Sacrifice Innocents"
+			dependencies: ["6E5079DA5CC192BD"]
+			size: 1.5d
+			id: "5F180FB09AE58756"
+			tasks: [{
+				id: "2DDE35BC9DFC744B"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+			rewards: [{
+				id: "0CE36D2AF4ED15D4"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: [
+				"5F180FB09AE58756"
+				"450DF63D2B4A320F"
+			]
+			id: "274402596E2E6FE6"
+			tasks: [{
+				id: "711E49CB1F69E4C6"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Use near a Blood Altar to fill it."]
+			dependencies: ["5F180FB09AE58756"]
+			id: "450DF63D2B4A320F"
+			tasks: [{
+				id: "3A7780DEA3E5ADB9"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "bloodmagic:soulsnare"
+			x: 0.0d
+			y: -2.0d
+			description: ["Throw a Soul Snare at a mob, and it will get white particles. Kill it after that to obtain Demon Will."]
+			dependencies: ["5F180FB09AE58756"]
+			id: "5982B60384C4EAA1"
+			tasks: [
+				{
+					id: "69B754E07C66C9EB"
+					type: "item"
+					item: "bloodmagic:soulsnare"
+				}
+				{
+					id: "245D49A49CB3DE4C"
+					type: "item"
+					item: {
+						id: "bloodmagic:basemonstersoul"
+						Count: 1b
+						tag: {
+							souls: 5.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			description: ["Place Demon Will into the Hellfire Forge in the slot on the right."]
+			dependencies: [
+				"5982B60384C4EAA1"
+				"274402596E2E6FE6"
+			]
+			id: "399A5EC5CD72F16E"
+			tasks: [{
+				id: "026750E685F95233"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			description: ["Used to store will."]
+			dependencies: ["399A5EC5CD72F16E"]
+			id: "488EDE6E77CE8700"
+			tasks: [{
+				id: "535E8DF73A34F5E7"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 64.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Blood Altar T2"
+			x: 4.0d
+			y: 0.0d
+			description: ["The Blank Runes can be replaced with other types of runes when you are able to craft them. See the manual on how to upgrade your altar."]
+			dependencies: [
+				"6AA19D25B033DD83"
+				"274402596E2E6FE6"
+				"4816984EF11AD5C1"
+			]
+			id: "75C86C9D8570970C"
+			tasks: [{
+				id: "361559106767C846"
+				type: "item"
+				item: "bloodmagic:blankrune"
+				count: 8L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: ["Used in crafting recipes and the Alchemy Table."]
+			dependencies: ["488EDE6E77CE8700"]
+			id: "6AA19D25B033DD83"
+			tasks: [{
+				id: "177D3CA5B1477CCB"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["274402596E2E6FE6"]
+			id: "34E438C7810E8818"
+			tasks: [{
+				id: "622EB43A821E08CC"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+		}
+		{
+			title: "T1 Essences"
+			icon: {
+				id: "kubejs:wet_essence"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["34E438C7810E8818"]
+			id: "4816984EF11AD5C1"
+			tasks: [
+				{
+					id: "73F239E5BA4A9E41"
+					type: "item"
+					item: {
+						id: "kubejs:flaming_essence"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "58C9508FDC445628"
+					type: "item"
+					item: {
+						id: "kubejs:wet_essence"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["75C86C9D8570970C"]
+			id: "6631F08BFE876FCD"
+			tasks: [{
+				id: "204A279967C752F4"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["75C86C9D8570970C"]
+			id: "0ACD55119B97D29D"
+			tasks: [{
+				id: "1D003C645566BCF2"
+				type: "item"
+				item: "bloodmagic:reinforcedslate"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Used to store will."]
+			dependencies: ["0ACD55119B97D29D"]
+			id: "509FE5D7A20757C4"
+			tasks: [{
+				id: "550B2C37196ED504"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 256.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "T2 Essences"
+			icon: {
+				id: "kubejs:storage_essence"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"6631F08BFE876FCD"
+				"509FE5D7A20757C4"
+			]
+			id: "4CFA726B01F80065"
+			tasks: [
+				{
+					id: "3C68DDEE0693B6EF"
+					type: "item"
+					item: {
+						id: "kubejs:earthen_essence"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "61B5EE5B64491D2C"
+					type: "item"
+					item: {
+						id: "kubejs:gusty_essence"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7387B5406410B6A7"
+					type: "item"
+					item: {
+						id: "kubejs:storage_essence"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			description: ["Used for Alchemy Array recipes."]
+			dependencies: ["4CFA726B01F80065"]
+			id: "44B96082882C4C50"
+			tasks: [{
+				id: "03E2C57CEF15E2E3"
+				type: "item"
+				item: {
+					id: "bloodmagic:arcaneashes"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Used to automate Demon Will. Killing mobs with the sword will drop it automatically."]
+			dependencies: [
+				"44B96082882C4C50"
+				"052D01F249204FE1"
+			]
+			id: "3E7EFC915F0F47CC"
+			tasks: [{
+				id: "2A6503209CF21B45"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["509FE5D7A20757C4"]
+			id: "052D01F249204FE1"
+			tasks: [{
+				id: "3D5C3584F7B83D3A"
+				type: "item"
+				item: "bloodmagic:reagentbinding"
+			}]
+		}
+		{
+			title: "Blood Altar T3"
+			icon: "bloodmagic:altarcapacityrune"
+			x: 8.0d
+			y: -2.0d
+			description: ["You will need some Capacity Runes to have enough LP to make a Magician Blood Orb."]
+			dependencies: ["4CFA726B01F80065"]
+			id: "6081E8940A44E105"
+			tasks: [
+				{
+					id: "6473163C9505D396"
+					type: "item"
+					item: "bloodmagic:altarcapacityrune"
+					count: 10L
+				}
+				{
+					id: "44680B78EF7A566A"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 10L
+				}
+				{
+					id: "3FB72869609656D8"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["6081E8940A44E105"]
+			id: "6539488003BB73EB"
+			tasks: [{
+				id: "114837DCE2F34B04"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			dependencies: ["6539488003BB73EB"]
+			id: "618CD06660D310DB"
+			tasks: [{
+				id: "74196ECBFB46B662"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+		}
+		{
+			title: "Ritual Tools"
+			icon: "bloodmagic:activationcrystalweak"
+			x: 12.0d
+			y: -4.0d
+			description: ["You will need a Weak Activation Crystal to activate any rituals you perform, and a Ritual Diviner to easily place any ritual stones. Shift right-click and shift left-click to select the ritual with the Ritual Diviner, and right click on a Master Ritual Stone to build it, given you have enough materials. You will need to have enough LP in your network to activate rituals, and LP can be put into your network easily by placing your Blood Orb on the Blood Altar and letting it charge. The charging can be sped up with Acceleration Runes."]
+			dependencies: ["618CD06660D310DB"]
+			id: "5FAF598C86BC5685"
+			tasks: [
+				{
+					id: "32E4313149C02C46"
+					type: "item"
+					item: "bloodmagic:ritualdiviner"
+				}
+				{
+					id: "68E7C767FF59EAB8"
+					type: "item"
+					item: "bloodmagic:activationcrystalweak"
+				}
+			]
+		}
+		{
+			title: "Edge of the Hidden Realm"
+			icon: "bloodmagic:inversion_pillar"
+			x: 12.0d
+			y: -2.0d
+			description: ["Edge of the Hidden Realm uses 80,000 LP."]
+			dependencies: ["5FAF598C86BC5685"]
+			id: "468950DFDA7CF292"
+			tasks: [
+				{
+					id: "398A2CA93A8BC452"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "4C8A030388B36396"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 36L
+				}
+				{
+					id: "79A635EF87C0D074"
+					type: "dimension"
+					title: "Travel through the Inversion Pillar"
+					icon: "bloodmagic:inversion_pillar"
+					dimension: "bloodmagic:dungeon"
+				}
+			]
+		}
+		{
+			title: "Tau"
+			icon: "bloodmagic:strong_tau"
+			x: 12.0d
+			y: 0.0d
+			description: ["Tau can be planted. Whenever Tau matures while a mob is on top of it, it will leech some of its health and grow into Saturated Tau instead of regular Tau."]
+			dependencies: ["468950DFDA7CF292"]
+			id: "1534B3001F98CC84"
+			tasks: [
+				{
+					id: "2877CBDA5DDF3FED"
+					type: "item"
+					item: "bloodmagic:weak_tau"
+				}
+				{
+					id: "3C1CD255B65248BC"
+					type: "item"
+					item: "bloodmagic:strong_tau"
+				}
+			]
+		}
+		{
+			icon: "bloodmagic:alchemicalreactionchamber"
+			x: 10.0d
+			y: -2.0d
+			description: ["Used to turn Tau into Saturated Tau in addition of processing other ores."]
+			dependencies: ["618CD06660D310DB"]
+			id: "3C043636F52BCCF1"
+			tasks: [
+				{
+					id: "5D10BF1D466515B9"
+					type: "item"
+					item: "bloodmagic:alchemicalreactionchamber"
+				}
+				{
+					id: "25230CFA385EB4DD"
+					type: "item"
+					item: {
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: [
+				"3C043636F52BCCF1"
+				"1534B3001F98CC84"
+			]
+			id: "1753D9CE0EFC5D48"
+			tasks: [{
+				id: "451FBE09986CE477"
+				type: "item"
+				item: "bloodmagic:weakbloodshard"
+			}]
+		}
+		{
+			title: "Blood Altar T4"
+			icon: "bloodmagic:largebloodstonebrick"
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["1753D9CE0EFC5D48"]
+			id: "64629ADD11BB5699"
+			tasks: [
+				{
+					id: "006A768B5D0B0923"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 28L
+				}
+				{
+					id: "01EABFAD20FAA59F"
+					type: "item"
+					item: "bloodmagic:largebloodstonebrick"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["64629ADD11BB5699"]
+			id: "4B945DBA21298703"
+			tasks: [{
+				id: "53BBFA66AF6E4935"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+		}
+		{
+			title: "Advanced Rituals"
+			x: 18.0d
+			y: 2.0d
+			description: ["Now you can perform rituals requiring Dusk Ritual Stones."]
+			dependencies: ["304A02577A63CD6D"]
+			id: "5A84B39B5C206A85"
+			tasks: [{
+				id: "0BA8198B92C10B1F"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+		}
+		{
+			title: "Mark of the Falling Tower"
+			icon: "bloodmagic:dungeon_ore"
+			x: 18.0d
+			y: 0.0d
+			description: ["This ritual needs a whopping 1,250,000LP! The Master Blood Orb can only store 1,000,000LP, so you will need to make some Runes of the Orb or get more Blood Orbs. Additionally, you will need to throw a Weak Blood Shard on top of the Master Ritual Stone after activating this ritual as a catalyst. You will want to place some Obsidian above the center of the ritual blocks to stop the meteor from crashing all the way down and destroying the ritual blocks."]
+			dependencies: [
+				"5A84B39B5C206A85"
+				"5D79D8408611D93A"
+			]
+			id: "101E32A9086C6BC6"
+			tasks: [
+				{
+					id: "75869188E1BCA5AF"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "4D4A82C4127C7DEA"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 108L
+				}
+				{
+					id: "1525AC4902946B8E"
+					type: "item"
+					item: "bloodmagic:weakbloodshard"
+				}
+				{
+					id: "6B8E48E58A4175AA"
+					type: "item"
+					item: "bloodmagic:dungeon_stone"
+				}
+				{
+					id: "6025EBD4E1403A3A"
+					type: "item"
+					item: "bloodmagic:dungeon_ore"
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			dependencies: ["64629ADD11BB5699"]
+			id: "5D79D8408611D93A"
+			tasks: [{
+				id: "577EC082CBDCD2A7"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			dependencies: ["101E32A9086C6BC6"]
+			id: "623B31A302DE469C"
+			tasks: [{
+				id: "4F60D0F1567E3AEF"
+				type: "item"
+				item: "bloodmagic:ingot_hellforged"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -2.0d
+			dependencies: ["101E32A9086C6BC6"]
+			id: "0CE3FE2CFF38B8E5"
+			tasks: [{
+				id: "302FA9B79E7204BF"
+				type: "item"
+				item: "bloodmagic:corrupted_dust"
+			}]
+		}
+		{
+			title: "Well of Suffering"
+			icon: "bloodmagic:life_essence_bucket"
+			x: 20.0d
+			y: 2.0d
+			shape: "square"
+			description: ["This ritual requires 40,000LP to activate, and will need a small constant supply to continue running. You can use the Ritual Tinkerer to link the ritual to your Blood Altar, just make sure you build the ritual within the 15 block range of linking. This is an extremely powerful ritual, because it damages mobs around it and puts LP into the Blood Altar its linked to. It's generally a good idea to set up 2 Blood Altars with Well of Suffering rituals, one with a Blood Orb in it all of the time, and the other for general blood infusing."]
+			dependencies: ["5A84B39B5C206A85"]
+			id: "70B5C46058F48657"
+			tasks: [
+				{
+					id: "06B9D06C6E1CD6DD"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "43F8EFB2F92F35DE"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 36L
+				}
+				{
+					id: "3C63D0029F79122D"
+					type: "item"
+					item: "bloodmagic:ritualtinkerer"
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Allows for a greater amount of LP to be gained from damaged mobs from the Well of Suffering ritual."]
+			dependencies: ["70B5C46058F48657"]
+			id: "3A68373E1C9C0CCE"
+			tasks: [{
+				id: "6FAA47F08699B84F"
+				type: "item"
+				item: "bloodmagic:sacrificerune"
+			}]
+		}
+		{
+			title: "Blood Altar T5"
+			icon: {
+				id: "minecraft:beacon"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: -4.0d
+			dependencies: ["64629ADD11BB5699"]
+			id: "598174EB45CF4C58"
+			tasks: [
+				{
+					id: "42948027A33DB4C8"
+					type: "item"
+					item: {
+						id: "minecraft:beacon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "6AEF680CD211EFF4"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 52L
+				}
+			]
+		}
+		{
+			title: "Essence of Fading Light"
+			x: 16.0d
+			y: 0.0d
+			dependencies: [
+				"64629ADD11BB5699"
+				"203B7D08D9E0BD43"
+			]
+			id: "304A02577A63CD6D"
+			tasks: [{
+				id: "5171F49ED33B4532"
+				type: "item"
+				item: {
+					id: "kubejs:fading_light_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			dependencies: ["4B945DBA21298703"]
+			id: "203B7D08D9E0BD43"
+			tasks: [{
+				id: "6C018EEEF2865889"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: {
+						souls: 1024.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: -4.0d
+			dependencies: ["598174EB45CF4C58"]
+			id: "3098157A66A21312"
+			tasks: [{
+				id: "7DCC20A20D2AF23C"
+				type: "item"
+				item: "bloodmagic:etherealslate"
+			}]
+		}
+		{
+			title: "Pladium Void Ore Miner"
+			icon: {
+				id: "envirotech:pladium_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: -2.0d
+			dependencies: [
+				"0CE3FE2CFF38B8E5"
+				"3098157A66A21312"
+				"623B31A302DE469C"
+			]
+			id: "745DFAA75B23C97E"
+			tasks: [
+				{
+					id: "28DBEB5E09D6BFF4"
+					type: "item"
+					item: {
+						id: "envirotech:pladium_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "580F725887D5B3DB"
+					type: "item"
+					item: {
+						id: "envirocore:pladium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 52L
+				}
+				{
+					id: "13785121B6582AD4"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 56L
+				}
+				{
+					id: "574DD68BA0C5C2DE"
+					type: "item"
+					title: "12x Modifier"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:mod"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "envirocore"
+									}
+								}
+								{
+									id: "itemfilters:id_regex"
+									Count: 1b
+									tag: {
+										value: "modifier"
+									}
+								}
+							]
+						}
+					}
+					count: 12L
+				}
+			]
+		}
+		{
+			title: "Ionite Crystal"
+			x: 20.0d
+			y: -4.0d
+			dependencies: ["745DFAA75B23C97E"]
+			id: "4744E02F2C66863C"
+			tasks: [{
+				id: "1D5D255F1C55DBE8"
+				type: "item"
+				item: {
+					id: "envirocore:ionite_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Your First Demon Will"
+			icon: "bloodmagic:defaultcrystal"
+			x: 22.0d
+			y: -4.0d
+			description: ["Placing a Tartaric Gem into a Demon Crucible will take the will within it and disperse it into the chunk. Will from a chunk will be drained by a Demon Crystallizer, which will slowly grow a Demon Will Cluster. Breaking a Demon Will Cluster with a Pickaxe will yield an amount of Demon Will equivalent to the amount of crystals on the block."]
+			dependencies: ["4744E02F2C66863C"]
+			id: "48B551999D0B8DF3"
+			tasks: [
+				{
+					id: "7C393514C8E5BDFB"
+					type: "item"
+					item: "bloodmagic:demoncrucible"
+				}
+				{
+					id: "550E43EB58EE1650"
+					type: "item"
+					item: "bloodmagic:demoncrystallizer"
+				}
+				{
+					id: "0763ACF0860D030B"
+					type: "item"
+					item: "bloodmagic:defaultcrystal"
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: -2.0d
+			description: ["Right-clicking on a Demon Will Cluster with a Greater Tartaric Gem containing at least 1,024 Will will remove 1 crystal from the cluster and drop it as a Demon Will Crystal. It will not harvest it if there is only 1 crystal left. This will save you Demon Will, make the automation simpler, and can be automated with Deployers or similar."]
+			dependencies: ["48B551999D0B8DF3"]
+			id: "63517D29818C7FFF"
+			tasks: [{
+				id: "2C5A4C7F24B20E0A"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: {
+						souls: 4096.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Resonance of the Faceted Crystal"
+			icon: "bloodmagic:destructivecrystal"
+			x: 22.0d
+			y: 0.0d
+			description: ["After constructing this ritual, place a Demon Crystallizer atop the Master Ritual Stone and wait for it to grow a Demon Will Cluster with at least 5 crystals. After activating the ritual, it will split the Demon Will Cluster into 4 separate Demon Will Clusters, all with different aspcets. They will grow independently and can also be automated in the same way."]
+			dependencies: ["63517D29818C7FFF"]
+			id: "5EF8D9651FFD3644"
+			tasks: [
+				{
+					id: "7D2FDF1E51C3C445"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "6F07A03435F45E5C"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 20L
+				}
+				{
+					id: "34D42AD90278F6FC"
+					type: "item"
+					item: "bloodmagic:corrosivecrystal"
+				}
+				{
+					id: "4B18069E26F306D8"
+					type: "item"
+					item: "bloodmagic:vengefulcrystal"
+				}
+				{
+					id: "13B5178CD895BA2A"
+					type: "item"
+					item: "bloodmagic:destructivecrystal"
+				}
+				{
+					id: "1944E8D9E97E797C"
+					type: "item"
+					item: "bloodmagic:steadfastcrystal"
+				}
+			]
+		}
+		{
+			title: "Enchanted Crystal"
+			x: 24.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["5EF8D9651FFD3644"]
+			size: 2.5d
+			repeatable: true
+			id: "3D92C16DF19A64BA"
+			tasks: [{
+				id: "69CC942ED1A2C010"
+				type: "item"
+				item: {
+					id: "kubejs:enchanted_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "19352603CD55CDA3"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛯ\\nI’ve been thinking a lot about any types of absolutely final methods to resolve the conflict. It’s a cold war over resources, right? The way to resolve it is to make resources easier to obtain for everyone.\\n\"}"]
+						title: "Entry ᛯ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+	]
+}

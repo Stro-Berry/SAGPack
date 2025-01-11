@@ -1,0 +1,611 @@
+{
+	id: "5751158AE0296B21"
+	group: ""
+	order_index: 4
+	filename: "chapter_4b_natures_aura"
+	title: "4a - Nature's Aura"
+	icon: {
+		id: "naturesaura:gold_leaf"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Nature's Aura"
+			icon: {
+				id: "naturesaura:gold_leaf"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Reconnect with your Roots"
+			description: ["Right click your Brilliant Fiber onto some leaves, then once they turn golden break them to get Gold Leaves"]
+			dependencies: ["220824DDF2C6E80B"]
+			size: 1.5d
+			id: "2850F7738A89CA07"
+			tasks: [{
+				id: "38E02D4469C9250F"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_leaf"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4L
+			}]
+			rewards: [{
+				id: "3D8AB98FFAA57791"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["2850F7738A89CA07"]
+			id: "2AFD38C184F5C8DC"
+			tasks: [{
+				id: "1CDA8D5578690BE0"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_powder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ritual of the Forest"
+			icon: {
+				id: "naturesaura:wood_stand"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 3.0d
+			y: -1.5d
+			description: ["Read the Book of Natural Aura to see how to build the structure. The golden powder will be consumed in the recipe."]
+			dependencies: ["2AFD38C184F5C8DC"]
+			id: "5974668F1753B0A5"
+			tasks: [
+				{
+					id: "36F02372A75BDCC6"
+					type: "item"
+					item: {
+						id: "naturesaura:wood_stand"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "4820221605A2FBBC"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_powder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Natural Altar"
+			icon: {
+				id: "naturesaura:nature_altar"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"5974668F1753B0A5"
+				"691ABDD7247DA442"
+			]
+			id: "16FBD18E1473634C"
+			tasks: [
+				{
+					id: "2C793D0506958379"
+					type: "item"
+					item: {
+						id: "naturesaura:nature_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "46EE7139420846F9"
+					type: "item"
+					title: "20x Planks"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:tag"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "minecraft:planks"
+									}
+								}
+								{
+									id: "itemfilters:not"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										items: [{
+											id: "itemfilters:or"
+											Count: 1b
+											tag: {
+												temperature: 0.0d
+												items: [
+													{
+														id: "minecraft:warped_planks"
+														Count: 1b
+													}
+													{
+														id: "minecraft:crimson_planks"
+														Count: 1b
+														tag: {
+															temperature: 0.0d
+														}
+													}
+												]
+											}
+										}]
+									}
+								}
+							]
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "3B671B66DC8F1EF4"
+					type: "item"
+					item: {
+						id: "minecraft:stone_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "6E0CBEB23690169E"
+					type: "item"
+					item: {
+						id: "minecraft:chiseled_stone_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "5E157F1A9569EA0E"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_brick"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["Right click air in the overworld with this to get Bottled Sunlight, in the Nether to get Bottled Ghosts, and in the End to get Bottled Darkness."]
+			dependencies: ["2AFD38C184F5C8DC"]
+			id: "1B2F5BEC3D29390B"
+			tasks: [{
+				id: "748C14E302E288CE"
+				type: "item"
+				item: {
+					id: "naturesaura:bottle_two_the_rebottling"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tier 1 Tokens"
+			icon: {
+				id: "naturesaura:token_joy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["1B2F5BEC3D29390B"]
+			id: "691ABDD7247DA442"
+			tasks: [{
+				id: "51898C596684EB26"
+				type: "item"
+				item: {
+					id: "naturesaura:token_joy"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Infused Materials"
+			icon: {
+				id: "naturesaura:infused_iron"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["16FBD18E1473634C"]
+			id: "38CAFEBB85476A53"
+			tasks: [
+				{
+					id: "5E2E15729089FD45"
+					type: "item"
+					item: {
+						id: "naturesaura:infused_iron"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "006D87E995DDF6C5"
+					type: "item"
+					item: {
+						id: "naturesaura:infused_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Crimson Altar"
+			icon: {
+				id: "naturesaura:aura_bottle"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					stored_type: "naturesaura:nether"
+				}
+			}
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["16FBD18E1473634C"]
+			id: "6CF1240B2946AB6E"
+			tasks: [
+				{
+					id: "26456E80BC011D1A"
+					type: "item"
+					item: {
+						id: "naturesaura:nature_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "36D6C241FE2518A0"
+					type: "item"
+					title: "20x Nether Planks"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "minecraft:crimson_planks"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "minecraft:warped_planks"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+							]
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "663E1A5254C8187C"
+					type: "item"
+					item: {
+						id: "minecraft:red_nether_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "1EDE0E8E20191FCD"
+					type: "item"
+					item: {
+						id: "minecraft:nether_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "291949B55F1C765D"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_nether_brick"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Tainted Gold"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["6CF1240B2946AB6E"]
+			id: "4C00384110CC501A"
+			tasks: [{
+				id: "5A6F1EA47A943DEA"
+				type: "item"
+				item: {
+					id: "naturesaura:tainted_gold"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Offering Table"
+			icon: {
+				id: "naturesaura:offering_table"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.0d
+			y: 1.5d
+			description: ["You'll need to kill Hoglins using a Knife to make the Stuffed Hoglin for Tokens of Fear."]
+			dependencies: [
+				"38CAFEBB85476A53"
+				"4C00384110CC501A"
+			]
+			id: "232AA3CEE8131C1B"
+			tasks: [
+				{
+					id: "65246A1C3BAEA349"
+					type: "item"
+					item: {
+						id: "naturesaura:offering_table"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3F69E5AAA16989A2"
+					type: "item"
+					title: "36x Any Flower"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+					count: 36L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			dependencies: ["232AA3CEE8131C1B"]
+			id: "0989D61CD516B337"
+			tasks: [{
+				id: "349392DA5E1489BE"
+				type: "item"
+				item: {
+					id: "naturesaura:sky_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tier 2 Tokens"
+			icon: {
+				id: "naturesaura:token_euphoria"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 9.0d
+			y: 1.5d
+			dependencies: ["232AA3CEE8131C1B"]
+			id: "21B6B4B754073F73"
+			tasks: [
+				{
+					id: "10DD1485AD162BB6"
+					type: "item"
+					item: {
+						id: "naturesaura:token_euphoria"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0818F08A014FCAA5"
+					type: "item"
+					item: {
+						id: "naturesaura:token_terror"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5C7699E1601B6CB0"
+					type: "item"
+					item: {
+						id: "naturesaura:token_rage"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5C4265DE5596C140"
+					type: "item"
+					item: {
+						id: "naturesaura:token_grief"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			shape: "gear"
+			dependencies: [
+				"0989D61CD516B337"
+				"21B6B4B754073F73"
+				"475EE2E4D2EB40F4"
+			]
+			size: 2.5d
+			id: "732F9C3F316EABA1"
+			tasks: [{
+				id: "51533C2F969B3C64"
+				type: "item"
+				item: {
+					id: "naturesaura:conversion_catalyst"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ancient Trees"
+			x: 4.0d
+			y: -3.0d
+			dependencies: [
+				"5974668F1753B0A5"
+				"1F0A9D96FC7172F0"
+			]
+			id: "475EE2E4D2EB40F4"
+			tasks: [{
+				id: "21193D5BEAFC9B6F"
+				type: "item"
+				item: {
+					id: "naturesaura:ancient_sapling"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Fight the Dragon"
+			x: 2.0d
+			y: -3.0d
+			description: ["Go to the End and fight the Ender Dragon. Then, travel through the gateway and collect some Chorus."]
+			id: "1F0A9D96FC7172F0"
+			tasks: [{
+				id: "037773F3C63192B0"
+				type: "kill"
+				icon: {
+					id: "minecraft:dragon_head"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+		}
+	]
+}

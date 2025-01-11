@@ -1,0 +1,1742 @@
+{
+	id: "17A5801EB0C81E31"
+	group: ""
+	order_index: 11
+	filename: "chapter_9_advent_of_ascension_i"
+	title: "9 - Advent of Ascension I"
+	icon: {
+		id: "aoa3:carved_rune_of_travel"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Advent of Ascension I"
+			icon: {
+				id: "aoa3:carved_rune_of_travel"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: -10.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Dimensional Discovery"
+			dependencies: ["679380B199F9EB49"]
+			size: 1.5d
+			id: "1383473FA6EBB8F6"
+			tasks: [{
+				id: "68DA54EC86029345"
+				type: "item"
+				item: {
+					id: "aoa3:ancient_rock"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ancient Teleporter"
+			icon: {
+				id: "aoa3:carved_rune_of_power"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: -8.0d
+			y: 0.0d
+			description: ["To build the teleport, start by placing your 5 runes from left to right in the same order they are in the quest book. Build 5 blocks up on both sides, and then connect with 3 blocks at the top. It should look like a nether portal frame. You will need to craft realmstones of your cooresponding dimension to light your portal."]
+			dependencies: ["1383473FA6EBB8F6"]
+			id: "133BF183A003C13C"
+			tasks: [
+				{
+					id: "5FDB16F6CD429347"
+					type: "item"
+					item: {
+						id: "aoa3:ancient_rock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 13L
+				}
+				{
+					id: "66436480FECC9736"
+					type: "item"
+					item: {
+						id: "aoa3:carved_rune_of_direction"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "18EFF739F804AB1C"
+					type: "item"
+					item: {
+						id: "aoa3:carved_rune_of_space"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1AB6AD491B1BABD9"
+					type: "item"
+					item: {
+						id: "aoa3:carved_rune_of_power"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "46529A865DE5A829"
+					type: "item"
+					item: {
+						id: "aoa3:carved_rune_of_reality"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "544C0613CF0704B3"
+					type: "item"
+					item: {
+						id: "aoa3:carved_rune_of_travel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Barathos"
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "15B663A9969B35ED"
+			tasks: [{
+				id: "43166C7A5D59AB52"
+				type: "item"
+				item: {
+					id: "aoa3:barathos_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Deeplands"
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "08CDEAC93B5E6D2C"
+			tasks: [{
+				id: "37657AC7F47E749A"
+				type: "item"
+				item: {
+					id: "aoa3:deeplands_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Precasia"
+			x: 5.0d
+			y: -7.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "0FDE89FE4B7CEC56"
+			tasks: [{
+				id: "2EC9F9AD13440F25"
+				type: "item"
+				item: {
+					id: "aoa3:precasia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Creeponia"
+			x: 5.0d
+			y: -4.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "3B428724F89ABEE7"
+			tasks: [{
+				id: "6524788BBEB72AE3"
+				type: "item"
+				item: {
+					id: "aoa3:creeponia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Abyss"
+			x: 5.0d
+			y: 4.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "48FCF5517AA90001"
+			tasks: [{
+				id: "3C0CF17D5FE95804"
+				type: "item"
+				item: {
+					id: "aoa3:abyss_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Lelyetia"
+			x: 5.0d
+			y: 7.5d
+			dependencies: ["133BF183A003C13C"]
+			id: "68FB87F34B8731DE"
+			tasks: [{
+				id: "3CA0CC21750F5933"
+				type: "item"
+				item: {
+					id: "aoa3:lelyetia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Creeponia Gems"
+			icon: {
+				id: "aoa3:ornamyte"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.5d
+			y: -4.5d
+			description: [""]
+			dependencies: ["3B428724F89ABEE7"]
+			id: "5BA3AD8ABDB0EF68"
+			tasks: [
+				{
+					id: "3C9AAFBC75721BF9"
+					type: "item"
+					item: {
+						id: "aoa3:ornamyte"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "10D082CAC4E042D8"
+					type: "item"
+					item: {
+						id: "aoa3:jewelyte"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1688E90555290F8E"
+					type: "item"
+					item: {
+						id: "aoa3:gemenyte"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -6.0d
+			description: ["A rare drop from mobs in Creeponia."]
+			dependencies: ["3B428724F89ABEE7"]
+			id: "05E956BA252F7FFD"
+			tasks: [{
+				id: "298E618D59549EDD"
+				type: "item"
+				item: {
+					id: "aoa3:unstable_gunpowder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Creepy Raging Entity of Extreme Power"
+			icon: {
+				id: "aoa3:explosive_gems"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -4.5d
+			description: ["Find the Creeper HQ, go to the top, and use your Explosive Gems on it. Then, defeat C.R.E.E.P."]
+			dependencies: [
+				"05E956BA252F7FFD"
+				"5BA3AD8ABDB0EF68"
+			]
+			id: "21B93F1DB88A4A35"
+			tasks: [
+				{
+					id: "63341ADE741D207C"
+					type: "item"
+					item: {
+						id: "aoa3:explosive_gems"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "62CA1A313DB79C8A"
+					type: "observation"
+					title: "Find a Creep Altar"
+					icon: {
+						id: "aoa3:creep_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:creep_altar"
+				}
+				{
+					id: "466850425FE7F37F"
+					type: "kill"
+					title: "Defeat C.R.E.E.P"
+					icon: {
+						id: "minecraft:creeper_head"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:creep"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -9.0d
+			description: ["Since these are required to make Skeletal Ingots, and Skeletal Ingots are used to make these, you'll need to find this underground first. Look for some Isosaur spawners underground, there will be Skeletal Bricks around it."]
+			dependencies: ["0FDE89FE4B7CEC56"]
+			id: "6E952763EF7E8817"
+			tasks: [{
+				id: "79E0553B7951CE87"
+				type: "item"
+				item: {
+					id: "aoa3:skeletal_bricks"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "That's Me!"
+			x: 7.5d
+			y: -7.5d
+			description: ["Look for an orange temple made of these bricks. Go inside to the final room, where you'll find a Kaiyu Spawner, Use it to farm different skeletal fragments."]
+			dependencies: ["0FDE89FE4B7CEC56"]
+			id: "68401DE9768A8C53"
+			tasks: [{
+				id: "3B109149B91D8698"
+				type: "observation"
+				title: "Find a Kaiyu Temple"
+				icon: {
+					id: "aoa3:kaiyu_temple_block_plain"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "aoa3:kaiyu_temple_block_plain"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -7.5d
+			dependencies: [
+				"6E952763EF7E8817"
+				"68401DE9768A8C53"
+			]
+			id: "2CD875A223ECC65D"
+			tasks: [{
+				id: "71065A8ADF3EC994"
+				type: "item"
+				item: {
+					id: "aoa3:skeletal_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tyrosaur"
+			icon: {
+				id: "aoa3:bone_horn"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 12.5d
+			y: -6.0d
+			description: ["Use this in Precasia to spawn Tyrosaur."]
+			dependencies: ["2CD875A223ECC65D"]
+			id: "7B8F44D2414F800E"
+			tasks: [
+				{
+					id: "7737493341A240A4"
+					type: "item"
+					item: {
+						id: "aoa3:bone_horn"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "081CAF4BE268FCC8"
+					type: "kill"
+					title: "Defeat Tyrosaur"
+					icon: {
+						id: "aoa3:primal_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:tyrosaur"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			description: ["This block is found at a Charging Station structure, it needs to be placed on a Kror Altar for Boulder Dash to be used."]
+			dependencies: ["08CDEAC93B5E6D2C"]
+			id: "18BA066463AE017A"
+			tasks: [{
+				id: "5AAA4EB2F2298E28"
+				type: "item"
+				item: {
+					id: "aoa3:charging_table"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Deeplands Resources"
+			icon: {
+				id: "aoa3:dense_rock"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.5d
+			y: -1.5d
+			description: ["Chitin is dropped from most mobs in the Deeplands, and Dense Rock is dropped from Deep Case blocks, which many are found in the Kror arena."]
+			dependencies: ["08CDEAC93B5E6D2C"]
+			id: "237546F2550B9900"
+			tasks: [
+				{
+					id: "179B61BDB7E5E570"
+					type: "item"
+					item: {
+						id: "aoa3:dense_rock"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "065F85414A3A9A12"
+					type: "item"
+					item: {
+						id: "aoa3:chitin"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Kror"
+			icon: {
+				id: "aoa3:boulder_dash"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -1.5d
+			description: ["Use the Boulder Dash on the Kror Altar with a Charging Table placed on top, and then defeat Kror."]
+			dependencies: [
+				"237546F2550B9900"
+				"18BA066463AE017A"
+			]
+			id: "45A04AA245D01A9B"
+			tasks: [
+				{
+					id: "309CD581B1DD7E5E"
+					type: "item"
+					item: {
+						id: "aoa3:boulder_dash"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "050138697518AC5F"
+					type: "observation"
+					title: "Find a Kror Altar"
+					icon: {
+						id: "aoa3:kror_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:kror_altar"
+				}
+				{
+					id: "78E6E96D6BA11902"
+					type: "kill"
+					title: "Defeat Kror"
+					icon: {
+						id: "aoa3:subterranean_greatblade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:kror"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["There are many required structures for Advent of Ascension, but lucky they can all be found with the Explorer's Compass."]
+			dependencies: ["133BF183A003C13C"]
+			id: "7AC15A3C90CB1FAF"
+			tasks: [{
+				id: "3AA3F5266EDE515C"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The Hive King"
+			icon: {
+				id: "aoa3:hive_egg"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.5d
+			y: 1.5d
+			description: ["Right click on a Tharafly while holding a Hive Chunk to obtain a Hive Egg. Then, locate a Hive Nest and use the Hive Egg on the Hive Spawner."]
+			dependencies: ["15B663A9969B35ED"]
+			id: "24C0B4B27F46603E"
+			tasks: [
+				{
+					id: "36A42EAEE8DF0D34"
+					type: "item"
+					item: {
+						id: "aoa3:hive_egg"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2208C3DE3C680561"
+					type: "observation"
+					title: "Locate a Hive Nest"
+					icon: {
+						id: "aoa3:hive_spawner"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:hive_spawner"
+				}
+				{
+					id: "16DA305CA8DDC71F"
+					type: "kill"
+					title: "Defeat the Hive King"
+					icon: {
+						id: "aoa3:hive_howitzer"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+							HideFlags: 2
+						}
+					}
+					entity: "aoa3:hive_king"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			description: ["Defeating the Hive King will drop Varsium Nuggets, which can be turned into Baronyte."]
+			dependencies: ["24C0B4B27F46603E"]
+			id: "666F156FF026DD1D"
+			tasks: [{
+				id: "48355AD09F8D3AF9"
+				type: "item"
+				item: {
+					id: "aoa3:baronyte_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Baroness"
+			icon: {
+				id: "aoa3:warlock_gem"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 1.5d
+			description: ["Obtain a Warlock Gem and use it at the Baroness Arena."]
+			dependencies: ["666F156FF026DD1D"]
+			id: "440585F96C0BCD21"
+			tasks: [
+				{
+					id: "2A1E7B78321B0372"
+					type: "item"
+					item: {
+						id: "aoa3:warlock_gem"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7C22B0AEF5F17ED7"
+					type: "observation"
+					title: "Find a Baroness Altar"
+					icon: {
+						id: "aoa3:baroness_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:baroness_altar"
+				}
+				{
+					id: "53697F7F1F799F7B"
+					type: "kill"
+					title: "Defeat Baroness"
+					icon: {
+						id: "aoa3:baron_staff"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:baroness"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Elusive"
+			icon: {
+				id: "aoa3:staring_eye"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.5d
+			y: 6.0d
+			description: ["Obtain a Staring Eye, which is an occasional drop from a Tentacle Eye. Then, use it at an Illusion Tree."]
+			dependencies: ["48FCF5517AA90001"]
+			id: "4B4A2DFCF4C2EEA3"
+			tasks: [
+				{
+					id: "553604EA27AC6D5C"
+					type: "item"
+					item: {
+						id: "aoa3:staring_eye"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "18E8AE7B608FD11C"
+					type: "observation"
+					title: "Find an Illusion Altar"
+					icon: {
+						id: "aoa3:illusion_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:illusion_altar"
+				}
+				{
+					id: "09FA830AD0CC063B"
+					type: "kill"
+					title: "Defeat Elusive"
+					icon: {
+						id: "aoa3:illusion_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:elusive"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Abyss Resources"
+			icon: {
+				id: "aoa3:bloodstone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 7.5d
+			y: 4.5d
+			description: ["Nightmare Flakes are dropped by most mobs in Abyss, and Bloodstone is mined from Bloodstone Ore."]
+			dependencies: ["48FCF5517AA90001"]
+			id: "3DD84C3E5F8FD7C9"
+			tasks: [
+				{
+					id: "45C79319E532F07C"
+					type: "item"
+					item: {
+						id: "aoa3:bloodstone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1EE47DB283D4C5E5"
+					type: "item"
+					item: {
+						id: "aoa3:nightmare_flakes"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Shadowlord"
+			icon: {
+				id: "aoa3:book_of_shadows"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 4.5d
+			description: ["Find a Shadowlord Platform and summon Shadowlord."]
+			dependencies: [
+				"3DD84C3E5F8FD7C9"
+				"4B4A2DFCF4C2EEA3"
+			]
+			id: "1BF05B5F6FB744FC"
+			tasks: [
+				{
+					id: "168521A2B9F81658"
+					type: "item"
+					item: {
+						id: "aoa3:book_of_shadows"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1D6AB5AA297A6AEE"
+					type: "observation"
+					title: "Find a Shadow Altar"
+					icon: {
+						id: "aoa3:shadow_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:shadow_altar"
+				}
+				{
+					id: "24EF477B39D0EE94"
+					type: "kill"
+					title: "Defeat Shadowlord"
+					icon: {
+						id: "aoa3:shadow_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:shadowlord"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 7.5d
+			description: ["On the underside of the dimension, Zhinx Enclaves can spawn. Inside is a spawner that will spawn Zhinxs."]
+			dependencies: ["68FB87F34B8731DE"]
+			id: "454D7AD75530C736"
+			tasks: [{
+				id: "2AFBBA695FE28B14"
+				type: "item"
+				item: {
+					id: "aoa3:zhinx_dust"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Paravites"
+			x: 7.5d
+			y: 9.0d
+			description: ["Find a Paravite Hive on the underside of the dimension, and collect some of the blocks."]
+			dependencies: ["68FB87F34B8731DE"]
+			id: "43E582CEBE2A541F"
+			tasks: [{
+				id: "23D35BC729D8BA1E"
+				type: "item"
+				item: {
+					id: "aoa3:paravite_hive"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Flye"
+			icon: {
+				id: "aoa3:yellow_spores"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 7.5d
+			description: ["Using Yellow Spores on a Graw Altar at a Graw Pillar will spawn a glowing Flye. Killing it will give you another item."]
+			dependencies: [
+				"43E582CEBE2A541F"
+				"454D7AD75530C736"
+			]
+			id: "61EE29589073A1EE"
+			tasks: [
+				{
+					id: "7C653C44F846722D"
+					type: "item"
+					item: {
+						id: "aoa3:yellow_spores"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "30CA704870ED055A"
+					type: "observation"
+					title: "Find a Graw Altar"
+					icon: {
+						id: "aoa3:graw_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:graw_altar"
+				}
+			]
+		}
+		{
+			title: "Graw"
+			icon: {
+				id: "aoa3:guardians_eye"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.5d
+			y: 6.0d
+			description: ["Using this eye on the Graw Altar will summon Graw."]
+			dependencies: ["61EE29589073A1EE"]
+			id: "3C53EE8D32C414B7"
+			tasks: [
+				{
+					id: "1B6A89EA1F3AF01C"
+					type: "item"
+					item: {
+						id: "aoa3:guardians_eye"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "69364669F0C6818D"
+					type: "kill"
+					title: "Defeat Graw"
+					icon: {
+						id: "aoa3:lelyetian_greatblade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:graw"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Candyland"
+			x: 15.0d
+			y: -4.5d
+			dependencies: ["7B8F44D2414F800E"]
+			id: "42733D82295CC8B5"
+			tasks: [{
+				id: "7A927029CAEDA065"
+				type: "item"
+				item: {
+					id: "aoa3:candyland_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Mysterium"
+			x: 12.5d
+			y: -4.5d
+			dependencies: ["21B93F1DB88A4A35"]
+			id: "3765319DDEF3A8B1"
+			tasks: [{
+				id: "1D818BAEB79F09B0"
+				type: "item"
+				item: {
+					id: "aoa3:mysterium_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Haven"
+			x: 15.0d
+			y: 4.5d
+			dependencies: ["3C53EE8D32C414B7"]
+			id: "2DCB0E08A0D4BFF1"
+			tasks: [{
+				id: "3F66171D25343E38"
+				type: "item"
+				item: {
+					id: "aoa3:haven_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Dustopia"
+			x: 12.5d
+			y: 4.5d
+			dependencies: ["1BF05B5F6FB744FC"]
+			id: "13AB661D45D7138A"
+			tasks: [{
+				id: "1597A74667FCBB6C"
+				type: "item"
+				item: {
+					id: "aoa3:dustopia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Gingerbread House"
+			x: 15.0d
+			y: -3.0d
+			description: ["Locate a Gingerbread House."]
+			dependencies: ["42733D82295CC8B5"]
+			id: "615DBD5C13B43F1B"
+			tasks: [{
+				id: "333D967E6F20543E"
+				type: "item"
+				item: {
+					id: "aoa3:gingerbread"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Candy Cane"
+			x: 17.5d
+			y: -3.0d
+			description: ["Find an Infested Candy Cane and kill some Cane Bugs."]
+			dependencies: ["42733D82295CC8B5"]
+			id: "1EEBA86ED87D7126"
+			tasks: [{
+				id: "7D1815ABB74CF061"
+				type: "item"
+				item: {
+					id: "aoa3:candy_cane"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Cotton Candor"
+			icon: {
+				id: "aoa3:treat_bag"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: -1.5d
+			description: ["Use the Treat Bag anywhere in Candyland to summon Cotton Candor."]
+			dependencies: [
+				"1EEBA86ED87D7126"
+				"615DBD5C13B43F1B"
+			]
+			id: "7C0F4E3A01B93337"
+			tasks: [
+				{
+					id: "27F04F0CC0195472"
+					type: "item"
+					item: {
+						id: "aoa3:treat_bag"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "65AFD1759AD4DC4E"
+					type: "kill"
+					title: "Defeat Cotton Candor"
+					icon: {
+						id: "aoa3:cotton_crusher"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:cotton_candor"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "The Four Guardians"
+			icon: {
+				id: "aoa3:voliant_heart"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: 3.0d
+			description: ["Find a Voliant, a rare mob in Haven. Kill it to get a Voliant Heart. Then, find a Guardian Tower and make sure that the Guardian Altar has a redstone signal from 4 sides."]
+			dependencies: ["2DCB0E08A0D4BFF1"]
+			id: "501B75EB64A2D08E"
+			tasks: [
+				{
+					id: "3A694FEDEB0F23BB"
+					type: "item"
+					item: {
+						id: "aoa3:voliant_heart"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4E290E85892F845D"
+					type: "observation"
+					title: "Find a Guardian Altar"
+					icon: {
+						id: "aoa3:guardian_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:guardian_altar"
+				}
+				{
+					id: "1D48128A74D961D9"
+					type: "kill"
+					title: "Defeat the Blue Guardian"
+					icon: {
+						id: "aoa3:blue_crystal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:blue_guardian"
+					value: 1L
+				}
+				{
+					id: "228921844F0AEDD9"
+					type: "kill"
+					title: "Defeat the Green Guardian"
+					icon: {
+						id: "aoa3:green_crystal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:green_guardian"
+					value: 1L
+				}
+				{
+					id: "1E4813D0D18299FB"
+					type: "kill"
+					title: "Defeat the Red Guardian"
+					icon: {
+						id: "aoa3:red_crystal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:red_guardian"
+					value: 1L
+				}
+				{
+					id: "60B6039108FE6055"
+					type: "kill"
+					title: "Defeat the Yellow Guardian"
+					icon: {
+						id: "aoa3:yellow_crystal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:yellow_guardian"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Haven Resources"
+			icon: {
+				id: "aoa3:floating_stone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: 3.0d
+			description: ["Floating Stones are rarely dropped from mobs in Haven. Crystallite is from an ore."]
+			dependencies: ["2DCB0E08A0D4BFF1"]
+			id: "6FA33DCE0E8D1631"
+			tasks: [
+				{
+					id: "0876B5E3BD73902F"
+					type: "item"
+					item: {
+						id: "aoa3:floating_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5E4B44E487386F89"
+					type: "item"
+					item: {
+						id: "aoa3:crystallite"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Rockrider"
+			icon: {
+				id: "aoa3:heavy_boulder"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: 1.5d
+			description: ["Throw this on the ground anywhere in Haven."]
+			dependencies: [
+				"501B75EB64A2D08E"
+				"6FA33DCE0E8D1631"
+			]
+			id: "1486AEE8F7B95044"
+			tasks: [
+				{
+					id: "08F99091BA55B428"
+					type: "item"
+					item: {
+						id: "aoa3:heavy_boulder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7298E30B33EBA83B"
+					type: "kill"
+					title: "Defeat Rockrider"
+					icon: {
+						id: "aoa3:rockbasher_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:rock_rider"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Fungal Resources"
+			icon: {
+				id: "aoa3:mystic_shrooms"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.5d
+			y: -3.0d
+			description: ["These are dropped rarely from mobs in Mysterium. Mystic Shrooms are significantly more uncommon. Mystite is an ore."]
+			dependencies: ["3765319DDEF3A8B1"]
+			id: "2F04220058162E8D"
+			tasks: [
+				{
+					id: "6667B76F5971F80B"
+					type: "item"
+					item: {
+						id: "aoa3:mushroom_spores"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "721BB8232A856448"
+					type: "item"
+					item: {
+						id: "aoa3:mystic_shrooms"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "06923F3002C593CE"
+					type: "item"
+					item: {
+						id: "aoa3:mystite_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			description: ["Locate a Runic Arena. Hitting the Runic Golems that spawn while their shield is up will drop Active Rune Stones. Using them on the Runic Block in the center will convert it into a Runic Bomb. You can use them to damage the Runic Golems, but after you obtain the Runic Bombs you are able to progress."]
+			dependencies: ["3765319DDEF3A8B1"]
+			hide_text_until_complete: false
+			id: "10CF242229BA7F6A"
+			tasks: [{
+				id: "08D5E4689E9F84C5"
+				type: "item"
+				item: {
+					id: "aoa3:runic_bomb"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			title: "King Shroomus"
+			icon: {
+				id: "aoa3:shroom_stone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.5d
+			y: -1.5d
+			description: ["Dropping this anywhere in Mysterium will summon King Shroomus."]
+			dependencies: [
+				"10CF242229BA7F6A"
+				"2F04220058162E8D"
+			]
+			id: "7AD6D6E04F4A862F"
+			tasks: [
+				{
+					id: "37BC1A31E25BB616"
+					type: "item"
+					item: {
+						id: "aoa3:shroom_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1092C00D56B0BCB7"
+					type: "kill"
+					title: "Defeat King Shroomus"
+					icon: {
+						id: "aoa3:shroomus_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:king_shroomus"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 3.0d
+			description: ["Hunt down some Urkas and collect their hides."]
+			dependencies: ["13AB661D45D7138A"]
+			id: "0E104AB5BD2069D3"
+			tasks: [{
+				id: "78029AECE816C5EE"
+				type: "item"
+				item: {
+					id: "aoa3:urka_hide"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			description: ["Locate an Arkzyne Outpost in Dustopia, and get a Primordial Skull from an Arkzyne."]
+			dependencies: ["13AB661D45D7138A"]
+			id: "0A06A539063B5F1E"
+			tasks: [{
+				id: "51E563460DD32707"
+				type: "item"
+				item: {
+					id: "aoa3:primordial_skull"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The Primordial Five"
+			icon: {
+				id: "aoa3:darkly_powder"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.5d
+			y: 1.5d
+			description: ["Find a Primordial Shrine, and use thhe Darkly Powder to light up all of the Dustopian Lamps. Then, right click the Primordial Shrine."]
+			dependencies: [
+				"0E104AB5BD2069D3"
+				"0A06A539063B5F1E"
+			]
+			id: "63BECD0A5E2CF1D0"
+			tasks: [
+				{
+					id: "579ACD0A40C341F9"
+					type: "item"
+					item: {
+						id: "aoa3:darkly_powder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "35A0AF8D19B5A038"
+					type: "observation"
+					title: "Find a Primordial Shrine"
+					icon: {
+						id: "aoa3:primordial_shrine"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:primordial_shrine"
+				}
+				{
+					id: "33A720F5EF505DB6"
+					type: "kill"
+					title: "Defeat Kajaros"
+					icon: {
+						id: "aoa3:primordial_chestplate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:kajaros"
+					value: 1L
+				}
+				{
+					id: "0628F00B4348F95C"
+					type: "kill"
+					title: "Defeat Miskel"
+					icon: {
+						id: "aoa3:primordial_staff"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:miskel"
+					value: 1L
+				}
+				{
+					id: "5937B9E1BB504353"
+					type: "kill"
+					title: "Defeat Harkos"
+					icon: {
+						id: "aoa3:primordial_bow"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:harkos"
+					value: 1L
+				}
+				{
+					id: "3ABA5BF82B699BE0"
+					type: "kill"
+					title: "Defeat Raxxan"
+					icon: {
+						id: "aoa3:primordial_helmet"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:raxxan"
+					value: 1L
+				}
+				{
+					id: "4258D4873377CF50"
+					type: "kill"
+					title: "Defeat Okazor"
+					icon: {
+						id: "aoa3:primordial_greatblade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:okazor"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Heavenly Aluminosilicate Catalyst"
+			x: 12.5d
+			y: 0.0d
+			dependencies: [
+				"440585F96C0BCD21"
+				"63BECD0A5E2CF1D0"
+				"7C0F4E3A01B93337"
+				"45A04AA245D01A9B"
+				"7AD6D6E04F4A862F"
+				"1486AEE8F7B95044"
+			]
+			id: "388A28B45E9FC38F"
+			tasks: [{
+				id: "79B5E6B17F9BFA90"
+				type: "item"
+				item: {
+					id: "kubejs:heavenly_aluminosilicate_catalyst"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "White Substance"
+			x: 20.0d
+			y: -1.5d
+			dependencies: ["388A28B45E9FC38F"]
+			id: "2BF2B475684D04B2"
+			tasks: [{
+				id: "2F6C651F03C6B42A"
+				type: "item"
+				item: {
+					id: "kubejs:white_substance"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Blue Substance"
+			x: 20.0d
+			y: 1.5d
+			dependencies: ["388A28B45E9FC38F"]
+			id: "4203D67F1557D8F3"
+			tasks: [{
+				id: "58224F700D68DA1E"
+				type: "item"
+				item: {
+					id: "kubejs:blue_substance"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Azure Substance"
+			x: 22.5d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"2BF2B475684D04B2"
+				"4203D67F1557D8F3"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "5E5D303F724D6E2F"
+			tasks: [{
+				id: "027244F03DBE55A0"
+				type: "item"
+				item: {
+					id: "kubejs:azure_substance"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DDBC0E972ABDD0E"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛇᛡ\\nOur research is continuing to prove successful, as we make more and more plans and also some blueprint to infinitely generate objects. We will find as many as we can and decide which one to attempt to create from there.\\n\"}"]
+						title: "Entry ᛇᛡ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+	]
+}

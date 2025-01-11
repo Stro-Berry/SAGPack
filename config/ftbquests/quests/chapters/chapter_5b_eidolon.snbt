@@ -1,0 +1,894 @@
+{
+	id: "236FA025F350959C"
+	group: ""
+	order_index: 6
+	filename: "chapter_5b_eidolon"
+	title: "5a - Eidolon"
+	icon: {
+		id: "eidolon:straw_effigy"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Eidolon"
+			icon: {
+				id: "eidolon:straw_effigy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Ancient Magic"
+			description: ["Use your new Catalyst to make some Pewter."]
+			dependencies: ["732F9C3F316EABA1"]
+			size: 1.5d
+			id: "60DDB042D95ADB08"
+			tasks: [{
+				id: "21129032BAFF46E1"
+				type: "item"
+				item: {
+					id: "eidolon:pewter_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 2L
+			}]
+			rewards: [{
+				id: "375851F03F597969"
+				type: "item"
+				item: {
+					id: "eidolon:codex"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["Most Eidolon recipes will be made in this."]
+			dependencies: ["60DDB042D95ADB08"]
+			id: "1CE3D1A5481797E4"
+			tasks: [{
+				id: "056094091E14A300"
+				type: "item"
+				item: {
+					id: "eidolon:worktable"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["Light a fire under the Crucible in order for it to function. Follow the steps in JEI to make recipes."]
+			dependencies: ["1CE3D1A5481797E4"]
+			id: "36252F7E4CD0B746"
+			tasks: [{
+				id: "6C40EDF6D2E8393A"
+				type: "item"
+				item: {
+					id: "eidolon:crucible"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["36252F7E4CD0B746"]
+			id: "6587FB4BA14581A4"
+			tasks: [{
+				id: "21647757ABD390E1"
+				type: "item"
+				item: {
+					id: "eidolon:ender_calx"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["36252F7E4CD0B746"]
+			id: "28E3B98CA08E2086"
+			tasks: [{
+				id: "0814D5776BDC0798"
+				type: "item"
+				item: {
+					id: "eidolon:crimson_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["6587FB4BA14581A4"]
+			id: "2E7D1152C3B3E8D7"
+			tasks: [{
+				id: "2981B76E938B53F1"
+				type: "item"
+				item: {
+					id: "eidolon:warped_sprouts"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Calx of the Nether"
+			icon: "kubejs:calx_of_the_nether"
+			x: 6.0d
+			y: 2.0d
+			description: ["Combine Refined Crimson and Warped Sprouts."]
+			dependencies: [
+				"28E3B98CA08E2086"
+				"2E7D1152C3B3E8D7"
+			]
+			id: "5C7779813662733E"
+			tasks: [{
+				id: "60AA597FF4EE1EB2"
+				type: "item"
+				item: "kubejs:calx_of_the_nether"
+			}]
+		}
+		{
+			title: "Performing Rituals"
+			icon: {
+				id: "eidolon:brazier"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 2.0d
+			description: ["The ritual you will need to do next only requires 2 Stone Hands, but rituals will get more complex."]
+			dependencies: ["5C7779813662733E"]
+			id: "4AC6B14B763E24B6"
+			tasks: [
+				{
+					id: "0EE7D0E5D06316D6"
+					type: "item"
+					item: {
+						id: "eidolon:brazier"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "74B483E09157C585"
+					type: "item"
+					item: {
+						id: "eidolon:stone_hand"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Crystallization Ritual"
+			icon: {
+				id: "eidolon:soul_shard"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			description: ["See the Ars Ecclesia on how to perform."]
+			dependencies: ["4AC6B14B763E24B6"]
+			id: "7835E2CA93F3D626"
+			tasks: [
+				{
+					id: "5A6162FDFABE0D31"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "5C5F88CC11054C40"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4DF4FC8D353ACED6"
+					type: "item"
+					item: {
+						id: "eidolon:soul_shard"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Arcane Gold"
+			x: 8.0d
+			y: -2.0d
+			dependencies: [
+				"7835E2CA93F3D626"
+				"5C7779813662733E"
+			]
+			id: "5E558353D583D93D"
+			tasks: [{
+				id: "7EB8BE5FA34F7315"
+				type: "item"
+				item: {
+					id: "eidolon:arcane_gold_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 2L
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["7835E2CA93F3D626"]
+			id: "2222E17D92100A57"
+			tasks: [{
+				id: "78E25065D586D048"
+				type: "item"
+				item: {
+					id: "eidolon:lesser_soul_gem"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Wicked Sign"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "eidolon:textures/particle/wicked_sign.png"
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			description: ["Find a Witch and give her your Ars Ecclesia. She will give it back in a few seconds with the Wicked Sign unlocked."]
+			hide_dependency_lines: true
+			dependencies: ["60DDB042D95ADB08"]
+			id: "535B8EB404EA7253"
+			tasks: [{
+				id: "595D9698A1C26E0F"
+				type: "observation"
+				title: "Find a Witch"
+				icon: {
+					id: "eidolon:warlock_hat"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Damage: 0
+					}
+				}
+				timer: 0L
+				observe_type: 5
+				to_observe: "minecraft:witch"
+			}]
+		}
+		{
+			title: "Your First Altar"
+			icon: {
+				id: "eidolon:straw_effigy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -2.0d
+			description: ["An altar to chant at. You can only chhant once per day, but the chances you will acquire knowledge will increase if you add more things to your altar. Maybe work on Mekanism while you wait?"]
+			dependencies: [
+				"5E558353D583D93D"
+				"2222E17D92100A57"
+			]
+			id: "2FF86EF06CBB34AB"
+			tasks: [
+				{
+					id: "10081A4E328B4F36"
+					type: "item"
+					item: {
+						id: "eidolon:wooden_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "6728D6DA973B2A56"
+					type: "item"
+					item: {
+						id: "eidolon:straw_effigy"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Improving your Altar I"
+			icon: {
+				id: "eidolon:candlestick"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["2FF86EF06CBB34AB"]
+			id: "3A567D6039077A48"
+			tasks: [{
+				id: "281392381BA19D21"
+				type: "item"
+				title: "Light-Producing Altar Items"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "minecraft:torch"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "eidolon:candle"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "eidolon:candlestick"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Improving your Altar II"
+			x: 12.0d
+			y: -4.0d
+			dependencies: ["2FF86EF06CBB34AB"]
+			id: "08EB67337D6CA7FA"
+			tasks: [{
+				id: "539F9E13B13466D6"
+				type: "item"
+				item: {
+					id: "eidolon:goblet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Improving your Altar III"
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["2FF86EF06CBB34AB"]
+			id: "2250D2BBF97DEFBF"
+			tasks: [{
+				id: "0661BCABD04DE4E0"
+				type: "item"
+				title: "Head"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "minecraft:zombie_head"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "minecraft:skeleton_skull"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "minecraft:wither_skeleton_skull"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Improving your Altar IV"
+			icon: {
+				id: "minecraft:flower_pot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["2FF86EF06CBB34AB"]
+			id: "061ABBFC362E4918"
+			tasks: [
+				{
+					id: "72C252298C41A5CD"
+					type: "item"
+					item: {
+						id: "minecraft:flower_pot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "337B835E852E46F8"
+					type: "item"
+					title: "Flower"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "minecraft:crimson_fungus"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "minecraft:warped_fungus"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "minecraft:wither_rose"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Blood Sign"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "eidolon:textures/particle/blood_sign.png"
+				}
+			}
+			x: 10.0d
+			y: -4.0d
+			description: ["Chant and you will unlock this sign."]
+			dependencies: [
+				"2FF86EF06CBB34AB"
+				"535B8EB404EA7253"
+			]
+			id: "37A91472AEFB1B48"
+			tasks: [{
+				id: "1B8FBB3862372F32"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Animal Sacrifice"
+			x: 10.0d
+			y: -6.0d
+			description: ["Kill a Pig next to a goblet to fill it with blood. Perform the chant in the Ars Ecclesia and you will unlock a new sign."]
+			dependencies: [
+				"37A91472AEFB1B48"
+				"08EB67337D6CA7FA"
+			]
+			id: "6BB84DEA964256E2"
+			tasks: [{
+				id: "54F80AE00DA6EEA8"
+				type: "kill"
+				title: "Sacrifice a Pig"
+				icon: {
+					id: "minecraft:porkchop"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				entity: "minecraft:pig"
+				value: 1L
+			}]
+		}
+		{
+			title: "Soul Sign"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "eidolon:textures/particle/soul_sign.png"
+				}
+			}
+			x: 12.0d
+			y: -6.0d
+			description: ["Perform the Animal Sacrifice to unlock this sign."]
+			dependencies: ["6BB84DEA964256E2"]
+			id: "4A6BA49D3E89DD8E"
+			tasks: [{
+				id: "778A6D738B88838B"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -6.0d
+			description: ["Do the chant shown in the Ars Ecclesia at your altar and look at a Pewter Inlay to transform it into an Unholy Symbol."]
+			dependencies: ["4A6BA49D3E89DD8E"]
+			id: "411E198407EAEC95"
+			tasks: [{
+				id: "13B76BE5BACECEC4"
+				type: "item"
+				item: {
+					id: "eidolon:unholy_symbol"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Upgraded Altar"
+			icon: {
+				id: "eidolon:unholy_effigy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: -4.0d
+			description: ["Swap out the Altar and the Idol to upgrade your altar into something better."]
+			dependencies: ["411E198407EAEC95"]
+			id: "388D51D766B23BCA"
+			tasks: [
+				{
+					id: "67177A88136BC17A"
+					type: "item"
+					item: {
+						id: "eidolon:stone_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "672F0D55565941E7"
+					type: "item"
+					item: {
+						id: "eidolon:unholy_effigy"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Villager Sacrifice"
+			icon: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 14.0d
+			y: -2.0d
+			description: ["This time, fill a goblet with Villager Blood. Complete the chant shown in the Ars Ecclesia. You will need to do Dark Prayers at your upgraded Altar to unlock it."]
+			dependencies: [
+				"388D51D766B23BCA"
+				"08EB67337D6CA7FA"
+			]
+			id: "0EA791857D69B7E4"
+			tasks: [{
+				id: "518E4CA6CAC682D3"
+				type: "kill"
+				title: "Sacrifice a Villager"
+				icon: {
+					id: "minecraft:emerald"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				entity: "minecraft:villager"
+				value: 1L
+			}]
+		}
+		{
+			title: "Mind Sign"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "eidolon:textures/particle/mind_sign.png"
+				}
+			}
+			x: 16.0d
+			y: -2.0d
+			description: ["This is the final sign you can obtain in this mod."]
+			dependencies: ["0EA791857D69B7E4"]
+			id: "7B02942E31D6F3DE"
+			tasks: [{
+				id: "76B6431CDFC37A04"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -4.0d
+			description: ["Craft the Shadow Gem after unlocking the Mind sign."]
+			dependencies: ["7B02942E31D6F3DE"]
+			id: "5ECEB69876299FEB"
+			tasks: [{
+				id: "2DC1F648A1BA28A4"
+				type: "item"
+				item: {
+					id: "eidolon:shadow_gem"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: -4.0d
+			description: ["Crafted with a Shadow Gem and an Unholy Symbol."]
+			dependencies: [
+				"411E198407EAEC95"
+				"5ECEB69876299FEB"
+			]
+			id: "19B65F684F59722E"
+			tasks: [{
+				id: "126E2A39B4854123"
+				type: "item"
+				item: {
+					id: "eidolon:wicked_weave"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -6.0d
+			description: ["Some rituals require this instead of the regular Stone Hands."]
+			dependencies: ["411E198407EAEC95"]
+			id: "18650D3F289D6DA7"
+			tasks: [{
+				id: "60BC6B21437012FA"
+				type: "item"
+				item: {
+					id: "eidolon:necrotic_focus"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Wraiths"
+			icon: {
+				id: "eidolon:tattered_cloth"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 18.0d
+			y: -6.0d
+			description: ["With your new Necrotic Focus, you can spawn a Wraith using the Summon ritual. You will have to craft the Tattered Cloth out of Wicked Weave."]
+			dependencies: [
+				"19B65F684F59722E"
+				"18650D3F289D6DA7"
+			]
+			id: "55F94AB4F4ECC5B1"
+			tasks: [
+				{
+					id: "05DA0E8350507BA0"
+					type: "item"
+					item: {
+						id: "minecraft:charcoal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "51198DA9003D1BBA"
+					type: "item"
+					item: {
+						id: "eidolon:soul_shard"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "60893E704B5B6908"
+					type: "item"
+					item: {
+						id: "eidolon:tattered_cloth"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "239A78416E10BE59"
+					type: "observation"
+					title: "Summon a Wraith"
+					icon: {
+						id: "eidolon:spawn_wraith"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 5
+					to_observe: "eidolon:wraith"
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: -6.0d
+			description: ["Wraiths have a 33% chance of dropping Wraith Hearts, so you may need to do the ritual a few times."]
+			dependencies: ["55F94AB4F4ECC5B1"]
+			id: "07F0B9D97393FFF8"
+			tasks: [{
+				id: "61D6CB3C02F717DE"
+				type: "item"
+				item: {
+					id: "eidolon:wraith_heart"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Chilled to the Bone"
+			x: 20.0d
+			y: -4.0d
+			shape: "gear"
+			description: ["Used in many recipes to cool things down rapidly."]
+			dependencies: ["07F0B9D97393FFF8"]
+			size: 2.5d
+			id: "5314B00EBFA1349F"
+			tasks: [{
+				id: "78BE773B8B160367"
+				type: "item"
+				item: {
+					id: "eidolon:bonechill_wand"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,1376 @@
+{
+	id: "7B4B847122FA64C3"
+	group: ""
+	order_index: 19
+	filename: "chapter_17_mekanism_ii"
+	title: "17 - Mekanism II"
+	icon: {
+		id: "mekanism:reprocessed_fissile_fragment"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mekanism II"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Master Anti-Matter"
+			dependencies: ["1942781BE30CB938"]
+			size: 1.5d
+			id: "6A7EE446E9273CBD"
+			tasks: [{
+				id: "1C68E28855F03A99"
+				type: "item"
+				item: {
+					id: "kubejs:quantanium_casing"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Turbine"
+			icon: {
+				id: "mekanismgenerators:turbine_blade"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"This multiblock turns Steam into power. However it has many constraints on building. The materials in the quest are the minimum amount of materials needed, but it can be made larger."
+				""
+				"SIZE CONSTRAINTS"
+				"1. It must be a vertically-oriented rectangular cuboid."
+				"2. It must have a square base."
+				"3. Length and width must be between 5 and 17, and must be an uneven number."
+				"4. The maximum height of the structure is 18 blocks, and with an additiona limit of (2(Turbine Width))-1."
+				"The maximum height of the rotor shaft is 14, with an additional limit of (2(Turbine Width))-5."
+				""
+				"COMPONENT USAGE"
+				"Turbine Casing - Must be placed on the entire bottom layer and the edges."
+				"Structural Glass - Fills in the walls on the section with the Turbine Rotors."
+				"Turbine Rotor - Placed in the center of the multiblock, and placed vertically to the Rotational Complex."
+				"Turbine Blade - Two are placed on every Turbine Rotor, right click to add them."
+				"Rotational Complex - Exactly 1 is placed on top of the Turbine Rotors."
+				"Pressure Disperser - Placed on the same horizontal layer as the Rotational Complex."
+				"Electromagnetic Coil - Placed above the Pressure Dispersers in the empty space. One can be placed for every 4 Turbine Blades in the structure. These are used to actually create power."
+				"Turbine Vent - Must be placed on the top of the multiblock, as well as the upper section of the hull, starting at the Pressure Dispersers."
+				"Saturating Condensentrator - This block is optional, which is why it's not included in the quest. It can be placed in the empty space where the Electromagnetic Coils are placed to save some of the water."
+			]
+			dependencies: ["6A7EE446E9273CBD"]
+			id: "21D5169A69BC881A"
+			tasks: [
+				{
+					id: "75FA0E7059255259"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 69L
+				}
+				{
+					id: "53EB66E7116C28D1"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_vent"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 45L
+				}
+				{
+					id: "2AE7680B1C1F70EE"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_rotor"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "61D17D40093F1CCF"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_blade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "51BCAE89E5DEC189"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:rotational_complex"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "28AEE9459C188F85"
+					type: "item"
+					item: {
+						id: "mekanism:pressure_disperser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "4A3A523EB9C8C28A"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:electromagnetic_coil"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "68638665493B39F0"
+					type: "item"
+					item: {
+						id: "mekanism:structural_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 46L
+				}
+				{
+					id: "2440CFD9E119FF3C"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_valve"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["It is recommended to first build a Steam Turbine to create power, since Energized Ingots need lots of power. However, it is technically not required."]
+			dependencies: ["6A7EE446E9273CBD"]
+			dependency_requirement: "one_completed"
+			id: "631B03F3C4A73136"
+			tasks: [{
+				id: "698F58B6F4B82B54"
+				type: "item"
+				item: "kubejs:energized_ingot"
+			}]
+		}
+		{
+			title: "Elite Control Circuit"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["631B03F3C4A73136"]
+			id: "7FCD6E054CE2AF28"
+			tasks: [{
+				id: "22CF5721E4045160"
+				type: "item"
+				item: {
+					id: "mekanism:elite_control_circuit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Fission Reactor"
+			icon: {
+				id: "mekanismgenerators:control_rod_assembly"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 0.0d
+			description: ["The Fission Reactor has much less restrictions than the Industrial Turbine. It can be any size in any dimensions, up to 18x18x18. The edges and the bottom must be made out of Fission Reactor Casing, and the rest can be made out of Reactor Glass. Your ports will replace some of the glass, and can be changed with the Configurator. Two will be set to input, one set to output waste, and one set to output coolant. You need to place towers of Fission Fuel Assemblies in a checkerboard pattern inside, topped with a Control Rod Assembly. The reactor can accept Water as coolant, converted to Steam, and can accept Sodium, converted to Superheated Sodium. The Steam can be fed directly into an Industrial Turbine to create power, but using sodium also requires a Thermoelectric Boiler. It is incredibly important that you make sure the reactor has enough coolant, and the used coolant is pumped out quick enough, or the reactor will start taking damage. Setting the burn rate too high for the reactor to handle also causes damage. If the reactor's damage ever reaches 100%, it will melt down, explode, and irradiate everything around it. You may want to put your reactor further away from your base, just to be safe."]
+			dependencies: [
+				"7FCD6E054CE2AF28"
+				"6A7EE446E9273CBD"
+			]
+			id: "13A981641BB279D1"
+			tasks: [
+				{
+					id: "7731EC4E3F6CF1F5"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 53L
+				}
+				{
+					id: "31A00DCC737D036C"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_port"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "43A07D7DB7C6B856"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:reactor_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 40L
+				}
+				{
+					id: "04331CDBFDE6D038"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_fuel_assembly"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 10L
+				}
+				{
+					id: "4E2586DF4812EA73"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:control_rod_assembly"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			description: ["This machine is used to convert Nuclear Waste into Polonium, which is a very useful nuclear byproduct."]
+			hide_dependency_lines: true
+			dependencies: ["7FCD6E054CE2AF28"]
+			id: "003911B38F3E182A"
+			tasks: [{
+				id: "5F31CFEE3E0960E4"
+				type: "item"
+				item: {
+					id: "mekanism:solar_neutron_activator"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The Chocolate Glazed Berries of Desperation"
+			x: 4.0d
+			y: 2.0d
+			shape: "diamond"
+			description: ["You know what's delicious? Chocolate Glazed Berries. I'd have some Liquid Concrete and Purple Drink too, but there's currently a worldwide shortage of those items and I wouldn't want to do that to you. Tell you what; if you can get a stack of Chocolate Glazed Berries and submit them, I'll clear all of the radiation. It does it instantly after submitting the berries, so only submit them if you have actually irradiated somewhere important."]
+			dependencies: ["13A981641BB279D1"]
+			size: 1.1d
+			id: "41B8B4CD28038A5B"
+			tasks: [{
+				id: "4A3330EA930421BD"
+				type: "item"
+				item: "create:chocolate_glazed_berries"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4D6505B8B34BD31E"
+					type: "command"
+					title: "Clear all Radiation"
+					icon: {
+						id: "mekanism:radioactive_waste_barrel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					team_reward: true
+					auto: "invisible"
+					command: "/tellraw @a [\"\",{\"selector\":\"@p\",\"color\":\"#FFFF00\"},{\"text\":\" is really Crude Steel because they caused a Mekanism Fission Reactor meltdown! Make fun of them for being very bad at the game.\",\"color\":\"#FFFF00\"}]"
+					player_command: true
+				}
+				{
+					id: "58D8FA8C87980ED7"
+					type: "command"
+					title: " "
+					icon: {
+						id: "chiselsandbits:block_bit"
+						Count: 1b
+						tag: {
+							blockState: {
+								Name: "minecraft:glass"
+							}
+						}
+					}
+					auto: "invisible"
+					command: "/mek radiation removeAll"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["7FCD6E054CE2AF28"]
+			id: "51E00A8F3FF0A33A"
+			tasks: [{
+				id: "2C4C6369AB171C46"
+				type: "item"
+				item: {
+					id: "mekanism:isotopic_centrifuge"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Fissile Fuel"
+			icon: {
+				id: "mekanism:gauge_dropper"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					mekData: {
+						GasTanks: [{
+							Tank: 0b
+							stored: {
+								gasName: "mekanism:fissile_fuel"
+								amount: 16000L
+							}
+						}]
+					}
+				}
+			}
+			x: 6.0d
+			y: -2.0d
+			dependencies: [
+				"51E00A8F3FF0A33A"
+				"43B5DB3A5067E606"
+			]
+			id: "2EBB5EE083872E17"
+			tasks: [{
+				id: "2EFC29224378C1E3"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: ["Placing this in Asgard allows for extraction of Pitchblende below the bedrock."]
+			dependencies: ["7FCD6E054CE2AF28"]
+			id: "331B2C5EBAEDF0B1"
+			tasks: [{
+				id: "283FBF7437CD43FA"
+				type: "item"
+				item: {
+					id: "mekanism:digital_miner"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Pitchblende"
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["331B2C5EBAEDF0B1"]
+			id: "4600340D0B0E4596"
+			tasks: [{
+				id: "78FA4859F0F3363A"
+				type: "item"
+				item: {
+					id: "kubejs:pitchblende"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["4600340D0B0E4596"]
+			id: "43B5DB3A5067E606"
+			tasks: [{
+				id: "706D782295284BC8"
+				type: "item"
+				item: "mekanism:yellow_cake_uranium"
+			}]
+		}
+		{
+			title: "Plutonium"
+			x: 8.0d
+			y: -2.0d
+			dependencies: [
+				"13A981641BB279D1"
+				"2EBB5EE083872E17"
+			]
+			id: "26DAC1B68CB03203"
+			tasks: [{
+				id: "7F93F3AD941F1CF7"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_plutonium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Polonium"
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"2EBB5EE083872E17"
+				"003911B38F3E182A"
+				"13A981641BB279D1"
+			]
+			id: "2AA1A89BD7CE6C85"
+			tasks: [{
+				id: "1356160BF5D83E58"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_polonium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Be sure to make a lot of Radioactive Waste Barrels to put your Spent Nuclear Waste in, which will safely and slowly go away. Unlike other gases, radioactive ones like Polonium, Plutonium, Nuclear Waste, and Spent Nucear Waste can not overflow, or it will cause a radioactive gas leak, that will also irradiate everything."]
+			dependencies: ["13A981641BB279D1"]
+			id: "3DCC67CADD17A89A"
+			tasks: [{
+				id: "7DC1141CDD462091"
+				type: "item"
+				item: {
+					id: "mekanism:radioactive_waste_barrel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Plutonium Neutron Activator"
+			icon: "mekanismgenerators:reactor_glass"
+			x: 10.0d
+			y: -6.0d
+			description: ["This multiblock is required to extract Helium-3."]
+			hide_dependency_lines: true
+			dependencies: ["26DAC1B68CB03203"]
+			id: "1BF802F69F31835F"
+			tasks: [
+				{
+					id: "296D453F89D0C962"
+					type: "item"
+					item: "masterfulmachinery:elite_controller"
+				}
+				{
+					id: "2A3C37D512585A94"
+					type: "item"
+					item: "masterfulmachinery:elite_energy_port_energy_input"
+				}
+				{
+					id: "7A1F7D15F2CC95E7"
+					type: "item"
+					item: "masterfulmachinery:elite_gas_port_mekanism_gas_input"
+				}
+				{
+					id: "3346BE72DFE5007C"
+					type: "item"
+					item: "masterfulmachinery:elite_gas_port_mekanism_gas_output"
+				}
+				{
+					id: "1FFC7016E9BADEA0"
+					type: "item"
+					item: "emendatusenigmatica:aluminum_block"
+					count: 8L
+				}
+				{
+					id: "3775209DB7FD21E6"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockhslasteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "28F438295A79C266"
+					type: "item"
+					item: "emendatusenigmatica:lead_block"
+					count: 20L
+				}
+				{
+					id: "77D1DE6BEE49F644"
+					type: "item"
+					item: "immersivepetroleum:petcoke_block"
+					count: 24L
+				}
+				{
+					id: "3091DF77AB35A681"
+					type: "item"
+					item: "emendatusenigmatica:silver_block"
+					count: 19L
+				}
+				{
+					id: "4B6B51532F5EC0DA"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockstainlesssteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "66ED0B56F8D237F8"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblocktitanium"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "3B45EA32D6918037"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockvanadiumsteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "145B6B4F3C582A51"
+					type: "item"
+					item: {
+						id: "kubejs:fiberglass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "24C9006156C6209E"
+					type: "item"
+					item: {
+						id: "kubejs:plutonium_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "06C829EF1A5876AF"
+					type: "item"
+					item: {
+						id: "kubejs:steel_plated_ceramic_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 90L
+				}
+				{
+					id: "27BDC62B06B34816"
+					type: "item"
+					item: {
+						id: "kubejs:superconductive_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "72BF810638F5D476"
+					type: "item"
+					item: {
+						id: "extendedcrafting:crystaltine_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "5B0665C497533A54"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 17L
+				}
+			]
+		}
+		{
+			title: "Fusion Reactor"
+			icon: {
+				id: "mekanismgenerators:fusion_reactor_controller"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			description: [
+				"The Fission Reactor takes Deuterium and Helium-3 as input, but it can also take D-H-3 fuel directly. Pumping in Deuterium and Helium-3 separately allows you to control the burn rate, but pumping in D-H-3 fuel consumes it instantly. You can only put 100mB/t with Deuterium and Helium-3 separately, but it can be up to 1,000mB/t by pumping in Helium-3 fuel. It's recommended to pump in small amounts of Deuterium and Helium-3 constantly, while fusing any extra into D-H-3 fuel and pumping that in instead. The reactor can generate power on its own with fuel, but it can also be given coolant to turn into Steam, and pumped into an Industrial Turbine to make even more power."
+				""
+				"HOW TO BUILD"
+				"Imagine a 5x5x5 hollow cube. Now imagine cutting off 4 blocks on all 8 of its corners. This is the shape of the Fusion Reactor. The edges are made of Fusion Casings, while the 6 faces will have a 3x3 cross shape of Reactor Glass on them. Put your Laser Focus in the middle of one of these crosses on the side, and place your controller in the middle of the top cross. Replace the Reactor Glass on faces without a Laser Focus or Controller."
+			]
+			dependencies: ["2AA1A89BD7CE6C85"]
+			id: "31D52D2AAE78148E"
+			tasks: [
+				{
+					id: "159FFE8446650F29"
+					type: "item"
+					icon: {
+						id: "mekanismgenerators:fusion_reactor_controller"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "52D6EB5431C574AF"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "06696FE9E567F766"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_port"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "379B628290553971"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:laser_focus_matrix"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "644987E52A1603A6"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:reactor_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 23L
+				}
+			]
+		}
+		{
+			title: "Fission Circuit Breaker"
+			icon: {
+				id: "mekanismgenerators:fission_reactor_logic_adapter"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			description: ["Replace one of the Reactor Glass in the bottom left corner of a side of the reactor with a Logic Adaptor. Place a second one 2 blocks above it, and place a Reactor Port to the right of the first Logic Adaptor. Set the bottom adaptor to emit a signal on high temperature, and set the top one to Activation. Place the Observer on the top Adaptor, with it's face pointing outward, and the signal pointing to said adaptor. Add a block in front and below the bottom Adaptor, and place the redstone on it. Place the Redstone Torch on the right side of the block. In front of the Redstone Dust, place the Piston facing upwards, and place your Falling Block on the piston. Finally, place an Ultimate Pressurized Tube above the redstone torch, and use the Configurator to set it to only connect when given a redstone signal. Add a path of Ultimate Pressurized Tubes leading to some tanks full of Sodium to use as emergency coolant. This mechanism will shut off the reactor if it gets near a meltdown and supply it with powerful coolant to cool it down."]
+			dependencies: ["13A981641BB279D1"]
+			id: "6E7F435BC9E06E98"
+			tasks: [
+				{
+					id: "277A5E8F4C69040C"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_logic_adapter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "01260346125B1E66"
+					type: "item"
+					item: {
+						id: "minecraft:observer"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "45DAD87880A9DD97"
+					type: "item"
+					title: "Falling Block"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:or"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										items: [
+											{
+												id: "minecraft:sand"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:red_sand"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "biomesoplenty:white_sand"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "biomesoplenty:orange_sand"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "biomesoplenty:black_sand"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "futurepack:sand_m"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:anvil"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+													Damage: 0
+												}
+											}
+											{
+												id: "minecraft:chipped_anvil"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:damaged_anvil"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:white_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:orange_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:magenta_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:light_blue_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:yellow_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:lime_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:pink_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:gray_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:light_gray_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:cyan_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:purple_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:blue_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:brown_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:green_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:red_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:black_concrete_powder"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "minecraft:gravel"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+											{
+												id: "futurepack:gravel_m"
+												Count: 1b
+												tag: {
+													temperature: 0.0d
+												}
+											}
+										]
+									}
+								}
+								{
+									id: "futurepack:sand_neon"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "futurepack:sand_alutin"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "futurepack:sand_retium"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "futurepack:sand_glowtite"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "futurepack:sand_bioterium"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+									}
+								}
+								{
+									id: "thermal:sawdust_block"
+									Count: 1b
+								}
+								{
+									id: "thermal:gunpowder_block"
+									Count: 1b
+								}
+								{
+									id: "minecraft:dragon_egg"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7044D2A9023732DE"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5C7F403C73665888"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_torch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2020FF1ED3A4948E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_port"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6D40D219E233A856"
+					type: "item"
+					item: {
+						id: "mekanism:ultimate_pressurized_tube"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Activating your Fusion Reactor"
+			icon: {
+				id: "mekanism:laser"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["43B5DB3A5067E606"]
+			id: "6F4C6CF7333445B7"
+			tasks: [
+				{
+					id: "21C022A0C8ABB1DB"
+					type: "item"
+					item: {
+						id: "mekanism:laser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 15L
+				}
+				{
+					id: "7AABBD838F250B2A"
+					type: "item"
+					item: {
+						id: "mekanism:laser_amplifier"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "0EB072660C6E114D"
+					type: "item"
+					item: {
+						id: "minecraft:lever"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7A5983CFFA3C4079"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:hohlraum"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Rover Deployer"
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["26DAC1B68CB03203"]
+			id: "5992102605CDF3AB"
+			tasks: [{
+				id: "6B41279407739679"
+				type: "item"
+				item: "minecraft:barrier"
+			}]
+		}
+		{
+			title: "D-H-3 Fuel"
+			icon: {
+				id: "mekanismgenerators:fusion_fuel_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -4.0d
+			description: ["Automate some D-H-3 fuel. Perhaps a Crafting Card would help in making the rovers when needed."]
+			dependencies: [
+				"5992102605CDF3AB"
+				"6F4C6CF7333445B7"
+				"1BF802F69F31835F"
+			]
+			id: "1810D2AAD0DBCEB6"
+			tasks: [{
+				id: "4CAAD9718D8918AE"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Ultimate Control Circuit"
+			x: 12.0d
+			y: -2.0d
+			description: [""]
+			dependencies: [
+				"1810D2AAD0DBCEB6"
+				"6ADC31F203B19DBA"
+			]
+			id: "681DEA21DCF1D820"
+			tasks: [{
+				id: "2F9DD5772D0463F1"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_control_circuit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Supercritical Phase Shifter"
+			icon: {
+				id: "mekanism:sps_casing"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: -2.0d
+			description: [
+				"This multiblock converts Polonium into Antimatter. It requires a lot of energy to run."
+				""
+				"HOW TO BUILD"
+				"Imagine a 7x7x7 hollow cube. Imagine cutting off 4 blocks from all 8 corners. This is the shape of the Supercritical Phase Shifter. Construct the edges out of SPS Casings, and the main faces (that are shaped like 5x5 circles) out of Reactor Glass, with a port in the middle. Replace 2 extra Reactor Glasses with ports. Add Supercharged Coils on the inside of the multiblock, at the centers of the faces."
+			]
+			dependencies: ["681DEA21DCF1D820"]
+			id: "4AD7AB4DC6962D0B"
+			tasks: [
+				{
+					id: "38B33B854B2E2C57"
+					type: "item"
+					item: {
+						id: "mekanism:sps_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 60L
+				}
+				{
+					id: "15B5D7CE6B957BC4"
+					type: "item"
+					item: {
+						id: "mekanism:sps_port"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "6D3032717CEE077A"
+					type: "item"
+					item: {
+						id: "mekanism:supercharged_coil"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "773470518EFD1D73"
+					type: "item"
+					item: {
+						id: "mekanism:structural_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 118L
+				}
+			]
+		}
+		{
+			title: "Antimatter"
+			x: 14.0d
+			y: 0.0d
+			description: ["Just one Antimatter Pellet is equivalent to 1,000 Polonium Pellets. If you haven't already, make a larger Fission Reactor and water-cool your Fusion Reactor."]
+			dependencies: ["4AD7AB4DC6962D0B"]
+			id: "67DF1BA6C9842AA7"
+			tasks: [{
+				id: "141C22AAF03E6198"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_antimatter"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["67DF1BA6C9842AA7"]
+			id: "61BF3C19A62F71B0"
+			tasks: [{
+				id: "5C52CC1098D84F0E"
+				type: "item"
+				item: {
+					id: "mekanism:antiprotonic_nucleosynthesizer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["61BF3C19A62F71B0"]
+			size: 2.5d
+			id: "5FA29D4EFC769C54"
+			tasks: [{
+				id: "48C24B851F3D253C"
+				type: "item"
+				item: "draconicevolution:draconium_ingot"
+			}]
+		}
+		{
+			title: "Nanorite Void Miner"
+			x: 10.0d
+			y: 0.0d
+			dependencies: [
+				"2AA1A89BD7CE6C85"
+				"26DAC1B68CB03203"
+			]
+			id: "6ADC31F203B19DBA"
+			tasks: [{
+				id: "0E88C461E0D94BAD"
+				type: "item"
+				item: {
+					id: "envirotech:nanorite_void_miner_ccu"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

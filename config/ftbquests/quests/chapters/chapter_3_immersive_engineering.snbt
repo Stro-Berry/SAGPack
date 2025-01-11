@@ -1,0 +1,1567 @@
+{
+	id: "6405A4929F295F4B"
+	group: ""
+	order_index: 3
+	filename: "chapter_3_immersive_engineering"
+	title: "3 - Immersive Engineering"
+	icon: {
+		id: "immersiveengineering:hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Immersive Engineering"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Multiblock Mastery"
+			description: ["Put your eight Kiln Bricks in a cube, and right click with the Engineer's Hammer to complete the structure. It requires fuel to run."]
+			dependencies: ["50987FF92A581CF5"]
+			size: 1.5d
+			id: "08EB44C9B0EBE3E3"
+			tasks: [{
+				id: "6D41B56D04966823"
+				type: "observation"
+				title: "Look at a completed Alloy Kiln"
+				icon: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "immersiveengineering:alloy_smelter"
+			}]
+			rewards: [
+				{
+					id: "09535951802AA85F"
+					type: "item"
+					item: "immersiveengineering:manual"
+				}
+				{
+					id: "5D6AA666E7A08319"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: 4.0d
+			y: 4.0d
+			dependencies: [
+				"08EB44C9B0EBE3E3"
+				"35EF7AF27656BAA3"
+			]
+			id: "6B6CDF14A4976159"
+			tasks: [
+				{
+					id: "287BFA481AA70EE4"
+					type: "item"
+					item: "immersiveengineering:cokebrick"
+					count: 27L
+				}
+				{
+					id: "2F73C25BE770DB5A"
+					type: "observation"
+					title: "Look at a completed Coke Oven"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:coke_oven"
+				}
+			]
+		}
+		{
+			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["08EB44C9B0EBE3E3"]
+			id: "3C03FF4C388E2607"
+			tasks: [
+				{
+					id: "24FF944D5661812B"
+					type: "item"
+					item: "immersiveengineering:blastbrick"
+					count: 27L
+				}
+				{
+					id: "41C8BE9ED5EF84DE"
+					type: "observation"
+					title: "Look at a completed Blast Furnace"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:blast_furnace"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["The recipe for this doesn't show in JEI normally for some reason. Look at uses for Molten Cast Iron for the correct recipe."]
+			dependencies: [
+				"1F37F3D6CA84AAD4"
+				"40C0EF39B94BC9A5"
+			]
+			id: "1628EFCC6079B7DE"
+			tasks: [{
+				id: "2DC199737930D66D"
+				type: "item"
+				item: "emendatusenigmatica:cast_iron_ingot"
+			}]
+		}
+		{
+			icon: "create:limestone"
+			x: 0.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["08EB44C9B0EBE3E3"]
+			id: "1F37F3D6CA84AAD4"
+			tasks: [{
+				id: "7A8115154C8123E8"
+				type: "item"
+				title: "Limestone"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "create:limestone"
+								Count: 1b
+							}
+							{
+								id: "chisel:limestone/raw"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			title: "Steel"
+			x: 4.0d
+			y: 2.0d
+			description: ["Use Cast Iron and Coke to make some Steel."]
+			dependencies: [
+				"1628EFCC6079B7DE"
+				"6B6CDF14A4976159"
+				"3C03FF4C388E2607"
+			]
+			id: "4AC3D07BD3E90C4F"
+			tasks: [{
+				id: "5C68FB514EB9157B"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			title: "Treat your Wood"
+			icon: "immersiveengineering:treated_wood_horizontal"
+			x: 6.0d
+			y: 4.0d
+			description: ["Use the Creosote from making Coke to create Treated Wood."]
+			dependencies: ["6B6CDF14A4976159"]
+			id: "1AEF256D00384948"
+			tasks: [
+				{
+					id: "62594A8AE7356AEA"
+					type: "item"
+					item: "immersiveengineering:creosote_bucket"
+				}
+				{
+					id: "1752B0B64F4B26A8"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Now uses exactly 8 treated wood!"]
+			dependencies: [
+				"1AEF256D00384948"
+				"4AC3D07BD3E90C4F"
+			]
+			id: "57135D6C1DA24FCB"
+			tasks: [{
+				id: "0D0BCCF0D25CF407"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+		}
+		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: 8.0d
+			y: 0.0d
+			description: ["Presses metal into different shapes. A Metal Press Mold is required for operation. See the Engineer's Manual on how to build."]
+			dependencies: [
+				"57135D6C1DA24FCB"
+				"553384A26AAA6F2F"
+			]
+			id: "4DFC0BCCEA42CD53"
+			tasks: [
+				{
+					id: "73B8850ED404D8B1"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "3B121BE9B31A33BB"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "506FC0C73CECC4AE"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+				{
+					id: "3F73F59D9F0E612F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "1CA0894924055EE9"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "23DDC3FF1DAC2691"
+					type: "observation"
+					title: "Look at a completed Metal Press"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:metal_press"
+				}
+			]
+		}
+		{
+			title: "Molding"
+			icon: "immersiveengineering:mold_gear"
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["4DFC0BCCEA42CD53"]
+			id: "73FDBC6E15566EC4"
+			tasks: [
+				{
+					id: "694CDF7802BD0FB2"
+					type: "item"
+					item: "immersiveengineering:mold_gear"
+				}
+				{
+					id: "4216DEACC683D462"
+					type: "item"
+					item: "immersiveengineering:mold_wire"
+				}
+			]
+		}
+		{
+			title: "Crusher"
+			icon: "immersiveengineering:crusher"
+			x: 10.0d
+			y: 2.0d
+			description: ["Crushes items thrown into the top. See the Engineer's Manual on how to build."]
+			dependencies: ["73FDBC6E15566EC4"]
+			id: "26905AA9D3C45065"
+			tasks: [
+				{
+					id: "24F528F1201A5357"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "697ADEEF13B5683B"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "2FFF89B34A31A4DE"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "16612BB43062AD82"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "05E18C7033048884"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "15E056B8FB72CACC"
+					type: "observation"
+					title: "Look at a completed Crusher"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:crusher"
+				}
+			]
+		}
+		{
+			title: "Power Generation MK1"
+			icon: "immersiveengineering:dynamo"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["4AC3D07BD3E90C4F"]
+			id: "553384A26AAA6F2F"
+			tasks: [
+				{
+					id: "635C552601EA1490"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+				{
+					id: "2A26631678E4E079"
+					type: "item"
+					title: "Windmill or Waterwheel"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "immersiveengineering:windmill"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:watermill"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "5F63D3D85732E8E8"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "473950E38D1E4511"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "03CFB4412EB5C1EF"
+					type: "item"
+					title: "LV Wires"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "immersiveengineering:wirecoil_copper"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:wirecoil_copper_ins"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Capacity"
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["73FDBC6E15566EC4"]
+			id: "38078AD82EB86DB3"
+			tasks: [{
+				id: "5AA26900A90DA6CA"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			title: "Steel Sand"
+			x: 10.0d
+			y: 4.0d
+			description: ["Crush some Steel Dust to turn it even finer. Bonus points if you decide to inhale it."]
+			dependencies: ["26905AA9D3C45065"]
+			id: "63FD7A140DE33DC1"
+			tasks: [{
+				id: "1FABB484EE384CAA"
+				type: "item"
+				item: "kubejs:steel_sand"
+			}]
+		}
+		{
+			title: "Industrial Fermenter"
+			icon: "immersiveengineering:fermenter"
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "5D14322DD2F2EA15"
+			tasks: [
+				{
+					id: "59CACE96124087FA"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3AC0D25D1C16E017"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "0E5BC81859F39E57"
+					type: "item"
+					item: {
+						id: "minecraft:cauldron"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "3D82A43D5A9EFFE3"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "43F79CF13F796CC0"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "671ABE72EF1D8700"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "2960047C6D732AA5"
+					type: "observation"
+					title: "Look at a completed Fermenter"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:fermenter"
+				}
+				{
+					id: "6E9E3234FE4FC6E8"
+					type: "item"
+					item: "immersiveengineering:ethanol_bucket"
+				}
+			]
+		}
+		{
+			title: "Pumpjack"
+			icon: "immersivepetroleum:pumpjack"
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "0B29DB6C395C3FCC"
+			tasks: [
+				{
+					id: "5C6B519E9CB1EBB8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 11L
+				}
+				{
+					id: "7B7290D8A31323A3"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "0B77A353600C8B33"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 6L
+				}
+				{
+					id: "3CA2ECBCD72F36C1"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "70A253F59D6FFBF5"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "709D31A0CAB52A58"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 4L
+				}
+				{
+					id: "324D4FFA39ED30BC"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 4L
+				}
+				{
+					id: "647A2781A08335A0"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 2L
+				}
+				{
+					id: "447CD569BD035C65"
+					type: "observation"
+					title: "Look at a completed Pumpjack"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersivepetroleum:pumpjack"
+				}
+			]
+		}
+		{
+			title: "Distillation Tower"
+			icon: "immersivepetroleum:distillationtower"
+			x: 8.0d
+			y: 6.0d
+			description: [""]
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "4817B68970FD2B9E"
+			tasks: [
+				{
+					id: "6E9C1E69CCD37CF5"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 25L
+				}
+				{
+					id: "2EDA391E6B6E6393"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "78C9E9C73F34CBAD"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "1B53916CF7386AB2"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 60L
+				}
+				{
+					id: "5B66BB7870B5BD77"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
+					count: 30L
+				}
+				{
+					id: "56FDE62509FCBA22"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 17L
+				}
+				{
+					id: "652FA286FF2469BE"
+					type: "observation"
+					title: "Look at a completed Distillation Tower"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersivepetroleum:distillationtower"
+				}
+			]
+		}
+		{
+			icon: "immersiveengineering:sample_drill"
+			x: 8.0d
+			y: 8.0d
+			description: ["This is needed to find veins of ore and oil to be extracted by the Excavator and Pumpjack."]
+			id: "797B60EA0CE8693A"
+			tasks: [
+				{
+					id: "76582D4A15843DE4"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+				{
+					id: "5862919C08AD377D"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coresample"
+						Count: 1b
+						tag: { }
+					}
+					match_nbt: false
+				}
+			]
+		}
+		{
+			title: "Oil Processing"
+			icon: "immersivepetroleum:bitumen"
+			x: 6.0d
+			y: 6.0d
+			dependencies: [
+				"797B60EA0CE8693A"
+				"0B29DB6C395C3FCC"
+				"4817B68970FD2B9E"
+			]
+			id: "36BE1B48CBFE2FF3"
+			tasks: [{
+				id: "422210484520CE26"
+				type: "item"
+				item: "immersivepetroleum:bitumen"
+			}]
+		}
+		{
+			title: "Industrial Squeezer"
+			icon: "immersiveengineering:squeezer"
+			x: 10.0d
+			y: 6.0d
+			description: ["This machine can create HOP Graphite and Plant Oil. See the Engineer's Manual on how to build."]
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "5DB985D79D0D8B2A"
+			tasks: [
+				{
+					id: "12FC4A594958A820"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "28D3C50EE9B5B6E1"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3F37C4FB2E104B0B"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "52A22C67981D08B7"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "66451503C9B3E63C"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "13BE24DB62A95D0D"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "40C249F9B8BBB66E"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+				{
+					id: "1DAC2C18AB08D629"
+					type: "observation"
+					title: "Look at a completed Industrial Squeezer"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:squeezer"
+				}
+				{
+					id: "321F7D50D30BD74E"
+					type: "item"
+					item: "immersiveengineering:plantoil_bucket"
+				}
+			]
+		}
+		{
+			title: "Refinery"
+			icon: {
+				id: "immersiveengineering:refinery"
+				Count: 1b
+				tag: { }
+			}
+			x: 12.0d
+			y: 4.0d
+			description: ["Combines Ethanol and Plant Oil to make Biodiesel. See the Engineer's Manual on how to build."]
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "6A24284B2CEE444E"
+			tasks: [
+				{
+					id: "6F51A0CC7D8F68C6"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "2DD664A4302900B9"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "13EB5B0DD0AAA2FD"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "3A43663BE54E8950"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "347D78FB20E16994"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "19F1259684E6CFD6"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+				{
+					id: "60F2B14E4239DEAD"
+					type: "observation"
+					title: "Look at a completed Refinery"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:refinery"
+				}
+			]
+		}
+		{
+			title: "Power Generation MK2"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["553384A26AAA6F2F"]
+			id: "6EF95F086DB20182"
+			tasks: [{
+				id: "7AB6574BBFB146CD"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+				count: 4L
+				consume_items: false
+			}]
+		}
+		{
+			title: "Biodiesel"
+			x: 14.0d
+			y: 4.0d
+			dependencies: [
+				"6A24284B2CEE444E"
+				"5D14322DD2F2EA15"
+				"5DB985D79D0D8B2A"
+			]
+			id: "510ACD6A8CAF1244"
+			tasks: [{
+				id: "67891A3DA062E1E0"
+				type: "item"
+				item: "immersiveengineering:biodiesel_bucket"
+			}]
+		}
+		{
+			title: "Meteorite"
+			x: 2.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["08EB44C9B0EBE3E3"]
+			id: "35EF7AF27656BAA3"
+			tasks: [{
+				id: "4DAD5F548ABC41AC"
+				type: "item"
+				item: "appliedenergistics2:sky_stone_block"
+				count: 16L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			shape: "square"
+			dependencies: ["2A718DB5C3413AD0"]
+			id: "45C9B99289D9391A"
+			tasks: [{
+				id: "6D4EADC6B847C40E"
+				type: "item"
+				item: "appliedenergistics2:sky_compass"
+			}]
+		}
+		{
+			title: "HOP Graphite"
+			x: 12.0d
+			y: 6.0d
+			dependencies: ["5DB985D79D0D8B2A"]
+			id: "5481EEE7DA945AF3"
+			tasks: [{
+				id: "72984A375DDF4ADF"
+				type: "item"
+				item: "immersiveengineering:dust_hop_graphite"
+			}]
+		}
+		{
+			title: "Galvanized Square Steel and Eco-Friendly Wood Veneers"
+			x: 16.0d
+			y: 6.0d
+			description: ["Enhanced corrosion resistance."]
+			dependencies: ["510ACD6A8CAF1244"]
+			id: "1164EB726F72597B"
+			tasks: [{
+				id: "66185099CCC74CA9"
+				type: "item"
+				item: "kubejs:galvanized_steel_ingot"
+			}]
+		}
+		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: 14.0d
+			y: 8.0d
+			description: ["This machine requires three Graphite Electrodes, and three energy inputs. The top item in the recipe needs to be put in the top slot, and the other items can go anywhere else. See the Engineer's Manual for how to build."]
+			dependencies: [
+				"5481EEE7DA945AF3"
+				"1164EB726F72597B"
+			]
+			id: "3E42F4F1DF45B2B0"
+			tasks: [
+				{
+					id: "137B4CE97A953001"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "4D4CC1C21FA46192"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 6L
+				}
+				{
+					id: "616CC5301FC7C89B"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "70EE8F8219E6371F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "7BCA3ED8084184A2"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "3B6631A7584E4F8C"
+					type: "item"
+					item: {
+						id: "minecraft:cauldron"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "05300AB0F233CB73"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5233CCAADB2C8897"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "33F1B9DB672C99AC"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "68C781F896C4AC10"
+					type: "observation"
+					title: "Look at a completed Arc Furnace"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:arc_furnace"
+				}
+				{
+					id: "4D357487DC4B1135"
+					type: "item"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 0
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "Excavator"
+			icon: "immersiveengineering:excavator"
+			x: 11.0d
+			y: 8.0d
+			description: ["This machine extracts ore from hidden ore veins. Make sure you know what vein is in a chunk before you build it! See the Engineer's Manual for how to build."]
+			dependencies: [
+				"797B60EA0CE8693A"
+				"3E42F4F1DF45B2B0"
+			]
+			id: "73C57E5D284A0EEC"
+			tasks: [
+				{
+					id: "2DA9DC6B5F534D7F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 26L
+				}
+				{
+					id: "025A0EE28D1C64A5"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "5ECE59120CCA0C85"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "550A0B30099015EC"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "18C04AE9A9A0795A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0B93581A83808D03"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "5F0E9597D2ED9257"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 9L
+				}
+				{
+					id: "2FC179ED4EB067F4"
+					type: "observation"
+					title: "Look at a completed Excavator"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:excavator"
+				}
+			]
+		}
+		{
+			title: "W"
+			x: 11.0d
+			y: 10.0d
+			shape: "gear"
+			description: ["Unlocks PneumaticCraft."]
+			dependencies: ["73C57E5D284A0EEC"]
+			size: 2.5d
+			repeatable: true
+			id: "0F55C3AFCFD7892E"
+			tasks: [{
+				id: "50843B925C91496F"
+				type: "item"
+				item: {
+					id: "kubejs:tungsten_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "132C10268CBE939E"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᚳ\\nTrees that were at one point stellar at neutralizing our pollution are now very bad. We have nowhere to put excess pollution without ruining our air quality, so we’ve decided to pump it all into Helheim, since they probably wouldn’t mind and it’d make it harder for the\"}"
+							"{\"text\":\"aliens to colonize them.\\n\"}"
+						]
+						title: "Entry ᚳ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "We need to coke 2"
+			icon: "immersivepetroleum:cokerunit"
+			x: 4.0d
+			y: 6.0d
+			dependencies: [
+				"36BE1B48CBFE2FF3"
+				"1083B3905DEF42AF"
+			]
+			id: "27550EC5B8DA925F"
+			tasks: [
+				{
+					id: "75B530E50B13CF66"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 12L
+				}
+				{
+					id: "5F8B0DDFBFFBAA11"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 98L
+				}
+				{
+					id: "63A5955558668F20"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "01EEFB5255CC8BD8"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+				}
+				{
+					id: "4EF648066F45071A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5D4F23FC96AE5D93"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 5L
+				}
+				{
+					id: "6EF5D0042E172A27"
+					type: "item"
+					item: "immersiveengineering:concrete_tile"
+					count: 45L
+				}
+				{
+					id: "61F06E033950B8B3"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 88L
+				}
+				{
+					id: "58D31FC9BA6339B2"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 162L
+				}
+				{
+					id: "18DB15F36748548A"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
+					count: 46L
+				}
+				{
+					id: "3911E550BD7EC2BF"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 47L
+				}
+				{
+					id: "4800D559A760348A"
+					type: "item"
+					item: "immersiveengineering:steel_slope"
+					count: 3L
+				}
+				{
+					id: "3475FF414C567690"
+					type: "observation"
+					title: "Look at a completed Coker"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersivepetroleum:cokerunit"
+				}
+			]
+		}
+		{
+			title: "Desulfurization"
+			icon: "immersivepetroleum:hydrotreater"
+			x: 6.0d
+			y: 8.0d
+			dependencies: ["36BE1B48CBFE2FF3"]
+			id: "63BE3053633985CD"
+			tasks: [
+				{
+					id: "1EE77DD0009A745E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "15DF7EF5E90F95F9"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "3796B8BDB1CC39C8"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "54618810E87697C7"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "49B929966CA61DE5"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 15L
+				}
+				{
+					id: "495862DDCB427232"
+					type: "observation"
+					title: "Look at a completed Sulfur Recovery Unit"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersivepetroleum:hydrotreater"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["27550EC5B8DA925F"]
+			id: "4297C38DE6D29A7B"
+			tasks: [{
+				id: "24A41E7F35078B82"
+				type: "item"
+				item: "immersivepetroleum:petcoke"
+			}]
+		}
+		{
+			title: "Diesel"
+			x: 6.0d
+			y: 10.0d
+			dependencies: ["63BE3053633985CD"]
+			id: "0C2525AC83D8CD71"
+			tasks: [{
+				id: "072D9B42EF4794C9"
+				type: "item"
+				item: "immersivepetroleum:diesel_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["49A25C2E1635452E"]
+			id: "1083B3905DEF42AF"
+			tasks: [{
+				id: "577C8D8BCB10E400"
+				type: "item"
+				item: "immersiveengineering:concrete"
+			}]
+		}
+		{
+			title: "Mixer"
+			icon: "immersiveengineering:mixer"
+			x: 0.0d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["63FD7A140DE33DC1"]
+			id: "49A25C2E1635452E"
+			tasks: [
+				{
+					id: "170FA72BBD40E979"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "19076CB1AA423D38"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "068545C7DB98153D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "3C45E47B114A689A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0A6C9B972011CE2D"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "5B67409EFD8721F8"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+				{
+					id: "79054BACCC5F436C"
+					type: "observation"
+					title: "Look at a completed Mixer"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:mixer"
+				}
+			]
+		}
+		{
+			title: "Volatile Golden Mixture"
+			icon: {
+				id: "kubejs:volatile_golden_mixture_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 10.0d
+			dependencies: [
+				"4297C38DE6D29A7B"
+				"0C2525AC83D8CD71"
+			]
+			id: "7CFCD1B30D92961C"
+			tasks: [{
+				id: "2BA95EBE50FF3984"
+				type: "item"
+				item: {
+					id: "kubejs:volatile_golden_mixture_bucket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 10.0d
+			shape: "gear"
+			description: ["Unlocks Nature's Aura."]
+			dependencies: ["7CFCD1B30D92961C"]
+			size: 2.5d
+			id: "220824DDF2C6E80B"
+			tasks: [{
+				id: "1951D1EAD728B589"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 6.0d
+			shape: "square"
+			dependencies: ["1164EB726F72597B"]
+			id: "7E20B3477B3F9BA3"
+			tasks: [{
+				id: "1A31A19613F24190"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+		}
+		{
+			title: "Power Generation MK3"
+			icon: "immersiveengineering:diesel_generator"
+			x: 14.0d
+			y: 6.0d
+			shape: "square"
+			description: ["Generates power from Biodiesel. See the Engineer's Manual for how to build."]
+			dependencies: [
+				"510ACD6A8CAF1244"
+				"3E42F4F1DF45B2B0"
+			]
+			id: "16A380C7F7AEF996"
+			tasks: [
+				{
+					id: "19FB662141B6ADAA"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "782CD921D0C986FB"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3D2F18693BF2E292"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "5903A849FBBCEC67"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "000C75248B0E911D"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "36F00F8BF7671C69"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+				{
+					id: "12625E71CFC633E8"
+					type: "observation"
+					title: "Look at a completed Diesel Generator"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:diesel_generator"
+				}
+			]
+		}
+		{
+			title: "Higher Voltage"
+			icon: "immersiveengineering:connector_hv_relay"
+			x: 6.0d
+			y: -2.0d
+			shape: "diamond"
+			description: ["The transfer rate of HV wires and connectors have been buffed. HV wires can now transfer 131072 RF/t, and each HV connector transfers 32768 RF/t."]
+			dependencies: ["553384A26AAA6F2F"]
+			id: "26622682391DE64D"
+			tasks: [{
+				id: "34F063B7DB349EBF"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			shape: "square"
+			description: ["When powered and given a redstone signal, an External Heater will heat adjacent furnaces, regardless of whether they have valid items to smelt. Useful for powering Furnace Engines. This does not work with Blast Furnaces though."]
+			dependencies: ["1164EB726F72597B"]
+			id: "5D32651EE586D56B"
+			tasks: [{
+				id: "31D5EAAAA1A17436"
+				type: "item"
+				item: "immersiveengineering:furnace_heater"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 8.0d
+			shape: "square"
+			dependencies: ["1164EB726F72597B"]
+			id: "770C13A6544D9ECD"
+			tasks: [{
+				id: "5F1EC6DBFDC510DF"
+				type: "item"
+				item: {
+					id: "ironjetpacks:iron_jetpack"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Throttle: 1.0d
+					}
+				}
+			}]
+		}
+	]
+}

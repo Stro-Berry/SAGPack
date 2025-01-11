@@ -1,0 +1,619 @@
+{
+	id: "18E6E6C77998FEDC"
+	group: ""
+	order_index: 21
+	filename: "chapter_19_creative_items"
+	title: "19 - RFTools Dimensions"
+	icon: {
+		id: "rftoolsbase:machine_frame"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "RFTools Dimensions"
+			icon: {
+				id: "rftoolsbase:machine_frame"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "D.I.Y."
+			dependencies: ["4C7095D6D6BD434F"]
+			size: 1.5d
+			id: "3E726B03E73AEA9D"
+			tasks: [{
+				id: "1E1D21BC93D4E2D5"
+				type: "item"
+				item: {
+					id: "rftoolsbase:machine_frame"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Your First Dimlet"
+			x: 2.0d
+			y: 0.0d
+			description: ["Biome Dimlets are rarely dropped by Endermen. It doesn't matter what type you get, you just need to have one. Lost Knowledge is also rarely dropped by Endermen, so you'll want to keep that too."]
+			dependencies: ["3E726B03E73AEA9D"]
+			id: "42A3F22DD7E4244C"
+			tasks: [{
+				id: "7D6A7F927E94B9BE"
+				type: "item"
+				item: {
+					id: "rftoolsdim:biome_dimlet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Encoding Dimensions"
+			icon: {
+				id: "rftoolsdim:enscriber"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: -2.0d
+			description: ["Putting a Blank Dimension Tab in an Encoder with dimlets of your choice (in this case, you'll need to use a Biome Dimlet.)"]
+			dependencies: ["3E726B03E73AEA9D"]
+			id: "5395F75277FAB0F7"
+			tasks: [
+				{
+					id: "6D77053247C55315"
+					type: "item"
+					item: {
+						id: "rftoolsdim:enscriber"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1A2899423B298DCC"
+					type: "item"
+					item: {
+						id: "rftoolsdim:empty_dimension_tab"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Creating Dimensions"
+			x: 4.0d
+			y: 2.0d
+			description: ["Once you have your Dimension Tab, put it in the Dimension Builder and give it power. Be sure to chunkload it and give it a constant supply of power, or you could die in a collapsing world!"]
+			dependencies: ["3E726B03E73AEA9D"]
+			id: "4B18114DA33587FE"
+			tasks: [{
+				id: "2C152181AC81A7EF"
+				type: "item"
+				item: {
+					id: "rftoolsdim:dimension_builder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Dimensional Transport"
+			icon: "rftoolsutility:matter_transmitter"
+			x: 2.0d
+			y: 2.0d
+			description: ["Place a Matter Reciever and Transmitter on the overworld side, as well as a dialing device. Once your dimension is set up, you'll dial to the reciever in your custom dimension. Make sure to bring a source of power with you. On the other end, place the Transmitter and another Dialing Device, and dial to the reciever in the overworld."]
+			dependencies: ["3E726B03E73AEA9D"]
+			id: "33C7F1A8D9107780"
+			tasks: [
+				{
+					id: "54255CFD8B0F8343"
+					type: "item"
+					item: "rftoolsutility:matter_receiver"
+				}
+				{
+					id: "78B4FE50E7D60E9C"
+					type: "item"
+					item: "rftoolsutility:matter_transmitter"
+					count: 2L
+				}
+				{
+					id: "13E0C21CCD5BB629"
+					type: "item"
+					item: "rftoolsutility:dialing_device"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Your First Dimension"
+			x: 4.0d
+			y: 0.0d
+			description: ["Find some Common Dimensional Blobs, that will spawn in your new dimension. Kill them and obtain this essence."]
+			dependencies: [
+				"5395F75277FAB0F7"
+				"42A3F22DD7E4244C"
+				"4B18114DA33587FE"
+				"33C7F1A8D9107780"
+			]
+			id: "495638B6B15FC6EE"
+			tasks: [{
+				id: "1352F71F4F6F14F4"
+				type: "item"
+				item: {
+					id: "rftoolsdim:common_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "More Dimlets"
+			x: 4.0d
+			y: -2.0d
+			description: ["Many structures made of Dimensional Blank Blocks can be found around custom dimensions. They have chests inside, with dimlets. Find some more dimlets, you need a reasonable amount."]
+			dependencies: ["495638B6B15FC6EE"]
+			id: "7EC487AA78C9B7E9"
+			tasks: [{
+				id: "610EF506AA224A1C"
+				type: "item"
+				item: {
+					id: "rftoolsdim:block_dimlet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Your Second Dimension"
+			x: 6.0d
+			y: 0.0d
+			description: ["Use your newfound dimlets and make another dimension. The more RF/t the dimension uses, the rarer Dimensional Blobs are able to spawn."]
+			dependencies: ["7EC487AA78C9B7E9"]
+			id: "38A5D3BA7790EA73"
+			tasks: [{
+				id: "04B3C77369C18C6F"
+				type: "item"
+				item: {
+					id: "rftoolsdim:rare_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "rftoolsdim:researcher"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: -2.0d
+			description: ["Putting Lost Knowledge in the Researcher will research it. Put your researched Lost Knowledge into a Knowledge Holder next to a Dimlet Workbench to make custom dimlets."]
+			dependencies: ["38A5D3BA7790EA73"]
+			id: "71930B77FF6E6849"
+			tasks: [
+				{
+					id: "007F0364B772302E"
+					type: "item"
+					item: {
+						id: "rftoolsdim:researcher"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6BC367AAA58AE03A"
+					type: "item"
+					item: {
+						id: "rftoolsdim:knowledge_holder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "rftoolsdim:dimlet_workbench"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 2.0d
+			description: ["The Block Absorber can absorb most types of blocks, and fully filled ones are needed to fabricate the custom dimlets. Custom dimlets also need other things, which are put together in the Dimlet Workbench. The Dimlet Workbench needs to be next to a Knowledge Holder with the required research within."]
+			dependencies: ["38A5D3BA7790EA73"]
+			id: "1D5947C4DBFE7EE6"
+			tasks: [
+				{
+					id: "2662EE28A6C19FD4"
+					type: "item"
+					item: {
+						id: "rftoolsdim:dimlet_workbench"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "08F04824E6F5DD3E"
+					type: "item"
+					item: {
+						id: "rftoolsdim:block_absorber"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Your Third Dimension"
+			x: 8.0d
+			y: 0.0d
+			description: ["Create some high-value dimlets and make a dimension that uses even more power."]
+			dependencies: [
+				"71930B77FF6E6849"
+				"1D5947C4DBFE7EE6"
+			]
+			id: "1B646E3BF6043500"
+			tasks: [{
+				id: "4B35EF44F2AA58FA"
+				type: "item"
+				item: {
+					id: "rftoolsdim:legendary_essence"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Your Fourth Dimension"
+			x: 10.0d
+			y: 0.0d
+			description: ["You can make the Block Absorber for Dimensional Shard Ore by infusing a Netherite Block Block Absorber. Create a dimlet for it, and put it into your final dimension."]
+			dependencies: ["1B646E3BF6043500"]
+			id: "5A502FD522DEB7C2"
+			tasks: [{
+				id: "6F612474297E891B"
+				type: "item"
+				item: "emendatusenigmatica:dimensional_gem"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["5A502FD522DEB7C2"]
+			id: "47D69AFEF9B6F397"
+			tasks: [{
+				id: "2BD0A00DEE18A208"
+				type: "item"
+				item: {
+					id: "extendedcrafting:the_ultimate_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["47D69AFEF9B6F397"]
+			id: "00CE1E546F06E028"
+			tasks: [{
+				id: "36F06B2FA8D80447"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:creative_compressed_iron_block"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["47D69AFEF9B6F397"]
+			id: "091959F525C334CF"
+			tasks: [{
+				id: "294331E7457BCBB4"
+				type: "item"
+				item: "thermal:machine_catalyst_creative_augment"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			dependencies: ["00CE1E546F06E028"]
+			id: "00E37809E6140FFC"
+			tasks: [{
+				id: "4A3075B764E6C200"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:creative_compressor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			dependencies: ["00E37809E6140FFC"]
+			id: "2E422C153C5E3603"
+			tasks: [{
+				id: "20496C42B47DC295"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["091959F525C334CF"]
+			id: "046AAB6396EB7A7C"
+			tasks: [{
+				id: "60B0A75620E293FA"
+				type: "item"
+				item: "psi:cad_assembly_creative"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			dependencies: ["046AAB6396EB7A7C"]
+			id: "6280CC4B006AE2C9"
+			tasks: [{
+				id: "691EF782A0ABEB70"
+				type: "item"
+				item: {
+					id: "botania:creative_pool"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Starforge"
+			icon: {
+				id: "extendedcrafting:the_ultimate_block"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"2E422C153C5E3603"
+				"6280CC4B006AE2C9"
+			]
+			size: 2.5d
+			id: "669235D0B6247B19"
+			tasks: [
+				{
+					id: "0DB83083B7666CF1"
+					type: "item"
+					item: "masterfulmachinery:stellar_controller"
+				}
+				{
+					id: "08D9CCB6DF7F4390"
+					type: "item"
+					item: "masterfulmachinery:stellar_energy_port_energy_input"
+				}
+				{
+					id: "2D4908142D026450"
+					type: "item"
+					item: "masterfulmachinery:stellar_item_port_items_input"
+				}
+				{
+					id: "288C7AFEFED1FFDB"
+					type: "item"
+					item: "masterfulmachinery:stellar_item_port_items_output"
+				}
+				{
+					id: "5A9898EB4D1C21C6"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 14L
+				}
+				{
+					id: "2738902265BD376F"
+					type: "item"
+					item: {
+						id: "kubejs:time_infused_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 18L
+				}
+				{
+					id: "7B446F538E381960"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+					match_nbt: false
+				}
+				{
+					id: "0ECCDD7408CDF8DD"
+					type: "item"
+					item: {
+						id: "extendedcrafting:crystaltine_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 48L
+				}
+				{
+					id: "7DFE4261B4C77C09"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+					count: 6L
+				}
+				{
+					id: "65E0C746332CADA8"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 224L
+				}
+				{
+					id: "73A0EF6B9368014D"
+					type: "item"
+					item: {
+						id: "mekanism:sps_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 192L
+				}
+				{
+					id: "60256E46CFE7E551"
+					type: "item"
+					item: {
+						id: "mekanism:supercharged_coil"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "67E5F55DB948F5EF"
+					type: "item"
+					item: {
+						id: "extendedcrafting:the_ultimate_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "01F82B267EC890F1"
+					type: "item"
+					item: {
+						id: "envirocore:xerothium_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 72L
+				}
+			]
+			rewards: [{
+				id: "72657C256F822C07"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛇ\\nI received a knock from a mysterious person. They learned from a block of my plan, they didn’t elaborate so it must have been some weird artifact. They were trying to do the same thing as me: end the war peacefully. My plans and the artifacts I've\"}"
+							"{\"text\":\"collected will be quite useful, so I joined them.\\n\"}"
+						]
+						title: "Entry ᛇᛇ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+	]
+}

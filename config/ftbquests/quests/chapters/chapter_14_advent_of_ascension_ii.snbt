@@ -1,0 +1,1964 @@
+{
+	id: "3F5BE3360761BE73"
+	group: ""
+	order_index: 16
+	filename: "chapter_14_advent_of_ascension_ii"
+	title: "14 - Advent of Ascension II"
+	icon: {
+		id: "aoa3:carved_rune_of_power"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Advent of Ascension II"
+			icon: {
+				id: "aoa3:carved_rune_of_power"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.75d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "More Dimensional Discoveries"
+			dependencies: ["3D92C16DF19A64BA"]
+			size: 1.5d
+			id: "70258347DA5B24A6"
+			tasks: [{
+				id: "67346FB9F456FF1D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Iromine"
+			x: 12.5d
+			y: -1.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "47DD0A1415D2D0B3"
+			tasks: [{
+				id: "42F278BEB791150A"
+				type: "item"
+				item: {
+					id: "aoa3:iromine_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Crystevia"
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "5B5A8F8B181CE498"
+			tasks: [{
+				id: "76531DCAC689A966"
+				type: "item"
+				item: {
+					id: "aoa3:crystevia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Celeve"
+			x: 12.5d
+			y: -7.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "721E32502E62EE09"
+			tasks: [{
+				id: "6E603EF4B4B00EC6"
+				type: "item"
+				item: {
+					id: "aoa3:celeve_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Gardencia"
+			x: 12.5d
+			y: -4.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "1945A6F98F6FEA28"
+			tasks: [{
+				id: "752D2D548FD50C95"
+				type: "item"
+				item: {
+					id: "aoa3:gardencia_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Vox Ponds"
+			x: 12.5d
+			y: 7.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "7CDA34D676A44BF3"
+			tasks: [{
+				id: "5677D8CC3BDCE821"
+				type: "item"
+				item: {
+					id: "aoa3:vox_ponds_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Greckon"
+			x: 12.5d
+			y: 4.5d
+			dependencies: ["70258347DA5B24A6"]
+			id: "37CBFA9866BFDE36"
+			tasks: [{
+				id: "411976B3AF0BF152"
+				type: "item"
+				item: {
+					id: "aoa3:greckon_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Celevus Materials"
+			icon: {
+				id: "aoa3:red_celevus_leaves"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: -9.0d
+			dependencies: ["721E32502E62EE09"]
+			id: "1DF73F2A82795B4F"
+			tasks: [
+				{
+					id: "70F600482A93B085"
+					type: "item"
+					item: {
+						id: "aoa3:red_celevus_leaves"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "596E79AAEE6BFD36"
+					type: "item"
+					item: {
+						id: "aoa3:white_celevus_leaves"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "08D5D5D3D19A26E2"
+					type: "item"
+					item: {
+						id: "aoa3:green_celebulbs"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7C3E29742051AC32"
+					type: "item"
+					item: {
+						id: "aoa3:celeve_stem"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Balloon"
+			icon: {
+				id: "aoa3:balloon"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: -7.5d
+			description: ["Locate a Toy Tower and kill the Toy Trader within to obtain a Balloon."]
+			dependencies: [
+				"1DF73F2A82795B4F"
+				"1AAA73BD492E67DC"
+			]
+			id: "190FAE64E67A47A3"
+			tasks: [
+				{
+					id: "24AE662E1F4C06E2"
+					type: "kill"
+					title: "Murder a Toy Merchant"
+					icon: {
+						id: "aoa3:red_celevians"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:toy_merchant"
+					value: 1L
+				}
+				{
+					id: "7E1412A372FED2EB"
+					type: "item"
+					item: {
+						id: "aoa3:balloon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Gyro"
+			icon: {
+				id: "aoa3:toy_gyrocopter"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: -6.0d
+			description: ["Use a Toy Gyrocopter anywhere in Celeve to summon Gyro."]
+			dependencies: ["190FAE64E67A47A3"]
+			id: "23B783BD20CF4A45"
+			tasks: [
+				{
+					id: "618AD3FE5D887FE8"
+					type: "item"
+					item: {
+						id: "aoa3:toy_gyrocopter"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "74D995AF72E22F65"
+					type: "kill"
+					title: "Defeat Gyro"
+					icon: {
+						id: "aoa3:hardened_confetti_ball"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "minecraft:zombie"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Small Petals"
+			icon: {
+				id: "aoa3:small_blue_petal"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: -4.5d
+			description: ["Petals are dropped by various enemies in the dimension. Some petals need specific enemies to drop."]
+			dependencies: ["1945A6F98F6FEA28"]
+			id: "706AE77792BFC9B8"
+			tasks: [
+				{
+					id: "4320B9E7E3609EEF"
+					type: "item"
+					item: {
+						id: "aoa3:small_blue_petal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "03728444E299EE9E"
+					type: "item"
+					item: {
+						id: "aoa3:small_green_petal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "62B70E30EA6AD178"
+					type: "item"
+					item: {
+						id: "aoa3:small_orange_petal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4345E533E9E2B648"
+					type: "item"
+					item: {
+						id: "aoa3:small_purple_petal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "79CCE66F5532BCA7"
+					type: "item"
+					item: {
+						id: "aoa3:small_red_petal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: -6.0d
+			description: ["Locate the Garden Castle and take the Petal Crafting Station."]
+			dependencies: ["1945A6F98F6FEA28"]
+			id: "46228F30B1EC7E8F"
+			tasks: [{
+				id: "304D61D5BAA061B4"
+				type: "item"
+				item: {
+					id: "aoa3:petal_crafting_station"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Vinocorne"
+			icon: {
+				id: "aoa3:petals"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: -4.5d
+			description: ["Locate a Floro Castle and make your way to the top. Use your Petals on the Vinocorne Spawner and defeat Vinocorne."]
+			dependencies: [
+				"706AE77792BFC9B8"
+				"46228F30B1EC7E8F"
+			]
+			id: "55628735410EFC23"
+			tasks: [
+				{
+					id: "4B7181B6E4B72477"
+					type: "item"
+					item: {
+						id: "aoa3:petals"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5AB53FF3F4F05837"
+					type: "observation"
+					title: "Locate a Vinocorne Shrine"
+					icon: {
+						id: "aoa3:vinocorne_shrine"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:vinocorne_shrine"
+				}
+				{
+					id: "1D9E083F1520F6BF"
+					type: "kill"
+					title: "Defeat Vinocorne"
+					icon: {
+						id: "aoa3:rosidian_sword"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:vinocorne"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: -7.5d
+			description: ["Dropped by mobs in Celeve."]
+			dependencies: ["721E32502E62EE09"]
+			id: "1AAA73BD492E67DC"
+			tasks: [{
+				id: "24C474ECFF7FC510"
+				type: "item"
+				item: {
+					id: "aoa3:confetti_pile"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Iromine Materials"
+			icon: {
+				id: "aoa3:magnet_shard"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: -3.0d
+			description: ["Killing mobs in the dimension will give Magnet Shards. Iro Scraps are obtained by mining Iro Crates, which are found in the Enforcer Tower. Lyon Ingots are from Lyon Ore."]
+			dependencies: ["47DD0A1415D2D0B3"]
+			id: "509DEC97580ECBCD"
+			tasks: [
+				{
+					id: "282B548208101BAE"
+					type: "item"
+					item: "minecraft:barrier"
+				}
+				{
+					id: "6A2D7417C12CA5C1"
+					type: "item"
+					item: {
+						id: "aoa3:magnet_shard"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6893A38F45F32254"
+					type: "item"
+					item: {
+						id: "aoa3:lyon_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Professor"
+			icon: {
+				id: "aoa3:mecha_gear"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: -1.5d
+			description: ["The Professor will spawn in the Professor's Lab. You will need to trade to reach Lever 3, where you can get Mecha Gears. Use these Mecha Gears to turn Iro Scrap into an Iro Crate, and then trade it again to get a Gold Spring. The professor may not give the needed trades when at level 3, in which case you'll need to find another."]
+			dependencies: ["509DEC97580ECBCD"]
+			id: "1FDDAC98ABF5FC9B"
+			tasks: [
+				{
+					id: "7BBAC206740E69BB"
+					type: "item"
+					item: {
+						id: "aoa3:mecha_gear"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "327E1E839982B403"
+					type: "item"
+					item: {
+						id: "aoa3:iro_crate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "MechBot"
+			icon: {
+				id: "aoa3:gold_spring"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: -1.5d
+			description: ["Locate the Charging Pads and use the Gold Spring on one of the MechBot Altars to summon MechBot."]
+			dependencies: [
+				"1FDDAC98ABF5FC9B"
+				"509DEC97580ECBCD"
+			]
+			id: "0E377CF3960FF619"
+			tasks: [
+				{
+					id: "2C677257D50BFD4B"
+					type: "item"
+					item: {
+						id: "aoa3:gold_spring"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "21985B7799CFBF31"
+					type: "observation"
+					title: "Locate a MechBot Altar"
+					icon: {
+						id: "aoa3:mechbot_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:mechbot_altar"
+				}
+				{
+					id: "3AF3F6C614D2772E"
+					type: "kill"
+					title: "Defeat MechBot"
+					icon: {
+						id: "aoa3:power_core"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:mechbot"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			description: ["Druses are dropped by various mobs in the dimension. Some require a specific mob. Combine them to make this."]
+			dependencies: ["5B5A8F8B181CE498"]
+			id: "01B0317B42B6E447"
+			tasks: [{
+				id: "3F4C1C2A19E7E2F4"
+				type: "item"
+				item: {
+					id: "aoa3:rainbow_druse"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Crystals"
+			x: 15.0d
+			y: 1.5d
+			description: ["You will need 10 Crystals, they can be any color. However, all 10 have to be the same color. Crystals are mined as ores."]
+			dependencies: ["5B5A8F8B181CE498"]
+			id: "5F033F9D6F9E723A"
+			tasks: [{
+				id: "7D0BD22C89BE51FC"
+				type: "item"
+				title: "10x Crystals"
+				icon: {
+					id: "aoa3:blue_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "aoa3:blue_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "aoa3:green_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "aoa3:purple_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "aoa3:red_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "aoa3:white_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "aoa3:yellow_crystal"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+				count: 10L
+			}]
+		}
+		{
+			title: "Crystocore"
+			icon: {
+				id: "aoa3:giant_crystal"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: 1.5d
+			description: ["First, you will need to locate a Crystal Extension Station. Drop 10 of your crystals near the Crystal Extension Station (block), and right click on the block with your Rainbow Druse to obtain the Giant Crystal. Use it in the Power Station (block), found in the Power Station."]
+			dependencies: [
+				"5F033F9D6F9E723A"
+				"01B0317B42B6E447"
+			]
+			id: "20CF18C0A3F1AD8D"
+			tasks: [
+				{
+					id: "6FCE660B13F3D53F"
+					type: "observation"
+					title: "Locate a Crystal Extension Shrine"
+					icon: {
+						id: "aoa3:crystal_extension_shrine"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:crystal_extension_shrine"
+				}
+				{
+					id: "40A187F18382DA79"
+					type: "item"
+					item: {
+						id: "aoa3:giant_crystal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6E8D0D37FD23DB01"
+					type: "observation"
+					title: "Locate a Power Station"
+					icon: {
+						id: "aoa3:power_station"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:power_station"
+				}
+				{
+					id: "5D204232D10496F5"
+					type: "kill"
+					title: "Defeat Crystocore"
+					icon: {
+						id: "aoa3:cryston_staff"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:crystocore"
+					value: 1L
+				}
+			]
+		}
+		{
+			icon: {
+				id: "aoa3:hazmat_helmet"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 15.0d
+			y: 7.5d
+			description: ["You will need to quickly get 4 Polluted Stone before you die from the toxicity. From there, you can make a Hazmat Suit to protect yourself."]
+			dependencies: ["7CDA34D676A44BF3"]
+			id: "3FBEE122A4E6CDA5"
+			tasks: [
+				{
+					id: "21F13F006D89D4DC"
+					type: "item"
+					title: "Quick!"
+					item: {
+						id: "aoa3:polluted_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "3FC843404D891D9E"
+					type: "item"
+					item: {
+						id: "aoa3:hazmat_helmet"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "08AD5648A5A2C28F"
+					type: "item"
+					item: {
+						id: "aoa3:hazmat_chestplate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0891C05984F924E6"
+					type: "item"
+					item: {
+						id: "aoa3:hazmat_legs"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68C831AB70676F12"
+					type: "item"
+					item: {
+						id: "aoa3:hazmat_boots"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Uncharged Stone"
+			icon: {
+				id: "aoa3:uncharged_stone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: 9.0d
+			description: ["Locate an Enigma Station and locate an Enigma table. Right click on one to obtain an Uncharged Stone."]
+			dependencies: ["3FBEE122A4E6CDA5"]
+			id: "527DAED0793B2E76"
+			tasks: [
+				{
+					id: "301C2FA082AA63F4"
+					type: "observation"
+					title: "Locate an Enigma Table"
+					icon: {
+						id: "aoa3:enigma_table"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:enigma_table"
+				}
+				{
+					id: "43739693135567A1"
+					type: "item"
+					item: {
+						id: "aoa3:uncharged_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Vox Materials"
+			icon: {
+				id: "aoa3:toxic_lump"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: 7.5d
+			description: ["Degraded Steel is found in structures and Toxic Lumps are dropped by mobs in the dimension."]
+			dependencies: ["3FBEE122A4E6CDA5"]
+			id: "265FC25802CB8155"
+			tasks: [
+				{
+					id: "093489E22D73ECC3"
+					type: "item"
+					item: {
+						id: "aoa3:degraded_steel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7922185A8B967942"
+					type: "item"
+					item: {
+						id: "aoa3:toxic_lump"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Voxxulon"
+			icon: {
+				id: "aoa3:vile_stone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: 6.0d
+			description: ["Locate a Voxxulon Platform and use your Vile Stone on the Voxxulon Altar."]
+			dependencies: [
+				"265FC25802CB8155"
+				"527DAED0793B2E76"
+			]
+			id: "5A7CD9804E415FA9"
+			tasks: [
+				{
+					id: "59A9EA4C1F1806D0"
+					type: "item"
+					item: {
+						id: "aoa3:vile_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0EC6A8311D2DC879"
+					type: "observation"
+					title: "Locate a Voxxulon Altar"
+					icon: {
+						id: "aoa3:voxxulon_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:voxxulon_altar"
+				}
+				{
+					id: "6E2D33481A416CB7"
+					type: "kill"
+					title: "Defeat Voxxulon"
+					icon: {
+						id: "aoa3:noxious_greatblade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:voxxulon"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Greckon Materials"
+			x: 15.0d
+			y: 4.5d
+			description: ["Ghoulasm is dropped by mobs in the dimension. To get Illusionary Essence, kill the Illusioner found in one of the lower floors in the Haunted Dungeon."]
+			dependencies: ["37CBFA9866BFDE36"]
+			id: "40BBE8F8E628527E"
+			tasks: [{
+				id: "3E0CD8E35BF46D99"
+				type: "item"
+				item: {
+					id: "aoa3:ghoulasm"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Greckon Metals"
+			icon: {
+				id: "aoa3:ghastly_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 15.0d
+			y: 6.0d
+			description: ["Both of these come from ores."]
+			dependencies: ["37CBFA9866BFDE36"]
+			id: "2AE1A7A00428C882"
+			tasks: [
+				{
+					id: "133F1F544AEE19F7"
+					type: "item"
+					item: {
+						id: "aoa3:ghoulish_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "325A01A5C99BF9CA"
+					type: "item"
+					item: {
+						id: "aoa3:ghastly_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Bane"
+			icon: {
+				id: "aoa3:haunted_idol"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: 4.5d
+			description: ["Find a Haunted Maze and navigate your way to the end of it to find a Haunting Table. Right clicking on it while holding Ghoulasm will grant you Primed Ghoulasm. Use it to craft a Haunted Idol and throw it on the ground to summon Bane."]
+			dependencies: [
+				"40BBE8F8E628527E"
+				"2AE1A7A00428C882"
+			]
+			id: "40F5A971F788CAAE"
+			tasks: [
+				{
+					id: "5CA7507DA0762661"
+					type: "observation"
+					title: "Locate a Haunting Table"
+					icon: {
+						id: "aoa3:haunting_table"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:haunting_table"
+				}
+				{
+					id: "22A084B53D638B7B"
+					type: "item"
+					item: {
+						id: "aoa3:primed_ghoulasm"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4F7616788CC06196"
+					type: "item"
+					item: {
+						id: "aoa3:haunted_idol"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1F8EE2E1025B9A2D"
+					type: "kill"
+					title: "Defeat Bane"
+					icon: {
+						id: "aoa3:amethyst"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "minecraft:zombie"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Lunalus"
+			x: 22.5d
+			y: -4.5d
+			description: ["Make sure to bring your Hazmat Suit again for this dimension, because you will need it to breathe."]
+			dependencies: ["23B783BD20CF4A45"]
+			id: "02FB3258A094804C"
+			tasks: [{
+				id: "7B237D658C7D9B40"
+				type: "item"
+				item: {
+					id: "aoa3:lunalus_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "L'Borean"
+			x: 20.0d
+			y: -4.5d
+			dependencies: ["55628735410EFC23"]
+			id: "7375FD9DD700A9A3"
+			tasks: [{
+				id: "2AEB6410244B3405"
+				type: "item"
+				item: {
+					id: "aoa3:lborean_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The Shyrelands"
+			x: 20.0d
+			y: 4.5d
+			dependencies: ["40F5A971F788CAAE"]
+			id: "354DE2B2A0A59279"
+			tasks: [{
+				id: "523F19BD9DBF28BF"
+				type: "item"
+				item: {
+					id: "aoa3:shyrelands_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Runandor"
+			x: 22.5d
+			y: 4.5d
+			dependencies: ["5A7CD9804E415FA9"]
+			id: "2F2A8A1ADDE2510E"
+			tasks: [{
+				id: "635A84C1002E711E"
+				type: "item"
+				item: {
+					id: "aoa3:runandor_realmstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Lunalus Vegetation"
+			icon: {
+				id: "aoa3:twinklestone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 22.5d
+			y: -3.0d
+			description: ["These plants are found in Lunar Oases."]
+			dependencies: ["02FB3258A094804C"]
+			id: "28B24D4F4D64B509"
+			tasks: [
+				{
+					id: "35214D1E64839788"
+					type: "item"
+					item: {
+						id: "aoa3:lunalip"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "295353B0A206DE3E"
+					type: "item"
+					item: {
+						id: "aoa3:twinklestone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "10AB18D46AE17E38"
+					type: "item"
+					item: {
+						id: "aoa3:lunide_log"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Artificial Lunalus Materials"
+			icon: {
+				id: "aoa3:lunar_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 25.0d
+			y: -3.0d
+			description: ["Orbulons are dropped by mobs in the dimension. Lunar Ingots are found in chests within Zal Ships. Neon Lamps are found at the front of the ships."]
+			dependencies: ["02FB3258A094804C"]
+			id: "0AB3048DB5ABC885"
+			tasks: [
+				{
+					id: "09AF5346A08FE7EA"
+					type: "item"
+					item: {
+						id: "aoa3:lunar_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "60D31C48541520EE"
+					type: "item"
+					item: {
+						id: "aoa3:neon_lamp"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "471FDEF6F93E4A77"
+					type: "item"
+					item: {
+						id: "aoa3:orbulon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Visualent"
+			icon: {
+				id: "aoa3:observing_eye"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 22.5d
+			y: -1.5d
+			description: ["Use anywhere in Lunalus to summon Visualent."]
+			dependencies: [
+				"0AB3048DB5ABC885"
+				"28B24D4F4D64B509"
+			]
+			id: "1E3DA4E9AFC8E388"
+			tasks: [
+				{
+					id: "100D1222BC0D1F4C"
+					type: "item"
+					item: {
+						id: "aoa3:observing_eye"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7B757069631188AF"
+					type: "kill"
+					title: "Defeat Visualent"
+					icon: {
+						id: "aoa3:lunarade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:visualent"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Corallus"
+			icon: {
+				id: "aoa3:amphibiyte_lung"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: -3.0d
+			description: ["Locate an Amphibiyte Cove and kill the an Amphybiyte to obtain a lung used to summon the boss."]
+			dependencies: ["7375FD9DD700A9A3"]
+			id: "525832EC566DFF36"
+			tasks: [
+				{
+					id: "60ED3B9D0F01E59C"
+					type: "item"
+					item: {
+						id: "aoa3:amphibiyte_lung"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "693936D65452D3AF"
+					type: "kill"
+					title: "Defeat Corallus"
+					icon: {
+						id: "aoa3:achelos_helmet"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:corallus"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: -3.0d
+			description: ["There is a chance to fish this item while fishing in L'Borean"]
+			dependencies: ["7375FD9DD700A9A3"]
+			id: "5E97D7C233FACB63"
+			tasks: [{
+				id: "488FC97AFFBFB022"
+				type: "item"
+				item: {
+					id: "aoa3:call_of_the_drake"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Dracyon"
+			icon: {
+				id: "aoa3:dracyon_altar"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: -1.5d
+			description: ["Locate a Dracyon Fountain to find the Dracyon Altar, and use a Call of the Drake on it to summon Dracyon."]
+			dependencies: [
+				"5E97D7C233FACB63"
+				"525832EC566DFF36"
+			]
+			id: "2466FADE2795AD4F"
+			tasks: [
+				{
+					id: "719F6391FA5CBB83"
+					type: "observation"
+					title: "Locate a Dracyon Altar"
+					icon: {
+						id: "aoa3:dracyon_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:dracyon_altar"
+				}
+				{
+					id: "749895A5A8E4DBC3"
+					type: "kill"
+					title: "Defeat Dracyon"
+					icon: {
+						id: "aoa3:hydroplate_chestplate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:dracyon"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Special Blocks"
+			icon: {
+				id: "aoa3:divine_station"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 17.5d
+			y: 3.0d
+			description: ["Whitewashing Tables are found in Whitewashing Mills. Divine Stations are found in Divine Ritual Temples."]
+			dependencies: ["354DE2B2A0A59279"]
+			id: "65E37E5CAFBA70ED"
+			tasks: [
+				{
+					id: "75CE4340027F157B"
+					type: "item"
+					item: {
+						id: "aoa3:whitewashing_table"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7EFEC075DF64A877"
+					type: "item"
+					item: {
+						id: "aoa3:divine_station"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "aoa3:shyrestone_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: 3.0d
+			description: ["Shyreglass generates in Shyre Pillars found below the surface of the dimension. Whitewashing Solution is dropped from mobs, and Shyregems and Shyrestone are mined as an ore."]
+			dependencies: ["354DE2B2A0A59279"]
+			id: "0B3792ECDDD57FEF"
+			tasks: [
+				{
+					id: "43D3067494F3D025"
+					type: "item"
+					item: {
+						id: "aoa3:shyrestone_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "62A148FA7DC29BD8"
+					type: "item"
+					item: {
+						id: "aoa3:shyregem"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6F9400D14388ABC3"
+					type: "item"
+					item: {
+						id: "aoa3:whitewashing_solution"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "24C13DAB943E27A1"
+					type: "item"
+					item: {
+						id: "aoa3:shyre_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Craexxeus"
+			icon: {
+				id: "aoa3:ancient_ring"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 20.0d
+			y: 1.5d
+			description: ["Locate a Crae Statue and use the Ancient Ring on the Craexxeus Altar to summon Craexxeus."]
+			dependencies: [
+				"0B3792ECDDD57FEF"
+				"65E37E5CAFBA70ED"
+			]
+			id: "42B7C77F75D8CADB"
+			tasks: [
+				{
+					id: "479D03F388AB65EC"
+					type: "item"
+					item: {
+						id: "aoa3:ancient_ring"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "544B0416F2FC247B"
+					type: "observation"
+					title: "Locate a Craexxeus Altar"
+					icon: {
+						id: "aoa3:craexxeus_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:craexxeus_altar"
+				}
+				{
+					id: "674400E2541CE301"
+					type: "kill"
+					title: "Defeat Craexxeus"
+					icon: {
+						id: "aoa3:gods_greatblade"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					entity: "aoa3:craexxeus"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Mega Rune Fragments"
+			icon: {
+				id: "aoa3:blue_mega_rune_fragment"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 22.5d
+			y: 3.0d
+			description: ["Runic Rooms spawn underground. They have a Rune Templar of a certain color, which when activated using a Rune of a cooresponding color, will begin the minigame. Its health will drain and it will spawn enemies that you will need to kill because it regenerates the Templar's health. After the Templar's health reaches 0, it will give you the Mega Rune Fragment of it's color."]
+			dependencies: ["2F2A8A1ADDE2510E"]
+			id: "0709680DEE397B98"
+			tasks: [
+				{
+					id: "634965834AFFF9EC"
+					type: "item"
+					item: {
+						id: "aoa3:water_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "45FF3473D8D3994B"
+					type: "item"
+					item: {
+						id: "aoa3:blue_mega_rune_fragment"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3FB37F4E56267801"
+					type: "item"
+					item: {
+						id: "aoa3:poison_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4FE8DB0EDA5F069B"
+					type: "item"
+					item: {
+						id: "aoa3:green_mega_rune_fragment"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2660BF47E472FEC3"
+					type: "item"
+					item: {
+						id: "aoa3:fire_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "51101B576FEFEDC4"
+					type: "item"
+					item: {
+						id: "aoa3:red_mega_rune_fragment"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "602FE4DA10CC16C8"
+					type: "item"
+					item: {
+						id: "aoa3:energy_rune"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "622A677EF8502964"
+					type: "item"
+					item: {
+						id: "aoa3:yellow_mega_rune_fragment"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Runic Materials"
+			icon: "aoa3:runic_energy"
+			x: 25.0d
+			y: 3.0d
+			description: ["Runic Energy is dropped by mobs in the dimension."]
+			dependencies: ["2F2A8A1ADDE2510E"]
+			id: "5FAB6AF8140DD467"
+			tasks: [
+				{
+					id: "4D5BFDEB72365285"
+					type: "item"
+					item: {
+						id: "aoa3:runic_energy"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6905DEDE8C467129"
+					type: "item"
+					item: {
+						id: "aoa3:runic_log"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2A4C64B5EBDD3AB5"
+					type: "item"
+					item: {
+						id: "aoa3:runic_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Clunkhead"
+			icon: {
+				id: "aoa3:mega_rune_stone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 22.5d
+			y: 1.5d
+			description: ["Locate a Clunkhead Arena and find the Clunkhead Altar. Use the Mega Rune Stone on the Clunkhead Altar."]
+			dependencies: [
+				"0709680DEE397B98"
+				"5FAB6AF8140DD467"
+			]
+			id: "48ED9780718D0DB1"
+			tasks: [
+				{
+					id: "20F068AE3B57CC9E"
+					type: "item"
+					item: {
+						id: "aoa3:mega_rune_stone"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "63F014720F8F3D60"
+					type: "observation"
+					title: "Locate a Clunkhead Altar"
+					icon: {
+						id: "aoa3:clunkhead_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "aoa3:clunkhead_altar"
+				}
+				{
+					id: "7931E26A853A0F53"
+					type: "kill"
+					title: "Defeat Clunkhead"
+					icon: {
+						id: "aoa3:rune_box"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					entity: "aoa3:clunkhead"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "Dimensionally Transcendent Pebble and Hellsteel"
+			x: 20.0d
+			y: 0.0d
+			description: ["DO NOT LOSE THIS ITEM! You will need it again at the end of the modpack."]
+			dependencies: [
+				"20CF18C0A3F1AD8D"
+				"42B7C77F75D8CADB"
+				"48ED9780718D0DB1"
+				"1E3DA4E9AFC8E388"
+				"2466FADE2795AD4F"
+				"0E377CF3960FF619"
+			]
+			id: "3045B7403B041A50"
+			tasks: [{
+				id: "66838454B54ABCD6"
+				type: "item"
+				item: {
+					id: "kubejs:dimensionally_transcendent_pebble_and_hellsteel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Portal to Asgard"
+			icon: {
+				id: "botania:glimmering_dreamwood"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 25.0d
+			y: 0.0d
+			dependencies: ["3045B7403B041A50"]
+			id: "47AF21E7517D317E"
+			tasks: [
+				{
+					id: "45E02DADA88F6353"
+					type: "item"
+					item: {
+						id: "masterfulmachinery:multiblock_controller"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "0ECFB0B2F8AB483C"
+					type: "item"
+					item: {
+						id: "masterfulmachinery:multiblock_item_port_items_input"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "09962DE58772F770"
+					type: "item"
+					item: {
+						id: "masterfulmachinery:multiblock_item_port_items_output"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1A3C0CDC7A80C062"
+					type: "item"
+					item: {
+						id: "botania:glimmering_dreamwood"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "51103A0E576F6597"
+					type: "item"
+					item: {
+						id: "botania:fabulous_pool"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "2BB5193C60E04DBF"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_pylon"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "29D0E31E64C46C2D"
+					type: "item"
+					item: {
+						id: "masterfulmachinery:multiblock_mana_port_botania_mana_input"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 30.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["47AF21E7517D317E"]
+			size: 2.5d
+			id: "778E64B825C7835C"
+			tasks: [{
+				id: "765EDA8ECC2B9106"
+				type: "item"
+				item: {
+					id: "kubejs:stellar_core"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

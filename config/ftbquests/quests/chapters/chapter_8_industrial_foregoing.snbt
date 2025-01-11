@@ -1,0 +1,858 @@
+{
+	id: "78C83CE2004CE80F"
+	group: ""
+	order_index: 10
+	filename: "chapter_8_industrial_foregoing"
+	title: "8 - Industrial Foregoing"
+	icon: {
+		id: "industrialforegoing:infinity_hammer"
+		Count: 1b
+		tag: {
+			CanCharge: 1b
+			Energy: 0L
+			Fluid: {
+				FluidName: "biofuel"
+				Amount: 0
+			}
+			Special: 0b
+			temperature: 0.0d
+			Selected: "POOR"
+			Beheading: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Industrial Foregoing"
+			icon: {
+				id: "industrialforegoing:infinity_hammer"
+				Count: 1b
+				tag: {
+					CanCharge: 1b
+					Energy: 0L
+					Fluid: {
+						FluidName: "biofuel"
+						Amount: 0
+					}
+					Special: 0b
+					temperature: 0.0d
+					Selected: "POOR"
+					Beheading: 0
+				}
+			}
+			x: 5.0d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "Complex Systems"
+			dependencies: ["4C4E619D74E7CD55"]
+			size: 1.5d
+			id: "679380B199F9EB49"
+			tasks: [{
+				id: "6849B98CE931D4E0"
+				type: "item"
+				item: {
+					id: "industrialforegoing:machine_frame_pity"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "62CBFFF43AAC8BC0"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["679380B199F9EB49"]
+			id: "5BFFF139BAD50661"
+			tasks: [{
+				id: "0CFB32DAC905705E"
+				type: "item"
+				item: {
+					id: "industrialforegoing:fluid_extractor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			dependencies: ["679380B199F9EB49"]
+			id: "458CBCF10BC38334"
+			tasks: [{
+				id: "08C0FE857A0A3506"
+				type: "item"
+				item: {
+					id: "industrialforegoing:latex_processing_unit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			dependencies: [
+				"458CBCF10BC38334"
+				"5BFFF139BAD50661"
+			]
+			id: "50888B6EA155F4BC"
+			tasks: [{
+				id: "6C18978EBD434CEE"
+				type: "item"
+				item: {
+					id: "industrialforegoing:tinydryrubber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			dependencies: ["50888B6EA155F4BC"]
+			id: "364C59DC3EC12E7A"
+			tasks: [{
+				id: "06B8FE1B01769E7F"
+				type: "item"
+				item: {
+					id: "industrialforegoing:plastic"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["364C59DC3EC12E7A"]
+			id: "616329DA19E2E4C5"
+			tasks: [{
+				id: "5032E831CE4D0CEE"
+				type: "item"
+				item: {
+					id: "industrialforegoing:dissolution_chamber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["616329DA19E2E4C5"]
+			id: "4810F030A422A81F"
+			tasks: [{
+				id: "367856FD9ED6DC5E"
+				type: "item"
+				item: {
+					id: "industrialforegoing:machine_frame_simple"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["4810F030A422A81F"]
+			id: "07307B1D7263A7FE"
+			tasks: [{
+				id: "7BB7E7BA71F9FB6A"
+				type: "item"
+				item: {
+					id: "industrialforegoing:mob_slaughter_factory"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["07307B1D7263A7FE"]
+			id: "4FB6E468925B06BA"
+			tasks: [{
+				id: "5676C7B51B01273E"
+				type: "item"
+				item: {
+					id: "industrialforegoing:pink_slime"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Flux Networks"
+			icon: "fluxnetworks:flux_controller"
+			x: 11.0d
+			y: 6.0d
+			shape: "square"
+			dependencies: ["22772710B6018EC6"]
+			id: "1ED6EC652B8052B3"
+			tasks: [
+				{
+					id: "401304A00191A398"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+				{
+					id: "4FFB2870871D3E76"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+				}
+			]
+		}
+		{
+			title: "Air Collector"
+			icon: "immersiveengineering:alu_scaffolding_standard"
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["4810F030A422A81F"]
+			id: "3F29F4053776DEBF"
+			tasks: [
+				{
+					id: "068CD33332DD4CCC"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "2EA737D273BDB76A"
+					type: "item"
+					item: "masterfulmachinery:advanced_energy_port_energy_input"
+				}
+				{
+					id: "150A97FB13B6D503"
+					type: "item"
+					item: "masterfulmachinery:advanced_item_port_items_input"
+				}
+				{
+					id: "3A916F8DDD042F9E"
+					type: "item"
+					item: "masterfulmachinery:advanced_gas_port_mekanism_gas_output"
+				}
+				{
+					id: "41676D8948DB4D2E"
+					type: "item"
+					item: "immersiveengineering:alu_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "252493C1A111D1EC"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 8L
+				}
+				{
+					id: "375DFB022D1078B6"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 12L
+				}
+			]
+		}
+		{
+			title: "Cryogenic Distillation Column"
+			icon: {
+				id: "electrodynamics:resourceblockvanadiumsteel"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["3C8353D3DC73DE70"]
+			id: "64B4E30C9E1D22FB"
+			tasks: [
+				{
+					id: "2D02B11664035ABE"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "419497318720B96A"
+					type: "item"
+					item: "masterfulmachinery:advanced_energy_port_energy_input"
+				}
+				{
+					id: "439B03E269BFF640"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_input"
+				}
+				{
+					id: "03030076F09F64B2"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_output"
+					count: 3L
+				}
+				{
+					id: "3020F2D2A3F19B28"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_aluminum"
+					count: 64L
+				}
+				{
+					id: "4BC86FB4B005FD45"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockhslasteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "34E4F3380DA85576"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockvanadiumsteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 11L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: [
+				"568CC9E3EF7C84C2"
+				"6877B215A0F5194F"
+			]
+			id: "40C13653E8EB82A5"
+			tasks: [{
+				id: "727435978D0AE7B0"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingotstainlesssteel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Advanced Arc Smelter"
+			icon: {
+				id: "kubejs:alumina_refractory_bricks"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 5.0d
+			y: 4.0d
+			description: ["NOTE: Electrodynamics wires crash the game when placed with the Schematicannon, so they are not present in the schematic. You will need to add them manually!"]
+			dependencies: ["4FB6E468925B06BA"]
+			id: "568CC9E3EF7C84C2"
+			tasks: [
+				{
+					id: "0ACA205C99C3C972"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "26052A28C2A31A09"
+					type: "item"
+					item: "masterfulmachinery:advanced_item_port_items_input"
+				}
+				{
+					id: "69D60C260D332524"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_input"
+					count: 2L
+				}
+				{
+					id: "14E1DDCAD4140141"
+					type: "item"
+					item: "masterfulmachinery:advanced_item_port_items_output"
+					consume_items: false
+				}
+				{
+					id: "22CD5B23C57B2A13"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_output"
+					count: 2L
+				}
+				{
+					id: "7709EAD998D713B5"
+					type: "item"
+					item: "masterfulmachinery:advanced_energy_port_energy_input"
+				}
+				{
+					id: "5F66FC95B7F277E0"
+					type: "item"
+					item: "emendatusenigmatica:aluminum_block"
+					count: 20L
+				}
+				{
+					id: "136DD2D80C906CFA"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockhslasteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 35L
+				}
+				{
+					id: "64930E39056B0668"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockvanadiumsteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 13L
+				}
+				{
+					id: "0F544FABE9BC308A"
+					type: "item"
+					item: {
+						id: "kubejs:alumina_refractory_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 157L
+				}
+				{
+					id: "0D0FD3DC0F19C191"
+					type: "item"
+					item: {
+						id: "kubejs:hop_graphite_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 18L
+				}
+				{
+					id: "045A45D7DFFE938A"
+					type: "item"
+					item: "immersiveengineering:furnace_heater"
+					count: 3L
+				}
+				{
+					id: "6B836F7F0EC12993"
+					type: "item"
+					item: {
+						id: "electrodynamics:wirehighlyinsulatedsuperconductive"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 28L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 6.0d
+			dependencies: ["40C13653E8EB82A5"]
+			id: "10B352870638978F"
+			tasks: [{
+				id: "0253543EDEC83450"
+				type: "item"
+				item: {
+					id: "industrialforegoing:machine_frame_advanced"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.0d
+			dependencies: ["10B352870638978F"]
+			id: "3811159A31401317"
+			tasks: [{
+				id: "49B32090DFD1C26C"
+				type: "item"
+				item: {
+					id: "industrialforegoing:material_stonework_factory"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.0d
+			dependencies: ["10B352870638978F"]
+			id: "72C800949BA74BDF"
+			tasks: [{
+				id: "017F642FC7D84DFE"
+				type: "item"
+				item: {
+					id: "industrialforegoing:bioreactor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			dependencies: [
+				"3811159A31401317"
+				"72C800949BA74BDF"
+			]
+			id: "2D50BBA8BE372D12"
+			tasks: [{
+				id: "5290257DE67ED9D1"
+				type: "item"
+				item: {
+					id: "industrialforegoing:laser_lens0"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Fluid Laser Drill"
+			icon: {
+				id: "industrialforegoing:ether_gas_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 5.0d
+			dependencies: ["2D50BBA8BE372D12"]
+			id: "22772710B6018EC6"
+			tasks: [
+				{
+					id: "4C512CECBEF1D076"
+					type: "item"
+					item: {
+						id: "industrialforegoing:fluid_laser_base"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4C216922C462F646"
+					type: "item"
+					item: {
+						id: "industrialforegoing:laser_drill"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 4.0d
+			dependencies: ["22772710B6018EC6"]
+			id: "07189D50A75AC566"
+			tasks: [{
+				id: "77D8BB4B738B847A"
+				type: "item"
+				item: {
+					id: "industrialforegoing:machine_frame_supreme"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 7.0d
+			shape: "square"
+			dependencies: ["2D50BBA8BE372D12"]
+			id: "54AF7A06D62D8086"
+			tasks: [{
+				id: "4853008B3595BA3D"
+				type: "item"
+				item: {
+					id: "industrialforegoing:stasis_chamber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ore Laser Drill"
+			icon: {
+				id: "industrialforegoing:ore_laser_base"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 3.0d
+			dependencies: ["07189D50A75AC566"]
+			id: "205D11F714AAF912"
+			tasks: [
+				{
+					id: "564AFCB46DD86BB8"
+					type: "item"
+					item: {
+						id: "industrialforegoing:ore_laser_base"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "671B55B6E1978FDE"
+					type: "item"
+					item: {
+						id: "industrialforegoing:laser_drill"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tanzanite"
+			x: 13.75d
+			y: 1.25d
+			shape: "gear"
+			dependencies: ["205D11F714AAF912"]
+			size: 2.5d
+			repeatable: true
+			id: "73508B2921C997D0"
+			tasks: [{
+				id: "4A40A0B60CAFF68B"
+				type: "item"
+				item: {
+					id: "kubejs:tanzanite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "763B5260040F4C4E"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛥ\\nRevolts are popping up all over the alloy fabrication colonies, likely caused by the aliens. The council is attempting to find a solution, but I doubt that anything good will come of it.\\n\"}"]
+						title: "Entry ᛥ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Liquid Air Condenser"
+			icon: "create:copper_casing"
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["3F29F4053776DEBF"]
+			id: "3C8353D3DC73DE70"
+			tasks: [
+				{
+					id: "3983EED93A0CB165"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "412101EB754887C7"
+					type: "item"
+					item: "masterfulmachinery:advanced_gas_port_mekanism_gas_input"
+				}
+				{
+					id: "6EDD189437837998"
+					type: "item"
+					item: "masterfulmachinery:advanced_kinetic_port_create_rotation_input"
+				}
+				{
+					id: "17519734A572090D"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_output"
+				}
+				{
+					id: "5C3F2810E6D84B68"
+					type: "item"
+					item: {
+						id: "electrodynamics:glassaluminum"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7991D44EEC70DD5A"
+					type: "item"
+					item: "immersiveengineering:alu_scaffolding_standard"
+					count: 4L
+				}
+				{
+					id: "3482F941520BD3EB"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_aluminum"
+					count: 21L
+				}
+				{
+					id: "04406570194FC854"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 31L
+				}
+				{
+					id: "1199401FA0FB920A"
+					type: "item"
+					item: "create:copper_casing"
+					count: 11L
+				}
+				{
+					id: "2D0756E87FE77A9E"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "217016226609EAA9"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 11L
+				}
+				{
+					id: "63B8B1EFE1802D71"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "40036EC235BB8818"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:heat_sink"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 35L
+				}
+			]
+		}
+		{
+			title: "Expansion Valve"
+			icon: {
+				id: "electrodynamics:resourceblockhslasteel"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["64B4E30C9E1D22FB"]
+			id: "6877B215A0F5194F"
+			tasks: [
+				{
+					id: "0D90BC623A09DE57"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "290A6B899089A1C3"
+					type: "item"
+					item: "masterfulmachinery:advanced_energy_port_energy_input"
+				}
+				{
+					id: "059D7FC61BAE76E9"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_input"
+				}
+				{
+					id: "1D6368940792DAA6"
+					type: "item"
+					item: "masterfulmachinery:advanced_fluid_port_fluids_output"
+				}
+				{
+					id: "3D6937C73EEA47B2"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_aluminum"
+					count: 21L
+				}
+				{
+					id: "2F2B9092444648A5"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockhslasteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+	]
+}

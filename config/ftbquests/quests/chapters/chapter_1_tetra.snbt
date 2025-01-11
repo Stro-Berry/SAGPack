@@ -1,0 +1,772 @@
+{
+	id: "55D58691CE6FC751"
+	group: ""
+	order_index: 1
+	filename: "chapter_1_tetra"
+	title: "1 - Tetra"
+	icon: {
+		id: "tetra:basic_workbench"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tetra"
+			x: 0.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Modular Tools and Ancient Secrets"
+			dependencies: ["33F97A73438424AF"]
+			size: 1.5d
+			id: "043A5BAB93770525"
+			tasks: [{
+				id: "552538F52F87EFC6"
+				type: "observation"
+				title: "Create a Workbench"
+				icon: {
+					id: "tetra:basic_workbench"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "tetra:basic_workbench"
+			}]
+			rewards: [{
+				id: "54A4731C8232A034"
+				type: "item"
+				item: {
+					id: "tetra:holo"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						"holo/core_material": "frame/dim"
+						"holo/frame": "holo/frame"
+						"holo/core": "holo/core"
+						"holo/frame_material": "core/ancient"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			shape: "circle"
+			description: ["Use your new Wooden Pickaxe to collect some stone."]
+			dependencies: ["043A5BAB93770525"]
+			id: "6E412C7E1C38C9EF"
+			tasks: [{
+				id: "7CA90CD10CB26719"
+				type: "item"
+				item: {
+					id: "minecraft:cobblestone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			shape: "circle"
+			description: ["Same deal as the Stone Pickaxe, upgrade your Hammer using Stone."]
+			dependencies: ["6E412C7E1C38C9EF"]
+			id: "619D64CB1E70D173"
+			tasks: [{
+				id: "32BD7A3E97D04876"
+				type: "advancement"
+				title: "Stone Hammer"
+				advancement: "tetra:upgrades/hammer_2"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Stone Pickaxe"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/handle": "double/basic_handle"
+					honing_progress: 290
+					HideFlags: 1
+					"double/head_left": "double/basic_pickaxe_left"
+					"double/head_right": "double/basic_pickaxe_right"
+					"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
+					id: "d3b1b7b5-8140-4bbb-8a53-8f6646e84aed"
+					AS_Amulet_Holder: [I;
+						2082794444
+						-761640982
+						-1185328148
+						380181990
+					]
+					Damage: 0
+					"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
+					"double/basic_handle_material": "basic_handle/stick"
+				}
+			}
+			x: 1.5d
+			y: -2.0d
+			shape: "circle"
+			description: ["Create a Stone Pickaxe by using Cobblestone to upgrade a Wooden Pickaxe in a Workbench, and mine some Iron Ore."]
+			dependencies: ["6E412C7E1C38C9EF"]
+			id: "6C19C9CF531B30AF"
+			tasks: [{
+				id: "5EC9ACFC6416AC7A"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+		}
+		{
+			title: "Ferrous Materials"
+			icon: {
+				id: "minecraft:iron_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 3.0d
+			y: -3.0d
+			shape: "circle"
+			description: ["Combine some Iron Ore with Charcoal to make Iron Dust. Put it into a Campfire to make an Iron Ingot."]
+			dependencies: [
+				"6C19C9CF531B30AF"
+				"5283236C1DD0AA5F"
+			]
+			id: "71E7979A7A24BF19"
+			tasks: [
+				{
+					id: "741C876277A7B497"
+					type: "item"
+					item: "emendatusenigmatica:iron_dust"
+				}
+				{
+					id: "0ACDF7724F234AB4"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Multiple Hammers"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					temperature: 0.0d
+					id: "d461a1e6-9e9b-4459-9960-fd9c58a74fce"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					Damage: 0
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+				}
+			}
+			x: 4.5d
+			y: 2.0d
+			description: ["Upgrading a hammer to Iron needs a Tier 2 hammer. Since you can't use a hammer while you're upgrading it, you'll need to make another hammer."]
+			dependencies: ["619D64CB1E70D173"]
+			id: "75D48A98AD980E61"
+			tasks: [{
+				id: "166BFC94CA40EA64"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Iron Pickaxe"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/handle": "double/basic_handle"
+					honing_progress: 402
+					HideFlags: 1
+					"double/head_left": "double/basic_pickaxe_left"
+					"double/head_right": "double/basic_pickaxe_right"
+					"double/basic_pickaxe_right_material": "basic_pickaxe/iron"
+					id: "65387041-442f-43ad-bce7-1cf0fa46fbc2"
+					Damage: 0
+					"double/basic_pickaxe_left_material": "basic_pickaxe/iron"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle/settle_progress": 253
+				}
+			}
+			x: 3.0d
+			y: -1.0d
+			shape: "circle"
+			description: ["Upgrade your pickaxe to Iron and mine some Redstone."]
+			dependencies: [
+				"71E7979A7A24BF19"
+				"619D64CB1E70D173"
+			]
+			id: "59A7DB9CC5EB7213"
+			tasks: [{
+				id: "30485AEB99628E99"
+				type: "item"
+				item: {
+					id: "minecraft:redstone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: [
+				"75D48A98AD980E61"
+				"71E7979A7A24BF19"
+			]
+			id: "223F99C62A493E23"
+			tasks: [{
+				id: "49712BA16CD1805D"
+				type: "advancement"
+				title: "Iron Hammer"
+				advancement: "tetra:upgrades/hammer_3"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Smelting"
+			x: 4.5d
+			y: -2.0d
+			description: ["Now you can smelt Iron Ore directly."]
+			dependencies: ["59A7DB9CC5EB7213"]
+			id: "5EBB060ABA309BA9"
+			tasks: [{
+				id: "1AAB5395348094F9"
+				type: "item"
+				item: {
+					id: "minecraft:furnace"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Gilded Materials"
+			x: 4.5d
+			y: -4.0d
+			dependencies: [
+				"5EBB060ABA309BA9"
+				"59A7DB9CC5EB7213"
+			]
+			id: "22CBF3CC00A7DC5E"
+			tasks: [{
+				id: "3657E911574F484B"
+				type: "item"
+				item: {
+					id: "minecraft:gold_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Eye of...render?"
+			x: 6.0d
+			y: -3.0d
+			description: ["Able to see images and process them into data. Compatible with the circuitry of the Holosphere."]
+			dependencies: [
+				"5EBB060ABA309BA9"
+				"22CBF3CC00A7DC5E"
+			]
+			id: "70C547F97ED5ABE3"
+			tasks: [{
+				id: "51F1A21E3DF8043E"
+				type: "item"
+				item: "kubejs:render_eye"
+			}]
+		}
+		{
+			title: "Diamond Pickaxe"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					AS_Amulet_Holder: [I;
+						2082794444
+						-761640982
+						-1185328148
+						380181990
+					]
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					honing_progress: 440
+					HideFlags: 1
+					"double/head_left": "double/basic_pickaxe_left"
+					"double/head_right": "double/basic_pickaxe_right"
+					"double/basic_pickaxe_right_material": "basic_pickaxe/diamond"
+					"double/head_left:arrested": 0
+					id: "e1616ecd-501e-4ea6-9731-8ee373cdbbb6"
+					Damage: 0
+					"double/head_right:arrested": 0
+					"double/basic_pickaxe_left_material": "basic_pickaxe/diamond"
+				}
+			}
+			x: 6.0d
+			y: -1.0d
+			description: ["Use your Diamond Pickaxe to mine some Obsidian."]
+			dependencies: [
+				"59A7DB9CC5EB7213"
+				"223F99C62A493E23"
+			]
+			id: "6669C7095229EEBD"
+			tasks: [{
+				id: "711CF8BC3991D73B"
+				type: "item"
+				item: {
+					id: "minecraft:obsidian"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Trip to Hell"
+			icon: {
+				id: "minecraft:flint_and_steel"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 1.0d
+			description: ["Use your Diamond Pickaxe to collect some Obsidian and build a portal to The Nether."]
+			dependencies: ["6669C7095229EEBD"]
+			id: "2FFCA317F96988A0"
+			tasks: [
+				{
+					id: "48185A356C264806"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "58F922D5D10785BC"
+					type: "dimension"
+					title: "Visit The Nether"
+					icon: {
+						id: "minecraft:netherrack"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					dimension: "minecraft:the_nether"
+				}
+			]
+		}
+		{
+			title: "Blackstone Hammer"
+			x: 7.5d
+			y: 2.0d
+			description: ["Use some Blackstone from The Nether to create a hammer."]
+			dependencies: ["2FFCA317F96988A0"]
+			id: "5EA66671E395CBEE"
+			tasks: [{
+				id: "6B85CAC0D0AC40D0"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_4"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Long Gone"
+			x: 7.5d
+			y: -2.0d
+			description: [
+				"Go to a Snowy or Mountain biome and use your upgraded Holosphere to find a Ruin."
+				"For the holosphere's to work, you need to be underground. Looking around in caves should work well."
+			]
+			dependencies: ["70C547F97ED5ABE3"]
+			id: "26E62BB5A2D1DD42"
+			tasks: [{
+				id: "66C347BFC53BB084"
+				type: "observation"
+				title: "Visit a Ruin"
+				icon: {
+					id: "tetra:forged_pillar"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "tetra:forged_pillar"
+			}]
+		}
+		{
+			title: "Increasing your Integrity"
+			x: 7.5d
+			y: 0.0d
+			description: ["To upgrade to Obsidian, you need a higher integrity. Integrity on a tool is determined by the Handle. Upgrade your hammer's handle to a Blaze Rod."]
+			dependencies: ["2FFCA317F96988A0"]
+			id: "6D7F48C43139E0C8"
+			tasks: [{
+				id: "2404052544AFBB4F"
+				type: "item"
+				item: {
+					id: "minecraft:blaze_rod"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Claw"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/claw_right_material": "claw/stone"
+					"double/head_left/settle_progress": 230
+					AS_Amulet_Holder: [I;
+						2082794444
+						-761640982
+						-1185328148
+						380181990
+					]
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/claw_left_material": "claw/stone"
+					"double/handle": "double/basic_handle"
+					honing_progress: 222
+					"double/head_left": "double/claw_left"
+					HideFlags: 1
+					"double/head_right": "double/claw_right"
+					"double/head_right/settle_progress": 230
+					id: "0f75c7e7-70c0-460f-a2cd-936b1f865c91"
+					Damage: 0
+					"double/handle/settle_progress": 211
+				}
+			}
+			x: 7.5d
+			y: -4.0d
+			description: ["Use the Workbench to create a Claw. You will need one of these to loot a Ruin."]
+			dependencies: ["26E62BB5A2D1DD42"]
+			id: "7073976582D1F926"
+			tasks: [{
+				id: "1EA590F38F6D3FE0"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "The Forge Hammer"
+			x: 9.0d
+			y: -1.0d
+			description: ["The Forge Hammer acts like a Workbench, but it has a higher tier than other hammers. It is required to create more advanced hammers."]
+			dependencies: [
+				"26E62BB5A2D1DD42"
+				"5EA66671E395CBEE"
+			]
+			id: "1EA1D2177B823487"
+			tasks: [{
+				id: "2C287399E4CD48CC"
+				type: "observation"
+				title: "Find a Forge Hammer"
+				icon: {
+					id: "tetra:hammer_base"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "tetra:hammer_base"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			description: ["Go to the Nether and collect some Netherite. You will need it to upgrade your Hammer. It has been nerfed for enjoyment."]
+			dependencies: ["2FFCA317F96988A0"]
+			id: "55C10B9BF06580FC"
+			tasks: [{
+				id: "6C3EBE68DB58542C"
+				type: "item"
+				item: {
+					id: "minecraft:netherite_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4L
+			}]
+		}
+		{
+			title: "Lost Trinkets"
+			icon: {
+				id: "tetra:magmatic_cell"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+					Damage: 0
+				}
+			}
+			x: 9.0d
+			y: -3.0d
+			description: ["To upgrade your hammer with Tetra, you will need 2 Combustion Chambers installed to increase the hammer power of the Forge Hammer. You will also need 2 Energy Cells installed. If there is already something in the forge hammer, you can use your Claw to remove it. These items are found in Crates and on Forge Hammers."]
+			dependencies: [
+				"26E62BB5A2D1DD42"
+				"7073976582D1F926"
+			]
+			id: "47B6B5935564705A"
+			tasks: [
+				{
+					id: "1A8531B940E1B3E3"
+					type: "item"
+					item: {
+						id: "tetra:magmatic_cell"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "4EE759181E6EB278"
+					type: "item"
+					item: {
+						id: "tetra:combustion_chamber"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Netherite Hammer"
+			x: 10.5d
+			y: 0.0d
+			description: ["The best hammer in Tetra."]
+			dependencies: [
+				"1EA1D2177B823487"
+				"55C10B9BF06580FC"
+				"6D7F48C43139E0C8"
+				"47B6B5935564705A"
+			]
+			id: "4CCB276BE9DF51E1"
+			tasks: [{
+				id: "0F66565DFB9F3500"
+				type: "advancement"
+				title: "Netherite Hammer"
+				advancement: "tetra:upgrades/hammer_6"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Silk Touch"
+			x: 10.5d
+			y: -2.0d
+			description: [
+				"Craft a Silk Touch book and put it on your Netherite Hammer so you can mine the blocks in the Ruins."
+				"You will need to use the Tetra Workbench to apply the enchantment."
+			]
+			dependencies: [
+				"5E9B54F7071123E1"
+				"47B6B5935564705A"
+			]
+			id: "249D0DC1A21BA4B4"
+			tasks: [{
+				id: "11EB51772C0362CA"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			title: "The Extractor"
+			x: 9.0d
+			y: -2.0d
+			description: ["This structure can charge Energy Cells using the power eminating from Seeping Bedrock."]
+			dependencies: ["26E62BB5A2D1DD42"]
+			id: "5E9B54F7071123E1"
+			tasks: [{
+				id: "74969957088A40CC"
+				type: "observation"
+				title: "Find an Extractor"
+				icon: {
+					id: "tetra:transfer_unit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "tetra:transfer_unit"
+			}]
+		}
+		{
+			title: "Ruined No More"
+			icon: {
+				id: "tetra:forged_platform"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -1.0d
+			shape: "gear"
+			description: ["Mine the blocks in a Ruin."]
+			dependencies: [
+				"249D0DC1A21BA4B4"
+				"4CCB276BE9DF51E1"
+			]
+			size: 2.5d
+			id: "544E2409D1765FD8"
+			tasks: [{
+				id: "5B86C7E95E77A857"
+				type: "item"
+				title: "Any Forged Block"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						items: [
+							{
+								id: "tetra:forged_platform"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "tetra:forged_pillar"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+							{
+								id: "tetra:forged_wall"
+								Count: 1b
+								tag: {
+									temperature: 0.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "34C1A4C56924B0FE"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛕ\\nThe Asgardian Council unfortunately made the decision to make pay lower for all workers at the mining colonies and tighten restrictions. They’ve created inflation to ruin the economies of colonized dimensions and force the only viable way to earn enough to eat is\"}"
+							"{\"text\":\"through their jobs.\"}"
+						]
+						title: "Entry ᛕ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["0ACDF7724F234AB4"]
+			id: "7A8E219969B41471"
+			tasks: [{
+				id: "65B94DEE9CD11162"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Low-Budget Furnace"
+			x: 0.0d
+			y: -3.0d
+			description: ["Find some coal and mine it to make a campfire."]
+			dependencies: ["043A5BAB93770525"]
+			id: "5283236C1DD0AA5F"
+			tasks: [{
+				id: "0DF224EAB13D0124"
+				type: "item"
+				item: {
+					id: "minecraft:campfire"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

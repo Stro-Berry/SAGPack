@@ -1,0 +1,1160 @@
+{
+	id: "3F630940F8F267EF"
+	group: ""
+	order_index: 7
+	filename: "chapter_5a_mekanism"
+	title: "5b - Mekanism I"
+	icon: {
+		id: "mekanism:steel_casing"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mekanism I"
+			icon: {
+				id: "mekanism:steel_casing"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "idk"
+			dependencies: ["69B33534D656C8D5"]
+			size: 1.5d
+			id: "036882715F5CC93A"
+			tasks: [{
+				id: "638580E06D51890F"
+				type: "item"
+				item: {
+					id: "mekanism:metallurgic_infuser"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D5AA5261856C4BC"
+				type: "item"
+				item: {
+					id: "mekanism:configurator"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "60000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Basic Control Circuit"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["036882715F5CC93A"]
+			id: "3C08AC798D84E166"
+			tasks: [{
+				id: "30171AC04A6D9EEA"
+				type: "item"
+				item: {
+					id: "mekanism:basic_control_circuit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: [
+				"3C08AC798D84E166"
+				"251E4F9951A37F02"
+			]
+			id: "5A6CFFBB9CB6EAE3"
+			tasks: [{
+				id: "2A3FA87D81B44FED"
+				type: "item"
+				item: {
+					id: "mekanism:enrichment_chamber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"3C08AC798D84E166"
+				"251E4F9951A37F02"
+			]
+			id: "1B4CAAFFDEF05B3E"
+			tasks: [{
+				id: "2E243BBD2865C706"
+				type: "item"
+				item: {
+					id: "mekanism:crusher"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["036882715F5CC93A"]
+			id: "251E4F9951A37F02"
+			tasks: [{
+				id: "580D3EF36CDEC42D"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_infused"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: [
+				"251E4F9951A37F02"
+				"2F5C830C3BB7BE2B"
+			]
+			id: "2BED745747116D94"
+			tasks: [{
+				id: "0BE558E29601EB80"
+				type: "item"
+				item: {
+					id: "mekanism:electrolytic_core"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: ["Uses water as input and separates it into oxygen and hydrogen."]
+			dependencies: [
+				"2BED745747116D94"
+				"5A6CFFBB9CB6EAE3"
+			]
+			id: "6F69EE4C44A80FF7"
+			tasks: [{
+				id: "4DEF29B939C57F14"
+				type: "item"
+				item: {
+					id: "mekanism:electrolytic_separator"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			description: ["Go to the End and throw some Chromatic Compound into the void. You don't have to go all the way to the bottom, the Shadow Steel will still float up all of the way."]
+			id: "2F5C830C3BB7BE2B"
+			tasks: [{
+				id: "495D43F9A37EBC47"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+		}
+		{
+			title: "Osmium Crystallization"
+			icon: {
+				id: "mekanism:purification_chamber"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: -4.0d
+			description: ["With Oxygen and a Purification Chamber, you can crystallize Osmium."]
+			dependencies: [
+				"2F5C830C3BB7BE2B"
+				"6F69EE4C44A80FF7"
+				"1B4CAAFFDEF05B3E"
+			]
+			id: "19617AF934580860"
+			tasks: [
+				{
+					id: "6CA841272805EA66"
+					type: "item"
+					item: {
+						id: "mekanism:purification_chamber"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2E1E75400A11DA59"
+					type: "item"
+					item: {
+						id: "mekanism:crystal_osmium"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -6.0d
+			description: ["Compresses materials using Osmium...for some reason."]
+			dependencies: ["19617AF934580860"]
+			id: "056E97BF624A7F1E"
+			tasks: [{
+				id: "5366AADB15A8B0DF"
+				type: "item"
+				item: {
+					id: "mekanism:osmium_compressor"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["5A6CFFBB9CB6EAE3"]
+			id: "678CDEC48776B9EC"
+			tasks: [{
+				id: "52296152C1A35D96"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_reinforced"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			description: ["Enrich your Refined Obsidian Ingots into Enriched Obsidian."]
+			dependencies: [
+				"678CDEC48776B9EC"
+				"699D421B167FD20F"
+			]
+			id: "58F0A755CFAB6BC1"
+			tasks: [{
+				id: "65F44D1F2635E3CB"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_atomic"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["056E97BF624A7F1E"]
+			id: "699D421B167FD20F"
+			tasks: [{
+				id: "0E820B60D3B2653A"
+				type: "item"
+				item: {
+					id: "mekanism:ingot_refined_obsidian"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Advanced Control Circuit"
+			x: 6.0d
+			y: -6.0d
+			description: ["Use the Pneumaticcraft Assembly Line to fabricate this circuit."]
+			dependencies: ["056E97BF624A7F1E"]
+			id: "6F2465257BE625E7"
+			tasks: [{
+				id: "12238EA35AF227D6"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_control_circuit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Thermal Evaporation Plant"
+			icon: {
+				id: "mekanism:thermal_evaporation_controller"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			description: ["The Thermal Evaporation Plant requires heat. It can convert Water into Brine and Brine into Lithium. The deeper you make it, the more efficient it is. These materials can be used to make the minimum height, so you may want more."]
+			dependencies: [
+				"6F2465257BE625E7"
+				"58F0A755CFAB6BC1"
+			]
+			id: "40DD5A1CE45196A7"
+			tasks: [
+				{
+					id: "4F58DD19DA05E21C"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_controller"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2434EC9E8A760BD7"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_valve"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "5748BAB52A7DB948"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 48L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			description: ["You don't need a Chemical Crystallizer, you just need a Mechanical Press."]
+			dependencies: ["40DD5A1CE45196A7"]
+			id: "2235D56F32F255B2"
+			tasks: [{
+				id: "046EAD4C8B5BB9CB"
+				type: "item"
+				item: "emendatusenigmatica:lithium_dust"
+			}]
+		}
+		{
+			title: "PRC"
+			x: 10.0d
+			y: -2.0d
+			description: ["A very complicated machine. Takes a fluid, gas, and item as input, and outputs an item and a gas."]
+			dependencies: ["2235D56F32F255B2"]
+			id: "646E03E50287FD79"
+			tasks: [{
+				id: "2D64EDC56998619A"
+				type: "item"
+				item: {
+					id: "mekanism:pressurized_reaction_chamber"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "High Density Polyethylene"
+			x: 10.0d
+			y: 0.0d
+			description: ["You will need Ethylene to make these, however you are not able to use it for powergen. You will need to enrich it first."]
+			dependencies: [
+				"646E03E50287FD79"
+				"23E298D25C8B5960"
+			]
+			id: "783EAF136B100B07"
+			tasks: [{
+				id: "2C7B045E78936ADC"
+				type: "item"
+				item: {
+					id: "mekanism:hdpe_pellet"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["1B4CAAFFDEF05B3E"]
+			id: "7D83D070194DE1D4"
+			tasks: [{
+				id: "483937ECAA828241"
+				type: "item"
+				item: {
+					id: "mekanism:bio_fuel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Thermoelectric Boiler"
+			icon: {
+				id: "mekanism:boiler_casing"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -2.0d
+			description: ["Again, these are the minimum blocks required to build a Thermoelectric Boiler. You can build larger ones, though, but you will need more materials."]
+			dependencies: ["783EAF136B100B07"]
+			id: "0CB67F93C9BD8CDA"
+			tasks: [
+				{
+					id: "4B8CD54349467532"
+					type: "item"
+					item: {
+						id: "mekanism:boiler_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 31L
+				}
+				{
+					id: "3AB54B3B446C10F1"
+					type: "item"
+					item: {
+						id: "mekanism:boiler_valve"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "608EBA8E49CA45ED"
+					type: "item"
+					item: {
+						id: "mekanism:superheating_element"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "6F07CBD78003DB9A"
+					type: "item"
+					item: {
+						id: "mekanism:pressure_disperser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -6.0d
+			description: ["Fuses gases together."]
+			dependencies: ["6F2465257BE625E7"]
+			id: "1E593226FF2D5999"
+			tasks: [{
+				id: "192973E3224BFD6A"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_infuser"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Sodium Hydroxide"
+			icon: {
+				id: "mekanism:gauge_dropper"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -6.0d
+			description: ["Make some Sodium Hydroxide."]
+			dependencies: [
+				"40DD5A1CE45196A7"
+				"1E593226FF2D5999"
+			]
+			id: "1CF00FD77527DB22"
+			tasks: [{
+				id: "00ACE5172D3B3A4A"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "The Tie-In"
+			icon: "kubejs:chilly_core"
+			x: 14.0d
+			y: -6.0d
+			shape: "gear"
+			dependencies: ["5314B00EBFA1349F"]
+			size: 1.5d
+			id: "3CBB102487D0BE33"
+			tasks: [{
+				id: "1A37C683D2394EC6"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Aluminate Solution"
+			icon: {
+				id: "kubejs:aluminate_solution_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -6.0d
+			dependencies: [
+				"1CF00FD77527DB22"
+				"3CBB102487D0BE33"
+			]
+			id: "47BF374906199C94"
+			tasks: [{
+				id: "3490F3A6417036FD"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			title: "Your First Aluminum Hydroxide Crystal"
+			x: 14.0d
+			y: -4.0d
+			description: ["It's pretty difficult to make, but you'll be able to create them more easily after your first."]
+			hide_dependency_lines: true
+			dependencies: ["19617AF934580860"]
+			id: "0F7E0589ADDB87B2"
+			tasks: [{
+				id: "5926DA2E962D8739"
+				type: "item"
+				item: {
+					id: "kubejs:aluminum_hydroxide_shard"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Aluminum Hydroxide Crystal"
+			x: 12.0d
+			y: -4.0d
+			description: ["Now you will need to crush it."]
+			dependencies: [
+				"47BF374906199C94"
+				"0F7E0589ADDB87B2"
+			]
+			id: "080EAA5CF376CF36"
+			tasks: [{
+				id: "5E2D5FCE26E3B5E6"
+				type: "item"
+				item: {
+					id: "kubejs:aluminum_hydroxide_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Alumina"
+			x: 14.0d
+			y: -2.0d
+			description: ["You've made the Alumina, so you're almost there."]
+			dependencies: [
+				"080EAA5CF376CF36"
+				"0CB67F93C9BD8CDA"
+			]
+			id: "579C7F059519AFD6"
+			tasks: [{
+				id: "1D994EF329780AB6"
+				type: "item"
+				item: {
+					id: "kubejs:alumina"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Aluminum"
+			x: 14.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"579C7F059519AFD6"
+				"76FDD579F24C0B80"
+				"5BFE835B97EC3137"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "2BDEB25F0DE76068"
+			tasks: [{
+				id: "22BA569AB4342B85"
+				type: "item"
+				item: "emendatusenigmatica:aluminum_ingot"
+			}]
+			rewards: [{
+				id: "1942FC90DDFC2FEE"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛡ\\nThey just went to dimension eight; Vanaheim. They were there to colonize it, and they ended up killing all of the Vanir. This screwed up nature across all of the dimensions, which is why we never decided to colonize them ourselves.\\n\"}"]
+						title: "Entry ᛡ"
+						author: "Björn"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			description: [
+				"Used for making Environmental Tech components. Also unlocks an easier Printed Circuit Board recipe."
+				"You can speed up this machine by placing up to 16 Frequency Modifiers in the upgrade slots."
+				"Change the stack size of the slots by clicking the button under the energy bar. To automate this with AE2 autocrafting, you'll want to set the stack size to 1."
+			]
+			dependencies: ["783EAF136B100B07"]
+			id: "2E1E421C1BE40DA7"
+			tasks: [{
+				id: "01DD980AA11290A5"
+				type: "item"
+				item: {
+					id: "envirocore:assembler"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Litherite Void Miner"
+			icon: {
+				id: "envirotech:litherite_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 2.0d
+			description: [
+				"Place the Void Miner CCU in the direction that you want the laser to point. Void miners can be built in any direction, but the laser needs to be pointing at bedrock, the void, or the sky, so you can really only build it up or down. Click \"Build Multiblock\" in the Auto Utilty menu to automatically build the structure using materials from your inventory."
+				"Once the structure is complete, supply the FE input with power and place a container adjacent to the item output, and put a programmed Flash Memory in the slot in the controller GUI. You might need more than one FE input if the transfer rate isn't enough."
+				"You can click \"Minable Drops\" to see the chances of each ore being mined."
+			]
+			dependencies: [
+				"2E1E421C1BE40DA7"
+				"7806120693D0E2FC"
+			]
+			id: "736A275E679F5FFF"
+			tasks: [
+				{
+					id: "0C07684A8AD35C47"
+					type: "item"
+					item: {
+						id: "envirotech:litherite_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "38FF734FD2C21292"
+					type: "item"
+					item: {
+						id: "envirocore:litherite_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "752DA110CCDC4CE2"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 18L
+				}
+				{
+					id: "138E66314C28184B"
+					type: "item"
+					title: "2x Modifier"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:mod"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "envirocore"
+									}
+								}
+								{
+									id: "itemfilters:id_regex"
+									Count: 1b
+									tag: {
+										value: "modifier"
+									}
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Cryolite"
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["736A275E679F5FFF"]
+			id: "76FDD579F24C0B80"
+			tasks: [{
+				id: "79BD30A40386D7C4"
+				type: "item"
+				item: {
+					id: "kubejs:cryolite_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "envirocore:memory_programmer"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 4.0d
+			description: [
+				"The program in the Flash Memory determines which type of resources your Void Miner will create. To set a program, put a Flash Memory in the upper slot of a powered Memory Programmer, and click on the program you want."
+				"For Cryolite Ore, you'll want the Mineral program."
+			]
+			dependencies: ["2E1E421C1BE40DA7"]
+			id: "7806120693D0E2FC"
+			tasks: [
+				{
+					id: "321F8EE3CDB58E6A"
+					type: "item"
+					item: {
+						id: "envirocore:memory_programmer"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "53417813A9DE5012"
+					type: "item"
+					item: {
+						id: "envirocore:flash_memory"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "envirocore:lens_grinder"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: 4.0d
+			shape: "square"
+			dependencies: ["2E1E421C1BE40DA7"]
+			id: "37D2EF599CAE6D02"
+			tasks: [
+				{
+					id: "11420C3E16ED0D0E"
+					type: "item"
+					item: {
+						id: "envirocore:lens_grinder"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3A74644259EC0A28"
+					type: "item"
+					item: {
+						id: "envirocore:lens"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Erodium"
+			x: 14.0d
+			y: 4.0d
+			dependencies: ["736A275E679F5FFF"]
+			id: "7CB2AF7D811D8BC7"
+			tasks: [{
+				id: "547171DE23BE7EEC"
+				type: "item"
+				item: {
+					id: "envirocore:erodium_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Fracker"
+			icon: "immersiveengineering:steel_scaffolding_standard"
+			x: 8.0d
+			y: 2.0d
+			description: ["Your first multiblock! Used to get ethylene via natural gas."]
+			dependencies: [
+				"7D83D070194DE1D4"
+				"0BE6436C5F40F1D8"
+			]
+			id: "23E298D25C8B5960"
+			tasks: [
+				{
+					id: "55222FC3FD54D8B0"
+					type: "item"
+					item: "masterfulmachinery:basic_controller"
+				}
+				{
+					id: "13BF6F263BA00597"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_input"
+				}
+				{
+					id: "5FD5C5DE74D82A57"
+					type: "item"
+					item: "masterfulmachinery:basic_pressure_port_pncr_pressure_input"
+				}
+				{
+					id: "48034BEB0B4194D4"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_output"
+					count: 2L
+				}
+				{
+					id: "4D123CC7DC1194D1"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 26L
+				}
+				{
+					id: "18AD6469D676682C"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 23L
+				}
+				{
+					id: "29ABF41EB6D519F5"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "74C6578A3DC6296E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_wall"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "21B609AFF499FA4E"
+					type: "item"
+					item: {
+						id: "mekanism:steel_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "317252C1639A210E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 80L
+				}
+				{
+					id: "2D74415EDE916248"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Mass Electrolysis Array"
+			icon: {
+				id: "kubejs:steel_plated_ceramic_block"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: 0.0d
+			hide_dependency_lines: false
+			dependencies: ["783EAF136B100B07"]
+			id: "5BFE835B97EC3137"
+			tasks: [
+				{
+					id: "14F6A2B4B2DC08EE"
+					type: "item"
+					item: "masterfulmachinery:basic_controller"
+				}
+				{
+					id: "356AF42DBB3D1AEE"
+					type: "item"
+					item: "masterfulmachinery:basic_energy_port_energy_input"
+				}
+				{
+					id: "448E23882878DCEB"
+					type: "item"
+					item: "masterfulmachinery:basic_item_port_items_input"
+				}
+				{
+					id: "2ED7E50D74E99B7B"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_input"
+				}
+				{
+					id: "109E5189FFB5FDEA"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_output"
+				}
+				{
+					id: "38998F727921D9AC"
+					type: "item"
+					item: "immersivepetroleum:petcoke_block"
+					count: 9L
+				}
+				{
+					id: "2A88DA9B6E5B6C0D"
+					type: "item"
+					item: {
+						id: "kubejs:ceramic_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 64L
+				}
+				{
+					id: "771ADF808C46BF72"
+					type: "item"
+					item: {
+						id: "kubejs:fiberglass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 45L
+				}
+				{
+					id: "048AEB50DAF9DDCE"
+					type: "item"
+					item: {
+						id: "kubejs:hop_graphite_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "637B43E50F1D0891"
+					type: "item"
+					item: {
+						id: "kubejs:steel_plated_ceramic_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 76L
+				}
+				{
+					id: "3F50E8C1E73F20CD"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_copper"
+					count: 16L
+				}
+				{
+					id: "7B296A5F0ABBDB7C"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 18L
+				}
+				{
+					id: "7B792E5E9E675DC1"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 45L
+				}
+			]
+		}
+		{
+			icon: "create:schematicannon"
+			x: 6.0d
+			y: 2.0d
+			description: ["The Schematicannon is useful in building multiblocks automatically. First, put your Schematic in the Schematic Table and select the multiblock you need to build. Write it and then select the area you want it in. Put it into the Schematicannon. If you want it to be rotated, hold ALT and scroll to change the orientation. Place an inventory next to the Schematicannon; this is where you'll put the materials for your multiblock. Fuel your Schematicannon with Gunpowder as ammo, activate it, and it will start building your multiblock."]
+			hide_dependency_lines: true
+			dependencies: ["036882715F5CC93A"]
+			id: "0BE6436C5F40F1D8"
+			tasks: [
+				{
+					id: "73868957D3220F2C"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "5B3A8C7E807BAD59"
+					type: "item"
+					item: "create:schematic_table"
+				}
+				{
+					id: "70DBB22D25B757A0"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["58F0A755CFAB6BC1"]
+			id: "7E3560F0E56CA604"
+			tasks: [{
+				id: "0B63A2F017B81F08"
+				type: "item"
+				item: {
+					id: "mekanism:quantum_entangloporter"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

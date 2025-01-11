@@ -1,0 +1,1637 @@
+{
+	id: "37EFB179B2298809"
+	group: ""
+	order_index: 17
+	filename: "chapter_15_g"
+	title: "15 - Astral Sorcery"
+	icon: {
+		id: "astralsorcery:resonating_gem"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Astral Sorcery"
+			icon: {
+				id: "astralsorcery:resonating_gem"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Look to the Stars"
+			description: ["Find a Collector Monument in Alfheim and use it to make a Luminous Crafting Table."]
+			dependencies: [
+				"3045B7403B041A50"
+				"778E64B825C7835C"
+			]
+			size: 1.5d
+			id: "1234C3EC5958D170"
+			tasks: [
+				{
+					id: "7A825D32F33E0D32"
+					type: "observation"
+					title: "Find a Collector Crystal in Asgard"
+					icon: {
+						id: "astralsorcery:rock_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+							temperature: 0.0d
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "astralsorcery:rock_collector_crystal"
+				}
+				{
+					id: "2C93F0760CB53726"
+					type: "item"
+					item: {
+						id: "astralsorcery:altar_discovery"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3C3AF1E417F76C16"
+				type: "item"
+				item: {
+					id: "astralsorcery:tome"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["The crafting recipes for Marble variants are left as an exercise to the reader."]
+			dependencies: ["1234C3EC5958D170"]
+			id: "0CDF7C1987073D1F"
+			tasks: [{
+				id: "329A2A98012D01F0"
+				type: "item"
+				item: {
+					id: "astralsorcery:marble_raw"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: ["Aquamarine has a small processing chain."]
+			dependencies: ["1234C3EC5958D170"]
+			id: "43D3EF5FE2A2DBF8"
+			tasks: [{
+				id: "4CE05984775683ED"
+				type: "item"
+				item: {
+					id: "astralsorcery:aquamarine"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: [
+				"43D3EF5FE2A2DBF8"
+				"0CDF7C1987073D1F"
+			]
+			id: "1FD3454BA93DCADA"
+			tasks: [{
+				id: "2816028757B64901"
+				type: "item"
+				item: {
+					id: "astralsorcery:wand"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["Holding your Resonating Wand at night shows particles, below them is Rock Crystal Ore."]
+			dependencies: ["1FD3454BA93DCADA"]
+			id: "21E695A6D6AD9B6E"
+			tasks: [{
+				id: "5CCCCF07BFAB0947"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["1FD3454BA93DCADA"]
+			id: "47A0787A11279A29"
+			tasks: [{
+				id: "185BA171A6ED15A7"
+				type: "item"
+				item: {
+					id: "astralsorcery:nocturnal_powder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["47A0787A11279A29"]
+			id: "1A66DF8553739916"
+			tasks: [{
+				id: "3169A3852066DF29"
+				type: "item"
+				item: {
+					id: "astralsorcery:black_marble_raw"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: ["Lightwells require Astral crystals to make Liquid Starlight. The better the crystal, the more it will make."]
+			dependencies: ["21E695A6D6AD9B6E"]
+			id: "3BFA66BDD09BCB43"
+			tasks: [{
+				id: "2000A82A1310EEE1"
+				type: "item"
+				item: {
+					id: "astralsorcery:well"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["3BFA66BDD09BCB43"]
+			id: "4A162E7913D50ED0"
+			tasks: [{
+				id: "1602CB5FA68088F5"
+				type: "item"
+				item: {
+					id: "astralsorcery:liquid_starlight_bucket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:altar_attunement"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 0.0d
+			description: ["You will need these extra resources to build the multiblock for the Starlight Crafting Altar."]
+			dependencies: [
+				"1A66DF8553739916"
+				"4A162E7913D50ED0"
+			]
+			id: "50BC7EADD76618B6"
+			tasks: [
+				{
+					id: "632F432BFC74C78D"
+					type: "item"
+					item: {
+						id: "astralsorcery:altar_attunement"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "72505738AC7CEA10"
+					type: "item"
+					item: {
+						id: "astralsorcery:black_marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 21L
+				}
+				{
+					id: "6E85975FB8D4B89F"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 24L
+				}
+				{
+					id: "39AFC2A9434BE42C"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_arch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 28L
+				}
+				{
+					id: "5B16BDB388CB3EBF"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_chiseled"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "3155720B04575E40"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_pillar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Dynamism Gems"
+			icon: {
+				id: "astralsorcery:perk_gem_sky"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			description: ["These gems are used as crafting components, but are also used for Astral Perks when they're unlocked. To obtain them, throw a Rock Crystal and an Illumination Powder into Liquid Starlight, and they will form a crystal that will randomly grow into one of these three."]
+			dependencies: ["4A162E7913D50ED0"]
+			id: "3FA8BB19CC61A3C7"
+			tasks: [
+				{
+					id: "51429B4E0CC849FB"
+					type: "item"
+					item: {
+						id: "astralsorcery:perk_gem_sky"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5A8AAFE72C76214B"
+					type: "item"
+					item: {
+						id: "astralsorcery:perk_gem_day"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5A0EA7D1F6D6A65A"
+					type: "item"
+					item: {
+						id: "astralsorcery:perk_gem_night"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			description: ["Dropping logs into Liquid Starlight results in Infused Wood."]
+			dependencies: ["4A162E7913D50ED0"]
+			id: "60960B085686559D"
+			tasks: [{
+				id: "00788061C998E554"
+				type: "item"
+				item: {
+					id: "astralsorcery:infused_wood"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			description: ["Used to link Collector Crystals to other blocks."]
+			dependencies: [
+				"50BC7EADD76618B6"
+				"3FA8BB19CC61A3C7"
+				"60960B085686559D"
+			]
+			id: "0F11D78F67661664"
+			tasks: [{
+				id: "5E151E0B528D1C56"
+				type: "item"
+				item: {
+					id: "astralsorcery:linking_tool"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Starmetal Synthesis"
+			x: 12.0d
+			y: 2.0d
+			description: ["Starmetal is made when linking Collector Crystals to Elementium Ore, but you probably won't be able to mine it yet..."]
+			dependencies: ["0F11D78F67661664"]
+			id: "303BAB62D4B4FCC0"
+			tasks: [{
+				id: "6AE841D664949C95"
+				type: "observation"
+				title: "Create Starmetal Ore"
+				icon: {
+					id: "astralsorcery:starmetal_ore"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "astralsorcery:starmetal_ore"
+			}]
+		}
+		{
+			title: "Starglass"
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["0F11D78F67661664"]
+			id: "78926EBAB2C6FF4B"
+			tasks: [{
+				id: "4C077F14B049C2DD"
+				type: "item"
+				item: {
+					id: "kubejs:starglass"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:attunement_altar"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			description: ["The multiblock for this is quite large."]
+			dependencies: ["78926EBAB2C6FF4B"]
+			id: "0034764B13E0D9E0"
+			tasks: [
+				{
+					id: "770DAF4C66AA9310"
+					type: "item"
+					item: {
+						id: "astralsorcery:attunement_altar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1B7CB9F8897B0637"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_runed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "798561EE145D090C"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_arch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 80L
+				}
+				{
+					id: "372E65EEB6FC1646"
+					type: "item"
+					item: {
+						id: "astralsorcery:black_marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 225L
+				}
+				{
+					id: "012A06870DE02D86"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_pillar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "521548286BA2F99E"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_chiseled"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Astral Relays"
+			x: 12.0d
+			y: 0.0d
+			description: ["You will need to lay out Astral Relays on the Attunement Altar in the shape of constellations. Holding one of the Constellation Papers you found in the shrine in Asgard will reveal where they need to be placed."]
+			dependencies: ["78926EBAB2C6FF4B"]
+			id: "409F176E98D37677"
+			tasks: [{
+				id: "1D5BEB8883FFC106"
+				type: "item"
+				item: {
+					id: "astralsorcery:spectral_relay"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			description: ["When placed, Telescopes allow you to discover constellations by tracing bright stars in the shape of constellations you see on the Constellation Papers."]
+			dependencies: ["78926EBAB2C6FF4B"]
+			id: "69C1623534316FAB"
+			tasks: [{
+				id: "1607C418A0B10F1E"
+				type: "item"
+				item: {
+					id: "astralsorcery:telescope"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Attuned Rock Crystals"
+			x: 10.0d
+			y: -2.0d
+			description: ["Attune a rock crystal to Evorsio. You will need to discover Evorsio with the Telescope first, and it's not visible every single night."]
+			dependencies: [
+				"0034764B13E0D9E0"
+				"409F176E98D37677"
+				"69C1623534316FAB"
+			]
+			id: "6A93453C9B125399"
+			tasks: [{
+				id: "37A253DF0B116897"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 1
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 1
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:tool.efficiency"
+										pLevel: 1
+										discovered: 1b
+									}
+								]
+							}
+							constellationName: "astralsorcery:evorsio"
+						}
+						temperature: 0.0d
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			title: "Rituals"
+			icon: {
+				id: "astralsorcery:ritual_pedestal"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: -2.0d
+			description: ["Ritual Pedestals require an Attuned Rock Crystal to be placed in them for the ritual to start, as well as enough starlight. The Evorsio ritual breaks blocks, and it's the only way to successfully mine Starmetal Ore to obtain Starmetal."]
+			dependencies: ["50BC7EADD76618B6"]
+			id: "63D9D68A42BD45AC"
+			tasks: [
+				{
+					id: "30298C692679E57A"
+					type: "item"
+					item: {
+						id: "astralsorcery:ritual_pedestal"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "35B4CF5E936FF512"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "569BCFD124D7ADD2"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_chiseled"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "36DDDE8BA956B4C1"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 24L
+				}
+				{
+					id: "32517DA6248F1C61"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_arch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			dependencies: [
+				"63D9D68A42BD45AC"
+				"303BAB62D4B4FCC0"
+			]
+			id: "457793A5FB687AB2"
+			tasks: [{
+				id: "1C89679FEFCEC1E2"
+				type: "item"
+				item: {
+					id: "astralsorcery:starmetal_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:altar_constellation"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -4.0d
+			description: ["These materials are required to upgrade your altar."]
+			dependencies: [
+				"457793A5FB687AB2"
+				"6A93453C9B125399"
+			]
+			id: "664136C54C2C05E6"
+			tasks: [
+				{
+					id: "3FB06074E8F33049"
+					type: "item"
+					item: {
+						id: "astralsorcery:altar_constellation"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "356861C8C720AAA7"
+					type: "item"
+					item: {
+						id: "astralsorcery:black_marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 28L
+				}
+				{
+					id: "13CC144D0477CC3F"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "0A9704163FD139BA"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_runed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "2C3EAE1C1F4B9557"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+			]
+		}
+		{
+			title: "Self-Attunement"
+			icon: {
+				id: "astralsorcery:black_marble_pillar"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 10.0d
+			y: -6.0d
+			description: ["Standing on the Attunement Atlar while a constellation is laid out with Astral Relays will start a cutscene of yourself being attuned. Players who are attuned get Astral Sorcery perks and are able to discover Faint Constellations with a telescope."]
+			dependencies: ["0034764B13E0D9E0"]
+			id: "4DE740EEAD6743E8"
+			tasks: [{
+				id: "037EF22A49A244FE"
+				type: "checkmark"
+				title: "Attune Yourself"
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:infuser"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 12.0d
+			y: -6.0d
+			description: ["Liquid Starlight is needed to be placed in the 12 empty spots around the altar. It may be consumed during recipes, but eventually it can be automatically refilled with a Containment Chalice containing Liquid Starlight."]
+			dependencies: ["664136C54C2C05E6"]
+			id: "58B5C9F21A7DDB6B"
+			tasks: [
+				{
+					id: "19AB97028F02B83D"
+					type: "item"
+					item: {
+						id: "astralsorcery:infuser"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "7EC261ED7F0896A8"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "10AAC8A6EDE19EAD"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_runed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "3528577D9A41FB89"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "57A11566903608D2"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_chiseled"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "59DA508D0BEAE24C"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_pillar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Celestial Crystals"
+			x: 12.0d
+			y: -4.0d
+			description: ["Throwing Stardust and a Rock Crystal into Liquid Starlight will eventually grow a Celestial Crystal, an upgraded form of Rock Crystals. Celestial Crystals can be attuned to constellations as well."]
+			dependencies: ["457793A5FB687AB2"]
+			id: "06F19049DE701B03"
+			tasks: [{
+				id: "29E79E23A30C3D1C"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -6.0d
+			dependencies: ["58B5C9F21A7DDB6B"]
+			id: "1EBBD73EB1D97D3C"
+			tasks: [{
+				id: "440DC539FC68D420"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonating_gem"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:refraction_table"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: -4.0d
+			description: ["The Stellar Refraction Table is used to get higher tiers of enchantments. Put the Parchment and the Infused Glass into the Stellar Refraction Table. Each constellation links to an enchantment. Lucerna gives Night Vision, Discidia gives Sharpness, Armara gives Protection, Fornax gives Scorching Heat, and all other constellations have their own enchantments. To get higher levels, you want to overlap as many individual stars as you can. Generally, for good enchantments of a specific type of constellation it works to put 1 of the constellation you do want and 2 of a constellation you don't want, but fits together well in 2 different ways with the one of the enchantment you are trying to get high levels of."]
+			dependencies: ["1EBBD73EB1D97D3C"]
+			id: "6AD3DCDA932FC61E"
+			tasks: [
+				{
+					id: "1FFD37818F82E704"
+					type: "item"
+					item: {
+						id: "astralsorcery:refraction_table"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "5618117A057DD80E"
+					type: "item"
+					item: {
+						id: "astralsorcery:infused_glass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							astralsorcery: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0A80FCF8E4ADFDF8"
+					type: "item"
+					item: {
+						id: "astralsorcery:parchment"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Overpowered Kit"
+			x: 16.0d
+			y: -2.0d
+			dependencies: [
+				"4DE740EEAD6743E8"
+				"6AD3DCDA932FC61E"
+			]
+			id: "620248FC0ECD4072"
+			tasks: [{
+				id: "6AF790B98EF0C4A4"
+				type: "item"
+				item: {
+					id: "kubejs:overpowered_kit"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:altar_radiance"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 14.0d
+			y: -2.0d
+			description: ["You will need these materials to upgrade your altar."]
+			dependencies: [
+				"620248FC0ECD4072"
+				"06F19049DE701B03"
+				"7818E3584BDE7A95"
+			]
+			id: "7435798BF1D0F053"
+			tasks: [
+				{
+					id: "555FCFA1935E67A6"
+					type: "item"
+					item: {
+						id: "astralsorcery:altar_radiance"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "4EE1C44B16156681"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 28L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			description: ["Place an attuned Rock or Celestial Crystal in the slot on the left side of the Iridescent Altar if the recipe needs a specific constellation, like the one for the Observatory. The Observatory is needed to discover Faint constellations."]
+			dependencies: ["7435798BF1D0F053"]
+			id: "67AC6A9B247C5472"
+			tasks: [{
+				id: "5BB0DB1702EA1964"
+				type: "item"
+				item: {
+					id: "astralsorcery:observatory"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			description: ["Requires 4 Attuned Celestial Crystals with maxed stats, each attuned to one of the 4 faint constellations; Alcara, Gelu, Ulteria, and Vorux."]
+			dependencies: ["67AC6A9B247C5472"]
+			id: "73D56DC852394F50"
+			tasks: [{
+				id: "63DEB0214CF35FE5"
+				type: "item"
+				item: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:fountain_prime_liquid"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 2.0d
+			description: ["Using the Ichosic Resonator will show spouts of liquid from the ground. Find a black spout, which is where you will get Void. Build the multiblock above the spout and place 2 Containment Chalices near it. One will be used to input Liquid Starlight, and the other one will be the output for Void."]
+			dependencies: [
+				"73D56DC852394F50"
+				"4986ADBAB2C5A5E6"
+			]
+			id: "2E842A826C6DD200"
+			tasks: [
+				{
+					id: "0DCF0B2F80A5422E"
+					type: "item"
+					item: {
+						id: "astralsorcery:fountain"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "56C686EB6D84D30D"
+					type: "item"
+					item: {
+						id: "astralsorcery:fountain_prime_liquid"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1A7ED60059FB5B95"
+					type: "item"
+					item: {
+						id: "astralsorcery:resonator"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								upgrades: [
+									0
+									1
+									2
+								]
+							}
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2A8DEE07CCAB4821"
+					type: "item"
+					item: {
+						id: "astralsorcery:chalice"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "5978A96125BBCBA9"
+					type: "item"
+					item: {
+						id: "astralsorcery:black_marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "5F5C7609BA69DA1D"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_pillar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "2C9109988B32AD3F"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_runed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+			]
+		}
+		{
+			icon: {
+				id: "astralsorcery:celestial_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: 16.0d
+			y: 0.0d
+			description: ["Crafting a Celestial Collector Crystal and building this multiblock around it provides mass amounts of starlight. You need to place 8 Liquid Starlight in the holes in the multiblock."]
+			dependencies: ["7435798BF1D0F053"]
+			id: "4986ADBAB2C5A5E6"
+			tasks: [
+				{
+					id: "5DED8D1E1C84E042"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "78E3EE11421690A7"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_chiseled"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "06BE405F5D9F4DC3"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_runed"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "5C5A09AE87BE6B5A"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "199316B24E89ACDF"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_engraved"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "4D9C9B4A19554542"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_pillar"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dark Matter Alloy"
+			x: 18.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"2E842A826C6DD200"
+				"3036EBF878792AD3"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "5D3FA30ECCABED32"
+			tasks: [{
+				id: "1D9829E7E85DE8BC"
+				type: "item"
+				item: {
+					id: "kubejs:dark_matter_alloy"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "65EF49C4D0AA5E66"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛇᚳ\\nWe’re figuring out how to program more circuits, and we now believe that the Creative ME Cell will go be one of the easiest of these powerful items to make.\\n\"}"]
+						title: "Entry ᛇᚳ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Ionite Void Ore Miner"
+			icon: {
+				id: "envirotech:ionite_void_miner_ccu"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: -6.0d
+			dependencies: [
+				"1EBBD73EB1D97D3C"
+				"06F19049DE701B03"
+			]
+			id: "22D4B9D0880CDE2F"
+			tasks: [
+				{
+					id: "22449E03F181CA48"
+					type: "item"
+					item: {
+						id: "envirotech:ionite_void_miner_ccu"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "30194228027C3E02"
+					type: "item"
+					item: {
+						id: "envirocore:ionite_frame"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 68L
+				}
+				{
+					id: "3856C8D4557A191C"
+					type: "item"
+					item: {
+						id: "envirocore:structure_panel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "1EE5CDDA9636AC67"
+					type: "item"
+					title: "16x Modifier"
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							items: [
+								{
+									id: "itemfilters:mod"
+									Count: 1b
+									tag: {
+										temperature: 0.0d
+										value: "envirocore"
+									}
+								}
+								{
+									id: "itemfilters:id_regex"
+									Count: 1b
+									tag: {
+										value: "modifier"
+									}
+								}
+							]
+						}
+					}
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Aethium"
+			x: 18.0d
+			y: -2.0d
+			dependencies: ["22D4B9D0880CDE2F"]
+			id: "3036EBF878792AD3"
+			tasks: [{
+				id: "2F26B3BFBC01623D"
+				type: "item"
+				item: {
+					id: "envirocore:aethium_crystal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Crystallization Tank"
+			icon: "thermal:enderium_glass"
+			x: 14.0d
+			y: -4.0d
+			dependencies: ["1EBBD73EB1D97D3C"]
+			id: "7818E3584BDE7A95"
+			tasks: [
+				{
+					id: "6A4E2CE23FABCEFD"
+					type: "item"
+					item: "masterfulmachinery:magical_controller"
+				}
+				{
+					id: "1ECFD7ADDB6A68FC"
+					type: "item"
+					item: "masterfulmachinery:magical_energy_port_energy_input"
+				}
+				{
+					id: "3732D3DC73038A01"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_input"
+				}
+				{
+					id: "3E21968E40878845"
+					type: "item"
+					item: "masterfulmachinery:magical_fluid_port_fluids_input"
+					count: 2L
+				}
+				{
+					id: "5B1CD47699931457"
+					type: "item"
+					item: "masterfulmachinery:magical_mana_port_botania_mana_input"
+				}
+				{
+					id: "26BD37C85E0FBF3F"
+					type: "item"
+					item: "masterfulmachinery:magical_pressure_port_pncr_pressure_input"
+				}
+				{
+					id: "36D3EDE5886D4BF3"
+					type: "item"
+					item: "masterfulmachinery:magical_starlight_port_astral_starlight_input"
+				}
+				{
+					id: "27AC279C9177F2B9"
+					type: "item"
+					item: "masterfulmachinery:magical_item_port_items_output"
+				}
+				{
+					id: "339EBA01950329B7"
+					type: "item"
+					item: {
+						id: "kubejs:starglass"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "1DACE6EC65559ED7"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+							temperature: 0.0d
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "77E6CD230A9B222D"
+					type: "item"
+					item: "thermal:enderium_glass"
+					count: 52L
+				}
+				{
+					id: "5D9C2CE64DAF2B2E"
+					type: "item"
+					item: {
+						id: "astralsorcery:black_marble_raw"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "6AD815D7B8B30702"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_engraved"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "66551F7A66A2196C"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_arch"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "42E31B48FCD452D9"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_bricks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "464116D5EA3DE73F"
+					type: "item"
+					item: {
+						id: "astralsorcery:marble_stairs"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "59826C6ADA2EE3B9"
+					type: "item"
+					item: {
+						id: "astralsorcery:ritual_link"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+	]
+}

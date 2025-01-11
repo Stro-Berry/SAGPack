@@ -1,0 +1,642 @@
+{
+	id: "79C5F43D14D026D3"
+	group: ""
+	order_index: 12
+	filename: "chapter_10_occultism"
+	title: "10 - Occultism"
+	icon: "occultism:ritual_dummy/custom_ritual"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Occultism"
+			icon: "occultism:ritual_dummy/custom_ritual"
+			x: 6.0d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Drug-Induced Satanism"
+			description: ["Use the Azure Substance to attain the Third Eye effect. You will need to find some Otherworldly Trees, which are only visible when you have the effect."]
+			dependencies: ["5E5D303F724D6E2F"]
+			size: 1.5d
+			id: "1421A46F0B71A83F"
+			tasks: [{
+				id: "29958688C696510F"
+				type: "item"
+				item: "occultism:otherworld_log"
+			}]
+			rewards: [{
+				id: "471717C83B1A63CA"
+				type: "item"
+				item: "occultism:dictionary_of_spirits"
+			}]
+		}
+		{
+			title: "Spirit Infuser"
+			icon: {
+				id: "kubejs:tanzanite_block"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: -6.0d
+			description: ["Spirit Fire is usually made with lightning a Demon's Dream Fruit on fire, but now you will have to use an Azure Substance. You won't be able to use it on its own either, you'll have to construct this multiblock."]
+			dependencies: ["1421A46F0B71A83F"]
+			id: "57945334E3DB8BB3"
+			tasks: [
+				{
+					id: "33E468BEB6D72584"
+					type: "item"
+					item: "masterfulmachinery:advanced_controller"
+				}
+				{
+					id: "1F6AED59C9AE0CD9"
+					type: "item"
+					item: "masterfulmachinery:advanced_energy_port_energy_input"
+				}
+				{
+					id: "55DFF20AD709E5E6"
+					type: "item"
+					item: "masterfulmachinery:advanced_item_port_items_input"
+				}
+				{
+					id: "35DEC50485664421"
+					type: "item"
+					item: "masterfulmachinery:advanced_item_port_items_output"
+				}
+				{
+					id: "480D648F8355E3B4"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockstainlesssteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "186A9BD769060C9B"
+					type: "item"
+					item: {
+						id: "kubejs:azure_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 13L
+				}
+				{
+					id: "321720DFC766ABEF"
+					type: "item"
+					item: {
+						id: "kubejs:otherworldly_planks"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 20L
+				}
+				{
+					id: "595C912A97360279"
+					type: "item"
+					item: {
+						id: "kubejs:tanzanite_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "5B0727AD1C66B2C4"
+					type: "item"
+					item: "thermal:enderium_glass"
+					count: 12L
+				}
+				{
+					id: "059F11556A7DBA1A"
+					type: "item"
+					item: "occultism:otherworld_log"
+					count: 20L
+				}
+				{
+					id: "350925E3334FA375"
+					type: "item"
+					item: {
+						id: "minecraft:soul_soil"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -6.0d
+			dependencies: ["57945334E3DB8BB3"]
+			id: "70DC1613EE6580E0"
+			tasks: [{
+				id: "5A8F920019731AFD"
+				type: "item"
+				item: "occultism:otherstone"
+			}]
+		}
+		{
+			title: "Your First Ritual"
+			icon: "occultism:golden_sacrificial_bowl"
+			x: 6.0d
+			y: -2.0d
+			description: ["Check the Dictionary of Spirits for how to build this. You will also need to create Chalk."]
+			dependencies: [
+				"70DC1613EE6580E0"
+				"6C485CB13957A551"
+			]
+			id: "656977A23A0B28DB"
+			tasks: [
+				{
+					id: "37C1925EFE601112"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "580224F7B7BE997D"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 12L
+				}
+				{
+					id: "2A6C85C08D39B54C"
+					type: "item"
+					item: "occultism:candle_white"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			description: ["You will need to use chalk to draw different circles around your altar, depending on the type of circle your recipe requires."]
+			dependencies: [
+				"57945334E3DB8BB3"
+				"7927D47DD31F6742"
+			]
+			id: "2C35DE13CC608AFF"
+			tasks: [{
+				id: "091BB85FE65FBA35"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["70DC1613EE6580E0"]
+			id: "7927D47DD31F6742"
+			tasks: [{
+				id: "1DEC44E3A25BEEFD"
+				type: "item"
+				item: "occultism:burnt_otherstone"
+			}]
+		}
+		{
+			title: "Tallow"
+			icon: "occultism:tallow"
+			x: 6.0d
+			y: -4.0d
+			description: ["Tallow is required to make Candles."]
+			dependencies: ["70DC1613EE6580E0"]
+			id: "6C485CB13957A551"
+			tasks: [
+				{
+					id: "0440111046057F88"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "505EFDCB2A6C88CC"
+					type: "item"
+					item: "occultism:tallow"
+				}
+			]
+		}
+		{
+			title: "Foliots"
+			x: 4.0d
+			y: -2.0d
+			description: ["Combine with your Dictionary of Spirits to bind it, allowing its use in rituals."]
+			dependencies: ["7927D47DD31F6742"]
+			id: "1302A1E8F60ABC9D"
+			tasks: [{
+				id: "3899B25FF125F49A"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+		}
+		{
+			title: "Otherstone Trader"
+			icon: {
+				id: "kubejs:aestanite_ore"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 6.0d
+			y: 0.0d
+			description: ["Give the trader 2 Otherstone, and they will return with 1 Aestanite Ore."]
+			dependencies: [
+				"1302A1E8F60ABC9D"
+				"2C35DE13CC608AFF"
+				"656977A23A0B28DB"
+			]
+			id: "1C79913681103605"
+			tasks: [
+				{
+					id: "6E5506C3E7557CAA"
+					type: "item"
+					item: "occultism:otherstone"
+					count: 4L
+				}
+				{
+					id: "33CCAE5A6592ADA1"
+					type: "item"
+					item: {
+						id: "kubejs:aestanite_ore"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Foliot Crusher"
+			icon: {
+				id: "kubejs:crushed_aestanite"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			description: ["This foliot will crush ores, and unlike the Otherstone Trader, can be upgraded."]
+			dependencies: [
+				"656977A23A0B28DB"
+				"1302A1E8F60ABC9D"
+				"2C35DE13CC608AFF"
+				"1C79913681103605"
+			]
+			id: "3B28CB6690517922"
+			tasks: [{
+				id: "563253F744835840"
+				type: "item"
+				item: {
+					id: "kubejs:crushed_aestanite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Aestanite Ingot"
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["3B28CB6690517922"]
+			id: "01E2549DAAF7511A"
+			tasks: [{
+				id: "38C256621B55D35A"
+				type: "item"
+				item: {
+					id: "kubejs:aestanite_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Djinni"
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["01E2549DAAF7511A"]
+			id: "399E9EEDB90EA9D7"
+			tasks: [{
+				id: "68217BFBE94C3362"
+				type: "item"
+				item: "occultism:book_of_binding_djinni"
+			}]
+		}
+		{
+			title: "Higher-Tier Chalk"
+			icon: {
+				id: "occultism:chalk_purple"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["01E2549DAAF7511A"]
+			id: "2AA6F8B646A69C14"
+			tasks: [
+				{
+					id: "508664AA21151E87"
+					type: "item"
+					item: {
+						id: "occultism:chalk_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4D39D71E049A2405"
+					type: "item"
+					item: {
+						id: "occultism:chalk_purple"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "occultism:otherworld_goggles"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 12.0d
+			y: 2.0d
+			description: ["Create some Infused Lenses and make these goggles. Also remember to make a Divination Rod."]
+			dependencies: [
+				"399E9EEDB90EA9D7"
+				"2AA6F8B646A69C14"
+			]
+			id: "7105A9D786906136"
+			tasks: [
+				{
+					id: "16F5542CEC42D020"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_goggles"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "522491E372C3E7AB"
+					type: "item"
+					item: {
+						id: "occultism:divination_rod"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "The Wild Hunt"
+			x: 11.0d
+			y: -3.0d
+			description: ["Summon The Wild Hunt and defeat the spirits to obtain unique items."]
+			dependencies: ["2AA6F8B646A69C14"]
+			id: "0FB7BA406C7371A4"
+			tasks: [{
+				id: "0B0DD98216E7D9A4"
+				type: "kill"
+				title: "Defeat the Wild Hunt"
+				icon: {
+					id: "minecraft:wither_skeleton_skull"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				entity: "occultism:wild_hunt_wither_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["2AA6F8B646A69C14"]
+			id: "5A3BB9FFB5272701"
+			tasks: [{
+				id: "6E5D0A7AF229E45C"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Krurakcred"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			description: ["Go to the Nether and equip your Otherworld Goggles. Then, set your Divination Rod to Netherrack and use it to find the location of some Iesnium Ore. Mine it with your Infused Pickaxe."]
+			dependencies: [
+				"5A3BB9FFB5272701"
+				"7105A9D786906136"
+			]
+			id: "0E432670A700E90D"
+			tasks: [{
+				id: "7342AEC43018E524"
+				type: "item"
+				item: "occultism:iesnium_ore"
+			}]
+		}
+		{
+			title: "Ore Miners"
+			icon: {
+				id: "occultism:miner_djinni_ores"
+				Count: 1b
+				tag: {
+					spiritName: "Xalmas"
+					Damage: 0
+				}
+			}
+			x: 12.0d
+			y: -2.0d
+			description: ["With the use of a Magic Lamp, you can collect ores. An important one you'll need is Infused Ore."]
+			dependencies: [
+				"2AA6F8B646A69C14"
+				"399E9EEDB90EA9D7"
+			]
+			id: "2B7F1A69CCA219E7"
+			tasks: [
+				{
+					id: "47C204F6004F6AB3"
+					type: "item"
+					item: {
+						id: "occultism:miner_djinni_ores"
+						Count: 1b
+						tag: {
+							spiritName: "Luktimer"
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "612ABE715DFD3A03"
+					type: "item"
+					item: "occultism:dimensional_mineshaft"
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			dependencies: [
+				"2B7F1A69CCA219E7"
+				"0E432670A700E90D"
+			]
+			id: "0CFCFE097CD7FA83"
+			tasks: [{
+				id: "70294A2B20E67762"
+				type: "item"
+				item: "occultism:iesnium_ingot"
+			}]
+		}
+		{
+			title: "Unbound Afrit"
+			x: 12.0d
+			y: -4.0d
+			description: ["Using a purposefully incomplete pentacle, like the shown for this ritual in the Dictionry, you can summon a powerful spirit to obtain unique items."]
+			dependencies: [
+				"0FB7BA406C7371A4"
+				"40C96B783FF25AEC"
+			]
+			id: "550EB6E68F1190C3"
+			tasks: [{
+				id: "366BC771DEF0683E"
+				type: "kill"
+				title: "Defeat the Unbound Afrit"
+				icon: {
+					id: "occultism:book_of_binding_bound_afrit"
+					Count: 1b
+					tag: {
+						spiritName: "Creomeezur"
+					}
+				}
+				entity: "occultism:afrit_wild"
+				value: 1L
+			}]
+		}
+		{
+			title: "Afrit"
+			x: 13.0d
+			y: -3.0d
+			dependencies: ["0CFCFE097CD7FA83"]
+			id: "40C96B783FF25AEC"
+			tasks: [{
+				id: "5AF5B7866374152C"
+				type: "item"
+				item: "occultism:book_of_binding_afrit"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -5.0d
+			dependencies: ["550EB6E68F1190C3"]
+			id: "57471F5B81E305F2"
+			tasks: [{
+				id: "72BE64223BE906B3"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -5.0d
+			dependencies: ["0CFCFE097CD7FA83"]
+			id: "36EBE3909AAB1AF8"
+			tasks: [{
+				id: "5ADC63D78E784020"
+				type: "item"
+				item: "occultism:book_of_binding_marid"
+			}]
+		}
+		{
+			title: "Magical Bullet Slot"
+			x: 12.5d
+			y: -6.5d
+			shape: "gear"
+			dependencies: [
+				"57471F5B81E305F2"
+				"36EBE3909AAB1AF8"
+			]
+			size: 2.5d
+			repeatable: true
+			id: "3D6313B3B8E7F31B"
+			tasks: [{
+				id: "75BAE0F116BA468B"
+				type: "item"
+				item: {
+					id: "kubejs:magical_bullet_slot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D04E7478DE58787"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᚬ\\nAliens sent a chest with a message inside, saying they had no interest with us. However, they’ve been checking out our other dimensions, so we’re not completely sure what they’re actually up to.\\n\"}"]
+						title: "Entry ᚬ"
+						author: "Björn"
+					}
+				}
+			}]
+		}
+	]
+}

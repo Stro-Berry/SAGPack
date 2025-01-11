@@ -1,0 +1,441 @@
+{
+	id: "00D910BD6BFC3CD3"
+	group: ""
+	order_index: 22
+	filename: "chapter_20"
+	title: "20 - Creative Items"
+	icon: "create:handheld_worldshaper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Creative Energy Cube"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["7E9F48EEA159217F"]
+			id: "092657CA92975D79"
+			tasks: [{
+				id: "7502CC1426224BE8"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Creative Chemical Tank"
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"092657CA92975D79"
+				"5575F675AA708E25"
+			]
+			id: "5CF13FE23AFE1EEA"
+			tasks: [{
+				id: "27122F7C26AC7FE4"
+				type: "item"
+				item: {
+					id: "mekanism:creative_chemical_tank"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Creative Fluid Tank"
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"5CF13FE23AFE1EEA"
+				"5780C88C5672AFE3"
+			]
+			id: "062C656217F44712"
+			tasks: [{
+				id: "33C1133452626888"
+				type: "item"
+				item: {
+					id: "mekanism:creative_fluid_tank"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"062C656217F44712"
+				"7CC65F573C0C6326"
+			]
+			id: "1D363D0644F17815"
+			tasks: [{
+				id: "66FE9624C5C74713"
+				type: "item"
+				item: {
+					id: "kubejs:stellar_alloy"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			description: ["Allows for infinite blocks."]
+			dependencies: ["1D363D0644F17815"]
+			id: "7A911DD51CEC791F"
+			tasks: [{
+				id: "15DAFCE8FA6F3329"
+				type: "item"
+				item: "create:handheld_worldshaper"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["7A911DD51CEC791F"]
+			id: "6267528AD207426B"
+			tasks: [{
+				id: "760EEB0CE0EBD3A9"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:creative_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 14.0d
+			y: 0.0d
+			subtitle: "\"The Cell\""
+			description: ["Put your Creative ME Storage Cell in a Cell Workbench to Partition it. You can hold shift and grab items from JEI to put into it. Put it into your ME System to have infinite of the partitioned items."]
+			dependencies: [
+				"6267528AD207426B"
+				"3996FC9CA1C3C1D4"
+			]
+			hide_text_until_complete: true
+			id: "340A487AF2EFEC84"
+			tasks: [
+				{
+					id: "1CA2E05F8AC505CC"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:creative_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2D0DF4995F01778A"
+					type: "item"
+					item: "appliedenergistics2:cell_workbench"
+				}
+			]
+		}
+		{
+			title: "The RUNES"
+			x: 2.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "What if?"
+			description: [
+				"If you want to get far, you'll need to obtain the 12 Asgardian Runes. They used a Base 12 system, so you'll have to deal with that. The following riddles are for items related to the number 0-11, in order. Solve them and combine the item they represnt with a Rune of Asgard in the Starforge to obtain its rune counterpart. After that, combine all 12 runes in order in an Advanced Crafting Table to make the Amalgam Rune."
+				""
+				"Riddle 0: A dimlet is a part of a dimension. No effect, but makes it unique and eccentric."
+				"Riddle 1: When broken its contents spill, not its block. It helps enchant, but does not talk."
+				"Riddle 2: A module in your suit, perhaps. It freezes water with no mishaps. "
+				"Riddle 3: Don't limit yourself to 3 by 3. Switch to 7 by 7, and you'll be free."
+				"Riddle 4: Doesn't boost one attribute, boosts everything. Multiplies upgrade effectiveness, better processing. "
+				"Riddle 5: Enchant your gadget, but not really. Slide in the upgrade, and dig more quickly."
+				"Riddle 6: A random access memory, with importance. Assembled with a fragment, parts and ingots. "
+				"Riddle 7: Increase range, but not for you. Assist your machines, everything that they do. "
+				"Riddle 8: Manufactured from a standard card base. Add to a processor to increase variable space."
+				"Riddle 9: If you want to collect, you'll need a guide. Open your pack and see what's inside."
+				"Riddle 10: The dirt inflammable, during the day. Used in a farm, for mobs you will slay."
+				"Riddle 11: Attracts your items, they will be found. Golden exterior that is curved all around."
+			]
+			dependencies: ["669235D0B6247B19"]
+			hide: true
+			size: 1.5d
+			repeatable: true
+			id: "7E9F48EEA159217F"
+			tasks: [{
+				id: "584C8235D75B77AB"
+				type: "item"
+				item: {
+					id: "kubejs:rune_amalgam"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "5B0F8D7C7602837B"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"A good method to making the casing of the Creative Chemical Tank involves finding the volume in cubic centimeters from a limited set of factors. It is a vertically-oriented square prism, and the distance from any corner to its opposite corner (diagonally) is (ᛨᛡ*√ᛯ)cm, and the\"}"
+							"{\"text\":\" height of it is ᛄᛪcm. This information needs to be programmed into the Stellar Circuit. I decided I would make and test a small version, which successfully made an infinite energy provider. It was difficult to make, but we had a plan to make exactly enough resources for a\"}"
+							"{\"text\":\"larger one. The modifications we need for production are attached on the following page.\\n\"}"
+							"{\"text\":\"NETHER STAR:\\nOur nether star production creates Nether Star Nuggets, which are equal to one ᛕth of a Nether Star. We make ᛇᛇᛝᛡ nuggets every ᚹ days, and it will take ᛨᛄ days to get enough nuggets to make enough nether stars. The nuggets are made continuously, they\"}"
+							"{\"text\":\"don’t just all appear at once every few days.\\n\"}"
+							"{\"text\":\"CHAOTIC ENERGY CONTROLLER:\\nWe have ᛝ Chaotic Energy Controllers at the start of today (right now) and we make ᛪ Chaotic Energy Controllers in the middle of every day, but at the end of every day we increase production by ᛇ. We need to wait exactly ᛥ days.\\n\"}"
+							"{\"text\":\"STELLAR CORE:\\nStellar Cores are interesting, since they are homogeneous spheres that grow in size. We have ᛇ sphere that is ᛇ centimeter in diameter, and its diameter grows ᛨ centimeters every day. After ᚹ weeks the sphere will be big enough, at which point we will melt it. We'll\"}"
+							"{\"text\":\"cast it into stellar cores, each with a diameter of ᚳ centimeters. We will discard any extra fluid that cannot make a full stellar core.\\n\"}"
+						]
+						title: "Entry ᛇᚹ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Congratulations, you completed the pack! I hope you enjoyed it. Now, you'll need to exit out of the game and begin your next modpack. No need to do anything important with the Creative ME Cell, this was its only purpose."]
+			dependencies: ["340A487AF2EFEC84"]
+			hide_text_until_complete: true
+			size: 3.0d
+			repeatable: true
+			id: "331372CD483F904A"
+			tasks: [{
+				id: "62C069B150C66558"
+				type: "item"
+				item: {
+					id: "kubejs:certificate_of_stellar_alloy"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "5592D3D4A09862BC"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛨᛝ\\nI’ve been hearing whispers in my ear from a mysterious voice. They said they only want to help somebody make The Cell, that’s them. They’ve apparently been secretly guiding me since the beginning. They told me they’d take note and remember where these\"}"
+							"{\"text\":\"logs are buried, for who knows what reason. Hopefully it’s nothing bad and they actually want to help.\"}"
+						]
+						title: "Entry ᛨᛝ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Stellar Circuitry"
+			icon: {
+				id: "kubejs:stellar_circuit_chemical_tank"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"To make your first Stellar Circuit, you'll need to put 3 Basic Black Hole Units in a Crafting Table of materials in specific amounts. Björn, fortunately, included equations of the amounts of materials needed to make the circuit in his log from the previous quest. Unfortunately, they're all math problems, because the page with the answers was lost, so you'll have to solve them."
+				""
+				"As for programming the circuit, you need to craft a blank Stellar Circuit with numeric runes in order of the number you want to program it to, in base 12 of course. The stellar circuit goes in the first slot and the numbers are put from left to right starting in the next slot."
+			]
+			dependencies: ["7E9F48EEA159217F"]
+			hide: true
+			repeatable: true
+			id: "5575F675AA708E25"
+			tasks: [
+				{
+					id: "3F63C2A55D89D7F8"
+					type: "item"
+					item: {
+						id: "kubejs:stellar_circuit"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "561462AF359EEDA8"
+					type: "item"
+					item: {
+						id: "kubejs:stellar_circuit_chemical_tank"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "63AA58AD45A9DA0D"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᚬ\\nOur previous stellar circuit could only be applied to infinitely produce gaseous substances, we put pieces of our research together to search for a way to infinitely create any fluid. The solution seems to be quite simple. In our experiments, we used\\n\"}"
+							"{\"text\":\"process involving a cylinder with height ᛇ meter containing ᚹᛕ kg of a substance. The initial radius of the cylinder is ᛇ meter and the radius is reduced at a constant rate of ᛝ.ᚹ meters/second while the mass is kept the same, which increases the density of the contained material.\"}"
+							"{\"text\":\"The circuit needs to be programmed with the instantaneous rate of change of the density of the material as time increases, in kg/m^ᚹ/s, ᚹᛪ seconds after the process starts. This value was then rounded to the nearest integer.\\n\"}"
+						]
+						title: "Entry ᛇᚬ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Compression Circuitry"
+			x: 6.0d
+			y: 2.0d
+			description: ["Details for circuit programming in the previous quest."]
+			dependencies: ["5575F675AA708E25"]
+			hide: true
+			repeatable: true
+			id: "5780C88C5672AFE3"
+			tasks: [{
+				id: "3875E25E208A5840"
+				type: "item"
+				item: {
+					id: "kubejs:stellar_circuit_fluid_tank"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "559E9580E2CABD8B"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛄ\\nWe’ve completed the Stellar Probe, an object that can measure inherent properties of blocks. We’ve discovered the new material with properties similar to the Stellar Circuit itself also, that we’ve named Stellar Alloy. We don’t know much about its composition, but we\"}"
+							"{\"text\":\"assume that it requires a core of extremely compressed matter at the center. The core needs to be made from exploding a Black Hole Unit containing a specific amount of RFTools Machine Frames. This amount will be represented in the amount of milliseconds it takes for the bottom\"}"
+							"{\"text\":\"of our Test Cube to reach the ground, rounded to the nearest integer. Our test cube starts with its center ᛇᛥ meters in the air, and the equation of gravity in Asgard is the same as in Midgard; -ᛇᚬt^ᛨ +vt + h, where t is time, h is initial height, and v is starting velocity, which will be ᛝ. The\"}"
+							"{\"text\":\"cube’s density is about ᛇkg/ᛝ.ᛨᛄm^ᚹ. We’ve left the Test Cube on a pedestal in Asgard after our testing ended. Its mass in kilograms can be found by using the creative probe and viewing the “Hardness” section.\\n\"}"
+						]
+						title: "Entry ᛇᛄ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			icon: "theoneprobe:creativeprobe"
+			x: 8.0d
+			y: 2.0d
+			description: ["More details in the log from the previous quest."]
+			dependencies: ["5780C88C5672AFE3"]
+			hide: true
+			repeatable: true
+			id: "7CC65F573C0C6326"
+			tasks: [
+				{
+					id: "1FB07C7554C0FB65"
+					type: "item"
+					item: {
+						id: "kubejs:stellar_circuit_probe"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2B82342CE52E713C"
+					type: "item"
+					item: "theoneprobe:creativeprobe"
+				}
+			]
+			rewards: [{
+				id: "7C383F07C866CCAD"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: [
+							"{\"text\":\"Entry ᛇᛕ\\nDue to the uｎforｔunate tｈings, I am not able to ｗrite the creatiｏn of The Cell diｒectly. I’ve insteaｄ ｓtashed the cｏnstruction throughout all oｆ the logs. Oｎly ｔｈose who wiｌl use The Cell fｏr ｇood will care enough to ｓolve ｉt. Iｎ the mean time, I need tｏ ｒun\"}"
+							"{\"text\":\"away from this area, since the war will likely spreaｄ to thｅ location of me ｒeally quickly.\\n\"}"
+						]
+						title: "Entry ᛇᛕ"
+						author: "Björn"
+						resolved: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Tesseract"
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["7CC65F573C0C6326"]
+			hide: true
+			id: "3996FC9CA1C3C1D4"
+			tasks: [{
+				id: "0EEC32F2AC82C9CC"
+				type: "item"
+				item: {
+					id: "kubejs:tesseract"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The End?"
+			disable_toast: true
+			x: 2.0d
+			y: 2.0d
+			description: ["Is this really the end of the pack? Something isn't lining up here."]
+			id: "51E2283FA789CE3C"
+			tasks: [{
+				id: "45F83F109BB19743"
+				type: "item"
+				item: "kubejs:certificate_of_stellar_alloy"
+			}]
+		}
+	]
+}

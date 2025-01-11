@@ -1,0 +1,246 @@
+{
+	id: "3AA7A2AA183985CF"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: {
+		id: "kubejs:stellar_alloy"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome"
+			icon: {
+				id: "kubejs:stellar_alloy"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "...to hell"
+			size: 1.5d
+			id: "6E7123E47492DED7"
+			tasks: [{
+				id: "0A0F3DED725A5301"
+				type: "checkmark"
+				title: "Checkmark"
+			}]
+		}
+		{
+			title: "Tree"
+			icon: {
+				id: "minecraft:oak_log"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 2.0d
+			y: -1.0d
+			description: ["Chop down a tree with your bare hands."]
+			dependencies: ["6E7123E47492DED7"]
+			id: "1D2352BFFCE2ED98"
+			tasks: [{
+				id: "15880254CF468F9C"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				match_nbt: true
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["6E7123E47492DED7"]
+			id: "15C7E4A5B1A47511"
+			tasks: [{
+				id: "620A21B9D2813B23"
+				type: "item"
+				item: {
+					id: "minecraft:flint"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["Craft a Crafting Table"]
+			dependencies: [
+				"15C7E4A5B1A47511"
+				"1D2352BFFCE2ED98"
+			]
+			id: "7C673649BFC30C4C"
+			tasks: [{
+				id: "10E61E421026E102"
+				type: "item"
+				item: {
+					id: "minecraft:crafting_table"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Tool Handle"
+			x: 8.0d
+			y: 0.0d
+			description: ["With your canvases, create a sturdy tool handle with some other materials."]
+			dependencies: ["43AF4C5377173E00"]
+			id: "54620164A4C57C9C"
+			tasks: [{
+				id: "26E159FC92F7E7E1"
+				type: "item"
+				item: "kubejs:tool_handle"
+			}]
+		}
+		{
+			title: "Canvas"
+			x: 6.0d
+			y: 0.0d
+			description: ["Making a new flint knife, collect some straw from grass and weave it into canvases."]
+			dependencies: ["7C673649BFC30C4C"]
+			id: "43AF4C5377173E00"
+			tasks: [{
+				id: "5669688264396D6C"
+				type: "item"
+				item: {
+					id: "farmersdelight:canvas"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "The Real Beginning"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					temperature: 0.0d
+					id: "d461a1e6-9e9b-4459-9960-fd9c58a74fce"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					Damage: 0
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+				}
+			}
+			x: 10.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Completing this quest unlocks Chapter 1."]
+			dependencies: ["54620164A4C57C9C"]
+			size: 2.5d
+			id: "33F97A73438424AF"
+			tasks: [
+				{
+					id: "6B337E981C8FFE8A"
+					type: "item"
+					item: {
+						id: "tetra:modular_double"
+						Count: 1b
+						tag: {
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							temperature: 0.0d
+							id: "436e39e7-bb5d-4171-a251-d9b6d2f1240e"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							Damage: 0
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/basic_hammer_left_material": "basic_hammer/oak"
+						}
+					}
+				}
+				{
+					id: "2A08D79ABF49BBFF"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_pickaxe"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Useful Features"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/chat.png"
+				}
+			}
+			x: 0.0d
+			y: -2.0d
+			shape: "diamond"
+			description: [
+				"JEI - Hopefully I don't need to explain what this does."
+				"FTB Ultimine - Basically just veinminer. Default keybind is `."
+				"FindMe - Highlights nearby inventories containing the item you search for. Default keybind is y."
+			]
+			dependencies: ["6E7123E47492DED7"]
+			id: "77797094CBF06F8F"
+			tasks: [{
+				id: "6F84EF85798F2F67"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Quest Icons"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/offline.png"
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			shape: "diamond"
+			description: [
+				"Small Gear - The start of a chapter."
+				"Large Gear - The end of a chapter"
+				"Circle - Quests required for progression."
+				"Square - Optional quests."
+				"Diamond - Useful information or tips."
+				""
+			]
+			dependencies: ["6E7123E47492DED7"]
+			id: "498717C33AB8F663"
+			tasks: [{
+				id: "051237C264F9D3E0"
+				type: "checkmark"
+			}]
+		}
+	]
+}

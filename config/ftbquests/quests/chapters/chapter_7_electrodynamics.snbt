@@ -1,0 +1,819 @@
+{
+	id: "27311B74F292483F"
+	group: ""
+	order_index: 9
+	filename: "chapter_7_electrodynamics"
+	title: "7 - Electrodynamics"
+	icon: {
+		id: "electrodynamics:wireinsulatedcopper"
+		Count: 1b
+		tag: {
+			temperature: 0.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Electrodynamics"
+			icon: {
+				id: "electrodynamics:wireinsulatedcopper"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Geometry Dash reference"
+			dependencies: ["11C2B634EF47BA5A"]
+			size: 1.5d
+			id: "2E166ADD8634909B"
+			tasks: [{
+				id: "6CBF3900F33F62E0"
+				type: "checkmark"
+				title: "Check"
+			}]
+		}
+		{
+			title: "Your First Wires"
+			icon: {
+				id: "electrodynamics:wirecopper"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["2E166ADD8634909B"]
+			id: "165647B2BD5FF8BC"
+			tasks: [
+				{
+					id: "086BB954260D1EF4"
+					type: "item"
+					item: {
+						id: "electrodynamics:wiretin"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "3846476D7E10A1E2"
+					type: "item"
+					item: {
+						id: "electrodynamics:wirecopper"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["This machine will create 120V energy."]
+			dependencies: ["165647B2BD5FF8BC"]
+			id: "6F7DB320C5A809BD"
+			tasks: [{
+				id: "131DEBCE00CFC009"
+				type: "item"
+				item: {
+					id: "electrodynamics:coalgenerator"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: ["Now you can make wires more efficiently. Electrodynamics machines have different voltages, and need different wires. You'll have to use a Copper Wire to have enough amps."]
+			dependencies: [
+				"63D44D70D736E9BE"
+				"6F7DB320C5A809BD"
+			]
+			id: "7378F976C77C6E79"
+			tasks: [{
+				id: "3DED9C2C56034245"
+				type: "item"
+				item: {
+					id: "electrodynamics:wiremill"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Ore"
+			x: 0.0d
+			y: -2.0d
+			description: ["Electrodynamics has a unique ore."]
+			dependencies: ["2E166ADD8634909B"]
+			id: "03B9584B959639FD"
+			tasks: [{
+				id: "3797F4BA5F77C6EF"
+				type: "item"
+				item: {
+					id: "electrodynamics:orechromite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Iron is a harder material and requires a wiremill."]
+			dependencies: ["7378F976C77C6E79"]
+			id: "3C435148861916CF"
+			tasks: [{
+				id: "4FC8BBD1A68C3BE0"
+				type: "item"
+				item: {
+					id: "electrodynamics:wireiron"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["165647B2BD5FF8BC"]
+			id: "63D44D70D736E9BE"
+			tasks: [{
+				id: "78A27241A9BE135F"
+				type: "item"
+				item: {
+					id: "electrodynamics:circuitbasic"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"63D44D70D736E9BE"
+				"6F7DB320C5A809BD"
+			]
+			id: "075356B0BE9E9AEF"
+			tasks: [{
+				id: "16551F002141E901"
+				type: "item"
+				item: {
+					id: "electrodynamics:mineralgrinder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: [
+				"03B9584B959639FD"
+				"075356B0BE9E9AEF"
+			]
+			id: "46C0F6454043DB4F"
+			tasks: [{
+				id: "68CC79963C7C6A2B"
+				type: "item"
+				item: {
+					id: "electrodynamics:oxidechromite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Transformers"
+			x: 2.0d
+			y: 4.0d
+			description: ["Upgrade Transformers will double the voltage of inputted power and output it on the opposite side. Downgrade Transformers will do the opposite, halving the voltage. You'll need Upgrade Transformers to meet the voltage requirements of higher tier machines"]
+			dependencies: ["63D44D70D736E9BE"]
+			id: "06DDA2B670DC86C0"
+			tasks: [{
+				id: "280AC6DEBF3454C7"
+				type: "item"
+				item: {
+					id: "electrodynamics:upgradetransformer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["Unlocks tier 2 machines. Most tier 2 machines need 240V, so you will have to use an Upgrade Transformer to increase the voltage from your 120V Coal Generators."]
+			dependencies: [
+				"63D44D70D736E9BE"
+				"3C435148861916CF"
+				"46C0F6454043DB4F"
+			]
+			id: "12522B47D27EC4D5"
+			tasks: [{
+				id: "34E02F949D00E477"
+				type: "item"
+				item: {
+					id: "electrodynamics:circuitadvanced"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["12522B47D27EC4D5"]
+			id: "08DC3709135FF5F8"
+			tasks: [{
+				id: "631515434FAD335D"
+				type: "item"
+				item: {
+					id: "electrodynamics:lathe"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: [
+				"12522B47D27EC4D5"
+				"08DC3709135FF5F8"
+			]
+			id: "6F322C0FDDCB0B1F"
+			tasks: [{
+				id: "295F4851E6E3027A"
+				type: "item"
+				item: {
+					id: "electrodynamics:mineralcrusher"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["12522B47D27EC4D5"]
+			id: "0D8CB874676604A6"
+			tasks: [{
+				id: "0574071E0BF05464"
+				type: "item"
+				item: {
+					id: "electrodynamics:chemicalcrystallizer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["12522B47D27EC4D5"]
+			id: "5532F62EF0F70161"
+			tasks: [{
+				id: "6671E71B499C2210"
+				type: "item"
+				item: {
+					id: "electrodynamics:chemicalmixer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"12522B47D27EC4D5"
+				"08DC3709135FF5F8"
+			]
+			id: "4D62556435578EF0"
+			tasks: [{
+				id: "04F7F5580252292E"
+				type: "item"
+				item: {
+					id: "electrodynamics:oxidationfurnace"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["4D62556435578EF0"]
+			id: "00EB56AE091AD5B8"
+			tasks: [{
+				id: "18384505420E9F39"
+				type: "item"
+				item: {
+					id: "electrodynamics:oxidechromiumdisilicide"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Liquid Polyethylene"
+			icon: "immersiveengineering:ethanol_bucket"
+			x: 10.0d
+			y: 2.0d
+			dependencies: [
+				"5532F62EF0F70161"
+				"00EB56AE091AD5B8"
+			]
+			id: "67308F75D2BD888B"
+			tasks: [{
+				id: "374177D91A494B76"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: [
+				"67308F75D2BD888B"
+				"0D8CB874676604A6"
+			]
+			id: "5FC59A61A443B642"
+			tasks: [{
+				id: "76106E0E76F7CBAC"
+				type: "item"
+				item: {
+					id: "electrodynamics:sheetplastic"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: [
+				"6F322C0FDDCB0B1F"
+				"5FC59A61A443B642"
+			]
+			id: "67DB7C814F6CFCAD"
+			tasks: [{
+				id: "294AA51BDA2C91F5"
+				type: "item"
+				item: {
+					id: "electrodynamics:compositeplating"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["67DB7C814F6CFCAD"]
+			id: "2075DA6F82586B39"
+			tasks: [{
+				id: "5F963D09AE2F5714"
+				type: "item"
+				item: {
+					id: "electrodynamics:circuitelite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			dependencies: ["2075DA6F82586B39"]
+			id: "0A72EAD846637A43"
+			tasks: [{
+				id: "462188D4D648ED6D"
+				type: "item"
+				item: {
+					id: "electrodynamics:energizedalloyer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["2075DA6F82586B39"]
+			id: "6477F01FE5F6DECA"
+			tasks: [{
+				id: "31A9F28A014610D2"
+				type: "item"
+				item: {
+					id: "electrodynamics:mineralwasher"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			dependencies: ["0A72EAD846637A43"]
+			id: "6D4AC6B5B6083B8C"
+			tasks: [{
+				id: "590DC1A2C99B8DCE"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingotvanadiumsteel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: -2.0d
+			dependencies: [
+				"6D4AC6B5B6083B8C"
+				"6A1574A3EBAD37BF"
+			]
+			id: "4626CC4B976095FF"
+			tasks: [{
+				id: "68F1D3B2B7467799"
+				type: "item"
+				item: {
+					id: "electrodynamics:reinforcedalloyer"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Preparing your Superconductor"
+			icon: {
+				id: "kubejs:superconducting_slab"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 22.0d
+			y: -2.0d
+			description: ["Make a Superconductive Mixture and an Ender Substrate to begin making your superconductor. You will also need Copper Sulfide."]
+			dependencies: ["4626CC4B976095FF"]
+			id: "2B61A3F600FD77FD"
+			tasks: [
+				{
+					id: "72E6077BDDA6669D"
+					type: "item"
+					item: {
+						id: "kubejs:superconducting_blend"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2E623B67EE661821"
+					type: "item"
+					item: {
+						id: "kubejs:ender_substrate"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["2B61A3F600FD77FD"]
+			size: 2.5d
+			repeatable: true
+			id: "4C4E619D74E7CD55"
+			tasks: [{
+				id: "3D2015612AFC5A3B"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingotsuperconductive"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "5222FCDE0689FD68"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						pages: ["{\"text\":\"Entry ᛇ\\nCraft of technology arose here, so we’ve needed more resources to support ourselves. Due to our magic’s decline, we need a greater proportion from other dimensions. A few are too far away to be efficient, but most have lots of materials, especially Midgard.\\n\"}"]
+						title: "Entry ᛇ"
+						author: "Björn"
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "dynamicelectricity:motordclv"
+				Count: 1b
+				tag: { }
+			}
+			x: 6.0d
+			y: -4.0d
+			shape: "square"
+			description: [
+				""
+				"DC Motors will turn RF into Electrodynamics electricity. It will slowly consume Conductor Brushes and Industrial Lubricant Gel when running."
+			]
+			dependencies: ["08DC3709135FF5F8"]
+			id: "2F3A7EF48A1B3445"
+			tasks: [
+				{
+					id: "5F48DFD6F8C16624"
+					type: "item"
+					item: {
+						id: "dynamicelectricity:motordclv"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7E27951F6ACCCB8A"
+					type: "item"
+					item: {
+						id: "dynamicelectricity:conductorbrush"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "75BEF5DF2E676721"
+					type: "item"
+					item: "dynamicelectricity:gellubricant"
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			dependencies: ["45ADA1B8DF975BB2"]
+			id: "6A1574A3EBAD37BF"
+			tasks: [{
+				id: "07C52B1B679CB047"
+				type: "item"
+				item: {
+					id: "electrodynamics:circuitultimate"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Gas Absorption Chamber"
+			icon: {
+				id: "electrodynamics:resourceblockvanadiumsteel"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 0.0d
+			dependencies: [
+				"6D4AC6B5B6083B8C"
+				"755C5F3B721B25E9"
+			]
+			id: "4E47FF4AAF1AF530"
+			tasks: [
+				{
+					id: "77A3A4F7081EC1E0"
+					type: "item"
+					item: "masterfulmachinery:basic_controller"
+				}
+				{
+					id: "010BB72FE693C85B"
+					type: "item"
+					item: "masterfulmachinery:basic_energy_port_energy_input"
+				}
+				{
+					id: "415D3DA018703371"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_input"
+				}
+				{
+					id: "5A54697E62AEAE48"
+					type: "item"
+					item: "masterfulmachinery:basic_gas_port_mekanism_gas_input"
+				}
+				{
+					id: "018171E24891942B"
+					type: "item"
+					item: "masterfulmachinery:basic_pressure_port_pncr_pressure_input"
+				}
+				{
+					id: "285D00DD1D54E781"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_output"
+					count: 2L
+				}
+				{
+					id: "0CD38C24BD8316D6"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_aluminum"
+					count: 8L
+				}
+				{
+					id: "661A6E02D2D61D9D"
+					type: "item"
+					item: {
+						id: "electrodynamics:resourceblockvanadiumsteel"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 7L
+				}
+				{
+					id: "4202795F65B6423C"
+					type: "item"
+					item: "appliedenergistics2:quartz_vibrant_glass"
+					count: 27L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["6477F01FE5F6DECA"]
+			id: "755C5F3B721B25E9"
+			tasks: [{
+				id: "6E27F2EEB034FBF8"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingotmolybdenum"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			title: "Sulfuric Acid"
+			icon: {
+				id: "mekanism:sulfuric_acid_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			x: 16.0d
+			y: 2.0d
+			dependencies: ["4E47FF4AAF1AF530"]
+			id: "10A7FE764A7922AE"
+			tasks: [{
+				id: "6587F8026D17FEC6"
+				type: "checkmark"
+				title: "Checkbox"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 2.0d
+			dependencies: ["5F711FA9846B9453"]
+			id: "45ADA1B8DF975BB2"
+			tasks: [{
+				id: "16084FC89DD07672"
+				type: "item"
+				item: {
+					id: "electrodynamics:ingotchromium"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 2.0d
+			dependencies: ["10A7FE764A7922AE"]
+			id: "643686BDE92460A5"
+			tasks: [{
+				id: "541B67D0BB82FD3E"
+				type: "item"
+				item: {
+					id: "kubejs:sodium_dichromate"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.0d
+			dependencies: ["643686BDE92460A5"]
+			id: "5F711FA9846B9453"
+			tasks: [{
+				id: "09C9F05349FFBDEE"
+				type: "item"
+				item: {
+					id: "kubejs:chromiumiii_oxide"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			shape: "square"
+			description: ["This lets you heat your older machines more efficiently."]
+			dependencies: ["165647B2BD5FF8BC"]
+			id: "67532E2067C562CB"
+			tasks: [{
+				id: "45C6C0DA300957B9"
+				type: "item"
+				item: {
+					id: "mekanism:resistive_heater"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

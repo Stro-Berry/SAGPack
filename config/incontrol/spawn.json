@@ -1,0 +1,13 @@
+[
+    {
+      "dimension": "minecraft:overworld",
+      "mod": "aoa3",
+      "hostile": "true",
+      "result": "deny"
+    },
+    {
+      "mob": "aoa3:realmshifter",
+      "result": "deny"
+    }
+]
+    
