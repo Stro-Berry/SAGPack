@@ -1,0 +1,57 @@
+{
+	"type": "indus_furnace",
+	"recipes": [
+	  {
+	    "id": "kjs2",
+	    "output": {
+	      "size": 1,
+	      "name": "futurepack:composite_metal"
+	    },
+	    "input": [
+		{
+	      "name": "bloodmagic:ingot_hellforged"
+		},
+		{
+	      "name": "kubejs:pristine_gold_ingot"
+		},
+		{
+	      "name": "electrodynamics:compositeplating"
+		}
+	    ]
+	  },
+	  {
+	    "id": "kjs4",
+	    "output": {
+	      "size": 1,
+	      "tag": "forge:ingots/neon"
+	    },
+	    "input": [
+		  {
+	        "name": "futurepack:crystal_neon"
+		  },
+		  {
+	        "name": "extendedcrafting:crystaltine_ingot"
+		  },
+		  {
+	        "name": "astralsorcery:resonating_gem"
+		  }
+	    ]
+	  },
+	   {
+	    "id": "katalysator_tin_graphene",
+	    "output": {
+	      "size": 1,
+	      "name": "futurepack:tin_graphene_katalysator"
+	    },
+	    "input": [
+	      {
+	        "tag": "forge:ingots/tin"
+	      },
+	      {
+	        "tag": "forge:rods/blaze"
+	      },
+	      "minecraft:coal"
+	    ]
+	  }
+	]
+}

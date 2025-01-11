@@ -1,0 +1,21 @@
+{
+	"programs": ["envirotech:ore", "envirotech:metallic_ore"],
+	"item": {
+		"raw:item": "electrodynamics:orechromite", "count":1
+	},
+	"config": [
+		{
+			"weight": 250,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"],
+			"tiers": [2, 3, 4, 5, 6, 7, 8]
+		},
+		{
+			"focus": "envirotech:gray",
+			"weight": 2000,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"],
+			"tiers": [2, 3, 4, 5, 6, 7, 8]
+		}
+	]
+}

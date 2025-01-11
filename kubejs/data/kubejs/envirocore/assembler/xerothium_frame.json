@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "draconicevolution:particle_generator"
+  },
+  "bottom": {
+    "raw:item": "envirocore:xerothium_interconnect"
+  },
+  "left": {
+    "raw:item": "draconicevolution:awakened_draconium_ingot"
+  },
+  "right": {
+    "raw:item": "draconicevolution:awakened_draconium_ingot"
+  },
+  "center": {
+    "raw:item": "envirocore:nanorite_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:xerothium_frame"
+  }
+}

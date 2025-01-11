@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "futurepack:quartz_glass"
+  },
+  "bottom": {
+    "raw:item": "envirocore:aethium_interconnect"
+  },
+  "left": {
+    "raw:item": "futurepack:ingot_wakurium"
+  },
+  "right": {
+    "raw:item": "futurepack:ingot_wakurium"
+  },
+  "center": {
+    "raw:item": "envirocore:ionite_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:aethium_frame"
+  }
+}

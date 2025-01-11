@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "botania:bifrost_perm"
+  },
+  "bottom": {
+    "raw:item": "envirocore:kyronite_interconnect"
+  },
+  "left": {
+    "raw:item": "botania:elementium_ingot"
+  },
+  "right": {
+    "raw:item": "botania:elementium_ingot"
+  },
+  "center": {
+    "raw:item": "envirocore:erodium_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:kyronite_frame"
+  }
+}

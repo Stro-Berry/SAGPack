@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "immersiveengineering:heavy_engineering"
+  },
+  "bottom": {
+    "raw:item": "envirocore:litherite_interconnect"
+  },
+  "left": {
+    "raw:item": "advgenerators:iron_wiring"
+  },
+  "right": {
+    "raw:item": "advgenerators:iron_wiring"
+  },
+  "center": {
+    "raw:item": "envirocore:structure_panel"
+  },
+  "output": {
+    "raw:item": "envirocore:litherite_frame"
+  }
+}

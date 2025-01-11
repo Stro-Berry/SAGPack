@@ -1,0 +1,125 @@
+{	
+	"type": "crushing",
+	"recipes": [
+	  {
+	    "output": {
+	      "size": 2,
+	      "tag": "forge:dusts/obsidian"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:obsidian"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:snow_block"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:packed_ice"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:sand"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:cobblestone"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:quartz"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:diorite"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:red_sand"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:granite"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:clay_ball"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:coarse_dirt"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:soul_sand"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:blackstone"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "minecraft:glowstone_dust"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:shroomlight"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 4,
+	      "name": "minecraft:glowstone_dust"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:glowstone"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 1,
+	      "name": "futurepack:sand_m"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "futurepack:cobblestone_m"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 4,
+	      "name": "kubejs:antimony_dust"
+	    },
+	    "input": {
+	      "size": 4,
+	      "name": "kubejs:antimony_ingot"
+	    }
+	  },
+	  {
+	    "output": {
+	      "size": 2,
+	      "name": "kubejs:ilmenite_dust"
+	    },
+	    "input": {
+	      "size": 1,
+	      "name": "kubejs:ilmenite_ore"
+	    }
+	  }
+	]
+}

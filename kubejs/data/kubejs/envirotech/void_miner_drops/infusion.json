@@ -1,0 +1,21 @@
+{
+	"programs": ["envirotech:ore", "envirotech:gemstone_ore"],
+	"item": {
+		"raw:item": "kubejs:infused_ore", "count":1
+	},
+	"config": [
+		{
+			"weight": 150,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"],
+			"tiers": [5, 6, 7, 8]
+		},
+		{
+			"focus": "envirotech:magenta",
+			"weight": 1200,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"],
+			"tiers": [5, 6, 7, 8]
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "mekanism:structural_glass"
+  },
+  "bottom": {
+    "raw:item": "mekanism:structural_glass"
+  },
+  "left": {
+    "raw:item": "mekanism:ingot_refined_obsidian"
+  },
+  "right": {
+    "raw:item": "mekanism:ingot_refined_obsidian"
+  },
+  "center": {
+    "raw:item": "envirocore:laser_diode"
+  },
+  "output": {
+    "raw:item": "envirocore:laser_core"
+  }
+}

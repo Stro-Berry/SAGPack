@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "astralsorcery:starmetal_ingot"
+  },
+  "bottom": {
+    "raw:item": "envirocore:ionite_interconnect"
+  },
+  "left": {
+    "raw:item": "astralsorcery:resonating_gem"
+  },
+  "right": {
+    "raw:item": "astralsorcery:resonating_gem"
+  },
+  "center": {
+    "raw:item": "envirocore:pladium_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:ionite_frame"
+  }
+}

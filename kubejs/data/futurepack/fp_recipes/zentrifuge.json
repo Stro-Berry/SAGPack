@@ -1,0 +1,1121 @@
+{
+	"type": "centrifuge",
+	"recipes": [
+	  {
+	    "support": 2,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:dust_magnet"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:ingot_bitripentium"
+	      },
+		  {
+	        "size": 2,
+	        "name": "emendatusenigmatica:iron_dust"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:meteor_rock"
+	    }
+	  },
+	  {
+	    "support": 8,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "futurepack:chemicals_b"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "futurepack:log_tyros"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:chemicals_b"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "futurepack:sapling_tyros"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 600,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 16,
+	        "tag": "forge:dusts/neon"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:sand_neon"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 600,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 16,
+	        "tag": "forge:dusts/retium"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:sand_retium"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 600,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 16,
+	        "tag": "forge:dusts/glowtite"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:sand_glowtite"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 600,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 16,
+	        "tag": "forge:dusts/bioterium"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:sand_bioterium"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "envirocore:aethium_wafer"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "envirocore:aethium_boule"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 600,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 12,
+	        "tag": "forge:dusts/neon"
+	      },
+	      {
+	        "size": 4,
+	        "tag": "forge:dusts/aluminum"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "futurepack:sand_alutin"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "futurepack:fibers"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "futurepack:log_mushroom"
+	    }
+	  },
+	  {
+	    "support": 2,
+	    "time": 10,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "futurepack:fibers"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "futurepack:sapling_mushroom"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 28,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:andesite"
+	      },
+	      {
+	        "size": 1,
+	        "name": "minecraft:coal"
+	      }
+	    ],
+	    "input": {
+	      "size": 32,
+	      "name": "minecraft:cobblestone"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 400,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 2,
+	        "tag": "forge:gems/quartz"
+	      },
+	      {
+	        "size": 2,
+	        "tag": "forge:dusts/iron"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:granite"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 300,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 4,
+	        "tag": "forge:gems/quartz"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:dusts/iron"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:diorite"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 250,
+	    "output": [
+	      {
+	        "size": 5,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:gems/quartz"
+	      },
+	      {
+	        "size": 2,
+	        "tag": "forge:dusts/aluminum"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:andesite"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 300,
+	    "output": [
+	      {
+	        "size": 12,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:dusts/tin"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:dusts/copper"
+	      }
+	    ],
+	    "input": {
+	      "size": 16,
+	      "name": "minecraft:gravel"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 6,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 2,
+	        "tag": "forge:dusts/iron"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:red_sand"
+	    }
+	  },
+	  {
+	    "support": 16,
+	    "time": 300,
+	    "output": [
+	      {
+	        "size": 12,
+	        "name": "minecraft:sandstone"
+	      },
+	      {
+	        "size": 1,
+	        "name": "minecraft:ender_pearl"
+	      }
+	    ],
+	    "input": {
+	      "size": 16,
+	      "name": "minecraft:end_stone"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 250,
+	    "output": [
+	      {
+	        "size": 14,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 2,
+	        "tag": "forge:dusts/copper"
+	      }
+	    ],
+	    "input": {
+	      "size": 16,
+	      "name": "futurepack:stone_m"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 20,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "emendatusenigmatica:lithium_dust"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:ingots/gadolinium"
+	      },
+	      {
+	        "size": 1,
+	        "name": "kubejs:neodymium_dust"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "tag": "forge:ingots/rareearthmetal"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 100,
+	    "output": [
+	      {
+	        "size": 5,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 1,
+	        "name": "minecraft:clay_ball"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:dirt"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 100,
+	    "output": [
+	      {
+	        "size": 6,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 2,
+	        "name": "minecraft:cobblestone"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:coarse_dirt"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 100,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 2,
+	        "name": "minecraft:clay_ball"
+	      },
+	      {
+	        "size": 3,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:podzol"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 100,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 2,
+	        "name": "minecraft:clay_ball"
+	      },
+	      {
+	        "size": 2,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "minecraft:grass_block"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "minecraft:gravel"
+	      },
+	      {
+	        "size": 3,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:mossy_cobblestone"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 60,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:wood_chips"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 2,
+	      "tag": "forge:tree_saplings"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 240,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "futurepack:wood_chips"
+	      },
+	      {
+	        "size": 5,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "tag": "forge:tree_leaves"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 40,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:brown_mushroom"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 40,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:red_mushroom"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 120,
+	    "output": [
+	      {
+	        "size": 10,
+	        "name": "minecraft:melon_seeds"
+	      },
+	      {
+	        "size": 3,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:melon"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 240,
+	    "output": [
+	      {
+	        "size": 8,
+	        "name": "minecraft:sugar"
+	      }
+	    ],
+	    "input": {
+	      "size": 6,
+	      "name": "minecraft:sugar_cane"
+	    }
+	  },
+	  {
+	    "support": 2,
+	    "time": 240,
+	    "output": [
+	      {
+	        "size": 12,
+	        "name": "minecraft:green_dye"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 6,
+	      "name": "minecraft:cactus"
+	    }
+	  },
+	  {
+	    "support": 2,
+	    "time": 240,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "minecraft:green_dye"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 6,
+	      "name": "minecraft:vine"
+	    }
+	  },
+	  {
+	    "support": 2,
+	    "time": 240,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 12,
+	      "name": "minecraft:lily_pad"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:dusts/iron"
+	      },
+	      {
+	        "size": 2,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 16,
+	      "name": "minecraft:clay_ball"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 1,
+	        "tag": "forge:dusts/iron"
+	      },
+	      {
+	        "size": 2,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:clay"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 2,
+	        "name": "minecraft:brick"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:terracotta"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "minecraft:sand"
+	      },
+	      {
+	        "size": 2,
+	        "name": "minecraft:brick"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:white_terracotta"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:wheat_seeds"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:hay_block"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "minecraft:wheat_seeds"
+	      },
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      }
+	    ],
+	    "input": {
+	      "size": 9,
+	      "name": "minecraft:wheat"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:yellow_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:dandelion"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:red_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:poppy"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:light_blue_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:blue_orchid"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:magenta_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:allium"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:light_gray_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:azure_bluet"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:red_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:red_tulip"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:orange_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:orange_tulip"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:light_gray_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:white_tulip"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:pink_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:pink_tulip"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:light_gray_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:oxeye_daisy"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:yellow_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "futurepack:topinambur_flower"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 150,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 4,
+	        "name": "minecraft:pink_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "futurepack:mendel_flower"
+	    }
+	  },
+	  {
+	    "support": 8,
+	    "time": 220,
+	    "output": [
+	      {
+	        "size": 2,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 8,
+	        "name": "minecraft:yellow_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:sunflower"
+	    }
+	  },
+	  {
+	    "support": 8,
+	    "time": 220,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 8,
+	        "name": "minecraft:magenta_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:lilac"
+	    }
+	  },
+	  {
+	    "support": 8,
+	    "time": 220,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 8,
+	        "name": "minecraft:red_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:rose_bush"
+	    }
+	  },
+	  {
+	    "support": 8,
+	    "time": 220,
+	    "output": [
+	      {
+	        "size": 3,
+	        "name": "futurepack:kompost"
+	      },
+	      {
+	        "size": 8,
+	        "name": "minecraft:pink_dye"
+	      }
+	    ],
+	    "input": {
+	      "size": 1,
+	      "name": "minecraft:peony"
+	    }
+	  },
+	  {
+	    "support": 2,
+	    "time": 200,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "kubejs:enriched_uranium_dust"
+	      },
+	      {
+	        "size": 26,
+	        "name": "emendatusenigmatica:uranium_dust"
+	      }
+	    ],
+	    "input": {
+	      "size": 27,
+	      "name": "kubejs:pitchblende"
+	    }
+	  },
+	  {
+	    "support": 0,
+	    "time": 20,
+	    "output": [
+	      {
+	        "size": 4,
+	        "name": "emendatusenigmatica:gold_dust"
+	      },
+	      {
+	        "size": 1,
+	        "name": "minecraft:cobblestone"
+	      },
+		  {
+	        "size": 1,
+	        "name": "kubejs:stibnite_dust"
+	      }
+	    ],
+	    "input": {
+	      "size": 4,
+	      "name": "minecraft:gold_ore"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 20,
+	    "output": [
+	      {
+	        "size": 1,
+	        "name": "kubejs:neodymium_dust"
+	      },
+	      {
+	        "size": 8,
+	        "name": "minecraft:sand"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "futurepack:sand_m"
+	    }
+	  },
+	  {
+	    "support": 4,
+	    "time": 20,
+	    "output": [
+	      {
+	        "size": 8,
+	        "name": "kubejs:crude_titanium_dust"
+	      },
+	      {
+	        "size": 4,
+	        "name": "emendatusenigmatica:iron_dust"
+	      },
+		  {
+	        "size": 4,
+	        "name": "mekanism:salt"
+	      }
+	    ],
+	    "input": {
+	      "size": 8,
+	      "name": "kubejs:acidic_titanium_salt"
+	    }
+	  }
+	]
+}

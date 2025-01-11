@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "envirocore:cpu"
+  },
+  "bottom": {
+    "raw:item": "envirocore:cpu"
+  },
+  "left": {
+    "raw:item": "create:refined_radiance"
+  },
+  "right": {
+    "raw:item": "create:refined_radiance"
+  },
+  "center": {
+    "raw:item": "mekanism:basic_induction_cell"
+  },
+  "output": {
+    "raw:item": "envirocore:laser_diode"
+  }
+}

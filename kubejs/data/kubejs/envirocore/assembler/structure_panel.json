@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "envirocore:obsidian_plate"
+  },
+  "bottom": {
+    "raw:item": "envirocore:obsidian_plate"
+  },
+  "left": {
+    "raw:item": "mekanism:hdpe_sheet"
+  },
+  "right": {
+    "raw:item": "mekanism:hdpe_sheet"
+  },
+  "center": {
+    "raw:item": "tetra:forged_beam"
+  },
+  "output": {
+    "raw:item": "envirocore:structure_panel"
+  }
+}

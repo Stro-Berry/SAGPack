@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "bloodmagic:demonslate"
+  },
+  "bottom": {
+    "raw:item": "envirocore:pladium_interconnect"
+  },
+  "left": {
+    "raw:item": "bloodmagic:ingot_hellforged"
+  },
+  "right": {
+    "raw:item": "bloodmagic:ingot_hellforged"
+  },
+  "center": {
+    "raw:item": "envirocore:kyronite_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:pladium_frame"
+  }
+}

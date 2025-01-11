@@ -1,0 +1,593 @@
+{
+	"type": "recycler_shredder",
+	"recipes": [
+		{
+			"chance": [
+				0.85,
+				0.1
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 1,
+					"name": "minecraft:sand"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:gravel"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:cobblestone"
+			}
+		},
+		{
+			"chance": [
+				0.8
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:tree_leaves"
+			}
+		},
+		{
+			"chance": [
+				0.75,
+				0.25
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				},
+				{
+					"size": 1,
+					"name": "futurepack:wood_chips"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:tree_saplings"
+			}
+		},
+		{
+			"chance": [
+				0.25
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:wood_chips"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:rods/wooden"
+			}
+		},
+		{
+			"chance": [
+				0.9
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 4,
+					"name": "minecraft:sand"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:sandstone"
+			}
+		},
+		{
+			"chance": [
+				0.9
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 1,
+					"name": "minecraft:sand"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:gravel"
+			}
+		},
+		{
+			"chance": [
+				0.6
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:grain"
+			}
+		},
+		{
+			"chance": [
+				0.6
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:apple"
+			}
+		},
+		{
+			"chance": [
+				0.6
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:carrot"
+			}
+		},
+		{
+			"chance": [
+				0.7
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:potato"
+			}
+		},
+		{
+			"chance": [
+				0.6
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "futurepack:erse"
+			}
+		},
+		{
+			"chance": [
+				0.7
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 4,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:pumpkin"
+			}
+		},
+		{
+			"chance": [
+				0.7
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:melon_slice"
+			}
+		},
+		{
+			"chance": [
+				0.6
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 4,
+					"name": "minecraft:string"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:white_wool"
+			}
+		},
+		{
+			"chance": [
+				0.85
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 1,
+					"name": "minecraft:sand"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:glass"
+			}
+		},
+		{
+			"chance": [
+				0.2
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 1,
+					"name": "minecraft:sand"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:glass_panes"
+			}
+		},
+		{
+			"chance": [
+				1.0,
+				0.25
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 3,
+					"name": "minecraft:bone_meal"
+				},
+				{
+					"size": 2,
+					"name": "minecraft:bone_meal"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:bones"
+			}
+		},
+		{
+			"chance": [
+				1.0,
+				0.75,
+				0.1
+			],
+			"time": 30,
+			"output": [
+				{
+					"size": 6,
+					"name": "futurepack:wood_chips"
+				},
+				{
+					"size": 2,
+					"name": "futurepack:wood_chips"
+				},
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "minecraft:logs"
+			}
+		},
+		{
+			"chance": [
+				0.9,
+				0.1
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:wood_chips"
+				},
+				{
+					"size": 1,
+					"tag": "forge:rods/wooden"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:stairs/wooden"
+			}
+		},
+		{
+			"chance": [
+				0.9
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:wood_chips"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:slabs/wooden"
+			}
+		},
+		{
+			"chance": [
+				0.9,
+				0.1
+			],
+			"time": 20,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:wood_chips"
+				},
+				{
+					"size": 2,
+					"tag": "forge:rods/wooden"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:planks/wooden"
+			}
+		},
+		{
+			"chance": [
+				1.0
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "futurepack:wood_chips"
+			}
+		},
+		{
+			"chance": [
+				1.0
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "futurepack:fibers"
+			}
+		},
+		{
+			"chance": [
+				0.65
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "futurepack:topinambur_flower"
+			}
+		},
+		{
+			"chance": [
+				1.0
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 2,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "futurepack:topinambur_potato"
+			}
+		},
+		{
+			"chance": [
+				0.85
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:beetroot"
+			}
+		},
+		{
+			"chance": [
+				0.45
+			],
+			"time": 10,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "minecraft:flowers"
+			}
+		},
+		{
+			"chance": [
+				0.33
+			],
+			"time": 5,
+			"output": [
+				{
+					"size": 1,
+					"name": "futurepack:kompost"
+				}
+			],
+			"input": {
+				"size": 1,
+				"tag": "forge:seeds"
+			}
+		},
+		{
+			"chance": [
+				0.4,
+				1.0
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 4,
+					"name": "minecraft:leather"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:leather"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:leather_helmet"
+			}
+		},
+		{
+			"chance": [
+				0.4,
+				1.0
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 7,
+					"name": "minecraft:leather"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:leather"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:leather_chestplate"
+			}
+		},
+		{
+			"chance": [
+				0.4,
+				1.0
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 6,
+					"name": "minecraft:leather"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:leather"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:leather_leggings"
+			}
+		},
+		{
+			"chance": [
+				0.4,
+				1.0
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 3,
+					"name": "minecraft:leather"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:leather"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:leather_boots"
+			}
+		},
+		{
+			"chance": [
+				0.5,
+				1.0
+			],
+			"time": 15,
+			"output": [
+				{
+					"size": 6,
+					"name": "minecraft:leather"
+				},
+				{
+					"size": 1,
+					"name": "minecraft:leather"
+				}
+			],
+			"input": {
+				"size": 1,
+				"name": "minecraft:leather_horse_armor"
+			}
+		}
+	]
+}

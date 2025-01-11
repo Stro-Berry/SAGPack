@@ -1,0 +1,12 @@
+{
+	"type": "recycler_time",
+	"recipes": [
+	  {
+	    "type": "repair",
+	    "input": {
+	      "size": 1,
+	      "name": "futurepack:shredder"
+	    }
+	  }
+	]
+}

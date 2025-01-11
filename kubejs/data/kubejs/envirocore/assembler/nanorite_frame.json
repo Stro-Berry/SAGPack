@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "mekanism:elite_control_circuit"
+  },
+  "bottom": {
+    "raw:item": "envirocore:nanorite_interconnect"
+  },
+  "left": {
+    "raw:item": "mekanism:pellet_polonium"
+  },
+  "right": {
+    "raw:item": "mekanism:pellet_polonium"
+  },
+  "center": {
+    "raw:item": "envirocore:aethium_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:nanorite_frame"
+  }
+}

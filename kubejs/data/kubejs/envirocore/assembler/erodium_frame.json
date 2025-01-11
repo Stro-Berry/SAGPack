@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "thermal:signalum_glass"
+  },
+  "bottom": {
+    "raw:item": "envirocore:erodium_interconnect"
+  },
+  "left": {
+    "raw:item": "emendatusenigmatica:lumium_plate"
+  },
+  "right": {
+    "raw:item": "emendatusenigmatica:lumium_plate"
+  },
+  "center": {
+    "raw:item": "envirocore:litherite_frame"
+  },
+  "output": {
+    "raw:item": "envirocore:erodium_frame"
+  }
+}

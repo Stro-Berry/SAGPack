@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "mekanism:advanced_control_circuit"
+  },
+  "bottom": {
+    "raw:item": "mekanism:advanced_control_circuit"
+  },
+  "left": {
+    "raw:item": "mekanism:atomic_alloy"
+  },
+  "right": {
+    "raw:item": "mekanism:atomic_alloy"
+  },
+  "center": {
+    "raw:item": "envirocore:structure_panel"
+  },
+  "output": {
+    "raw:item": "envirocore:null_modifier"
+  }
+}

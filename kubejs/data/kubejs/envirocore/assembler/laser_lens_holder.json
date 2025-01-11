@@ -1,0 +1,23 @@
+{
+  "duration": {
+    "raw:int": 20
+  },
+  "top": {
+    "raw:item": "envirocore:laser_core"
+  },
+  "bottom": {
+    "raw:item": "envirocore:laser_core"
+  },
+  "left": {
+    "raw:item": "envirocore:obsidian_plate"
+  },
+  "right": {
+    "raw:item": "envirocore:obsidian_plate"
+  },
+  "center": {
+    "raw:item": "create:refined_radiance"
+  },
+  "output": {
+    "raw:item": "envirocore:laser_lens_holder"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"program": "envirotech:crystal",
+	"item": {"raw:item": "envirocore:nanorite_crystal", "count":1},
+	"config": [
+		{"weight": 100, "tiers": [7]},
+		{"weight": 200, "tiers": [8]},
+		{"focus": "envirotech:nanorite", "weight": 400, "tiers": [7]},
+		{"focus": "envirotech:nanorite", "weight": 1600, "tiers": [8]}
+	]
+}
