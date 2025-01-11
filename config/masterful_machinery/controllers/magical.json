@@ -1,0 +1,56 @@
+{
+    "controllerId": "magical",
+    "name": "Magical Machine Structure",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 4, "columns": 4
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "Energy",
+            "id": "energy",
+            "data": {
+                "capacity": 16000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 64000
+            }
+        },
+        {
+            "type": "masterfulmachinery:pncr_pressure",
+            "name": "Pressure",
+            "id": "pressure",
+            "data": {
+                "volume": 120,
+                "dangerPressure": 20.0,
+                "criticalPressure": 20.5
+            }
+        },
+        {
+            "type": "masterfulmachinery:botania_mana",
+            "name": "Mana",
+            "id": "mana",
+            "data": {
+                "capacity": 2000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:astral_starlight",
+            "name": "Starlight",
+            "id": "starlight",
+            "data": {
+                "capacity": 5000000
+            }
+        }
+    ]
+}

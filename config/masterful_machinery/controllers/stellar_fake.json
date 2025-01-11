@@ -1,0 +1,22 @@
+{
+    "controllerId": "stellar_fake",
+    "name": "Stellar Machine Structure",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 6, "columns": 6
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "Energy",
+            "id": "energy",
+            "data": {
+                "capacity": 1024000000
+            }
+        }
+    ]
+}

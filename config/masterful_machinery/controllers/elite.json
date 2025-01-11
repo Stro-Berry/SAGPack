@@ -1,0 +1,56 @@
+{
+    "controllerId": "elite",
+    "name": "Elite Machine Structure",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 4, "columns": 4
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "Energy",
+            "id": "energy",
+            "data": {
+                "capacity": 256000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 1024000
+            }
+        },
+        {
+            "type": "masterfulmachinery:mekanism_gas",
+            "name": "Gas",
+            "id": "gas",
+            "data": {
+                "capacity": 256000
+            }
+        },
+        {
+            "type": "masterfulmachinery:mekanism_slurry",
+            "name": "Slurry",
+            "id": "slurry",
+            "data": {
+                "capacity": 128000
+            }
+        },
+        {
+            "type": "masterfulmachinery:pncr_pressure",
+            "name": "Pressure",
+            "id": "pressure",
+            "data": {
+                "volume": 120,
+                "dangerPressure": 20.0,
+                "criticalPressure": 20.5
+            }
+        }
+    ]
+}

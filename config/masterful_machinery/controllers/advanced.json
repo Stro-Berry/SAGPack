@@ -1,0 +1,46 @@
+{
+    "controllerId": "advanced",
+    "name": "Advanced Machine Structure",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 4, "columns": 4
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "Energy",
+            "id": "energy",
+            "data": {
+                "capacity": 4000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 64000
+            }
+        },
+        {
+            "type": "masterfulmachinery:mekanism_gas",
+            "name": "Gas",
+            "id": "gas",
+            "data": {
+                "capacity": 64000
+            }
+        },
+        {
+            "type": "masterfulmachinery:create_rotation",
+            "name": "Kinetic",
+            "id": "kinetic",
+            "data": {
+                "stress": 16
+            }
+        }
+    ]
+}
