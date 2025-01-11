@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/generated",
+  "overrides": [
+    { "predicate": {"id": "draconicevolution:large_chaos_frag"}, "model": "item/custom/kubejs/large_chaos_frag"}
+  ]
+}

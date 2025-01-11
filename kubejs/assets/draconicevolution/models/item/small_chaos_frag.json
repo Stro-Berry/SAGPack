@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/generated",
+  "textures": {
+    "layer0": "draconicevolution:custom/kubejs/small_chaos_frag"
+  }
+}
