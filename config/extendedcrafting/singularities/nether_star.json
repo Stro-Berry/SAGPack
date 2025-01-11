@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.nether_star",
+  "colors": [
+    "f2f0cd",
+    "f2f0cd"
+  ],
+  "ingredient": {
+    "item": "minecraft:nether_star"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.quantanium",
+  "colors": [
+    "a64ee0",
+    "a64ee0"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/quantanium"
+  }
+}

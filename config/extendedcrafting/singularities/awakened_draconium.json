@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.awakened_draconium",
+  "colors": [
+    "ed8823",
+    "ed8823"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium_awakened"
+  }
+}

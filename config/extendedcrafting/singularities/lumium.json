@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.lumium",
+  "colors": [
+    "f3f4ab",
+    "f3f4ab"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/lumium"
+  }
+}

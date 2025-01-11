@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.titanium",
+  "colors": [
+    "d7e1e2",
+    "d7e1e2"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/titanium"
+  }
+}

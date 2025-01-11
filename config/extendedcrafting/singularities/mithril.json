@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.mithril",
+  "colors": [
+    "5cb4c4",
+    "5cb4c4"
+  ],
+  "ingredient": {
+    "item": "kubejs:mithril_ingot"
+  }
+}

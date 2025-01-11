@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.dark_matter",
+  "colors": [
+    "0c0c0c",
+    "0c0c0c"
+  ],
+  "ingredient": {
+    "item": "kubejs:dark_matter_alloy"
+  }
+}

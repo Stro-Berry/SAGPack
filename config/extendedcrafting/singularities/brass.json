@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.brass",
+  "colors": [
+    "d1bc68",
+    "d1bc68"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/brass"
+  }
+}

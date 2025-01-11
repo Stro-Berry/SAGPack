@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.stainless_steel",
+  "colors": [
+    "e2e2e2",
+    "e2e2e2"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/stainlesssteel"
+  }
+}

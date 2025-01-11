@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.osmium",
+  "colors": [
+    "93c1c6",
+    "93c1c6"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/osmium"
+  }
+}
