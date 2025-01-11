@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masterfulmachinery:block/stellar_fake_energy_port_energy_input"
+    }
+  }
+}
