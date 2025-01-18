@@ -1,0 +1,11 @@
+{
+	id: "410783D491C99077"
+	order_index: 2
+	title: "betterores"
+	loot_size: 1
+	rewards: [
+		{ item: "emendatusenigmatica:gold_chunk", count: 4 }
+		{ item: "emendatusenigmatica:iron_chunk", count: 6 }
+		{ item: "emendatusenigmatica:silver_chunk", count: 4 }
+	]
+}

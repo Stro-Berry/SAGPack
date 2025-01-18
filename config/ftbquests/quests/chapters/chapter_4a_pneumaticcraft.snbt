@@ -27,7 +27,10 @@
 			y: 0.0d
 			shape: "gear"
 			subtitle: "Feel the Pressure"
-			description: ["You'll have to use TNT to make your first Compressed Iron Ingots, but it will become easier with the Pressure Chamber."]
+			description: [
+				"You'll have to use TNT to make your first Compressed Iron Ingots, but it will become easier with the Pressure Chamber."
+				"&cThis recipe doesn't show in JEI for some reason. Use the pressure chamber recipe, but blow up the ingredients with TNT instead."
+			]
 			dependencies: ["0F55C3AFCFD7892E"]
 			size: 1.5d
 			id: "7866D57C5FEF0C67"

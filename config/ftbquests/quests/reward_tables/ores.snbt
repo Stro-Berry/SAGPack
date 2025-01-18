@@ -1,0 +1,13 @@
+{
+	id: "6B459D01428D6EAD"
+	order_index: 1
+	title: "ores"
+	loot_size: 1
+	rewards: [
+		{ item: "emendatusenigmatica:copper_chunk", count: 4 }
+		{ item: "emendatusenigmatica:tin_chunk", count: 4 }
+		{ item: "emendatusenigmatica:lead_chunk", count: 4 }
+		{ item: "emendatusenigmatica:zinc_chunk", count: 4 }
+		{ item: "emendatusenigmatica:nickel_chunk", count: 4 }
+	]
+}

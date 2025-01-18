@@ -286,26 +286,9 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 0.0d
-			dependencies: ["12522B47D27EC4D5"]
-			id: "0D8CB874676604A6"
-			tasks: [{
-				id: "0574071E0BF05464"
-				type: "item"
-				item: {
-					id: "electrodynamics:chemicalcrystallizer"
-					Count: 1b
-					tag: {
-						temperature: 0.0d
-					}
-				}
-			}]
-		}
-		{
-			x: 10.0d
-			y: 4.0d
-			hide_dependency_lines: true
+			x: 8.0d
+			y: 2.0d
+			hide_dependency_lines: false
 			dependencies: ["12522B47D27EC4D5"]
 			id: "5532F62EF0F70161"
 			tasks: [{
@@ -341,31 +324,11 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 2.0d
-			dependencies: ["4D62556435578EF0"]
-			id: "00EB56AE091AD5B8"
-			tasks: [{
-				id: "18384505420E9F39"
-				type: "item"
-				item: {
-					id: "electrodynamics:oxidechromiumdisilicide"
-					Count: 1b
-					tag: {
-						temperature: 0.0d
-					}
-				}
-			}]
-		}
-		{
-			title: "Liquid Polyethylene"
-			icon: "immersiveengineering:ethanol_bucket"
+			title: "Diisobutyl Phthalate"
+			icon: "kubejs:diisobutyl_phthalate_bucket"
 			x: 10.0d
 			y: 2.0d
-			dependencies: [
-				"5532F62EF0F70161"
-				"00EB56AE091AD5B8"
-			]
+			dependencies: ["5532F62EF0F70161"]
 			id: "67308F75D2BD888B"
 			tasks: [{
 				id: "374177D91A494B76"
@@ -374,23 +337,14 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 2.0d
-			dependencies: [
-				"67308F75D2BD888B"
-				"0D8CB874676604A6"
-			]
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["67308F75D2BD888B"]
 			id: "5FC59A61A443B642"
 			tasks: [{
 				id: "76106E0E76F7CBAC"
 				type: "item"
-				item: {
-					id: "electrodynamics:sheetplastic"
-					Count: 1b
-					tag: {
-						temperature: 0.0d
-					}
-				}
+				item: "kubejs:polyvinyl_chloride"
 			}]
 		}
 		{

@@ -1,0 +1,26 @@
+{
+	id: "0981041AFDFF018B"
+	order_index: 4
+	title: "bucket"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:water_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "minecraft:lava_bucket"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+		}
+	]
+}

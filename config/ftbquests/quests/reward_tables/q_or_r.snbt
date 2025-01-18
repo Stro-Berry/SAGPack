@@ -1,0 +1,28 @@
+{
+	id: "3A70E075F8D28E2B"
+	order_index: 5
+	title: "q or r"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:quartz"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 16
+		}
+		{
+			item: {
+				id: "minecraft:redstone"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+	]
+}

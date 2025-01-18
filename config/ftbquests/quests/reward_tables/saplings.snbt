@@ -1,0 +1,28 @@
+{
+	id: "426C734BF2082F35"
+	order_index: 0
+	title: "saplings"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:spruce_sapling"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 4
+		}
+		{
+			item: {
+				id: "minecraft:dark_oak_sapling"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 4
+		}
+	]
+}

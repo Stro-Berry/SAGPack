@@ -66,10 +66,14 @@
 			]
 		}
 		{
-			title: "Coke Oven"
+			title: "We need to coke"
 			icon: "immersiveengineering:coke_oven"
 			x: 4.0d
 			y: 4.0d
+			description: [
+				"Makes the carbonated, cold and bubbly drink we all know about."
+				"Wait... wrong coke..."
+			]
 			dependencies: [
 				"08EB44C9B0EBE3E3"
 				"35EF7AF27656BAA3"
@@ -98,12 +102,19 @@
 					to_observe: "immersiveengineering:coke_oven"
 				}
 			]
+			rewards: [{
+				id: "51F80B7B986DB9E9"
+				type: "item"
+				item: "create:fluid_tank"
+				count: 2
+			}]
 		}
 		{
 			title: "Blast Furnace"
 			icon: "immersiveengineering:blast_furnace"
 			x: 2.0d
 			y: 2.0d
+			description: ["The first method of steel production."]
 			dependencies: ["08EB44C9B0EBE3E3"]
 			id: "3C03FF4C388E2607"
 			tasks: [
@@ -129,6 +140,12 @@
 					to_observe: "immersiveengineering:blast_furnace"
 				}
 			]
+			rewards: [{
+				id: "3B9938176D29F461"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+				count: 24
+			}]
 		}
 		{
 			x: 2.0d
@@ -144,11 +161,23 @@
 				type: "item"
 				item: "emendatusenigmatica:cast_iron_ingot"
 			}]
+			rewards: [{
+				id: "23FB4646F57DF0B9"
+				type: "item"
+				item: {
+					id: "farmersdelight:skillet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			icon: "create:limestone"
 			x: 0.0d
 			y: 0.0d
+			description: ["limestone stone"]
 			hide_dependency_lines: true
 			dependencies: ["08EB44C9B0EBE3E3"]
 			id: "1F37F3D6CA84AAD4"
@@ -175,6 +204,18 @@
 				}
 				count: 8L
 			}]
+			rewards: [{
+				id: "2C67FE55AEA891B3"
+				type: "item"
+				item: {
+					id: "minecraft:lime_dye"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "Steel"
@@ -191,6 +232,12 @@
 				id: "5C68FB514EB9157B"
 				type: "item"
 				item: "emendatusenigmatica:steel_ingot"
+			}]
+			rewards: [{
+				id: "41CEB6A0DEEF25FF"
+				type: "item"
+				item: "create:limestone"
+				count: 24
 			}]
 		}
 		{
@@ -214,6 +261,17 @@
 					count: 8L
 				}
 			]
+			rewards: [{
+				id: "4F6D9992B540209B"
+				type: "item"
+				item: {
+					id: "immersiveengineering:axe_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			x: 6.0d
@@ -228,6 +286,11 @@
 				id: "0D0BCCF0D25CF407"
 				type: "item"
 				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "705BBB58C5D739DE"
+				type: "item"
+				item: "cfm:spruce_chair"
 			}]
 		}
 		{
@@ -291,12 +354,27 @@
 					to_observe: "immersiveengineering:metal_press"
 				}
 			]
+			rewards: [
+				{
+					id: "715F90D39F3D10DC"
+					type: "item"
+					item: "emendatusenigmatica:steel_ingot"
+					count: 8
+				}
+				{
+					id: "23D63F5EEFE62690"
+					type: "item"
+					item: "emendatusenigmatica:electrum_ingot"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "Molding"
 			icon: "immersiveengineering:mold_gear"
 			x: 8.0d
 			y: 2.0d
+			description: ["In order for the metal press to work, it needs a mold. Make these two essential molds."]
 			dependencies: ["4DFC0BCCEA42CD53"]
 			id: "73FDBC6E15566EC4"
 			tasks: [
@@ -311,6 +389,11 @@
 					item: "immersiveengineering:mold_wire"
 				}
 			]
+			rewards: [{
+				id: "359DAE86AAF6CB31"
+				type: "choice"
+				table_id: 1213636903948481638L
+			}]
 		}
 		{
 			title: "Crusher"
@@ -372,12 +455,19 @@
 					to_observe: "immersiveengineering:crusher"
 				}
 			]
+			rewards: [{
+				id: "2BF1C3D2AFB1958F"
+				type: "item"
+				item: "immersiveengineering:windmill_sail"
+				count: 4
+			}]
 		}
 		{
 			title: "Power Generation MK1"
 			icon: "immersiveengineering:dynamo"
 			x: 6.0d
 			y: 0.0d
+			description: ["Now we can make energy properly! Use a waterwheel and kinetic dynamo to generate the power, and the wires and connectors to transfer it."]
 			dependencies: ["4AC3D07BD3E90C4F"]
 			id: "553384A26AAA6F2F"
 			tasks: [
@@ -441,18 +531,31 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "6B94CE73A105BD3E"
+				type: "choice"
+				icon: "immersiveengineering:watermill"
+				table_id: 3678582898064452737L
+			}]
 		}
 		{
 			title: "Capacity"
 			x: 10.0d
 			y: 0.0d
 			shape: "square"
+			description: ["The first energy storage device. You can upgrade it to increase its capacity."]
 			dependencies: ["73FDBC6E15566EC4"]
 			id: "38078AD82EB86DB3"
 			tasks: [{
 				id: "5AA26900A90DA6CA"
 				type: "item"
 				item: "immersiveengineering:capacitor_lv"
+			}]
+			rewards: [{
+				id: "0FCC5BEB1AC71804"
+				type: "item"
+				item: "emendatusenigmatica:lead_ingot"
+				count: 8
 			}]
 		}
 		{
@@ -467,12 +570,19 @@
 				type: "item"
 				item: "kubejs:steel_sand"
 			}]
+			rewards: [{
+				id: "615D2BB317F4FE40"
+				type: "item"
+				item: "emendatusenigmatica:zinc_chunk"
+				count: 12
+			}]
 		}
 		{
 			title: "Industrial Fermenter"
 			icon: "immersiveengineering:fermenter"
 			x: 12.0d
 			y: 2.0d
+			description: ["See the Engineer's Manual on how to build."]
 			dependencies: ["63FD7A140DE33DC1"]
 			id: "5D14322DD2F2EA15"
 			tasks: [
@@ -538,12 +648,25 @@
 					item: "immersiveengineering:ethanol_bucket"
 				}
 			]
+			rewards: [{
+				id: "3EB51AA85BD367D7"
+				type: "item"
+				item: {
+					id: "minecraft:potato"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 16
+			}]
 		}
 		{
 			title: "Pumpjack"
 			icon: "immersivepetroleum:pumpjack"
 			x: 8.0d
 			y: 4.0d
+			description: ["Works like the Excavator, but for fluids. For now, we want to use it to get oil."]
 			dependencies: ["63FD7A140DE33DC1"]
 			id: "0B29DB6C395C3FCC"
 			tasks: [
@@ -610,13 +733,18 @@
 					to_observe: "immersivepetroleum:pumpjack"
 				}
 			]
+			rewards: [{
+				id: "12AB7EC440C079C5"
+				type: "item"
+				item: "immersivepetroleum:oil_bucket"
+			}]
 		}
 		{
 			title: "Distillation Tower"
 			icon: "immersivepetroleum:distillationtower"
 			x: 8.0d
 			y: 6.0d
-			description: [""]
+			description: ["Separates crude oil into different fluids."]
 			dependencies: ["63FD7A140DE33DC1"]
 			id: "4817B68970FD2B9E"
 			tasks: [
@@ -671,6 +799,11 @@
 					to_observe: "immersivepetroleum:distillationtower"
 				}
 			]
+			rewards: [{
+				id: "62DB351777121B1C"
+				type: "item"
+				item: "immersiveengineering:fluid_sorter"
+			}]
 		}
 		{
 			icon: "immersiveengineering:sample_drill"
@@ -695,12 +828,19 @@
 					match_nbt: false
 				}
 			]
+			rewards: [{
+				id: "7B058A0F2190ADAB"
+				type: "item"
+				item: "emendatusenigmatica:copper_chunk"
+				count: 16
+			}]
 		}
 		{
 			title: "Oil Processing"
-			icon: "immersivepetroleum:bitumen"
+			icon: "emendatusenigmatica:bitumen_gem"
 			x: 6.0d
 			y: 6.0d
+			description: ["Used for further processing. Can also make asphalt."]
 			dependencies: [
 				"797B60EA0CE8693A"
 				"0B29DB6C395C3FCC"
@@ -710,7 +850,13 @@
 			tasks: [{
 				id: "422210484520CE26"
 				type: "item"
-				item: "immersivepetroleum:bitumen"
+				item: "emendatusenigmatica:bitumen_gem"
+			}]
+			rewards: [{
+				id: "7845D7D366370639"
+				type: "item"
+				item: "immersivepetroleum:asphalt"
+				count: 16
 			}]
 		}
 		{
@@ -789,6 +935,11 @@
 					item: "immersiveengineering:plantoil_bucket"
 				}
 			]
+			rewards: [{
+				id: "5A1E8BAA55DBC981"
+				type: "choice"
+				table_id: 7145901830977241099L
+			}]
 		}
 		{
 			title: "Refinery"
@@ -854,12 +1005,24 @@
 					to_observe: "immersiveengineering:refinery"
 				}
 			]
+			rewards: [{
+				id: "0487F3783F0027D6"
+				type: "item"
+				item: {
+					id: "mekanism:basic_fluid_tank"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			title: "Power Generation MK2"
 			x: 4.0d
 			y: 0.0d
 			shape: "square"
+			description: ["Makes energy by the Seebeck effect, which is a reaction between cold and hot materials."]
 			dependencies: ["553384A26AAA6F2F"]
 			id: "6EF95F086DB20182"
 			tasks: [{
@@ -869,11 +1032,23 @@
 				count: 4L
 				consume_items: false
 			}]
+			rewards: [{
+				id: "4F03BAD731F7769C"
+				type: "item"
+				item: {
+					id: "minecraft:blue_ice"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			title: "Biodiesel"
 			x: 14.0d
 			y: 4.0d
+			description: ["A great fuel source!"]
 			dependencies: [
 				"6A24284B2CEE444E"
 				"5D14322DD2F2EA15"
@@ -885,11 +1060,18 @@
 				type: "item"
 				item: "immersiveengineering:biodiesel_bucket"
 			}]
+			rewards: [{
+				id: "2583104EFF5FDC6B"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+				count: 16
+			}]
 		}
 		{
 			title: "Meteorite"
 			x: 2.0d
 			y: 4.0d
+			description: ["A material needed in the coke oven, and later needed for AE2."]
 			hide_dependency_lines: true
 			dependencies: ["08EB44C9B0EBE3E3"]
 			id: "35EF7AF27656BAA3"
@@ -899,11 +1081,18 @@
 				item: "appliedenergistics2:sky_stone_block"
 				count: 16L
 			}]
+			rewards: [{
+				id: "41A5AE9A43B2723F"
+				type: "item"
+				item: "kubejs:forged_shard"
+				count: 12
+			}]
 		}
 		{
 			x: 0.0d
 			y: 4.0d
 			shape: "square"
+			description: ["Locates meteorites. No way."]
 			dependencies: ["2A718DB5C3413AD0"]
 			id: "45C9B99289D9391A"
 			tasks: [{
@@ -911,11 +1100,24 @@
 				type: "item"
 				item: "appliedenergistics2:sky_compass"
 			}]
+			rewards: [{
+				id: "3C67695AA04E6E9D"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Potion: "minecraft:strong_swiftness"
+					}
+				}
+			}]
 		}
 		{
 			title: "HOP Graphite"
 			x: 12.0d
 			y: 6.0d
+			description: ["Compressing coke dust makes a hard graphite powder."]
 			dependencies: ["5DB985D79D0D8B2A"]
 			id: "5481EEE7DA945AF3"
 			tasks: [{
@@ -923,18 +1125,39 @@
 				type: "item"
 				item: "immersiveengineering:dust_hop_graphite"
 			}]
+			rewards: [{
+				id: "7825815278295181"
+				type: "item"
+				item: "emendatusenigmatica:silver_chunk"
+				count: 8
+			}]
 		}
 		{
 			title: "Galvanized Square Steel and Eco-Friendly Wood Veneers"
 			x: 16.0d
 			y: 6.0d
-			description: ["Enhanced corrosion resistance."]
+			description: [
+				"Enhanced corrosion resistance."
+				"Little John..."
+			]
 			dependencies: ["510ACD6A8CAF1244"]
 			id: "1164EB726F72597B"
 			tasks: [{
 				id: "66185099CCC74CA9"
 				type: "item"
 				item: "kubejs:galvanized_steel_ingot"
+			}]
+			rewards: [{
+				id: "3A92DF2E23FFDA78"
+				type: "item"
+				item: {
+					id: "minecraft:oak_planks"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 64
 			}]
 		}
 		{
@@ -1033,6 +1256,38 @@
 						}
 					}
 					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "1CA5826D5DE6E8C8"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 8
+				}
+				{
+					id: "2C07EDC2100F46F6"
+					type: "item"
+					item: {
+						id: "minecraft:gold_block"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 4
+				}
+				{
+					id: "0207D76AF7A59F31"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 4
 				}
 			]
 		}
@@ -1147,108 +1402,11 @@
 			}]
 		}
 		{
-			title: "We need to coke 2"
-			icon: "immersivepetroleum:cokerunit"
-			x: 4.0d
-			y: 6.0d
-			dependencies: [
-				"36BE1B48CBFE2FF3"
-				"1083B3905DEF42AF"
-			]
-			id: "27550EC5B8DA925F"
-			tasks: [
-				{
-					id: "75B530E50B13CF66"
-					type: "item"
-					item: "immersiveengineering:concrete"
-					count: 12L
-				}
-				{
-					id: "5F8B0DDFBFFBAA11"
-					type: "item"
-					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 98L
-				}
-				{
-					id: "63A5955558668F20"
-					type: "item"
-					item: "immersiveengineering:heavy_engineering"
-					count: 5L
-				}
-				{
-					id: "01EEFB5255CC8BD8"
-					type: "item"
-					item: "immersiveengineering:sheetmetal_steel"
-				}
-				{
-					id: "4EF648066F45071A"
-					type: "item"
-					item: "immersiveengineering:rs_engineering"
-				}
-				{
-					id: "5D4F23FC96AE5D93"
-					type: "item"
-					item: "immersiveengineering:light_engineering"
-					count: 5L
-				}
-				{
-					id: "6EF5D0042E172A27"
-					type: "item"
-					item: "immersiveengineering:concrete_tile"
-					count: 45L
-				}
-				{
-					id: "61F06E033950B8B3"
-					type: "item"
-					item: "immersiveengineering:steel_fence"
-					count: 88L
-				}
-				{
-					id: "58D31FC9BA6339B2"
-					type: "item"
-					item: "immersiveengineering:sheetmetal_iron"
-					count: 162L
-				}
-				{
-					id: "18DB15F36748548A"
-					type: "item"
-					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
-					count: 46L
-				}
-				{
-					id: "3911E550BD7EC2BF"
-					type: "item"
-					item: "immersiveengineering:fluid_pipe"
-					count: 47L
-				}
-				{
-					id: "4800D559A760348A"
-					type: "item"
-					item: "immersiveengineering:steel_slope"
-					count: 3L
-				}
-				{
-					id: "3475FF414C567690"
-					type: "observation"
-					title: "Look at a completed Coker"
-					icon: {
-						id: "immersiveengineering:hammer"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					timer: 0L
-					observe_type: 0
-					to_observe: "immersivepetroleum:cokerunit"
-				}
-			]
-		}
-		{
 			title: "Desulfurization"
 			icon: "immersivepetroleum:hydrotreater"
 			x: 6.0d
 			y: 8.0d
+			description: ["Separates the sulfur from the Sulfurized Diesel."]
 			dependencies: ["36BE1B48CBFE2FF3"]
 			id: "63BE3053633985CD"
 			tasks: [
@@ -1297,22 +1455,35 @@
 					to_observe: "immersivepetroleum:hydrotreater"
 				}
 			]
+			rewards: [{
+				id: "0DB1725E825DB85B"
+				type: "choice"
+				table_id: 1428422400954921824L
+			}]
 		}
 		{
 			x: 4.0d
 			y: 8.0d
-			dependencies: ["27550EC5B8DA925F"]
+			description: ["Petroleum Coke. You should make the process of making this automated."]
+			dependencies: ["22AA7794379E24C9"]
 			id: "4297C38DE6D29A7B"
 			tasks: [{
 				id: "24A41E7F35078B82"
 				type: "item"
 				item: "immersivepetroleum:petcoke"
 			}]
+			rewards: [{
+				id: "1515AFEF9CB04E0D"
+				type: "item"
+				item: "immersivepetroleum:petcoke"
+				count: 8
+			}]
 		}
 		{
 			title: "Diesel"
 			x: 6.0d
 			y: 10.0d
+			description: ["Another good fuel source."]
 			dependencies: ["63BE3053633985CD"]
 			id: "0C2525AC83D8CD71"
 			tasks: [{
@@ -1320,10 +1491,17 @@
 				type: "item"
 				item: "immersivepetroleum:diesel_bucket"
 			}]
+			rewards: [{
+				id: "6C8C44229EA71F0E"
+				type: "item"
+				item: "farmersdelight:stuffed_potato"
+				count: 6
+			}]
 		}
 		{
 			x: 2.0d
 			y: 6.0d
+			description: ["A basic building block needed for the Coker."]
 			dependencies: ["49A25C2E1635452E"]
 			id: "1083B3905DEF42AF"
 			tasks: [{
@@ -1331,12 +1509,19 @@
 				type: "item"
 				item: "immersiveengineering:concrete"
 			}]
+			rewards: [{
+				id: "619C168B526A5C2E"
+				type: "item"
+				item: "kubejs:concrete_bottle"
+				count: 4
+			}]
 		}
 		{
 			title: "Mixer"
 			icon: "immersiveengineering:mixer"
 			x: 0.0d
 			y: 6.0d
+			description: ["Mixes fluids and items together. Look in the Engineer's Manual on how to build it."]
 			hide_dependency_lines: true
 			dependencies: ["63FD7A140DE33DC1"]
 			id: "49A25C2E1635452E"
@@ -1391,6 +1576,12 @@
 					to_observe: "immersiveengineering:mixer"
 				}
 			]
+			rewards: [{
+				id: "0A017EBDAD83E227"
+				type: "item"
+				item: "create:mechanical_mixer"
+				count: 2
+			}]
 		}
 		{
 			title: "Volatile Golden Mixture"
@@ -1403,6 +1594,7 @@
 			}
 			x: 4.0d
 			y: 10.0d
+			description: ["A mixture of many different substances. It's Volatile, It's Golden, It's"]
 			dependencies: [
 				"4297C38DE6D29A7B"
 				"0C2525AC83D8CD71"
@@ -1418,6 +1610,12 @@
 						temperature: 0.0d
 					}
 				}
+			}]
+			rewards: [{
+				id: "4E31A7D7B6273568"
+				type: "item"
+				item: "emendatusenigmatica:gold_chunk"
+				count: 24
 			}]
 		}
 		{
@@ -1439,17 +1637,29 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7ADB7392A1ECD103"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+				count: 4
+			}]
 		}
 		{
 			x: 18.0d
 			y: 6.0d
 			shape: "square"
+			description: ["Grows crops more efficiently than farmland."]
 			dependencies: ["1164EB726F72597B"]
 			id: "7E20B3477B3F9BA3"
 			tasks: [{
 				id: "1A31A19613F24190"
 				type: "item"
 				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "66386E67A297BFA0"
+				type: "item"
+				item: "cookingforblockheads:sink"
 			}]
 		}
 		{
@@ -1516,6 +1726,32 @@
 					to_observe: "immersiveengineering:diesel_generator"
 				}
 			]
+			rewards: [
+				{
+					id: "3021698AEAC9D7E9"
+					type: "item"
+					item: {
+						id: "minecraft:potato"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 32
+				}
+				{
+					id: "58663A3BE9C16EAC"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 32
+				}
+			]
 		}
 		{
 			title: "Higher Voltage"
@@ -1530,6 +1766,11 @@
 				id: "34F063B7DB349EBF"
 				type: "checkmark"
 			}]
+			rewards: [{
+				id: "199637AF447715B4"
+				type: "item"
+				item: "farmersdelight:pasta_with_meatballs"
+			}]
 		}
 		{
 			x: 16.0d
@@ -1543,11 +1784,24 @@
 				type: "item"
 				item: "immersiveengineering:furnace_heater"
 			}]
+			rewards: [{
+				id: "6099C4DD10E84B04"
+				type: "item"
+				item: {
+					id: "ironfurnaces:upgrade_iron"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 2
+			}]
 		}
 		{
 			x: 16.0d
 			y: 8.0d
 			shape: "square"
+			description: ["A good flight option for now, until you can make something better later."]
 			dependencies: ["1164EB726F72597B"]
 			id: "770C13A6544D9ECD"
 			tasks: [{
@@ -1561,6 +1815,159 @@
 						Throttle: 1.0d
 					}
 				}
+			}]
+			rewards: [{
+				id: "29D83E8DAC1DE148"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+				count: 12
+			}]
+		}
+		{
+			title: "Pipez"
+			icon: "pipez:universal_pipe"
+			x: 11.0d
+			y: 12.0d
+			shape: "square"
+			description: ["Pipez is an easy-to-use material transportation mod."]
+			dependencies: ["0F55C3AFCFD7892E"]
+			id: "653543FA8EAB56C0"
+			tasks: [
+				{
+					id: "53B801E5085949B4"
+					type: "item"
+					item: "pipez:item_pipe"
+				}
+				{
+					id: "49252DA44A19EE2A"
+					type: "item"
+					item: "pipez:wrench"
+				}
+			]
+			rewards: [
+				{
+					id: "4A247ED7796D7C9B"
+					type: "item"
+					item: "pipez:item_pipe"
+					count: 16
+				}
+				{
+					id: "194DCBCB838B3819"
+					type: "item"
+					item: "pipez:fluid_pipe"
+					count: 16
+				}
+				{
+					id: "544C08BC3BE86EEC"
+					type: "item"
+					item: "pipez:energy_pipe"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "We need to coke 2"
+			icon: "immersivepetroleum:cokerunit"
+			disable_toast: true
+			x: 4.0d
+			y: 6.0d
+			description: ["Further processes Bitumen into Petcoke and Diesel."]
+			dependencies: [
+				"1083B3905DEF42AF"
+				"36BE1B48CBFE2FF3"
+			]
+			id: "22AA7794379E24C9"
+			tasks: [
+				{
+					id: "2548F2D53CF5DE67"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 12L
+				}
+				{
+					id: "2E36F244C4F2246A"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 98L
+				}
+				{
+					id: "2DE2A70536FF5314"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "32B99014F4212451"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+				}
+				{
+					id: "16314911A08FEB1E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 5L
+				}
+				{
+					id: "7D60DF07C8B67C10"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "289D1252A39B4887"
+					type: "item"
+					item: "immersiveengineering:concrete_tile"
+					count: 45L
+				}
+				{
+					id: "67D9E14775B94EE9"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 88L
+				}
+				{
+					id: "614AF01389DD7BAF"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 162L
+				}
+				{
+					id: "2BAA44A4E4DE2021"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 46L
+				}
+				{
+					id: "7524232CA9DB4742"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 47L
+				}
+				{
+					id: "1A55FD7FD873E5BA"
+					type: "item"
+					item: "immersiveengineering:steel_slope"
+					count: 3L
+				}
+				{
+					id: "4CE9D2F188CECB02"
+					type: "observation"
+					title: "Look at completed Coker"
+					icon: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersivepetroleum:coker"
+				}
+			]
+			rewards: [{
+				id: "56DEA1A67482ABFE"
+				type: "choice"
+				table_id: 8099173138463767937L
 			}]
 		}
 	]

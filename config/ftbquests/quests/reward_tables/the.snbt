@@ -1,0 +1,10 @@
+{
+	id: "330CF3A7E3F56C81"
+	order_index: 7
+	title: "the"
+	loot_size: 1
+	rewards: [
+		{ item: "immersiveengineering:watermill" }
+		{ item: "immersiveengineering:wirecoil_copper", count: 4 }
+	]
+}

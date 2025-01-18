@@ -44,6 +44,7 @@
 		{
 			x: 0.0d
 			y: 2.0d
+			description: ["Grinds resources into smaller chunks."]
 			dependencies: ["763DEF5D07F38F12"]
 			id: "0E8174664311A153"
 			tasks: [{
@@ -51,10 +52,22 @@
 				type: "item"
 				item: "create:millstone"
 			}]
+			rewards: [{
+				id: "594E26E81E74512F"
+				type: "item"
+				item: {
+					id: "futurepack:ersebrot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			x: 2.0d
 			y: 2.0d
+			description: ["Blows air around. Putting certain substances in front of the wind can produce certain effects."]
 			dependencies: ["763DEF5D07F38F12"]
 			id: "283A57022E9A4341"
 			tasks: [{
@@ -62,11 +75,24 @@
 				type: "item"
 				item: "create:encased_fan"
 			}]
+			rewards: [{
+				id: "5719D671DDDD5E52"
+				type: "choice"
+				icon: {
+					id: "minecraft:bucket"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				table_id: 684833132314034571L
+			}]
 		}
 		{
 			title: "Impure Forged Shards"
 			x: 2.0d
 			y: 4.0d
+			description: ["Still a bit dirty..."]
 			dependencies: ["0E8174664311A153"]
 			id: "00EB4483C6CFD47A"
 			tasks: [{
@@ -74,11 +100,18 @@
 				type: "item"
 				item: "kubejs:impure_forged_shard"
 			}]
+			rewards: [{
+				id: "00CEE533B3A70601"
+				type: "item"
+				item: "tetra:forged_wall"
+				count: 8
+			}]
 		}
 		{
 			title: "Forged Shards"
 			x: 4.0d
 			y: 4.0d
+			description: ["All clean!"]
 			dependencies: [
 				"00EB4483C6CFD47A"
 				"283A57022E9A4341"
@@ -93,6 +126,7 @@
 		{
 			x: 4.0d
 			y: 0.0d
+			description: ["Mixes substances if a basin is present."]
 			dependencies: ["763DEF5D07F38F12"]
 			id: "74D403BD611D0189"
 			tasks: [{
@@ -113,17 +147,40 @@
 				type: "item"
 				item: "create:blaze_burner"
 			}]
+			rewards: [{
+				id: "0B79FB81008BCE32"
+				type: "item"
+				item: {
+					id: "minecraft:coal_block"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			title: "Based"
 			x: 4.0d
 			y: -2.0d
+			description: ["Holds stuff. Needs machines to be any more useful."]
 			dependencies: ["763DEF5D07F38F12"]
 			id: "5655394C509CDB43"
 			tasks: [{
 				id: "7ADC9910A0721D8F"
 				type: "item"
 				item: "create:basin"
+			}]
+			rewards: [{
+				id: "6C031A65D9B2F201"
+				type: "item"
+				item: {
+					id: "minecraft:cauldron"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
 			}]
 		}
 		{
@@ -144,11 +201,24 @@
 				item: "create:andesite_alloy"
 				count: 16L
 			}]
+			rewards: [{
+				id: "6255EF31FBFE2CF9"
+				type: "item"
+				item: {
+					id: "minecraft:andesite"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 64
+			}]
 		}
 		{
 			x: 6.0d
 			y: 2.0d
 			shape: "circle"
+			description: ["Unlocks methods of fluid manipulation."]
 			dependencies: [
 				"3A94CC17F571C152"
 				"1ECB55D14457DAAD"
@@ -159,10 +229,17 @@
 				type: "item"
 				item: "create:copper_casing"
 			}]
+			rewards: [{
+				id: "6871FE7667FD77F2"
+				type: "item"
+				item: "emendatusenigmatica:copper_chunk"
+				count: 12
+			}]
 		}
 		{
 			x: 4.0d
 			y: 2.0d
+			description: ["Presses materials into plates."]
 			dependencies: ["763DEF5D07F38F12"]
 			id: "1ECB55D14457DAAD"
 			tasks: [{
@@ -170,11 +247,18 @@
 				type: "item"
 				item: "create:mechanical_press"
 			}]
+			rewards: [{
+				id: "0DA56B6E071C97C3"
+				type: "item"
+				item: "tetra:forged_wall"
+				count: 8
+			}]
 		}
 		{
 			title: "Squirter"
 			x: 8.0d
 			y: 2.0d
+			description: ["Deposits fluids onto items."]
 			dependencies: ["107FCC4C116FA38F"]
 			id: "7D422BFA00557171"
 			tasks: [{
@@ -186,6 +270,7 @@
 		{
 			x: 8.0d
 			y: 0.0d
+			description: ["This pack isn't polished enough to have a description for this"]
 			dependencies: [
 				"3A94CC17F571C152"
 				"7D422BFA00557171"
@@ -195,6 +280,12 @@
 				id: "601C898EB49559CD"
 				type: "item"
 				item: "create:polished_rose_quartz"
+			}]
+			rewards: [{
+				id: "160ED7650DA3F202"
+				type: "choice"
+				icon: "create:rose_quartz"
+				table_id: 4211112448881757739L
 			}]
 		}
 		{
@@ -213,10 +304,25 @@
 				type: "checkmark"
 				title: "Molten Materials"
 			}]
+			rewards: [{
+				id: "38CB53E2B70AD178"
+				type: "item"
+				item: {
+					id: "mekanism:gauge_dropper"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			x: 10.0d
 			y: 0.0d
+			description: [
+				"In real life, this was one of the first versions of a diode."
+				"In this mod, it's about the same, but becomes less useful quicker."
+			]
 			dependencies: [
 				"17ED5CC98502BADB"
 				"60195D37EB350BB1"
@@ -227,11 +333,24 @@
 				type: "item"
 				item: "create:electron_tube"
 			}]
+			rewards: [{
+				id: "0BFC926E06DD9D3D"
+				type: "choice"
+				icon: {
+					id: "minecraft:iron_ingot"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				table_id: 6874828217564602289L
+			}]
 		}
 		{
 			disable_toast: true
 			x: 6.0d
 			y: 4.0d
+			description: ["Slices things."]
 			dependencies: [
 				"301F5684AB57280A"
 				"1ECB55D14457DAAD"
@@ -241,6 +360,12 @@
 				id: "11A2EE5E8366352A"
 				type: "item"
 				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "58F6866F6E85AD5E"
+				type: "item"
+				item: "farmersdelight:sweet_berry_cheesecake_slice"
+				count: 4
 			}]
 		}
 		{
@@ -255,10 +380,17 @@
 				id: "0E9B053E89446A6F"
 				type: "checkmark"
 			}]
+			rewards: [{
+				id: "73EA257AAA8AFB61"
+				type: "item"
+				item: "tetra:forged_beam"
+				count: 4
+			}]
 		}
 		{
 			x: 12.0d
 			y: 0.0d
+			description: ["Deploys whatever your heart desires."]
 			dependencies: ["450FABF6155D34D9"]
 			id: "5C9CE02866C9A117"
 			tasks: [{
@@ -266,25 +398,51 @@
 				type: "item"
 				item: "create:deployer"
 			}]
+			rewards: [{
+				id: "43095DFACCE463CA"
+				type: "item"
+				item: "emendatusenigmatica:brass_ingot"
+				count: 6
+			}]
 		}
 		{
 			title: "Forged Duplication"
+			icon: "tetra:forged_wall"
 			x: 12.0d
 			y: -2.0d
 			shape: "square"
-			description: ["Use the sequenced assembly recipe to turn one Forged Shard into one Forged Wall, which can then be milled back into four Forged Shards"]
+			description: ["Use the sequenced assembly recipe to turn one Forged Shard into one Forged Wall, which can then be milled back into four Forged Shards."]
 			dependencies: ["5C9CE02866C9A117"]
 			id: "0EC8D0A2C62955F7"
-			tasks: [{
-				id: "361D01C1C46DED28"
+			tasks: [
+				{
+					id: "361D01C1C46DED28"
+					type: "item"
+					item: {
+						id: "tetra:forged_wall"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+				}
+				{
+					id: "2FBEC7B67E1F6033"
+					type: "checkmark"
+					title: "Make Forged Duplicator"
+				}
+			]
+			rewards: [{
+				id: "1750044ECE123DFD"
 				type: "item"
 				item: {
-					id: "tetra:forged_wall"
+					id: "minecraft:basalt"
 					Count: 1b
 					tag: {
 						temperature: 0.0d
 					}
 				}
+				count: 24
 			}]
 		}
 		{
@@ -299,6 +457,10 @@
 			x: 12.0d
 			y: -4.0d
 			shape: "square"
+			description: [
+				"With your new infinite supply of forged walls, you can make basically any tetra material out of them."
+				"Some assembly required."
+			]
 			dependencies: ["0EC8D0A2C62955F7"]
 			id: "19DD49B5F4D8FEEB"
 			tasks: [
@@ -351,6 +513,12 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "2CE3A37C00690A31"
+				type: "item"
+				item: "tetra:metal_scrap"
+				count: 20
+			}]
 		}
 		{
 			title: "Exploration-less Metal Scraps"
@@ -372,13 +540,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3F84A17562A10903"
+				type: "item"
+				item: "kubejs:forged_shard"
+				count: 8
+			}]
 		}
 		{
 			x: 14.0d
 			y: 0.0d
 			description: [
 				""
-				"You'll probably want to semi-automate forged walls and tetra components before making this."
+				"You'll probably want to semi-automate forged walls and tetra components before making this, since you'll need quite a few."
 			]
 			dependencies: ["5C9CE02866C9A117"]
 			id: "067E2DC29A94DDAB"
@@ -386,10 +560,6 @@
 				id: "75791FD777E79D72"
 				type: "item"
 				item: "create:brass_casing"
-			}]
-			rewards: [{
-				id: "4D528A8AF89E7651"
-				type: "random"
 			}]
 		}
 		{
@@ -445,6 +615,12 @@
 					item: "create:mechanical_pump"
 				}
 			]
+			rewards: [{
+				id: "4D982A6A285754CE"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 6
+			}]
 		}
 		{
 			title: "Windmill"
@@ -492,11 +668,18 @@
 					count: 8L
 				}
 			]
+			rewards: [{
+				id: "1215A336858C0551"
+				type: "item"
+				item: "create:sail_frame"
+				count: 8
+			}]
 		}
 		{
 			title: "Crushing Wheels"
 			x: 12.0d
 			y: 2.0d
+			description: ["A bigger and better version of the millstone that gives more drops and has some exclusive recipes."]
 			dependencies: ["5C9CE02866C9A117"]
 			id: "40C885C4FA1BC1E6"
 			tasks: [{
@@ -505,10 +688,31 @@
 				item: "create:crushing_wheel"
 				count: 2L
 			}]
+			rewards: [
+				{
+					id: "75D06324DC649A67"
+					type: "item"
+					item: {
+						id: "minecraft:andesite"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 32
+				}
+				{
+					id: "1384A7232379CBFD"
+					type: "item"
+					item: "emendatusenigmatica:zinc_chunk"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 14.0d
 			y: 2.0d
+			description: ["The start of something."]
 			dependencies: ["40C885C4FA1BC1E6"]
 			id: "706311EE50AC87D6"
 			tasks: [{
@@ -516,10 +720,22 @@
 				type: "item"
 				item: "create:blaze_cake_base"
 			}]
+			rewards: [{
+				id: "2C84FDB04E9024A6"
+				type: "item"
+				item: {
+					id: "minecraft:chicken_spawn_egg"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			x: 16.0d
 			y: 4.0d
+			description: ["While it can be eaten, you'll want to use it for something else."]
 			dependencies: [
 				"67DAB36C4D1AED40"
 				"3B788526ECC41D96"
@@ -529,6 +745,12 @@
 				id: "3D52F640D1571D86"
 				type: "item"
 				item: "nethers_delight:magma_gelatin"
+			}]
+			rewards: [{
+				id: "69EAB90208C14544"
+				type: "item"
+				item: "nethers_delight:nether_skewer"
+				count: 2
 			}]
 		}
 		{
@@ -548,10 +770,23 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "211238B6DFD0FA65"
+				type: "item"
+				item: {
+					id: "minecraft:netherrack"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 32
+			}]
 		}
 		{
 			x: 14.0d
 			y: 4.0d
+			description: ["Gets the fluids. idk man im not paid enough for this"]
 			hide_dependency_lines: true
 			dependencies: ["107FCC4C116FA38F"]
 			id: "1B5AB360690B78F6"
@@ -559,6 +794,12 @@
 				id: "4382038BB2732B43"
 				type: "item"
 				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "4AA4D7EDB1C7ECB0"
+				type: "item"
+				item: "emendatusenigmatica:copper_chunk"
+				count: 16
 			}]
 		}
 		{
@@ -576,10 +817,26 @@
 				type: "item"
 				item: "create:blaze_cake"
 			}]
+			rewards: [{
+				id: "72668FD2EBCCBA86"
+				type: "item"
+				item: {
+					id: "minecraft:magma_cream"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 12
+			}]
 		}
 		{
 			x: 18.0d
 			y: 2.0d
+			description: [
+				"Said to be able to absorb both the brightest of lights and the darkest of nights!"
+				"We don't care about that right now, though."
+			]
 			dependencies: ["40C0EF39B94BC9A5"]
 			id: "21E14170A0817BC5"
 			tasks: [{
@@ -590,6 +847,12 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+			rewards: [{
+				id: "79CE63DA23536D1A"
+				type: "item"
+				item: "create:blaze_cake"
+				count: 2
 			}]
 		}
 		{
@@ -603,6 +866,11 @@
 				id: "6A99FB0F6ECD16D6"
 				type: "item"
 				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "56B89DECF4E67334"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
 			}]
 		}
 		{
@@ -663,6 +931,18 @@
 					item: "create:flywheel"
 				}
 			]
+			rewards: [{
+				id: "0A3CE3F2477EC8E3"
+				type: "item"
+				item: {
+					id: "minecraft:dried_kelp_block"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "Straw Collection"
@@ -705,6 +985,17 @@
 					count: 3L
 				}
 			]
+			rewards: [{
+				id: "4CD95339997A82A9"
+				type: "item"
+				item: {
+					id: "farmersdelight:diamond_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Getting Dream Luck for your Geodes"
@@ -756,6 +1047,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "03437C9B618420A6"
+				type: "item"
+				item: "tetra:geode"
+				count: 8
+			}]
 		}
 		{
 			title: "Propelpearls"
@@ -767,6 +1064,33 @@
 				id: "47FE35B019351237"
 				type: "item"
 				item: "nethers_delight:propelpearl"
+			}]
+			rewards: [{
+				id: "734F94BB5AC24DCC"
+				type: "item"
+				item: "nethers_delight:propelplant_berry_stem"
+				count: 4
+			}]
+		}
+		{
+			title: "Water Wheels"
+			icon: "create:water_wheel"
+			x: 0.0d
+			y: -2.0d
+			shape: "square"
+			description: ["The first way to make Stress Units. Pour water over as much of this as possible to make the most SU."]
+			dependencies: ["763DEF5D07F38F12"]
+			id: "23B4FCAF75449C67"
+			tasks: [{
+				id: "77E0AAE373471B7E"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "1A5DF617CBEE1422"
+				type: "item"
+				item: "create:water_wheel"
+				count: 3
 			}]
 		}
 	]

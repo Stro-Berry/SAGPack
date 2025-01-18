@@ -72,6 +72,18 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "512C4FAFF2C34E3C"
+				type: "item"
+				item: {
+					id: "minecraft:stone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 6
+			}]
 		}
 		{
 			x: 3.0d
@@ -86,6 +98,18 @@
 				title: "Stone Hammer"
 				advancement: "tetra:upgrades/hammer_2"
 				criterion: ""
+			}]
+			rewards: [{
+				id: "6A7CB7AA7B3C92B7"
+				type: "item"
+				item: {
+					id: "minecraft:cobblestone"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 16
 			}]
 		}
 		{
@@ -130,6 +154,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "77D4D9915D02BDFE"
+				type: "choice"
+				icon: "emendatusenigmatica:copper_chunk"
+				table_id: 7729756964188417709L
+			}]
 		}
 		{
 			title: "Ferrous Materials"
@@ -167,6 +197,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "6ED50DE4AF67672B"
+				type: "item"
+				item: "emendatusenigmatica:iron_dust"
+				count: 3
+			}]
 		}
 		{
 			title: "Multiple Hammers"
@@ -194,6 +230,11 @@
 				id: "166BFC94CA40EA64"
 				type: "checkmark"
 				title: "Checkbox"
+			}]
+			rewards: [{
+				id: "611ADCFC76D5EB25"
+				type: "item"
+				item: "kubejs:tool_handle"
 			}]
 		}
 		{
@@ -235,6 +276,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "53E67A705755A495"
+				type: "choice"
+				icon: "emendatusenigmatica:iron_chunk"
+				table_id: 4685858886304501879L
+			}]
 		}
 		{
 			x: 4.5d
@@ -251,6 +298,11 @@
 				advancement: "tetra:upgrades/hammer_3"
 				criterion: ""
 			}]
+			rewards: [{
+				id: "35D6CC6997097B86"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
 		}
 		{
 			title: "Smelting"
@@ -264,6 +316,17 @@
 				type: "item"
 				item: {
 					id: "minecraft:furnace"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "058E1A684D4A7C0A"
+				type: "item"
+				item: {
+					id: "minecraft:dried_kelp_block"
 					Count: 1b
 					tag: {
 						temperature: 0.0d
@@ -291,6 +354,17 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3136BB140A9D80D0"
+				type: "item"
+				item: {
+					id: "minecraft:golden_apple"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
 		}
 		{
 			title: "Eye of...render?"
@@ -306,6 +380,18 @@
 				id: "51F1A21E3DF8043E"
 				type: "item"
 				item: "kubejs:render_eye"
+			}]
+			rewards: [{
+				id: "18AD5FDB267D5546"
+				type: "choice"
+				icon: {
+					id: "minecraft:glass"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				table_id: 3018364989639914110L
 			}]
 		}
 		{
@@ -347,6 +433,17 @@
 				type: "item"
 				item: {
 					id: "minecraft:obsidian"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D57ABF4C3279D17"
+				type: "item"
+				item: {
+					id: "minecraft:lava_bucket"
 					Count: 1b
 					tag: {
 						temperature: 0.0d
@@ -396,6 +493,18 @@
 					dimension: "minecraft:the_nether"
 				}
 			]
+			rewards: [{
+				id: "4DAAF57C00588E5F"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
 		}
 		{
 			title: "Blackstone Hammer"
@@ -436,6 +545,18 @@
 				observe_type: 0
 				to_observe: "tetra:forged_pillar"
 			}]
+			rewards: [{
+				id: "72E41A4E77B39CE4"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Potion: "minecraft:long_night_vision"
+					}
+				}
+			}]
 		}
 		{
 			title: "Increasing your Integrity"
@@ -454,6 +575,18 @@
 						temperature: 0.0d
 					}
 				}
+			}]
+			rewards: [{
+				id: "27D360131EDD0E08"
+				type: "item"
+				item: {
+					id: "minecraft:blaze_powder"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4
 			}]
 		}
 		{
@@ -538,6 +671,18 @@
 				}
 				count: 4L
 			}]
+			rewards: [{
+				id: "7EC03814FE815C8E"
+				type: "item"
+				item: {
+					id: "minecraft:netherite_boots"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Lost Trinkets"
@@ -584,6 +729,17 @@
 					count: 2L
 				}
 			]
+			rewards: [{
+				id: "429831711CF87BA4"
+				type: "item"
+				item: {
+					id: "tetra:magmatic_cell"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Netherite Hammer"
@@ -603,6 +759,17 @@
 				title: "Netherite Hammer"
 				advancement: "tetra:upgrades/hammer_6"
 				criterion: ""
+			}]
+			rewards: [{
+				id: "41531CA9956A037F"
+				type: "item"
+				item: {
+					id: "minecraft:anvil"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
 			}]
 		}
 		{
@@ -634,12 +801,17 @@
 				}
 				weak_nbt_match: true
 			}]
+			rewards: [{
+				id: "1C29542B7B690999"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 		}
 		{
 			title: "The Extractor"
 			x: 9.0d
 			y: -2.0d
-			description: ["This structure can charge Energy Cells using the power eminating from Seeping Bedrock."]
+			description: ["This structure can charge Thermal Cells using the power eminating from Seeping Bedrock."]
 			dependencies: ["26E62BB5A2D1DD42"]
 			id: "5E9B54F7071123E1"
 			tasks: [{
@@ -767,6 +939,59 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1874DA5F70DE0A55"
+				type: "item"
+				item: {
+					id: "minecraft:coal"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "Finding More Ruins"
+			icon: "scannable:scanner"
+			x: 7.5d
+			y: -1.0d
+			shape: "square"
+			description: ["Ruins spawn in cold or mountainous biomes, but the holosphere doesn't always work great. The Scanner allows you to find certain blocks very easily, but to charge it you need energy, which you haven't unlocked yet. To counteract this, I'll give you a Flux Capacitor with enough energy to last your ruins exploration. Good luck!"]
+			dependencies: ["26E62BB5A2D1DD42"]
+			id: "1C95872EA57A7F55"
+			tasks: [
+				{
+					id: "1B3879AE4DE29BD3"
+					type: "item"
+					item: "scannable:scanner"
+				}
+				{
+					id: "6D1EC9EEB2912578"
+					type: "item"
+					item: "scannable:module_block"
+				}
+			]
+			rewards: [
+				{
+					id: "177C761FA08816CD"
+					type: "item"
+					item: "scannable:module_range"
+				}
+				{
+					id: "36114220673C4188"
+					type: "item"
+					item: {
+						id: "thermal:flux_capacitor"
+						Count: 1b
+						tag: {
+							Energy: 200000
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }

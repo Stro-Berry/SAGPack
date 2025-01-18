@@ -1,0 +1,148 @@
+{
+	id: "29E362F751F6727E"
+	order_index: 3
+	title: "funnyglass"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "aoa3:abyssal_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:ancient_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:aquatic_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:archaic_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:baron_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:gardencian_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:haven_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:iro_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:lelyetian_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:lunar_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:runic_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:shyre_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:vox_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+		{
+			item: {
+				id: "aoa3:zhinx_glass"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 32
+		}
+	]
+}

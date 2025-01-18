@@ -1,0 +1,11 @@
+{
+	id: "70660B0EE484BD81"
+	order_index: 11
+	title: "casings"
+	loot_size: 1
+	rewards: [
+		{ item: "create:andesite_casing", count: 6 }
+		{ item: "create:copper_casing", count: 4 }
+		{ item: "create:brass_casing", count: 2 }
+	]
+}

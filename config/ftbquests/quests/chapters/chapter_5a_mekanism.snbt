@@ -947,7 +947,7 @@
 					id: "4D123CC7DC1194D1"
 					type: "item"
 					item: "immersiveengineering:concrete"
-					count: 26L
+					count: 25L
 				}
 				{
 					id: "18AD6469D676682C"
@@ -988,13 +988,18 @@
 					id: "317252C1639A210E"
 					type: "item"
 					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 80L
+					count: 82L
 				}
 				{
 					id: "2D74415EDE916248"
 					type: "item"
 					item: "immersiveengineering:sheetmetal_steel"
 					count: 16L
+				}
+				{
+					id: "6F19BAF0D835ABD9"
+					type: "item"
+					item: "masterfulmachinery:basic_kinetic_port_create_rotation_input"
 				}
 			]
 		}
@@ -1155,6 +1160,105 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Large Mixer"
+			icon: "create:large_cogwheel"
+			x: 16.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Lets you make certain Mechanical Mixer recipes faster and easier."]
+			dependencies: ["2BDEB25F0DE76068"]
+			id: "06005348C137DB2C"
+			tasks: [
+				{
+					id: "45A489A6AF5D0827"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_aluminum"
+					count: 12L
+				}
+				{
+					id: "45D322E6FDF6C7E2"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+				}
+				{
+					id: "7F435A9B375803B9"
+					type: "item"
+					item: {
+						id: "mekanism:boiler_casing"
+						Count: 1b
+						tag: {
+							temperature: 0.0d
+						}
+					}
+					count: 29L
+				}
+				{
+					id: "3A6146C6BAF90C3A"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "3A7021AF2B4F5DA4"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+				{
+					id: "4322866126AA7E5D"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "23A98C4D89A09AD0"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_standard"
+					count: 4L
+				}
+				{
+					id: "45991CE4782DF185"
+					type: "item"
+					item: "appliedenergistics2:quartz_vibrant_glass"
+					count: 18L
+				}
+				{
+					id: "5BC87FAC80F34C5D"
+					type: "item"
+					item: "masterfulmachinery:basic_controller"
+				}
+				{
+					id: "0138B9CFE2E76C65"
+					type: "item"
+					item: "masterfulmachinery:basic_energy_port_energy_input"
+				}
+				{
+					id: "77D9B5A4B067BDD6"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_input"
+					count: 2L
+				}
+				{
+					id: "73D9F119ECB7295C"
+					type: "item"
+					item: "masterfulmachinery:basic_item_port_items_input"
+				}
+				{
+					id: "61A6F2ECD8716121"
+					type: "item"
+					item: "masterfulmachinery:basic_kinetic_port_create_rotation_input"
+				}
+				{
+					id: "686B9D50E4AA2D0B"
+					type: "item"
+					item: "masterfulmachinery:basic_fluid_port_fluids_output"
+					count: 2L
+				}
+				{
+					id: "480DD601CA396BE6"
+					type: "item"
+					item: "masterfulmachinery:basic_item_port_items_output"
+				}
+			]
 		}
 	]
 }

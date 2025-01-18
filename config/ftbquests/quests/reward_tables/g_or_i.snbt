@@ -1,0 +1,28 @@
+{
+	id: "5F684BD6E7C51FB1"
+	order_index: 6
+	title: "g or i"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:gold_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 12
+		}
+		{
+			item: {
+				id: "minecraft:iron_ingot"
+				Count: 1b
+				tag: {
+					temperature: 0.0d
+				}
+			}
+			count: 12
+		}
+	]
+}

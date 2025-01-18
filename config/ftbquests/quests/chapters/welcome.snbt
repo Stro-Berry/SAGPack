@@ -27,12 +27,18 @@
 			y: 0.0d
 			shape: "gear"
 			subtitle: "...to hell"
+			description: ["Welcome to SAGPack! This pack has a custom-made progression that heavily focuses on automation. Enjoy your stay!"]
 			size: 1.5d
 			id: "6E7123E47492DED7"
 			tasks: [{
 				id: "0A0F3DED725A5301"
 				type: "checkmark"
 				title: "Checkmark"
+			}]
+			rewards: [{
+				id: "20DFBBF5434C5A7A"
+				type: "item"
+				item: "kubejs:concrete_bottle"
 			}]
 		}
 		{
@@ -62,10 +68,23 @@
 				}
 				match_nbt: true
 			}]
+			rewards: [{
+				id: "4B418635C80274E0"
+				type: "item"
+				item: {
+					id: "minecraft:apple"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 4
+			}]
 		}
 		{
 			x: 2.0d
 			y: 1.0d
+			description: ["Get flint... yeah"]
 			dependencies: ["6E7123E47492DED7"]
 			id: "15C7E4A5B1A47511"
 			tasks: [{
@@ -79,11 +98,23 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "006ACB417ADCC2A1"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_shovel"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+						Damage: 59
+					}
+				}
+			}]
 		}
 		{
 			x: 4.0d
 			y: 0.0d
-			description: ["Craft a Crafting Table"]
+			description: ["Craft a Crafting Table. Now we're getting somewhere..."]
 			dependencies: [
 				"15C7E4A5B1A47511"
 				"1D2352BFFCE2ED98"
@@ -100,6 +131,18 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "03DE744075197857"
+				type: "choice"
+				icon: {
+					id: "minecraft:spruce_sapling"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				table_id: 4786327274008358709L
+			}]
 		}
 		{
 			title: "Tool Handle"
@@ -112,6 +155,18 @@
 				id: "26E159FC92F7E7E1"
 				type: "item"
 				item: "kubejs:tool_handle"
+			}]
+			rewards: [{
+				id: "1016DE92F1FB54DB"
+				type: "item"
+				item: {
+					id: "minecraft:kelp"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 8
 			}]
 		}
 		{
@@ -131,6 +186,18 @@
 						temperature: 0.0d
 					}
 				}
+			}]
+			rewards: [{
+				id: "4A1B98CC99AEB4EE"
+				type: "item"
+				item: {
+					id: "minecraft:pumpkin_pie"
+					Count: 1b
+					tag: {
+						temperature: 0.0d
+					}
+				}
+				count: 2
 			}]
 		}
 		{
@@ -190,6 +257,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "20AA9A09B17FFE2B"
+				type: "item"
+				item: "create:builders_tea"
+			}]
 		}
 		{
 			title: "Useful Features"
