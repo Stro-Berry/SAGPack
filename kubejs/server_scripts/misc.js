@@ -117,6 +117,16 @@ onEvent('recipes', event => {
     event.remove({output: 'mekanism:fuelwood_heater'})
     event.remove({output: 'rftoolsutility:flight_module'})
     event.remove({id: 'hostilenetworks:living_matter/overworldian/iron_ingot'})
+    event.remove({output: 'aeadditions:chemical_interface'})
+    event.remove({output: 'pipez:item_pipe'})
+    event.remove({output: 'pipez:energy_pipe'})
+    event.remove({output: 'pipez:fluid_pipe'})
+    event.remove({output: 'pipez:universal_pipe'})
+    event.remove({output: 'pipez:gas_pipe'})
+    event.remove({output: 'pipez:basic_upgrade'})
+    event.remove({output: 'pipez:improved_upgrade'})
+    event.remove({output: 'pipez:advanced_upgrade'})
+    event.remove({output: 'pipez:ultimate_upgrade'})
 
     event.shaped('16x minecraft:stick', [
         'L',
@@ -292,6 +302,98 @@ onEvent('recipes', event => {
         G: "minecraft:ghast_tear",
         M: 'rftoolsutility:module_template',
         E: 'minecraft:ender_pearl'
+    })
+
+    event.shaped('8x pipez:item_pipe', [
+        'TTT',
+        'GRG',
+        'TTT'
+    ], {
+        T: "kubejs:tungsten_ingot",
+        G: "kubejs:galvanized_steel_ingot",
+        R: "minecraft:redstone"
+    })
+
+    event.shaped('8x pipez:fluid_pipe', [
+        'TTT',
+        'PRP',
+        'TTT'
+    ], {
+        T: "kubejs:tungsten_ingot",
+        P: "immersiveengineering:fluid_pipe",
+        R: "minecraft:redstone"
+    })
+
+    event.shaped('8x pipez:energy_pipe', [
+        'TTT',
+        'CRC',
+        'TTT'
+    ], {
+        T: "kubejs:tungsten_ingot",
+        C: "immersiveengineering:connector_hv",
+        R: "minecraft:redstone"
+    })
+
+    event.shaped('8x pipez:gas_pipe', [
+        'TTT',
+        'IRI',
+        'TTT'
+    ], {
+        T: "kubejs:tungsten_ingot",
+        I: "mekanism:alloy_infused",
+        R: "minecraft:redstone"
+    })
+
+    event.shaped('6x pipez:universal_pipe', [
+        'IEF',
+        'TRT',
+        'IEF'
+    ], {
+        I: "pipez:item_pipe",
+        E: "pipez:energy_pipe",
+        F: "pipez:fluid_pipe",
+        T: "kubejs:tungsten_ingot",
+        R: "minecraft:redstone_block"
+    })
+
+    event.shaped('pipez:basic_upgrade', [
+        'TST',
+        'SRS',
+        'TST'
+    ], {
+        T: "kubejs:tungsten_ingot",
+        S: "emendatusenigmatica:steel_gear",
+        R: "minecraft:redstone_block"
+    })
+
+    event.shaped('pipez:improved_upgrade', [
+        'PCP',
+        'CUC',
+        'PCP'
+    ], {
+        P: 'pneumaticcraft:plastic',
+        C: 'pneumaticcraft:ingot_iron_compressed',
+        U: 'pipez:basic_upgrade'
+    })
+
+    event.shaped('pipez:advanced_upgrade', [
+        'OAO',
+        'AUA',
+        'OAO'
+    ], {
+        O: 'mekanism:ingot_refined_obsidian',
+        A: 'mekanism:alloy_atomic',
+        U: 'pipez:improved_upgrade'
+    })
+
+    event.shaped('pipez:ultimate_upgrade', [
+        'AHA',
+        'HUH',
+        'AHA'
+    ], {
+        A: 'emendatusenigmatica:aluminum_ingot',
+        H: 'mekanism:hdpe_sheet',
+        U: 'pipez:advanced_upgrade'
     })
 
     event.shapeless('immersiveengineering:concrete', 'immersiveengineering:concrete_tile')

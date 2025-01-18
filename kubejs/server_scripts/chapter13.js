@@ -32,6 +32,7 @@ onEvent("recipes", event => {
     event.remove({id: "bloodmagic:alchemytable/reagent_magnetism"})
     event.remove({id: "bloodmagic:alchemytable/reagent_teleposition"})
     event.remove({id: "bloodmagic:alchemytable/reagent_suppression"})
+    event.remove({id: "bloodmagic:alchemytable/reagent_blood_light"})
     event.remove({id: "bloodmagic:alchemytable/arcane_ash"})
     event.remove({id: "bloodmagic:ritual_stone_master"})
     event.remove({output: "bloodmagic:soulforge"})

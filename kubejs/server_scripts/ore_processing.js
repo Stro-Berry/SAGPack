@@ -101,7 +101,8 @@ onEvent('recipes', event => {
         }
         if ('ore' in material) {
             event.recipes.createMilling([Item.of(material.output).withChance(0.5), material.output], material.ore)
-            event.recipes.createCrushing(`2x ${material.output}`, material.ore)
+            event.recipes.createCrushing(`${material.multi * 2}x ${material.output}`, material.ore)
+            event.recipes.mekanism.enriching(`${material.multi * 2}x ${material.output}`, material.ore)
             event.custom({
                 "type": "electrodynamics:mineral_crusher_recipe",
                 "input": {
@@ -113,17 +114,19 @@ onEvent('recipes', event => {
                     "count": 2
                 }
             })
-            event.custom({
-                "type": "electrodynamics:mineral_grinder_recipe",
-                "input": {
-                    "item": material.ore,
-                    "count": 1
-                },
-                "output": {
-                    "item": material.output,
-                    "count": 2
-                }
-            })
+            if (material.ore != 'electrodynamics:orechromite'){
+                event.custom({
+                    "type": "electrodynamics:mineral_grinder_recipe",
+                    "input": {
+                        "item": material.ore,
+                        "count": 1
+                    },
+                    "output": {
+                        "item": material.output,
+                        "count": 2
+                    }
+                })
+            }
             event.custom({
                 "type": "mekanism:reaction",
                 "itemInput": {
@@ -189,7 +192,8 @@ onEvent('recipes', event => {
             })
         } else {
             event.recipes.createMilling([Item.of(material.output).withChance(0.5), material.output], `#forge:ores/${material.id}`)
-            event.recipes.createCrushing(`2x ${material.output}`, `#forge:ores/${material.id}`)
+            event.recipes.createCrushing(`${material.multi * 2}x ${material.output}`, `#forge:ores/${material.id}`)
+            event.recipes.mekanism.enriching(`${material.multi * 2}x ${material.output}`, `#forge:ores/${material.id}`)
             event.custom({
                 "type": "electrodynamics:mineral_crusher_recipe",
                 "input": {
